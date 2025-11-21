@@ -6,6 +6,8 @@ import { ArrowRight, Download, Loader, ExternalLink } from "lucide-react";
 import CategoryCard from "@/components/CategoryCard";
 import WeekCard from "@/components/WeekCard";
 import DeepDiveSection from "@/components/DeepDiveSection";
+import ScoreOdometer from "@/components/ScoreOdometer";
+import { getStageIcon, getStageColor, getStageBgColor } from "@/lib/stageIcons";
 
 interface CategoryScore {
   name: string;
@@ -125,6 +127,11 @@ export default function ResultsPage({
     generateResources();
     generateDeepDive();
   }, [stage, totalScore, maxScore, categories]);
+
+  const StageIcon = getStageIcon(stage);
+  const stageColor = getStageColor(stage);
+  const stageBgColor = getStageBgColor(stage);
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-16 space-y-16">
@@ -132,36 +139,51 @@ export default function ResultsPage({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center space-y-6 max-w-3xl mx-auto"
+          className={`text-center space-y-8 max-w-3xl mx-auto rounded-lg p-8 md:p-12 border-2 border-border ${stageBgColor}`}
         >
-          <Badge className="text-base px-6 py-2" data-testid="badge-stage">
-            Your UX Career Stage
-          </Badge>
-          
-          <h1 className="text-5xl md:text-6xl font-bold" data-testid="text-stage">
-            {stage}
-          </h1>
-          
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            {summary}
-          </p>
-          
-          <div className="flex items-center justify-center gap-4 pt-4">
-            <div className="text-center">
-              <p className="text-5xl font-bold font-mono">{totalScore}</p>
-              <p className="text-sm text-muted-foreground font-mono">out of {maxScore}</p>
-            </div>
+          <div className="flex justify-center">
+            <motion.div
+              initial={{ scale: 0, rotate: -180 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
+              className={`p-4 rounded-full bg-background`}
+            >
+              <StageIcon className={`w-12 h-12 ${stageColor}`} />
+            </motion.div>
           </div>
+
+          <div>
+            <Badge className="text-sm px-4 py-1 mb-4" data-testid="badge-stage">
+              Your UX Career Stage
+            </Badge>
+            <h1
+              className="text-5xl md:text-6xl font-bold mb-4"
+              data-testid="text-stage"
+            >
+              {stage}
+            </h1>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              {summary}
+            </p>
+          </div>
+
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex justify-center pt-4"
+          >
+            <ScoreOdometer score={totalScore} maxScore={maxScore} />
+          </motion.div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="space-y-4 max-w-3xl mx-auto"
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="rounded-lg p-8 border-2 border-border bg-muted/30 max-w-3xl mx-auto space-y-4"
         >
           <h2 className="text-2xl font-bold">What This Means For Your Career</h2>
-          <p className="text-lg leading-relaxed text-muted-foreground italic">{summary}</p>
           {stageReadup && (
             <p className="text-lg leading-relaxed text-foreground">{stageReadup}</p>
           )}
