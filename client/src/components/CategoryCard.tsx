@@ -25,7 +25,7 @@ export default function CategoryCard({
       <Card className="p-6 space-y-4 bg-card border" data-testid={`category-${name.toLowerCase().replace(/\s+/g, '-')}`}>
         <div className="space-y-2">
           <h3 className="font-semibold text-lg">{name}</h3>
-          <p className="text-2xl font-bold text-foreground">
+          <p className="text-2xl font-bold text-foreground font-mono">
             {score}/{maxScore}
           </p>
         </div>

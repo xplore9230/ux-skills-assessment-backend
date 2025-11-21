@@ -29,7 +29,7 @@ export default function AnswerOption({
         data-testid={`option-${value}`}
       >
         <span className="flex items-start gap-4 w-full">
-          <span className={`text-sm font-semibold ${isSelected ? "" : "text-muted-foreground"}`}>
+          <span className={`text-sm font-semibold font-mono ${isSelected ? "" : "text-muted-foreground"}`}>
             {value}
           </span>
           <span className="flex-1 text-base leading-relaxed">{label}</span>

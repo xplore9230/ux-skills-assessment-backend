@@ -10,7 +10,7 @@ export default function ProgressBar({ current, total }: ProgressBarProps) {
 
   return (
     <div className="space-y-3">
-      <p className="text-sm text-muted-foreground" data-testid="text-progress">
+      <p className="text-sm text-muted-foreground font-mono" data-testid="text-progress">
         Question {current} of {total}
       </p>
       <div className="h-2 bg-muted rounded-full overflow-hidden border">

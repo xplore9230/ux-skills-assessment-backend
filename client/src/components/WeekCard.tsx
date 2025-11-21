@@ -18,9 +18,9 @@ export default function WeekCard({ week, tasks, delay = 0 }: WeekCardProps) {
       <Card className="p-6 space-y-4 h-full bg-card border" data-testid={`week-${week}`}>
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full border flex items-center justify-center">
-            <span className="text-sm font-bold">{week}</span>
+            <span className="text-sm font-bold font-mono">{week}</span>
           </div>
-          <h3 className="font-semibold text-lg">Week {week}</h3>
+          <h3 className="font-semibold text-lg">Week <span className="font-mono">{week}</span></h3>
         </div>
         
         <ul className="space-y-3">

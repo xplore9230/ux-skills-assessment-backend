@@ -59,8 +59,8 @@ export default function ResultsPage({
           
           <div className="flex items-center justify-center gap-4 pt-4">
             <div className="text-center">
-              <p className="text-5xl font-bold">{totalScore}</p>
-              <p className="text-sm text-muted-foreground">out of {maxScore}</p>
+              <p className="text-5xl font-bold font-mono">{totalScore}</p>
+              <p className="text-sm text-muted-foreground font-mono">out of {maxScore}</p>
             </div>
           </div>
         </motion.div>
