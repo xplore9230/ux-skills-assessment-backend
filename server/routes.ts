@@ -120,6 +120,85 @@ IMPORTANT: Only include real, verified articles and resources with correct URLs.
     }
   });
 
+  // AI-powered deep dive topics endpoint
+  app.post("/api/generate-deep-dive", async (req, res) => {
+    try {
+      if (!process.env.OPENAI_API_KEY) {
+        return res.status(500).json({ error: "AI service not configured" });
+      }
+
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+
+      const { stage, categories } = req.body;
+
+      const categoryDetails = categories
+        .map((c: any) => `${c.name}: ${c.score}/${c.maxScore}`)
+        .join("\n");
+
+      const prompt = `You are a UX career expert. Based on this assessment result, provide 2-3 deep dive topics for focused learning.
+
+Career Stage: ${stage}
+
+Skill Breakdown:
+${categoryDetails}
+
+For each topic, provide:
+- name: Topic title
+- pillar: Which skill area (from the 5 categories)
+- level: Beginner/Intermediate/Advanced
+- summary: 1-2 sentence explanation of why this matters for them
+- practice_points: 3 specific action items
+- resources: 3 real learning resources (articles, videos, guides)
+
+Focus on their weakest areas first. Format as JSON:
+{
+  "topics": [
+    {
+      "name": "Topic Name",
+      "pillar": "Category Name",
+      "level": "Intermediate",
+      "summary": "Why this matters...",
+      "practice_points": ["action1", "action2", "action3"],
+      "resources": [
+        {
+          "title": "Resource Title",
+          "type": "article|video|guide",
+          "estimated_read_time": "12 min",
+          "source": "Source Name",
+          "url": "https://example.com",
+          "tags": ["tag1", "tag2"]
+        }
+      ]
+    }
+  ]
+}
+
+IMPORTANT: Include ONLY real, verified resources with correct URLs.`;
+
+      const message = await openai.chat.completions.create({
+        model: "gpt-4o",
+        max_tokens: 2000,
+        messages: [
+          {
+            role: "user",
+            content: prompt,
+          },
+        ],
+      });
+
+      const content = message.choices[0].message.content || "";
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      const data = jsonMatch ? JSON.parse(jsonMatch[0]) : null;
+
+      res.json(data || { topics: [] });
+    } catch (error) {
+      console.error("Error generating deep dive:", error);
+      res.status(500).json({ error: "Failed to generate deep dive" });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

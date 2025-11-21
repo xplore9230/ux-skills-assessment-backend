@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Loader, ExternalLink } from "lucide-react";
 import CategoryCard from "@/components/CategoryCard";
 import WeekCard from "@/components/WeekCard";
+import DeepDiveSection from "@/components/DeepDiveSection";
 
 interface CategoryScore {
   name: string;
@@ -22,6 +23,24 @@ interface Resource {
   title: string;
   url: string;
   description: string;
+}
+
+interface DeepDiveResource {
+  title: string;
+  type: "article" | "video" | "guide";
+  estimated_read_time: string;
+  source: string;
+  url: string;
+  tags: string[];
+}
+
+interface DeepDiveTopic {
+  name: string;
+  pillar: string;
+  level: string;
+  summary: string;
+  practice_points: string[];
+  resources: DeepDiveResource[];
 }
 
 interface ResultsPageProps {
@@ -48,10 +67,13 @@ export default function ResultsPage({
   const [stageReadup, setStageReadup] = useState("");
   const [resources, setResources] = useState<Resource[]>([]);
   const [isLoadingResources, setIsLoadingResources] = useState(true);
+  const [deepDiveTopics, setDeepDiveTopics] = useState<DeepDiveTopic[]>([]);
+  const [isLoadingDeepDive, setIsLoadingDeepDive] = useState(true);
 
   useEffect(() => {
     setIsLoadingPlan(false);
     setIsLoadingResources(false);
+    setIsLoadingDeepDive(true);
 
     const generateResources = async () => {
       try {
@@ -77,7 +99,31 @@ export default function ResultsPage({
       }
     };
 
+    const generateDeepDive = async () => {
+      try {
+        const response = await fetch("/api/generate-deep-dive", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            stage,
+            categories,
+          }),
+        });
+        if (response.ok) {
+          const data = await response.json();
+          if (data.topics) {
+            setDeepDiveTopics(data.topics);
+          }
+        }
+      } catch (error) {
+        console.error("Failed to generate deep dive:", error);
+      } finally {
+        setIsLoadingDeepDive(false);
+      }
+    };
+
     generateResources();
+    generateDeepDive();
   }, [stage, totalScore, maxScore, categories]);
   return (
     <div className="min-h-screen bg-background">
@@ -184,11 +230,16 @@ export default function ResultsPage({
         </div>
 
 
+        <DeepDiveSection
+          topics={deepDiveTopics}
+          isLoading={isLoadingDeepDive}
+        />
+
         <div className="space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
           >
             <h2 className="text-3xl font-bold mb-2">Your AI-Powered 4-Week Improvement Plan</h2>
             <p className="text-lg text-muted-foreground">
