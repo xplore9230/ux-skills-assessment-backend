@@ -50,6 +50,9 @@ export default function ResultsPage({
   const [isLoadingResources, setIsLoadingResources] = useState(true);
 
   useEffect(() => {
+    // Set default plan immediately
+    setIsLoadingPlan(false);
+
     const generateAIPlan = async () => {
       try {
         const response = await fetch("/api/generate-improvement-plan", {
@@ -62,14 +65,14 @@ export default function ResultsPage({
             categories,
           }),
         });
-        const data = await response.json();
-        if (data.weeks) {
-          setImprovementPlan(data.weeks);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.weeks) {
+            setImprovementPlan(data.weeks);
+          }
         }
       } catch (error) {
         console.error("Failed to generate AI plan:", error);
-      } finally {
-        setIsLoadingPlan(false);
       }
     };
 
@@ -83,12 +86,14 @@ export default function ResultsPage({
             categories,
           }),
         });
-        const data = await response.json();
-        if (data.readup) {
-          setStageReadup(data.readup);
-        }
-        if (data.resources) {
-          setResources(data.resources);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.readup) {
+            setStageReadup(data.readup);
+          }
+          if (data.resources) {
+            setResources(data.resources);
+          }
         }
       } catch (error) {
         console.error("Failed to generate resources:", error);

@@ -1,3 +1,5 @@
+import { allQuestions } from "@/data/questions";
+
 interface CategoryScore {
   name: string;
   score: number;
@@ -28,18 +30,16 @@ export function calculateResults(answers: Record<string, number>) {
     "Collaboration & Communication": 0
   };
 
-  Object.entries(answers).forEach(([questionId, score]) => {
-    const questionNum = parseInt(questionId.slice(1));
-    let category = "";
-    
-    if (questionNum <= 3) category = "UX Fundamentals";
-    else if (questionNum <= 6) category = "UI Craft & Visual Design";
-    else if (questionNum <= 9) category = "User Research & Validation";
-    else if (questionNum <= 12) category = "Product Thinking & Strategy";
-    else category = "Collaboration & Communication";
+  // Create a map of question ID to question for quick lookup
+  const questionMap = new Map(allQuestions.map(q => [q.id, q]));
 
-    categoryScores[category] += score;
-    categoryCounts[category]++;
+  Object.entries(answers).forEach(([questionId, score]) => {
+    const question = questionMap.get(questionId);
+    if (question) {
+      const category = question.category;
+      categoryScores[category] += score;
+      categoryCounts[category]++;
+    }
   });
 
   const totalScore = Object.values(categoryScores).reduce((a, b) => a + b, 0);
