@@ -31,6 +31,16 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
 
   const handleAnswer = (value: number) => {
     setAnswers({ ...answers, [currentQuestion.id]: value });
+    
+    // Auto-advance to next question after a short delay
+    setTimeout(() => {
+      if (isLastQuestion) {
+        // Don't auto-advance on last question
+        return;
+      }
+      setDirection(1);
+      setCurrentIndex(currentIndex + 1);
+    }, 400);
   };
 
   const handleNext = () => {
@@ -66,7 +76,7 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
               exit={{ opacity: 0, x: direction * -50 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="p-8 md:p-12 space-y-8">
+              <Card className="p-8 md:p-12 space-y-8 bg-card">
                 <div className="space-y-4">
                   <p className="text-sm text-primary font-semibold uppercase tracking-wide">
                     {currentQuestion.category}

@@ -15,7 +15,7 @@ export default function WeekCard({ week, tasks, delay = 0 }: WeekCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay }}
     >
-      <Card className="p-6 space-y-4 h-full" data-testid={`week-${week}`}>
+      <Card className="p-6 space-y-4 h-full bg-card" data-testid={`week-${week}`}>
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
             <span className="text-sm font-bold text-primary">{week}</span>

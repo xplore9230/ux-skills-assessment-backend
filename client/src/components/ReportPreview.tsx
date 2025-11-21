@@ -12,7 +12,7 @@ export default function ReportPreview() {
     >
       <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full" />
       
-      <Card className="relative p-8 space-y-6 shadow-2xl" data-testid="report-preview">
+      <Card className="relative p-8 space-y-6 shadow-2xl bg-card" data-testid="report-preview">
         <div className="space-y-2">
           <p className="text-sm text-muted-foreground">Your UX Career Stage</p>
           <h3 className="text-3xl font-bold text-foreground">Emerging Senior</h3>
