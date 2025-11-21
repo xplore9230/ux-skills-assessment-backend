@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import ReportPreview from "@/components/ReportPreview";
+import illustrationImage from "@assets/generated_images/ux_assessment_landing_illustration.png";
 
 interface LandingPageProps {
   onStart: () => void;
@@ -62,7 +62,12 @@ export default function LandingPage({ onStart }: LandingPageProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center lg:justify-end"
           >
-            <ReportPreview />
+            <img 
+              src={illustrationImage} 
+              alt="UX design assessment illustration" 
+              className="w-full max-w-lg"
+              data-testid="landing-illustration"
+            />
           </motion.div>
         </div>
       </div>
