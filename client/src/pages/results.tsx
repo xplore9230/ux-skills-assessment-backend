@@ -141,6 +141,15 @@ export default function ResultsPage({
           transition={{ duration: 0.5 }}
           className="text-center space-y-6 max-w-3xl mx-auto"
         >
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center"
+          >
+            <ScoreOdometer score={totalScore} maxScore={maxScore} />
+          </motion.div>
+
           <Badge className="text-sm px-4 py-1" data-testid="badge-stage">
             Your UX Career Stage
           </Badge>
@@ -155,15 +164,6 @@ export default function ResultsPage({
           <p className="text-lg text-muted-foreground leading-relaxed">
             {summary}
           </p>
-
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex justify-center pt-4"
-          >
-            <ScoreOdometer score={totalScore} maxScore={maxScore} />
-          </motion.div>
         </motion.div>
 
         {stageReadup && (
