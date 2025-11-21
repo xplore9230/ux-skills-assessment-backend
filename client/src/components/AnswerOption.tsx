@@ -23,7 +23,7 @@ export default function AnswerOption({
       <Button
         variant={isSelected ? "default" : "outline"}
         className={`w-full h-auto py-4 px-6 rounded-full text-left justify-start transition-all ${
-          isSelected ? "bg-primary text-primary-foreground border-primary" : "bg-card border-card-border hover-elevate"
+          isSelected ? "bg-primary text-primary-foreground border-primary" : "bg-card border-card-border hover:bg-primary hover:text-primary-foreground hover:border-primary"
         }`}
         onClick={onClick}
         data-testid={`option-${value}`}
