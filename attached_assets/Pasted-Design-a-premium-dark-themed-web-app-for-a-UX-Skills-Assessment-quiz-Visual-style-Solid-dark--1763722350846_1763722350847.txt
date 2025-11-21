@@ -1,0 +1,41 @@
+Design a premium, dark-themed web app for a "UX Skills Assessment" quiz.
+
+Visual style:
+
+Solid dark background, no gradients (#050814 and #0C101C).
+
+Minimal accent palette using soft gold (#F4B731) and muted orange (#F97316) or teal (#2DD4BF) for key highlights only.
+
+Typography: Use an elegant serif like Newsreader or Playfair Display for main headings and a clean sans like Inter or Manrope for body and UI text. Headings should feel editorial and premium; body text should be highly legible.
+
+Big breathing space, generous padding, soft rounded corners, subtle shadows.
+
+Landing page layout:
+
+Left side: Hero section with headline "Find Your UX Career Stage", supporting description, and a clear primary CTA button "Take the UX Quiz".
+
+Right side: A mock "UX Report Card" preview showing a stage label (e.g. "Emerging Senior"), a circular score indicator, and a few small tags like "Strong in Product Thinking" and "Needs work in Research".
+
+Subtle background accent: a soft blurred glow behind the report card using the accent color.
+
+Quiz screen:
+
+Centered card with the question text, a small progress indicator ("Question 4 of 15" + horizontal progress bar), and five full-width pill-style options stacked vertically.
+
+Clear selected state: solid accent background with white text.
+
+Bottom sticky bar with "Previous" (ghost button) and "Next" (solid accent button).
+
+Results screen:
+
+Top: Stage badge (e.g. "Practitioner", "Emerging Senior", "Strategic Lead") with a short, one-line summary.
+
+Middle: Category breakdown cards for "UX Fundamentals", "UI Craft", "Research & Validation", "Product Thinking", "Collaboration", each with a score and simple horizontal bar indicator.
+
+Bottom: A clean 4-week improvement plan shown as vertical cards: Week 1, Week 2, Week 3, Week 4, each with 2–3 bullet points.
+
+Interactions:
+
+Use very subtle motion: fade-and-slide in main cards, smooth progress bar animations, gentle hover states on buttons (slight scale and brightness change).
+
+No flashy gradients, no overly playful elements. The overall feeling should be calm, confident, and premium, aimed at professional UX designers.
