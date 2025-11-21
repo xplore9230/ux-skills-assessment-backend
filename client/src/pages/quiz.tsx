@@ -30,12 +30,14 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
   const canGoPrevious = currentIndex > 0;
 
   const handleAnswer = (value: number) => {
-    setAnswers({ ...answers, [currentQuestion.id]: value });
+    const updatedAnswers = { ...answers, [currentQuestion.id]: value };
+    setAnswers(updatedAnswers);
     
     // Auto-advance to next question after a short delay
     setTimeout(() => {
       if (isLastQuestion) {
-        // Don't auto-advance on last question
+        // Auto-complete on last question
+        onComplete(updatedAnswers);
         return;
       }
       setDirection(1);
