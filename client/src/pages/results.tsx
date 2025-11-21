@@ -141,16 +141,6 @@ export default function ResultsPage({
           transition={{ duration: 0.5 }}
           className="text-center space-y-6 max-w-3xl mx-auto"
         >
-          <div className="flex justify-center">
-            <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
-            >
-              <StageIcon className={`w-12 h-12 ${stageColor}`} />
-            </motion.div>
-          </div>
-
           <Badge className="text-sm px-4 py-1" data-testid="badge-stage">
             Your UX Career Stage
           </Badge>

@@ -15,8 +15,8 @@ export default function ScoreOdometer({
   const [displayScore, setDisplayScore] = useState(0);
 
   useEffect(() => {
-    let start = 0;
-    const increment = score / (duration * 60);
+    let start = -10;
+    const increment = (score - (-10)) / (duration * 60);
     const interval = setInterval(() => {
       start += increment;
       if (start >= score) {
