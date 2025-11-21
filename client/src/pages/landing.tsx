@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import illustrationImage from "@assets/generated_images/ux_assessment_landing_illustration.png";
+import illustrationImage from "@assets/image_1763724648160.png";
 
 interface LandingPageProps {
   onStart: () => void;
