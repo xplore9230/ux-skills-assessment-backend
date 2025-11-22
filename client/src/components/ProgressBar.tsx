@@ -12,9 +12,17 @@ const ProgressBar = memo(function ProgressBar({ current, total }: ProgressBarPro
   return (
     <div className="space-y-3">
       <p className="text-sm text-muted-foreground font-serif" data-testid="text-progress">
+        <span className="sr-only">Quiz progress: </span>
         Question {current} of {total}
       </p>
-      <div className="h-2 bg-muted rounded-full overflow-hidden border">
+      <div 
+        role="progressbar"
+        aria-valuenow={current}
+        aria-valuemin={1}
+        aria-valuemax={total}
+        aria-label={`Quiz progress: question ${current} of ${total}`}
+        className="h-2 bg-muted rounded-full overflow-hidden border"
+      >
         <motion.div
           className="h-full bg-foreground"
           initial={{ width: 0 }}

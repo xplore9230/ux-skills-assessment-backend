@@ -138,23 +138,46 @@ def generate_improvement_plan_ollama(stage: str, total_score: int, max_score: in
         except Exception as e:
             print(f"RAG retrieval error: {e}")
     
-    prompt = f"""Create a 4-week UX improvement plan for a {stage} designer (score: {percentage}%).
+    prompt = f"""You are a UX career coach. Create a highly personalized 4-week improvement plan for a {stage} level designer.
 
-Weakest areas: {weakest_details}
+Career Stage: {stage}
+Total Score: {total_score}/{max_score} ({percentage}%)
 
-Requirements:
-- Focus on weakest 2 categories
-- 3 specific, actionable tasks per week (1-2 hours each)
-- Progressive difficulty (Week 1=basics, Week 4=advanced)
-- Match {stage} level capabilities
+Full Skill Breakdown:
+{category_details}
 
-Return JSON:
+WEAKEST AREAS (focus here):
+{weakest_details}
+{rag_context}
+
+IMPORTANT GUIDELINES:
+1. This is a {stage} level designer - tasks must match their current capabilities
+2. Focus HEAVILY on the 2 weakest categories above
+3. Each task must be:
+   - Specific and actionable (not generic advice)
+   - Completable in 1-2 hours
+   - Measurable (clear done criteria)
+   - Reference their actual score gaps
+4. Build progressively: Week 1 = basics, Week 4 = advanced
+5. Mention the {stage} stage in context (e.g., "As a {stage}, you should...")
+
+EXAMPLES OF GOOD TASKS:
+- "Create 3 wireframes for a checkout flow, focusing on error states you missed"
+- "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework"
+- "Redesign your portfolio's navigation using the 8-point grid system"
+
+EXAMPLES OF BAD TASKS:
+- "Learn more about UX" (too vague)
+- "Become better at design" (not measurable)
+- "Read articles" (not specific enough)
+
+Return ONLY valid JSON with this structure:
 {{
   "weeks": [
-    {{"week": 1, "tasks": ["task1", "task2", "task3"]}},
-    {{"week": 2, "tasks": ["task1", "task2", "task3"]}},
-    {{"week": 3, "tasks": ["task1", "task2", "task3"]}},
-    {{"week": 4, "tasks": ["task1", "task2", "task3"]}}
+    {{"week": 1, "tasks": ["Specific task referencing their weak area", "Another concrete task", "Third actionable task"]}},
+    {{"week": 2, "tasks": ["Build on week 1", "More advanced task", "Third task"]}},
+    {{"week": 3, "tasks": ["Even more advanced", "Task 2", "Task 3"]}},
+    {{"week": 4, "tasks": ["Most advanced task", "Final push", "Capstone task"]}}
   ]
 }}"""
     
@@ -219,24 +242,46 @@ def generate_deep_dive_topics_ollama(stage: str, categories: List[Dict[str, Any]
         except Exception as e:
             print(f"RAG retrieval error: {e}")
     
-    prompt = f"""Provide 2-3 deep dive topics for a {stage} UX designer.
+    prompt = f"""You are a UX career expert. Based on this assessment, provide 2-3 deep dive topics for focused learning.
 
-Skills: {category_details}
+Career Stage: {stage}
 
-For each topic return JSON:
+Skill Breakdown:
+{category_details}
+{rag_context}
+
+IMPORTANT:
+- Focus on their WEAKEST areas first
+- Each practice point must be SPECIFIC and ACTIONABLE (not generic advice)
+- Include concrete deliverables (e.g., "Create 3 wireframes...", "Conduct 2 interviews...")
+- Make it appropriate for {stage} level
+
+GOOD practice point examples:
+- "Conduct 5 user interviews using the Jobs-to-be-Done framework and document findings"
+- "Create a comprehensive style guide with color, typography, and spacing tokens"
+- "Build 3 interactive prototypes in Figma with micro-interactions"
+
+BAD practice point examples (too vague):
+- "Learn more about UX"
+- "Practice design"
+- "Read articles"
+
+Return ONLY valid JSON with this structure:
 {{
   "topics": [
     {{
-      "name": "Topic",
-      "pillar": "Category",
-      "level": "Intermediate",
-      "summary": "1 sentence why this matters",
-      "practice_points": ["action1", "action2", "action3"]
+      "name": "Specific Topic Name",
+      "pillar": "Category Name from above",
+      "level": "Beginner/Intermediate/Advanced",
+      "summary": "One sentence explaining why this matters for a {stage} designer",
+      "practice_points": [
+        "First specific, actionable task with clear deliverable",
+        "Second specific, actionable task with clear deliverable",
+        "Third specific, actionable task with clear deliverable"
+      ]
     }}
   ]
-}}
-
-Focus on weakest areas."""
+}}"""
     
     return call_ollama(prompt)
 

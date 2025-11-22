@@ -20,8 +20,10 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
         >
           <img 
             src={illustrationImage} 
-            alt="UX design assessment illustration" 
-            className="w-full max-w-2xl"
+            alt="UX Skills Assessment - Discover your career stage with personalized insights and recommendations" 
+            className="w-full max-w-2xl rounded-lg"
+            loading="eager"
+            fetchPriority="high"
             data-testid="landing-illustration"
           />
         </motion.div>
@@ -44,12 +46,12 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
           <div className="flex justify-center pt-2">
             <Button
               size="lg"
-              className="text-lg px-8 py-6 rounded-xl group"
+              className="text-lg px-8 py-6 rounded-xl group active:scale-95 transition-transform"
               onClick={onStart}
               data-testid="button-start-quiz"
             >
               Take the UX Quiz
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
             </Button>
           </div>
           

@@ -1,13 +1,12 @@
 import { memo, useMemo } from "react";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import WeekCard from "@/components/WeekCard";
 import DeepDiveSection from "@/components/DeepDiveSection";
 import ScoreOdometer from "@/components/ScoreOdometer";
 import CategoryCard from "@/components/CategoryCard";
+import { SkeletonCard } from "@/components/SkeletonCard";
 import { useResultsData } from "@/hooks/useResultsData";
 import type { CategoryScore, ImprovementWeek } from "@/types";
 import type { PrecomputedResults } from "@/hooks/useBackgroundComputation";
@@ -74,7 +73,7 @@ const ResultsPage = memo(function ResultsPage({
           <Badge variant="outline" className="text-xs font-bold uppercase tracking-widest px-4 py-1.5 border-foreground/20 text-foreground/60 rounded-full">
             Assessment Complete
           </Badge>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground tracking-tight leading-none">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground tracking-tight leading-none">
             {stage}
           </h1>
         </div>
@@ -126,7 +125,7 @@ const ResultsPage = memo(function ResultsPage({
           <p className="text-muted-foreground font-medium">Your performance across key UX competencies</p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {categories.map((category, index) => (
             <motion.div
               key={category.name}
@@ -146,7 +145,7 @@ const ResultsPage = memo(function ResultsPage({
       </div>
     ),
 
-    resources: !isLoadingResources && resources.length > 0 ? (
+    resources: resources.length > 0 ? (
       <div key="resources" className="space-y-8">
         <div className="text-center">
           <h2 className="text-3xl font-serif font-bold mb-2">Curated Resources</h2>
@@ -174,13 +173,25 @@ const ResultsPage = memo(function ResultsPage({
           ))}
         </div>
       </div>
-    ) : isLoadingResources ? (
+    ) : isLoadingResources && !resources.length ? (
       <div key="resources-loading" className="space-y-8 opacity-60">
         <div className="text-center">
           <h2 className="text-3xl font-serif font-bold mb-2">Curated Resources</h2>
           <div className="flex justify-center mt-4">
-            <div className="w-6 h-6 border-2 border-foreground/20 border-t-foreground rounded-full animate-spin" />
+            <div className="w-6 h-6 border-2 border-foreground/20 border-t-foreground rounded-full animate-spin" role="status" aria-label="Loading resources" />
           </div>
+        </div>
+      </div>
+    ) : !isLoadingResources && !resources.length ? (
+      <div key="resources-empty" className="space-y-8 text-center py-12">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-serif font-bold">Curated Resources</h2>
+          <p className="text-muted-foreground">
+            Resources are being prepared for your profile.
+          </p>
+          <p className="text-sm text-muted-foreground/70">
+            Check back in a moment for personalized recommendations.
+          </p>
         </div>
       </div>
     ) : null,
@@ -237,25 +248,27 @@ const ResultsPage = memo(function ResultsPage({
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
           <a
             href={jobLinks.linkedin_url}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-[#0A66C2] text-white rounded-lg font-semibold hover:bg-[#004182] transition-all duration-200 shadow-lg hover:shadow-xl border border-[#0A66C2]/20"
+            aria-label={`Search for ${jobLinks.job_title} jobs on LinkedIn (opens in new tab)`}
+            className="flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background rounded-full font-semibold hover:bg-foreground/90 transition-all duration-200 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 min-h-[44px]"
           >
             Search on LinkedIn
-            <ExternalLink className="w-4 h-4" />
+            <ExternalLink className="w-4 h-4" aria-hidden="true" />
           </a>
           
           <a
             href={jobLinks.google_url}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-card border border-border/60 text-foreground rounded-lg font-semibold hover:bg-muted/50 hover:border-border transition-all duration-200 shadow-lg"
+            aria-label={`Search for ${jobLinks.job_title} jobs on Google Jobs (opens in new tab)`}
+            className="flex items-center justify-center gap-2 px-8 py-4 bg-white/95 text-gray-900 rounded-full font-semibold hover:bg-white transition-all duration-200 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 min-h-[44px]"
           >
             Search on Google Jobs
-            <ExternalLink className="w-4 h-4" />
+            <ExternalLink className="w-4 h-4" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -295,21 +308,6 @@ const ResultsPage = memo(function ResultsPage({
     <div className="min-h-screen bg-background font-sans selection:bg-foreground/10">
       <div className="container mx-auto px-6 py-20 max-w-5xl space-y-24">
         
-        {/* AI Priority Message */}
-        {layoutStrategy && layoutStrategy.priority_message && !isLoadingLayout && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Alert className="border-primary/20 bg-primary/5">
-              <Sparkles className="h-4 w-4 text-primary" />
-              <AlertDescription className="text-sm font-medium">
-                {layoutStrategy.priority_message}
-              </AlertDescription>
-            </Alert>
-          </motion.div>
-        )}
 
         {/* Dynamic Sections */}
         {sectionOrder.map((sectionId) => {
@@ -321,32 +319,6 @@ const ResultsPage = memo(function ResultsPage({
           return section;
         })}
 
-        {/* Footer Actions */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-12 pb-20"
-        >
-          <Button
-            variant="outline"
-            size="lg"
-            className="rounded-full px-8 border-foreground/20 hover:bg-foreground/5 text-foreground/80 font-semibold"
-            onClick={() => console.log('Download report')}
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Save Report
-          </Button>
-          
-          <Button
-            size="lg"
-            className="rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 font-bold"
-            onClick={onRestart}
-          >
-            Retake Assessment
-            <ArrowRight className="w-4 h-4 ml-2" />
-          </Button>
-        </motion.div>
 
       </div>
     </div>

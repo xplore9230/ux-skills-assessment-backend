@@ -107,6 +107,9 @@ const LoadingResultsPage = memo(function LoadingResultsPage({
           <AnimatePresence mode="wait">
             <motion.h2
               key={currentMessageIndex}
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -118,6 +121,8 @@ const LoadingResultsPage = memo(function LoadingResultsPage({
           </AnimatePresence>
 
           <motion.p
+            role="status"
+            aria-live="polite"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -131,7 +136,14 @@ const LoadingResultsPage = memo(function LoadingResultsPage({
 
         {/* Progress Bar */}
         <div className="space-y-2">
-          <div className="h-1 w-full bg-muted/40 rounded-full overflow-hidden">
+          <div 
+            role="progressbar"
+            aria-valuenow={progress}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label="Results loading progress"
+            className="h-1 w-full bg-muted/40 rounded-full overflow-hidden"
+          >
             <motion.div
               className="h-full bg-primary"
               initial={{ width: 0 }}
@@ -139,7 +151,10 @@ const LoadingResultsPage = memo(function LoadingResultsPage({
               transition={{ duration: 0.3 }}
             />
           </div>
-          <p className="text-xs text-muted-foreground">{progress}%</p>
+          <p className="text-xs text-muted-foreground" aria-live="polite">
+            <span className="sr-only">Progress: </span>
+            {progress}%
+          </p>
         </div>
 
         {/* Subtle hint */}

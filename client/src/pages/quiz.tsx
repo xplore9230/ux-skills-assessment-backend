@@ -95,15 +95,19 @@ const QuizPage = memo(function QuizPage({ questions, onComplete, onBack, onHalfw
             >
               <Card className="p-3 md:p-6 lg:p-12 space-y-4 md:space-y-6 lg:space-y-8 bg-card border">
                 <div className="space-y-4">
-                  <p className="text-sm font-semibold uppercase tracking-wide">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                     {currentQuestion.category}
                   </p>
-                  <h2 className="text-2xl md:text-3xl font-bold leading-tight" data-testid="text-question">
+                  <h2 id="question-text" className="text-2xl md:text-3xl font-bold leading-tight" data-testid="text-question">
                     {currentQuestion.text}
                   </h2>
                 </div>
 
-                <div className="space-y-2 md:space-y-3 lg:space-y-4">
+                <div 
+                  role="radiogroup" 
+                  aria-labelledby="question-text"
+                  className="space-y-2 md:space-y-3 lg:space-y-4"
+                >
                   {currentQuestion.options.map((option) => (
                     <AnswerOption
                       key={option.value}

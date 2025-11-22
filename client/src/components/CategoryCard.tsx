@@ -33,7 +33,7 @@ const CategoryCard = memo(function CategoryCard({
         transition={{ duration: 0.4 }}
         className="h-full"
       >
-        <div className="h-full flex flex-col justify-between p-6 rounded-xl bg-muted/20 hover:bg-muted/30 transition-colors duration-300 space-y-4">
+        <div className="h-full flex flex-col justify-between p-6 rounded-xl border border-border/30 hover:border-border/50 bg-muted/20 hover:bg-muted/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 space-y-4">
           <div className="space-y-3">
             <div className="flex justify-between items-start gap-4">
               <div className="flex-1">
@@ -92,10 +92,11 @@ const CategoryCard = memo(function CategoryCard({
                   variant="ghost"
                   size="sm"
                   onClick={() => setModalOpen(true)}
-                  className="text-xs h-7 px-2 hover:bg-muted/50"
+                  aria-label={`View detailed analysis for ${name}`}
+                  className="text-xs min-h-11 px-3 hover:bg-muted/50 active:scale-95 transition-transform"
                 >
                   See Detailed Analysis
-                  <ChevronRight className="w-3 h-3 ml-1" />
+                  <ChevronRight className="w-3 h-3 ml-1" aria-hidden="true" />
                 </Button>
               )}
             </div>

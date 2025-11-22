@@ -38,10 +38,10 @@ const ScoreOdometer = memo(function ScoreOdometer({
       className="flex flex-col items-center"
     >
       <div className="relative flex items-baseline gap-2">
-        <span className="font-serif text-8xl md:text-9xl font-bold tracking-tighter text-foreground">
+        <span className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-foreground">
           {displayScore}
         </span>
-        <span className="text-xl md:text-2xl text-muted-foreground font-medium">
+        <span className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium">
           / {maxScore}
         </span>
       </div>

@@ -1,7 +1,8 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
-import { Loader, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 interface DeepDiveResource {
   title: string;
@@ -45,9 +46,9 @@ const DeepDiveSection = memo(function DeepDiveSection({
             from.
           </p>
         </div>
-        <div className="flex items-center justify-center py-12">
-          <Loader className="w-6 h-6 animate-spin mr-3" />
-          <span>Finding resources just for you…</span>
+        <div className="flex flex-col items-center justify-center py-12 gap-4">
+          <LoadingSpinner size="md" />
+          <span className="text-muted-foreground">Finding resources just for you…</span>
         </div>
       </motion.div>
     );
@@ -120,10 +121,12 @@ const DeepDiveSection = memo(function DeepDiveSection({
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`${resource.title} - opens in new tab`}
+                    title="Opens in new tab"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: 0.8 + resIdx * 0.1 }}
-                    className="flex items-start justify-between gap-3 p-3 rounded border border-border hover:bg-muted transition-colors group"
+                    className="flex items-start justify-between gap-3 p-4 md:p-3 rounded border border-border hover:bg-muted transition-all group min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-95"
                   >
                     <div className="flex-1 min-w-0">
                       <p className="font-semibold text-sm group-hover:underline">
@@ -140,7 +143,7 @@ const DeepDiveSection = memo(function DeepDiveSection({
                         ))}
                       </div>
                     </div>
-                    <ExternalLink className="w-4 h-4 flex-shrink-0 opacity-50 group-hover:opacity-100 transition-opacity" />
+                    <ExternalLink className="w-4 h-4 flex-shrink-0 opacity-50 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
                   </motion.a>
                 ))}
               </div>

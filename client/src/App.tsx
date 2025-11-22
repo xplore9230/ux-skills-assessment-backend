@@ -1,4 +1,5 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
+import { MotionConfig } from "framer-motion";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -111,34 +112,43 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        {appState === "landing" && <LandingPage onStart={handleStartQuiz} />}
-        {appState === "quiz" && (
-          <QuizPage
-            questions={questions}
-            onComplete={handleCompleteQuiz}
-            onBack={handleBackToLanding}
-            onHalfwayComplete={handleHalfwayComplete}
-          />
-        )}
-        {appState === "loading-results" && results && (
-          <LoadingResultsPage
-            onComplete={handleLoadingComplete}
-            stage={results.stage}
-            criticalDataLoaded={criticalDataLoaded}
-            loadingStartTime={loadingStartTime}
-          />
-        )}
-        {appState === "results" && results && (
-          <ResultsPage 
-            {...results} 
-            improvementPlan={aiRoadmap.length > 0 ? aiRoadmap : results.improvementPlan}
-            onRestart={handleRestart}
-            cachedResults={cachedResults}
-          />
-        )}
-      </TooltipProvider>
+      <MotionConfig reducedMotion="user">
+        <TooltipProvider>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-foreground focus:text-background focus:rounded-lg focus:font-semibold focus:shadow-lg"
+          >
+            Skip to main content
+          </a>
+          <Toaster />
+          <main id="main-content">
+            {appState === "landing" && <LandingPage onStart={handleStartQuiz} />}
+            {appState === "quiz" && (
+              <QuizPage
+                questions={questions}
+                onComplete={handleCompleteQuiz}
+                onBack={handleBackToLanding}
+                onHalfwayComplete={handleHalfwayComplete}
+              />
+            )}
+            {appState === "loading-results" && results && (
+              <LoadingResultsPage
+                onComplete={handleLoadingComplete}
+                stage={results.stage}
+                precomputationStatus={precomputationStatus}
+              />
+            )}
+            {appState === "results" && results && (
+              <ResultsPage 
+                {...results} 
+                improvementPlan={aiRoadmap.length > 0 ? aiRoadmap : results.improvementPlan}
+                onRestart={handleRestart}
+                cachedResults={cachedResults}
+              />
+            )}
+          </main>
+        </TooltipProvider>
+      </MotionConfig>
     </QueryClientProvider>
   );
 }
