@@ -1,0 +1,440 @@
+import json
+import os
+from typing import List, Optional, Dict, Any
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
+from ollama_client import (
+    generate_improvement_plan_ollama,
+    generate_resources_ollama,
+    generate_deep_dive_topics_ollama,
+    generate_layout_strategy,
+    generate_category_insights
+)
+from job_links import build_job_search_links
+
+# Import RAG components
+try:
+    from rag import get_rag_retriever
+    from vector_store import get_vector_store
+    RAG_AVAILABLE = True
+except ImportError:
+    RAG_AVAILABLE = False
+    print("⚠ RAG system not available")
+
+app = FastAPI(title="UX Skills Assessment API")
+
+# Enable CORS for local development and production
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",  # Local dev
+        "http://localhost:5000",  # Local dev Express
+        "https://*.vercel.app",  # Vercel preview and production deployments
+        # Add your custom domain here after deployment
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Load curated resources
+RESOURCES_FILE = os.path.join(os.path.dirname(__file__), "resources.json")
+try:
+    with open(RESOURCES_FILE, "r") as f:
+        CURATED_RESOURCES = json.load(f)
+except Exception as e:
+    print(f"Warning: Could not load resources.json: {e}")
+    CURATED_RESOURCES = {}
+
+# --- Data Models ---
+
+class CategoryScore(BaseModel):
+    name: str
+    score: int
+    maxScore: int
+
+class AssessmentInput(BaseModel):
+    stage: str
+    totalScore: int = 0
+    maxScore: int = 100
+    categories: List[CategoryScore]
+
+# --- Routes ---
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "service": "python-backend"}
+
+@app.post("/api/generate-improvement-plan")
+def generate_plan(data: AssessmentInput):
+    """
+    Generates a 4-week improvement plan using local Ollama LLM.
+    """
+    try:
+        # Convert pydantic model to dict for helper function
+        categories_dict = [c.model_dump() for c in data.categories]
+        return generate_improvement_plan_ollama(
+            data.stage, 
+            data.totalScore, 
+            data.maxScore, 
+            categories_dict
+        )
+    except Exception as e:
+        print(f"Error generating plan: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/generate-resources")
+def generate_resources(data: AssessmentInput):
+    """
+    Generates career stage readup using Ollama, and returns CURATED resources
+    from our local JSON file based on weakest categories.
+    """
+    try:
+        # 1. Get the inspiring readup from AI
+        categories_dict = [c.model_dump() for c in data.categories]
+        ai_response = generate_resources_ollama(data.stage, categories_dict)
+        
+        # 2. Pick resources based on weakest categories
+        # Sort categories by score percentage (lowest first)
+        sorted_categories = sorted(
+            data.categories, 
+            key=lambda c: (c.score / c.maxScore) if c.maxScore > 0 else 0
+        )
+        
+        # Get top 2 weakest categories
+        weakest_categories = sorted_categories[:2]
+        
+        selected_resources = []
+        for cat in weakest_categories:
+            # Find matching resources in our JSON
+            # We do a simple lookup; in production you might want fuzzy matching
+            if cat.name in CURATED_RESOURCES:
+                # Add top 2 resources from this category
+                selected_resources.extend(CURATED_RESOURCES[cat.name][:2])
+        
+        # If we don't have enough, just add some from the first category available
+        if not selected_resources and CURATED_RESOURCES:
+            first_key = list(CURATED_RESOURCES.keys())[0]
+            selected_resources = CURATED_RESOURCES[first_key][:3]
+            
+        return {
+            "readup": ai_response.get("readup", "Keep growing your skills!"),
+            "resources": selected_resources
+        }
+        
+    except Exception as e:
+        print(f"Error generating resources: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/generate-deep-dive")
+def generate_deep_dive(data: AssessmentInput):
+    """
+    Generates deep dive topics using local Ollama LLM and enriches them with curated resources.
+    """
+    try:
+        categories_dict = [c.model_dump() for c in data.categories]
+        ai_response = generate_deep_dive_topics_ollama(data.stage, categories_dict)
+        
+        # Enrich each topic with resources from our curated list
+        topics = ai_response.get("topics", [])
+        for topic in topics:
+            pillar = topic.get("pillar", "")
+            # Try to match resources from the curated list based on the pillar
+            topic_resources = []
+            
+            # Look for resources in the matching category
+            if pillar in CURATED_RESOURCES:
+                # Take first 2-3 resources from this category
+                curated = CURATED_RESOURCES[pillar][:3]
+                for res in curated:
+                    topic_resources.append({
+                        "title": res.get("title", ""),
+                        "type": "article",  # Default type
+                        "estimated_read_time": "5-10 min",  # Default estimate
+                        "source": res.get("url", "").split("//")[1].split("/")[0] if res.get("url") else "Web",
+                        "url": res.get("url", ""),
+                        "tags": res.get("tags", [])
+                    })
+            
+            # If no resources found, add some general ones
+            if not topic_resources and CURATED_RESOURCES:
+                first_key = list(CURATED_RESOURCES.keys())[0]
+                curated = CURATED_RESOURCES[first_key][:2]
+                for res in curated:
+                    topic_resources.append({
+                        "title": res.get("title", ""),
+                        "type": "article",
+                        "estimated_read_time": "5-10 min",
+                        "source": res.get("url", "").split("//")[1].split("/")[0] if res.get("url") else "Web",
+                        "url": res.get("url", ""),
+                        "tags": res.get("tags", [])
+                    })
+            
+            topic["resources"] = topic_resources
+        
+        return {"topics": topics}
+        
+    except Exception as e:
+        print(f"Error generating deep dive: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/job-search-links")
+def get_job_links(
+    stage: str = Query(..., description="Career stage"),
+    location: str = Query("Remote", description="Preferred location")
+):
+    """
+    Returns generated search URLs for LinkedIn and Google Jobs.
+    No external API calls required.
+    """
+    return build_job_search_links(stage, location)
+
+@app.post("/api/generate-layout")
+def generate_layout(data: AssessmentInput):
+    """
+    Generates dynamic layout strategy using AI based on user's performance.
+    Determines section order, visibility, and content depth.
+    """
+    try:
+        categories_dict = [c.model_dump() for c in data.categories]
+        layout_strategy = generate_layout_strategy(
+            data.stage,
+            data.totalScore,
+            data.maxScore,
+            categories_dict
+        )
+        
+        # Ensure we have valid defaults if AI fails
+        if not layout_strategy or not layout_strategy.get("section_order"):
+            layout_strategy = {
+                "section_order": ["hero", "stage-readup", "skill-breakdown", "resources", "deep-dive", "improvement-plan", "jobs"],
+                "section_visibility": {
+                    "hero": True,
+                    "stage-readup": True,
+                    "skill-breakdown": True,
+                    "resources": True,
+                    "deep-dive": True,
+                    "improvement-plan": True,
+                    "jobs": True
+                },
+                "content_depth": {
+                    "resources": "standard",
+                    "deep-dive": "standard",
+                    "improvement-plan": "standard"
+                },
+                "priority_message": f"Based on your {data.stage} level, here's your personalized roadmap."
+            }
+        
+        # Force jobs to always be visible
+        if "section_visibility" in layout_strategy:
+            layout_strategy["section_visibility"]["jobs"] = True
+        
+        return layout_strategy
+        
+    except Exception as e:
+        print(f"Error generating layout: {e}")
+        # Return default layout on error
+        return {
+            "section_order": ["hero", "stage-readup", "skill-breakdown", "resources", "deep-dive", "improvement-plan", "jobs"],
+            "section_visibility": {
+                "hero": True,
+                "stage-readup": True,
+                "skill-breakdown": True,
+                "resources": True,
+                "deep-dive": True,
+                "improvement-plan": True,
+                "jobs": True
+            },
+            "content_depth": {
+                "resources": "standard",
+                "deep-dive": "standard",
+                "improvement-plan": "standard"
+            },
+            "priority_message": "Let's review your UX skills assessment results."
+        }
+
+@app.post("/api/generate-category-insights")
+def generate_insights(data: AssessmentInput):
+    """
+    Generates personalized AI insights for each skill category.
+    Returns brief, detailed, and actionable insights.
+    """
+    try:
+        categories_dict = [c.model_dump() for c in data.categories]
+        ai_response = generate_category_insights(data.stage, categories_dict)
+        
+        insights = ai_response.get("insights", [])
+        
+        # Ensure we have insights for all categories
+        if not insights or len(insights) == 0:
+            # Generate fallback insights
+            insights = []
+            for cat in data.categories:
+                percentage = round((cat.score / cat.maxScore * 100)) if cat.maxScore > 0 else 0
+                insights.append({
+                    "category": cat.name,
+                    "brief": f"You scored {percentage}% in {cat.name}.",
+                    "detailed": f"Your performance in {cat.name} shows room for growth. Focus on building stronger foundations in this area.",
+                    "actionable": [
+                        f"Review core concepts in {cat.name}",
+                        f"Practice {cat.name} skills daily",
+                        f"Seek feedback on your {cat.name} work"
+                    ]
+                })
+        
+        return {"insights": insights}
+        
+    except Exception as e:
+        print(f"Error generating category insights: {e}")
+        # Return fallback insights
+        insights = []
+        for cat in data.categories:
+            percentage = round((cat.score / cat.maxScore * 100)) if cat.maxScore > 0 else 0
+            insights.append({
+                "category": cat.name,
+                "brief": f"You scored {percentage}% in {cat.name}.",
+                "detailed": f"Your performance in {cat.name} shows room for growth. Focus on building stronger foundations in this area.",
+                "actionable": [
+                    f"Review core concepts in {cat.name}",
+                    f"Practice {cat.name} skills daily",
+                    f"Seek feedback on your {cat.name} work"
+                ]
+            })
+        return {"insights": insights}
+
+
+# ============================================================================
+# RAG ENDPOINTS
+# ============================================================================
+
+class RAGSearchInput(BaseModel):
+    query: str
+    category: Optional[str] = None
+    difficulty: Optional[str] = None
+    top_k: int = 10
+
+class RAGLearningPathInput(BaseModel):
+    stage: str
+    categories: List[CategoryScore]
+
+@app.post("/api/rag/search")
+def rag_search(data: RAGSearchInput):
+    """
+    Perform semantic search on the RAG knowledge base.
+    Returns relevant UX resources based on the query.
+    """
+    if not RAG_AVAILABLE:
+        raise HTTPException(status_code=503, detail="RAG system not available")
+    
+    try:
+        rag = get_rag_retriever()
+        results = rag.semantic_search_resources(
+            query=data.query,
+            category=data.category,
+            difficulty=data.difficulty,
+            top_k=data.top_k
+        )
+        
+        return {
+            "query": data.query,
+            "results": results,
+            "total": len(results)
+        }
+        
+    except Exception as e:
+        print(f"Error in RAG search: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/rag/learning-path")
+def rag_learning_path(data: RAGLearningPathInput):
+    """
+    Generate a personalized learning path using RAG.
+    Sequences resources from beginner to advanced for weak areas.
+    """
+    if not RAG_AVAILABLE:
+        raise HTTPException(status_code=503, detail="RAG system not available")
+    
+    try:
+        # Sort categories to find weakest
+        sorted_cats = sorted(
+            data.categories,
+            key=lambda c: (c.score / c.maxScore) if c.maxScore > 0 else 0
+        )
+        weak_categories = [c.model_dump() for c in sorted_cats[:2]]
+        
+        rag = get_rag_retriever()
+        learning_path = rag.generate_learning_path(weak_categories, data.stage)
+        
+        return learning_path
+        
+    except Exception as e:
+        print(f"Error generating learning path: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/rag/stats")
+def rag_stats():
+    """
+    Get statistics about the RAG knowledge base.
+    Returns total resources, categories, and source breakdown.
+    """
+    if not RAG_AVAILABLE:
+        raise HTTPException(status_code=503, detail="RAG system not available")
+    
+    try:
+        vector_store = get_vector_store()
+        stats = vector_store.get_stats()
+        
+        return {
+            "status": "available",
+            "total_resources": stats.get("unique_resources", 0),
+            "total_chunks": stats.get("total_chunks", 0),
+            "categories": stats.get("categories", {}),
+            "difficulties": stats.get("difficulties", {}),
+            "sources": stats.get("sources", {})
+        }
+        
+    except Exception as e:
+        print(f"Error getting RAG stats: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/rag/resources/{category}")
+def get_resources_by_category(
+    category: str,
+    difficulty: Optional[str] = Query(None),
+    limit: int = Query(10, ge=1, le=50)
+):
+    """
+    Get resources filtered by category and optional difficulty.
+    """
+    if not RAG_AVAILABLE:
+        raise HTTPException(status_code=503, detail="RAG system not available")
+    
+    try:
+        rag = get_rag_retriever()
+        resources = rag.get_resources_for_category(
+            category=category,
+            difficulty=difficulty,
+            limit=limit
+        )
+        
+        return {
+            "category": category,
+            "difficulty": difficulty,
+            "resources": resources,
+            "total": len(resources)
+        }
+        
+    except Exception as e:
+        print(f"Error getting resources: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+

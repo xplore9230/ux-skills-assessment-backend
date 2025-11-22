@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { Loader, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -25,7 +26,7 @@ interface DeepDiveSectionProps {
   isLoading: boolean;
 }
 
-export default function DeepDiveSection({
+const DeepDiveSection = memo(function DeepDiveSection({
   topics,
   isLoading,
 }: DeepDiveSectionProps) {
@@ -154,4 +155,6 @@ export default function DeepDiveSection({
       </div>
     </motion.div>
   );
-}
+});
+
+export default DeepDiveSection;

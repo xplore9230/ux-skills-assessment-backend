@@ -1,65 +1,82 @@
-import { useState } from "react";
+import { useState, useMemo, useCallback, memo, useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProgressBar from "@/components/ProgressBar";
 import AnswerOption from "@/components/AnswerOption";
-
-interface Question {
-  id: string;
-  text: string;
-  category: string;
-  options: { value: number; label: string }[];
-}
+import type { Question } from "@/types";
 
 interface QuizPageProps {
   questions: Question[];
   onComplete: (answers: Record<string, number>) => void;
   onBack: () => void;
+  onHalfwayComplete?: (partialAnswers: Record<string, number>) => void;
 }
 
-export default function QuizPage({ questions, onComplete, onBack }: QuizPageProps) {
+const QuizPage = memo(function QuizPage({ questions, onComplete, onBack, onHalfwayComplete }: QuizPageProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [direction, setDirection] = useState(0);
+  const halfwayTriggeredRef = useRef(false);
 
-  const currentQuestion = questions[currentIndex];
-  const isLastQuestion = currentIndex === questions.length - 1;
-  const canGoNext = answers[currentQuestion.id] !== undefined;
-  const canGoPrevious = currentIndex > 0;
+  const currentQuestion = useMemo(() => questions[currentIndex], [questions, currentIndex]);
+  const isLastQuestion = useMemo(() => currentIndex === questions.length - 1, [currentIndex, questions.length]);
+  const canGoNext = useMemo(() => answers[currentQuestion.id] !== undefined, [answers, currentQuestion.id]);
+  const canGoPrevious = useMemo(() => currentIndex > 0, [currentIndex]);
+  
+  // Calculate progress percentage
+  const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
+  const progressPercentage = useMemo(() => (answeredCount / questions.length) * 100, [answeredCount, questions.length]);
 
-  const handleAnswer = (value: number) => {
+  // Trigger precomputation when user reaches 50% completion
+  useEffect(() => {
+    if (
+      !halfwayTriggeredRef.current &&
+      progressPercentage >= 50 &&
+      answeredCount >= Math.ceil(questions.length / 2) &&
+      onHalfwayComplete
+    ) {
+      halfwayTriggeredRef.current = true;
+      console.log(`🚀 Triggering precomputation at ${Math.round(progressPercentage)}% (${answeredCount}/${questions.length} answers)`);
+      onHalfwayComplete(answers);
+    }
+  }, [progressPercentage, answeredCount, questions.length, answers, onHalfwayComplete]);
+
+  const handleAnswer = useCallback((value: number) => {
     const updatedAnswers = { ...answers, [currentQuestion.id]: value };
     setAnswers(updatedAnswers);
     
     // Immediately advance to next question
     if (isLastQuestion) {
       // Auto-complete on last question
-      onComplete(updatedAnswers);
+      // Add a small delay to let the user see their selection
+      setTimeout(() => {
+        onComplete(updatedAnswers);
+      }, 300);
       return;
     }
     setDirection(1);
-    setCurrentIndex(currentIndex + 1);
-  };
+    setCurrentIndex((prev) => prev + 1);
+  }, [answers, currentQuestion.id, isLastQuestion, onComplete]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (isLastQuestion && canGoNext) {
       onComplete(answers);
     } else if (canGoNext) {
       setDirection(1);
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex((prev) => prev + 1);
     }
-  };
+  }, [isLastQuestion, canGoNext, onComplete, answers]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     if (canGoPrevious) {
       setDirection(-1);
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex((prev) => prev - 1);
     } else {
       onBack();
     }
-  };
+  }, [canGoPrevious, onBack]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -126,4 +143,6 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
       </div>
     </div>
   );
-}
+});
+
+export default QuizPage;

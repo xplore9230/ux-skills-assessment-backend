@@ -1,9 +1,4 @@
-export interface Question {
-  id: string;
-  text: string;
-  category: string;
-  options: { value: number; label: string }[];
-}
+import type { Question } from "@/types";
 
 export const allQuestions: Question[] = [
   // UX Fundamentals (12 questions)
@@ -767,8 +762,6 @@ export function getRandomQuestions(): Question[] {
 
   return shuffleArray(questions);
 }
-
-export const questions = getRandomQuestions();
 
 export const categoryNames = {
   "UX Fundamentals": "UX Fundamentals",

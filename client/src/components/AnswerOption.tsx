@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 
 interface AnswerOptionProps {
@@ -7,7 +8,7 @@ interface AnswerOptionProps {
   onClick: () => void;
 }
 
-export default function AnswerOption({
+const AnswerOption = memo(function AnswerOption({
   value,
   label,
   isSelected,
@@ -32,4 +33,6 @@ export default function AnswerOption({
       </span>
     </motion.div>
   );
-}
+});
+
+export default AnswerOption;

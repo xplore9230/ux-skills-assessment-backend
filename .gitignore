@@ -4,3 +4,34 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local development
+.local/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# ChromaDB
+.chroma/
+*.sqlite3

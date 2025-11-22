@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -7,7 +8,7 @@ interface LandingPageProps {
   onStart: () => void;
 }
 
-export default function LandingPage({ onStart }: LandingPageProps) {
+const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
@@ -73,4 +74,6 @@ export default function LandingPage({ onStart }: LandingPageProps) {
       </div>
     </div>
   );
-}
+});
+
+export default LandingPage;

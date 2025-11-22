@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 
 interface ProgressBarProps {
@@ -5,7 +6,7 @@ interface ProgressBarProps {
   total: number;
 }
 
-export default function ProgressBar({ current, total }: ProgressBarProps) {
+const ProgressBar = memo(function ProgressBar({ current, total }: ProgressBarProps) {
   const percentage = (current / total) * 100;
 
   return (
@@ -24,4 +25,6 @@ export default function ProgressBar({ current, total }: ProgressBarProps) {
       </div>
     </div>
   );
-}
+});
+
+export default ProgressBar;

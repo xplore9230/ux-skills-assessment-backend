@@ -1,71 +1,103 @@
 import { allQuestions } from "@/data/questions";
-
-interface CategoryScore {
-  name: string;
-  score: number;
-  maxScore: number;
-  status: "strong" | "decent" | "needs-work";
-}
+import type { CategoryScore, ImprovementWeek } from "@/types";
 
 interface StageResult {
   stage: string;
   summary: string;
-  improvementPlan: { week: number; tasks: string[] }[];
+  improvementPlan: ImprovementWeek[];
 }
 
-export function calculateResults(answers: Record<string, number>) {
-  const categoryScores: Record<string, number> = {
-    "UX Fundamentals": 0,
-    "UI Craft & Visual Design": 0,
-    "User Research & Validation": 0,
-    "Product Thinking & Strategy": 0,
-    "Collaboration & Communication": 0
-  };
+export function calculateResults(answers: Record<string, number>): {
+  totalScore: number;
+  maxScore: number;
+  categories: CategoryScore[];
+  stage: string;
+  summary: string;
+  improvementPlan: ImprovementWeek[];
+} {
+  try {
+    const categoryScores: Record<string, number> = {
+      "UX Fundamentals": 0,
+      "UI Craft & Visual Design": 0,
+      "User Research & Validation": 0,
+      "Product Thinking & Strategy": 0,
+      "Collaboration & Communication": 0
+    };
 
-  const categoryCounts: Record<string, number> = {
-    "UX Fundamentals": 0,
-    "UI Craft & Visual Design": 0,
-    "User Research & Validation": 0,
-    "Product Thinking & Strategy": 0,
-    "Collaboration & Communication": 0
-  };
+    const categoryCounts: Record<string, number> = {
+      "UX Fundamentals": 0,
+      "UI Craft & Visual Design": 0,
+      "User Research & Validation": 0,
+      "Product Thinking & Strategy": 0,
+      "Collaboration & Communication": 0
+    };
 
-  // Create a map of question ID to question for quick lookup
-  const questionMap = new Map(allQuestions.map(q => [q.id, q]));
+    // Create a map of question ID to question for quick lookup
+    const questionMap = new Map(allQuestions.map(q => [q.id, q]));
 
-  Object.entries(answers).forEach(([questionId, score]) => {
-    const question = questionMap.get(questionId);
-    if (question) {
-      const category = question.category;
-      categoryScores[category] += score;
-      categoryCounts[category]++;
-    }
-  });
+    Object.entries(answers).forEach(([questionId, score]) => {
+      const question = questionMap.get(questionId);
+      if (question) {
+        const category = question.category;
+        categoryScores[category] += score;
+        categoryCounts[category]++;
+      }
+    });
 
-  const totalScore = Object.values(categoryScores).reduce((a, b) => a + b, 0);
+    const totalScoreRaw = Object.values(categoryScores).reduce((a, b) => a + b, 0);
+    const totalQuestions = Object.values(categoryCounts).reduce((a, b) => a + b, 0);
+    const maxTotalScoreRaw = totalQuestions * 5;
+    
+    // Normalize total score to 0-100 scale
+    // Using simple percentage: (score / max) * 100
+    const normalizedTotalScore = Math.round((totalScoreRaw / maxTotalScoreRaw) * 100);
 
-  const categories: CategoryScore[] = Object.entries(categoryScores).map(([name, score]) => ({
-    name,
-    score,
-    maxScore: 15,
-    status: score >= 11 ? "strong" : score >= 6 ? "decent" : "needs-work"
-  }));
+    const categories: CategoryScore[] = Object.entries(categoryScores).map(([name, score]) => {
+      const count = categoryCounts[name];
+      const categoryMaxScore = count * 5;
+      const percentage = categoryMaxScore > 0 ? Math.round((score / categoryMaxScore) * 100) : 0;
+      
+      return {
+        name,
+        score: percentage, // Return percentage as the score
+        maxScore: 100,    // Normalized to 100
+        status: percentage >= 80 ? "strong" : percentage >= 60 ? "decent" : "needs-work"
+      };
+    });
 
-  const stageResult = getStageInfo(totalScore);
+    const stageResult = getStageInfo(normalizedTotalScore);
 
-  return {
-    totalScore,
-    maxScore: 75,
-    categories,
-    ...stageResult
-  };
+    return {
+      totalScore: normalizedTotalScore,
+      maxScore: 100,
+      categories,
+      ...stageResult
+    };
+  } catch (error) {
+    console.error("Error calculating results:", error);
+    // Return default fallback results
+    return {
+      totalScore: 0,
+      maxScore: 75,
+      categories: [],
+      stage: "Explorer",
+      summary: "Unable to calculate results. Please try again.",
+      improvementPlan: []
+    };
+  }
 }
 
-function getStageInfo(totalScore: number): StageResult {
-  if (totalScore <= 25) {
+function getStageInfo(score: number): StageResult {
+  // Thresholds based on normalized 0-100 score
+  // Explorer: 0-40%
+  // Practitioner: 41-65%
+  // Emerging Senior: 66-85%
+  // Strategic Lead: 86-100%
+  
+  if (score <= 40) {
     return {
       stage: "Explorer",
-      summary: "You're in the early stage of your UX journey or transitioning from another field. Your main focus now should be building strong fundamentals and getting hands-on with small projects.",
+      summary: "You're in the early stage of your UX journey. Your main focus now is building strong fundamentals and getting hands-on with small projects.",
       improvementPlan: [
         {
           week: 1,
@@ -101,10 +133,10 @@ function getStageInfo(totalScore: number): StageResult {
         }
       ]
     };
-  } else if (totalScore <= 45) {
+  } else if (score <= 65) {
     return {
       stage: "Practitioner",
-      summary: "You're functioning as a UX designer and can handle features with guidance. Now it's about depth: better research, stronger visual craft, and thinking more about impact and metrics.",
+      summary: "You're functioning as a UX designer and can handle features with guidance. Now it's about depth: better research, visual craft, and metrics.",
       improvementPlan: [
         {
           week: 1,
@@ -140,10 +172,10 @@ function getStageInfo(totalScore: number): StageResult {
         }
       ]
     };
-  } else if (totalScore <= 60) {
+  } else if (score <= 85) {
     return {
       stage: "Emerging Senior",
-      summary: "You're close to or already functioning at a senior level. You can drive flows end-to-end and work well with PM/eng. Next step is sharpening strategy, systems thinking, and mentoring.",
+      summary: "You're operating at a high level, driving flows end-to-end. The next step is sharpening strategy, systems thinking, and mentorship.",
       improvementPlan: [
         {
           week: 1,

@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { motion } from "framer-motion";
 
 interface ScoreOdometerProps {
   score: number;
-  maxScore: number;
+  maxScore: number; 
   duration?: number;
 }
 
-export default function ScoreOdometer({
+const ScoreOdometer = memo(function ScoreOdometer({
   score,
   maxScore,
-  duration = 0.8,
+  duration = 0.5, // Faster default
 }: ScoreOdometerProps) {
   const [displayScore, setDisplayScore] = useState(0);
 
@@ -32,18 +32,21 @@ export default function ScoreOdometer({
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      className="flex items-center justify-center gap-2"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="flex flex-col items-center"
     >
-      <div className="font-mono font-bold text-8xl leading-none w-32 text-center tabular-nums">
-        {String(displayScore).padStart(2, "0")}
-      </div>
-
-      <div className="text-2xl text-muted-foreground font-mono">
-        <p>/ {maxScore}</p>
+      <div className="relative flex items-baseline gap-2">
+        <span className="font-serif text-8xl md:text-9xl font-bold tracking-tighter text-foreground">
+          {displayScore}
+        </span>
+        <span className="text-xl md:text-2xl text-muted-foreground font-medium">
+          / {maxScore}
+        </span>
       </div>
     </motion.div>
   );
-}
+});
+
+export default ScoreOdometer;

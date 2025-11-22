@@ -2,8 +2,134 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import OpenAI from "openai";
+import { getJson } from "serpapi";
+
+// Helper to map career stage to job search query
+function buildJobTitle(stage: string): string {
+  switch (stage) {
+    case "Explorer":
+      return "Junior Product Designer";
+    case "Practitioner":
+      return "Product Designer";
+    case "Emerging Senior":
+      return "Senior Product Designer";
+    case "Strategic Lead":
+      return "Lead Product Designer";
+    default:
+      return "Product Designer";
+  }
+}
+
+// Mock Data for fallback
+const MOCK_JOBS = [
+  {
+    title: "Product Designer",
+    company: "Airbnb",
+    location: "Remote",
+    via: "LinkedIn",
+    job_url: "https://www.airbnb.com/careers"
+  },
+  {
+    title: "UX Researcher",
+    company: "Spotify",
+    location: "New York, NY",
+    via: "Spotify Careers",
+    job_url: "https://www.lifeatspotify.com/"
+  },
+  {
+    title: "Senior Product Designer",
+    company: "Linear",
+    location: "Remote",
+    via: "Linear Careers",
+    job_url: "https://linear.app/careers"
+  },
+  {
+    title: "UX Designer",
+    company: "Google",
+    location: "Mountain View, CA",
+    via: "Google Careers",
+    job_url: "https://careers.google.com/"
+  },
+  {
+    title: "Product Designer",
+    company: "Notion",
+    location: "San Francisco, CA",
+    via: "Notion Careers",
+    job_url: "https://www.notion.so/careers"
+  },
+  {
+    title: "Design Systems Designer",
+    company: "Shopify",
+    location: "Remote",
+    via: "Shopify Careers",
+    job_url: "https://www.shopify.com/careers"
+  }
+];
+
+// Helper to fetch jobs from SerpApi
+async function fetchJobsFromSerpApi(query: string, location: string): Promise<any[]> {
+  if (!process.env.SERPAPI_API_KEY) {
+    console.warn("SERPAPI_API_KEY is not configured. Using mock data.");
+    // Filter mock jobs slightly based on query to make it feel somewhat real
+    const isSenior = query.toLowerCase().includes("senior") || query.toLowerCase().includes("lead");
+    return Promise.resolve(MOCK_JOBS.filter(job => {
+      if (isSenior) return job.title.toLowerCase().includes("senior") || job.title.toLowerCase().includes("lead");
+      return !job.title.toLowerCase().includes("senior") && !job.title.toLowerCase().includes("lead");
+    }));
+  }
+
+  return new Promise((resolve, reject) => {
+    getJson({
+      engine: "google_jobs",
+      api_key: process.env.SERPAPI_API_KEY,
+      q: `${query} UX product design`,
+      location: location,
+      hl: "en",
+    }, (json: any) => {
+      if (json.error) {
+        console.error("SerpApi Error:", json.error);
+        resolve([]); // Return empty on error to prevent crash
+      } else {
+        const rawJobs = json.jobs_results || [];
+        const jobs = rawJobs.slice(0, 6).map((job: any) => {
+          // Find the best apply link
+          let applyLink = null;
+          const applyOpts = job.apply_options || [];
+          if (applyOpts.length > 0) {
+            applyLink = applyOpts[0].link;
+          }
+          
+          return {
+            title: job.title,
+            company: job.company_name,
+            location: job.location,
+            via: job.via,
+            job_url: applyLink || job.share_link
+          };
+        });
+        resolve(jobs);
+      }
+    });
+  });
+}
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Job recommendations endpoint
+  app.get("/api/job-recommendations", async (req, res) => {
+    try {
+      const stage = req.query.stage as string || "Practitioner";
+      const location = req.query.location as string || "Remote";
+      
+      const jobTitle = buildJobTitle(stage);
+      const jobs = await fetchJobsFromSerpApi(jobTitle, location);
+      
+      res.json({ jobs });
+    } catch (error) {
+      console.error("Error fetching jobs:", error);
+      res.status(500).json({ error: "Failed to fetch job recommendations" });
+    }
+  });
+
   // AI-generated improvement plan endpoint
   app.post("/api/generate-improvement-plan", async (req, res) => {
     try {
