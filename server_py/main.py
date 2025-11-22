@@ -29,7 +29,8 @@ app = FastAPI(title="UX Skills Assessment API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",  # Local dev
+        "http://localhost:3000",  # Local dev (npm run dev)
+        "http://localhost:5173",  # Local dev (vite)
         "http://localhost:5000",  # Local dev Express
         "https://*.vercel.app",  # Vercel preview and production deployments
         # Add your custom domain here after deployment
