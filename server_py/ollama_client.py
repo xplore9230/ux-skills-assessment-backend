@@ -14,10 +14,34 @@ except ImportError:
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 MODEL_NAME = "llama3.2"  # Can be overridden by env var
 
+# Check if Ollama is available
+OLLAMA_AVAILABLE = False
+
+def check_ollama_availability():
+    """Check if Ollama service is running and accessible."""
+    global OLLAMA_AVAILABLE
+    try:
+        response = requests.get(f"{OLLAMA_HOST}/api/tags", timeout=5)
+        OLLAMA_AVAILABLE = response.status_code == 200
+        if OLLAMA_AVAILABLE:
+            print("✓ Ollama is available and ready")
+        else:
+            print("⚠ Ollama service not responding - using fallback mode")
+    except Exception as e:
+        OLLAMA_AVAILABLE = False
+        print(f"⚠ Ollama not available ({str(e)}) - using fallback mode")
+
+# Check on startup
+check_ollama_availability()
+
 def call_ollama(prompt: str, model: str = MODEL_NAME) -> Dict[str, Any]:
     """
     Generic helper to call Ollama API with JSON format enforcement.
+    Returns None if Ollama is not available.
     """
+    if not OLLAMA_AVAILABLE:
+        return None  # Signal to use fallback
+        
     try:
         payload = {
             "model": model,
@@ -40,11 +64,53 @@ def call_ollama(prompt: str, model: str = MODEL_NAME) -> Dict[str, Any]:
             return json.loads(content)
         except json.JSONDecodeError:
             print(f"Failed to parse JSON from Ollama: {content[:200]}...")
-            return {}
+            return None
             
     except Exception as e:
         print(f"Ollama API error: {str(e)}")
-        return {}
+        return None
+
+def get_fallback_improvement_plan(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Generate a basic improvement plan when Ollama is not available."""
+    sorted_cats = sorted(categories, key=lambda c: (c['score'] / c['maxScore']) if c['maxScore'] > 0 else 0)
+    weakest = sorted_cats[0]['name'] if sorted_cats else "UX skills"
+    
+    return {
+        "weeks": [
+            {
+                "week": 1,
+                "tasks": [
+                    f"Review fundamentals of {weakest}",
+                    "Complete 2-3 online tutorials or courses",
+                    "Document your learning in a journal"
+                ]
+            },
+            {
+                "week": 2,
+                "tasks": [
+                    f"Practice {weakest} through small projects",
+                    "Get feedback from peers or mentors",
+                    "Analyze case studies in your focus area"
+                ]
+            },
+            {
+                "week": 3,
+                "tasks": [
+                    "Apply new skills to a real project",
+                    "Create a portfolio piece showcasing your work",
+                    "Share your progress with the community"
+                ]
+            },
+            {
+                "week": 4,
+                "tasks": [
+                    "Review and reflect on your growth",
+                    "Set goals for continued improvement",
+                    "Identify next areas to develop"
+                ]
+            }
+        ]
+    }
 
 def generate_improvement_plan_ollama(stage: str, total_score: int, max_score: int, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
     # Sort categories by score to identify weakest areas
@@ -92,7 +158,10 @@ Return JSON:
   ]
 }}"""
     
-    return call_ollama(prompt)
+    result = call_ollama(prompt)
+    if result is None:
+        return get_fallback_improvement_plan(stage, categories)
+    return result
 
 def generate_resources_ollama(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
