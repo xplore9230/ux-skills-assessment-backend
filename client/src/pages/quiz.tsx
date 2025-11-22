@@ -110,7 +110,7 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
                   {/* Progress dots */}
                   <div className="flex gap-1.5 justify-center">
                     {Array.from({ length: questions.length }).map((_, index) => (
-                      <motion.div
+                      <div
                         key={index}
                         className={`h-2 rounded-full transition-all ${
                           index < currentIndex
@@ -119,8 +119,6 @@ export default function QuizPage({ questions, onComplete, onBack }: QuizPageProp
                             ? "bg-primary w-5"
                             : "bg-muted w-2"
                         }`}
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: 1 }}
                       />
                     ))}
                   </div>
