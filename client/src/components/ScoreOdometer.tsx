@@ -10,7 +10,7 @@ interface ScoreOdometerProps {
 export default function ScoreOdometer({
   score,
   maxScore,
-  duration = 2.5,
+  duration = 0.8,
 }: ScoreOdometerProps) {
   const [displayScore, setDisplayScore] = useState(0);
 
