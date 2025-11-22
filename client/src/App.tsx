@@ -56,8 +56,9 @@ function App() {
     } else {
       // Fetch AI-generated roadmap if not cached
       console.log("⏳ Fetching improvement plan (not cached)");
+      const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL || "http://localhost:8000";
       try {
-        const response = await fetch("http://localhost:8000/api/generate-improvement-plan", {
+        const response = await fetch(`${PYTHON_API_URL}/api/generate-improvement-plan`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

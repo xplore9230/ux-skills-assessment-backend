@@ -1,0 +1,178 @@
+{
+  "score": 71,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 79,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 60,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 68,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "As an Emerging Senior, you should focus on understanding the Product Thinking & Strategy gap. Create a 2-page document outlining the core principles of product thinking and how they apply to your current work. Reference the 'Product Thinking' section in Laws of UX (lawsofux.com) for guidance.",
+          "Conduct 2 user interviews with Emerging Senior designers from different industries, asking them about their experiences with collaboration and communication. Document 5 pain points using the Jobs-to-be-Done framework to identify areas for improvement in your own collaboration style.",
+          "Create a visual representation of Tesler's Law (lawsofux.com) using 3-4 examples, explaining how it affects your design decisions."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Build on the first week by creating a 'Collaboration Plan' document outlining specific strategies for improving communication with stakeholders. Incorporate insights from user research and feedback loops to inform your approach.",
+          "Redesign your portfolio's navigation using the 8-point grid system (https://lawsofux.com/aesthetic-usability-effect/), focusing on improving visual hierarchy and error states.",
+          "Conduct a usability audit of an existing product or service, applying Hick’s Law (lawsofux.com) to identify areas for improvement in user experience."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a 'Product Thinking' journal, where you document your design decisions and reflect on how they align with the core principles of product thinking. Include examples from recent projects or hypothetical scenarios.",
+          "Develop a 'Collaboration Framework' that outlines specific steps for effective communication with stakeholders, including active listening, clear feedback, and conflict resolution strategies.",
+          "Design an 'Error State' hierarchy using 10-15 examples, applying the 8-point grid system to create a visually appealing and user-friendly design."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive 'Product Thinking & Strategy' portfolio piece that showcases your understanding of the core principles. Include case studies, design decisions, and reflections on how you applied product thinking in previous projects.",
+          "Develop a 'Collaboration Plan' presentation that outlines specific strategies for improving communication with stakeholders. Practice delivering the presentation to friends or colleagues to receive feedback.",
+          "Conduct a final usability audit of an existing product or service, applying all relevant UX principles learned throughout the 4-week program. Document your findings and recommendations in a detailed report."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and a keen eye for visual design. To take your career to the next level, focus on developing your product thinking and strategy skills, as well as honing your collaboration and communication abilities to effectively drive user-centered design solutions.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Implementing Hick’s Law in UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding and applying Hick's Law to optimize button sizes and reduce cognitive load for Emerging Senior designers.",
+        "practice_points": [
+          "Design 5 buttons with varying sizes (e.g., small, medium, large) and measure user response time using A/B testing tools like OptinMonster or VWO",
+          "Analyze the results of your experiment to identify the optimal button size for a specific use case and document findings in a report"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Applying the Jobs-to-be-Done framework to conduct user research and validate design decisions for Emerging Senior designers.",
+        "practice_points": [
+          "Conduct 3 user interviews using the Jobs-to-be-Done framework and document findings in a report, including quotes and insights"
+        ]
+      },
+      {
+        "name": "Creating a Comprehensive Style Guide with Color, Typography, and Spacing Tokens",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Developing a comprehensive style guide to ensure consistency in UI design for Emerging Senior designers.",
+        "practice_points": [
+          "Create 3 style guides with color palettes, typography, and spacing tokens using tools like Adobe XD or Sketch"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:49:39.997526"
+}

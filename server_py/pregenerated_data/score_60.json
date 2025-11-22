@@ -1,0 +1,183 @@
+{
+  "score": 60,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 68,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 54,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 58,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a product page using the 8-point grid system, focusing on proper alignment and spacing. (Reference: https://lawsofux.com/8-point-grid-system).",
+          "Write down 5 pain points from your own experiences with collaboration and communication in design teams. Analyze each point and think about how you can improve it. (Reference: https://lawsofux.com/teslers-law).",
+          "Design a minimalistic logo for a fictional company using the principles of Aesthetic-Usability Effect. Consider color, typography, and imagery. (Reference: https://lawsofux.com/aesthetic-usability-effect)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user journey map for a typical user interacting with your company's website or app. Identify pain points and areas for improvement using the Jobs-to-be-Done framework (Reference: https://nngroup.com/articles/ten-usability-heuristics).",
+          "Develop a basic product strategy document for a hypothetical product, including target audience, features, and unique selling points. Focus on clarity and concision. (Reference: https://lawsofux.com/laws-of-ux).",
+          "Conduct 2 usability testing sessions with friends or family members, using the Hick's Law principle to guide your questioning. Analyze the results and think about how you can apply them to real-world design challenges."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a comprehensive product roadmap for a company, including short-term and long-term goals, key performance indicators (KPIs), and potential risks. Focus on clarity and stakeholder buy-in.",
+          "Develop a collaboration strategy document for your design team, outlining roles, responsibilities, and communication channels. Reference Tesler's Law to inform your approach.",
+          "Design an error message for a common user mistake using the 10 Usability Heuristics (Reference: https://nngroup.com/articles/ten-usability-heuristics)."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system documentation, outlining your company's design principles, patterns, and components. Focus on clarity and consistency.",
+          "Develop a case study of a successful product or service redesign using the Laws of UX framework (Reference: https://lawsofux.com).",
+          "Conduct 2 user interviews with industry experts or thought leaders in your field, using the Jobs-to-be-Done framework to guide your questioning. Analyze the results and think about how you can apply them to real-world design challenges."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, remember that your skills are not set in stone - continuous learning and self-improvement can elevate you to the next level. Focus on bridging gaps in User Research & Validation (68/100) and Product Thinking & Strategy (54/100), as these areas will significantly impact the success of your projects.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick's Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Hick's Law states that the time taken to make a decision decreases as the number of options increases. As a Practitioner, apply this law to optimize navigation menus and reduce cognitive load.",
+        "practice_points": [
+          "Analyze 3 existing websites with complex navigation menus and calculate the average time it takes for users to find what they're looking for using Hick's Law",
+          "Design and test 2 alternative navigation menu designs that adhere to Hick's Law, measuring a 25% reduction in cognitive load",
+          "Conduct A/B testing on 1 website with a new navigation design, comparing the results to the original design"
+        ]
+      },
+      {
+        "name": "Creating an Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "The Aesthetic-Usability Effect states that users are more likely to engage with designs that are visually appealing. As a Practitioner, apply this principle to create an aesthetically pleasing design that also meets usability standards.",
+        "practice_points": [
+          "Design 3 visual concepts for a new product feature using the Aesthetic-Usability Effect as a guiding principle",
+          "Conduct user testing on 2 existing designs and provide feedback on how to improve their aesthetic appeal while maintaining usability",
+          "Create a mood board with 5 design inspirations that incorporate the Aesthetic-Usability Effect, and use it as a reference for future design projects"
+        ]
+      },
+      {
+        "name": "Conducting User Research Using the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "The Jobs-to-be-Done framework helps identify user needs and motivations. As a Practitioner, apply this framework to conduct user research and validate design decisions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings on user motivations and pain points",
+          "Create a user persona based on research findings from 1 previous project, incorporating insights from the Jobs-to-be-Done framework",
+          "Design and conduct an online survey to validate assumptions about user behavior related to a specific product feature"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:38:25.337313"
+}

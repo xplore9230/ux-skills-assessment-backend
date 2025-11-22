@@ -1,0 +1,231 @@
+{
+  "score": 32,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 28,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 32,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 30,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 35,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 33,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on proper alignment and spacing. (Reference: https://lawsofux.com/8-point-grid-system).",
+          "Write down 5 common UX principles you've learned so far, but don't fully understand. Research each principle and create a brief explanation for each. (Reference: https://nngroup.com/articles/ten-usability-heuristics)",
+          "Design a simple error message for a missing field in a form using the Aesthetic-Usability Effect as inspiration."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a solo user research study on your own website or app, asking users about their pain points with navigation. Document 3 key findings and potential solutions. (Reference: https://lawsofux.com/zeigarnik-effect)",
+          "Create a list of 10 common UX mistakes you've seen in design portfolios or websites, along with potential solutions for each. Focus on user-centered design principles.",
+          "Redesign the navigation menu of your own portfolio using Occam's Razor to guide your decisions."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a usability test plan for a hypothetical website redesign, including participant recruitment and testing procedures. (Reference: https://lawsofux.com/occams-razor)",
+          "Design a user journey map for a common pain point in your industry, using the Jobs-to-be-Done framework to guide your design decisions.",
+          "Conduct 2 user interviews with people from different age groups or demographics, asking them about their experiences with your product or service."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive UX strategy document for a hypothetical project, outlining research findings, design decisions, and usability testing results.",
+          "Design a prototype of a new feature using user research and validation data to guide your design decisions.",
+          "Develop a personal learning plan for continued UX growth, including specific resources and goals for the next 6 months."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to uncover hidden user needs and create products that truly delight. By leveraging your skills in UX fundamentals, UI craft, research, product thinking, and collaboration, you can drive meaningful change and shape the future of design.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Exploring usability heuristics will help Explorer designers identify and apply best practices for user interface design, improving overall UX.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design and document findings on how well they adhere to each principle",
+          "Create a comprehensive guide outlining the application of Occam's Razor in UX decision-making with examples"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Learning about the Aesthetic-Usability Effect will enhance Explorer designers' understanding of how visual elements impact user experience.",
+        "practice_points": [
+          "Design 5 mockups incorporating the Aesthetic-Usability Effect and document the results in a design journal"
+        ]
+      },
+      {
+        "name": "User Research Methods",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Mastering user research methods will enable Explorer designers to gather actionable insights for product development.",
+        "practice_points": [
+          "Conduct 2 interviews using the Zeigarnik Effect and document key findings on user motivations"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score meaning for Explorer, indicating areas where UX principles can be improved to enhance user experience.",
+        "detailed": "The current score of 28/100 suggests that there is room for improvement in understanding user needs, creating intuitive navigation, and ensuring accessibility. A higher score would indicate a stronger foundation in UX fundamentals, enabling the design team to create more effective and efficient experiences.",
+        "actionable": [
+          "Conduct user interviews to gain a deeper understanding of user pain points and motivations",
+          "Review existing designs and identify areas where usability can be improved",
+          "Research industry best practices for UX design and incorporate them into the design process"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score meaning for Explorer, indicating areas where UI principles can be refined to enhance visual appeal and user engagement.",
+        "detailed": "The current score of 32/100 suggests that there is room for improvement in creating visually appealing designs, developing a consistent brand identity, and ensuring typography and color schemes are effective. A higher score would indicate a stronger foundation in UI craft and visual design, enabling the design team to create more engaging and memorable experiences.",
+        "actionable": [
+          "Analyze competitors' UI designs to identify best practices for visual hierarchy and branding",
+          "Create a style guide to ensure consistency across all design elements",
+          "Experiment with different typography and color schemes to find the most effective combinations"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score meaning for Explorer, indicating areas where user research can be strengthened to inform design decisions.",
+        "detailed": "The current score of 30/100 suggests that there is room for improvement in conducting thorough user research, validating design assumptions, and gathering feedback from users. A higher score would indicate a stronger foundation in user research and validation, enabling the design team to create more informed and effective designs.",
+        "actionable": [
+          "Plan and execute user interviews with diverse groups of users to gather feedback on Explorer",
+          "Conduct usability testing to identify areas where users struggle with the interface",
+          "Analyze user feedback and sentiment analysis to inform design iterations"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score meaning for Explorer, indicating areas where product thinking can be refined to enhance business outcomes.",
+        "detailed": "The current score of 35/100 suggests that there is room for improvement in understanding business goals, identifying user needs, and developing effective solutions. A higher score would indicate a stronger foundation in product thinking and strategy, enabling the design team to create more impactful and successful products.",
+        "actionable": [
+          "Develop a product roadmap to align design decisions with business objectives",
+          "Conduct customer journey mapping to identify pain points and opportunities for improvement",
+          "Research industry trends and competitor strategies to inform product development"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score meaning for Explorer, indicating areas where collaboration and communication can be improved to enhance team effectiveness.",
+        "detailed": "The current score of 33/100 suggests that there is room for improvement in facilitating effective communication, building strong relationships with stakeholders, and managing conflicts. A higher score would indicate a stronger foundation in collaboration and communication, enabling the design team to work more efficiently and effectively together.",
+        "actionable": [
+          "Schedule regular design reviews and feedback sessions with the development team",
+          "Develop clear and concise design documentation to ensure understanding among stakeholders",
+          "Create a shared design language to promote consistency across the team"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:10:16.582094"
+}

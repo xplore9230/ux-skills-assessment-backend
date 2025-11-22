@@ -1,0 +1,183 @@
+{
+  "score": 79,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 72,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 82,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 79,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 87,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 73,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of UX Fundamentals",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice UX Fundamentals through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in the fundamentals of UX design and a keen eye for visual design. Now, focus on elevating your skills in user research, product thinking, and collaboration to drive more impactful designs that meet users' needs.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Emerging Seniors",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics effectively requires a deep understanding of the 10 principles outlined in '10 Usability Heuristics for User Interface Design'. By mastering these, you'll improve your ability to design intuitive and user-friendly interfaces.",
+        "practice_points": [
+          "Analyze 5 existing products using the 10 Usability Heuristics framework and document your findings",
+          "Create a heuristic evaluation guide for a specific product or feature",
+          "Design an interface based on the 'Visibility of System Status' heuristic and justify your design decisions"
+        ]
+      },
+      {
+        "name": "Applying Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "The Aesthetic-Usability Effect highlights the importance of visual elements in user experience. By understanding and applying this principle, you'll create more engaging and effective designs.",
+        "practice_points": [
+          "Conduct an experiment to test the effect of color on user engagement (e.g., using a tool like OptinMonster)",
+          "Design 3 wireframes with varying levels of visual hierarchy and typography",
+          "Create a style guide that incorporates the Aesthetic-Usability Effect principles"
+        ]
+      },
+      {
+        "name": "Developing Effective User Research Methods for Emerging Seniors",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "As an emerging senior UX designer, it's essential to develop effective user research methods to inform your design decisions. By mastering these techniques, you'll gather more accurate and actionable insights.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Empathy Mapping technique and document your findings",
+          "Create a user research plan for a specific project or feature",
+          "Analyze 5 existing user research studies to identify best practices"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:58:30.052502"
+}

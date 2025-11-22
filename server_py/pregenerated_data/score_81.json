@@ -1,0 +1,177 @@
+{
+  "score": 81,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 82,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 83,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 83,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 common user research methods (e.g., surveys, interviews, usability testing) and evaluate their effectiveness in your current work. Reference the '10 Usability Heuristics for User Interface Design' resource to inform your assessment. Score: 80/100",
+          "Redesign a simple wireframe using the Aesthetic-Usability Effect principles from 'Lawsofux.com'. Focus on creating a visually appealing and user-friendly interface. Score: 82/100 ( reference gap)",
+          "Write a short reflection (max 250 words) on how you can apply Occam's Razor in your design process to simplify complex solutions. Use the 'Occam’s Razor' resource as a guide."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a usability testing session with a friend or family member and document 5 pain points using the Jobs-to-be-Done framework. Reference the 'Lawsofux.com' resources to inform your approach. Score: 78/100 (reference gap)",
+          "Create a mood board for a hypothetical product redesign, incorporating the Zeigarnik Effect principles from 'Lawsofux.com'. Focus on creating an engaging and memorable visual identity. Score: 81/100",
+          "Write a short case study (max 500 words) on how you can apply the Aesthetic-Usability Effect in a real-world design project. Use the 'Aesthetic-Usability Effect' resource as a guide."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a user research plan for a new product idea, incorporating the 10 Usability Heuristics from 'nngroup.com'. Focus on identifying potential pain points and opportunities for improvement. Score: 82/100",
+          "Redesign your portfolio's navigation using the 8-point grid system. Reference the 'Lawsofux.com' resources to inform your approach. Score: 80/100 (reference gap)",
+          "Write a short reflection (max 250 words) on how you can apply Occam's Razor in your design process to simplify complex solutions. Use the 'Occam’s Razor' resource as a guide."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive user research report for a real-world project, incorporating the Jobs-to-be-Done framework and the 10 Usability Heuristics from 'nngroup.com'. Focus on providing actionable insights for design improvements. Score: 85/100",
+          "Design a high-fidelity prototype of a complex interface using the Aesthetic-Usability Effect principles from 'Lawsofux.com'. Focus on creating an engaging and user-friendly experience. Score: 83/100",
+          "Develop a final portfolio piece that showcases your skills in UI Craft & Visual Design, incorporating all the resources learned throughout this 4-week improvement plan."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in the fundamentals of UX design and a keen eye for visual design. To take your career to the next level, focus on refining your user research skills, developing a deeper understanding of product strategy, and honing your collaboration and communication skills to drive successful outcomes and build strong relationships with stakeholders.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor to Simplify UX Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to eliminate unnecessary complexity in UX design will improve overall efficiency and effectiveness.",
+        "practice_points": [
+          "Analyze 3 existing products or services and identify areas where Occam's Razor can be applied to simplify their UX decisions. Document findings and provide recommendations for improvement."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Mastering user research techniques will enable you to gain a deeper understanding of users' needs and behaviors, leading to more effective UX design.",
+        "practice_points": [
+          "Conduct 5 user interviews using the Jobs-to-be-Done framework and document findings. Identify patterns and themes that can inform future UX design decisions."
+        ]
+      },
+      {
+        "name": "Creating Aesthetic-Usability Effect in UI Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the Aesthetic-Usability Effect will help you create visually appealing and user-friendly designs that improve overall UX.",
+        "practice_points": [
+          "Create 3 wireframes of a hypothetical product with varying levels of visual design elements (e.g., color, typography, spacing). Evaluate which design elements have the greatest impact on usability."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:00:41.825182"
+}

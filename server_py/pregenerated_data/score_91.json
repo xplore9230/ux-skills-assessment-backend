@@ -1,0 +1,173 @@
+{
+  "score": 91,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 85,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 88,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 88,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 95,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 key principles that can be applied to your current work. Write a brief summary of each principle and how you can incorporate them into your design process. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/) Score improvement: +5 points",
+          "Create a list of 10 common user research methods used in UX design, including both qualitative and quantitative approaches. Prioritize the top 3 most effective methods for your current role as a Strategic Lead. (Reference: https://lawsofux.com/) Score improvement: +5 points"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Miller's Law to a recent design project, identifying areas where the law can be applied to improve user experience. Write a short reflection on how this law impacted your design decisions. (Reference: https://lawsofux.com/millers-law/) Score improvement: +5 points",
+          "Conduct 2 mini-user interviews with colleagues or peers, using Occam's Razor as a framework for understanding their pain points and needs. Document the key findings in a concise report. (Reference: https://lawsofux.com/occams-razor/) Score improvement: +5 points"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design an Aesthetic-Usability Effect experiment to test the impact of visual design elements on user behavior. Create a detailed plan, including participant recruitment and data analysis. (Reference: https://lawsofux.com/aesthetic-usability-effect/) Score improvement: +5 points",
+          "Create a 'UX Fundamentals' cheat sheet, summarizing key concepts and principles from Laws of UX and Miller's Law. Share it with your team or colleagues as a resource for future reference. (Reference: https://lawsofux.com/) Score improvement: +10 points"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive 'UX Fundamentals' course outline, covering the key concepts and principles from Laws of UX, Miller's Law, Occam's Razor, and Aesthetic-Usability Effect. Create a detailed lesson plan for each topic. (Reference: https://lawsofux.com/) Score improvement: +15 points",
+          "Create a 'Strategic Lead' portfolio piece that showcases your ability to apply UX Fundamentals in a strategic context. Write a brief reflection on how you incorporated these principles into the design process. (Reference: https://lawsofux.com/) Score improvement: +20 points"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design decisions that shape the future of products and experiences. With your exceptional skills in UI Craft & Visual Design and Collaboration & Communication, you can leverage your expertise to craft intuitive and engaging designs that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Strategic Decision-Making",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to distill complex UX problems into simple, actionable solutions will enhance your strategic lead role.",
+        "practice_points": [
+          "Analyze 3 real-world design decisions and apply Occam's Razor to identify potential biases or oversimplifications. Document findings in a written report."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Mastering user research techniques will help you uncover deeper insights and inform strategic design decisions. As a Strategic Lead, this skill is crucial for driving business outcomes.",
+        "practice_points": [
+          "Conduct 5 user interviews using the Jobs-to-be-Done framework and document findings in a written report. Identify key pain points and opportunities for strategic design improvements."
+        ]
+      },
+      {
+        "name": "Creating Aesthetic-Usability Effect through Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Developing an understanding of the aesthetic-usability effect will enable you to create designs that are both visually appealing and user-friendly. As a Strategic Lead, this skill is essential for driving design excellence.",
+        "practice_points": [
+          "Design 3 wireframes for a hypothetical product using principles from the Aesthetic-Usability Effect. Create a visual design system document outlining color, typography, and spacing tokens."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:11:23.614720"
+}

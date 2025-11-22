@@ -1,0 +1,175 @@
+{
+  "score": 9,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 12,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 9,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 6,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 2,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "As an Explorer, you should create a simple collaboration template using Google Docs or Trello to help facilitate team discussions. Document your process and share the template with me for feedback.",
+          "Write a short reflection (150-200 words) on how you currently communicate design decisions to your team. Identify areas where you'd like to improve and what strategies you can implement in the coming weeks.",
+          "Conduct 2 minutes of self-reflection on your current collaboration style. What are your strengths and weaknesses? How do you think this will impact your future projects?"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a basic product thinking framework using sticky notes or a mind mapping tool. Identify 3 pain points in the design process that you'd like to address. Document your thoughts and share with me for feedback.",
+          "Develop a simple user research plan for a hypothetical project. Outline the methods you would use to gather data, analyze results, and present findings. Share your plan with me."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design an aesthetic-usable effect using Adobe XD or Sketch. Create a simple design element (e.g., button, icon) that incorporates Jakob's Law. Document your process and share the final result with me for feedback.",
+          "Write a short essay (250-300 words) on Miller’s Law and its application in UX design. Explain how understanding this law can improve user experience."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Conduct a usability test using the 10 Usability Heuristics for User Interface Design. Choose a simple website or app and evaluate it against these guidelines. Document your findings and share with me.",
+          "Create a comprehensive product thinking and strategy document outlining how you would approach a hypothetical project. Include a clear problem statement, user research findings, design decisions, and a plan for implementation."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to shape the user experience and create products that delight and inspire. To unlock your full potential, focus on building a strong foundation in UX fundamentals, UI craft, and collaboration - with every project, ask yourself how you can use research, strategy, and design to drive meaningful change.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will help you identify and address pain points in user interfaces, improving overall UX.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design and document findings on how well they adhere to each principle",
+          "Create a new wireframe that incorporates at least 5 of the usability heuristics, focusing on user flow and error prevention"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Understanding the Aesthetic-Usability Effect will help you create visually appealing interfaces that also prioritize usability.",
+        "practice_points": [
+          "Design 2 mockups of a product's login page, one with an aesthetically pleasing design and one with a more utilitarian approach, and document your thought process"
+        ]
+      },
+      {
+        "name": "Conducting User Interviews",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Gaining user insights through interviews will help you validate design decisions and identify areas for improvement.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, taking detailed notes on users' goals and pain points"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:45:40.983156"
+}

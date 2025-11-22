@@ -1,0 +1,174 @@
+{
+  "score": 62,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 71,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 55,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 60,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 67,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a user persona for an e-commerce website using the 10 Usability Heuristics from nngroup.com. Document 3 pain points and 2 goals for your target audience.",
+          "Redesign the navigation menu of a fictional website using the 8-point grid system. Ensure it's accessible and easy to use."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview and document 3 pain points related to UI Craft & Visual Design using the Zeigarnik Effect as a reference. Analyze how the design elements contribute to user frustration.",
+          "Create a mood board for a hypothetical product launch, incorporating Occam's Razor principles to minimize visual noise."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a user research plan for a new feature using the Laws of UX. Identify 5 potential research questions and outline a method for data collection.",
+          "Redesign the error messages for a fictional website, applying the Aesthetic-Usability Effect to create a more user-friendly experience."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create an interactive prototype of a hypothetical product using InVision or Figma. Ensure it incorporates best practices from both UI Craft & Visual Design and User Research & Validation.",
+          "Write a case study for your redesign efforts, highlighting the user research process and how it informed your design decisions."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the potential to transform user experiences and drive business success. Focus on building your skills in User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication to elevate your practice and make a meaningful impact.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of usability heuristics to inform design decisions and improve user experience.",
+        "practice_points": [
+          "Analyze 5 existing products using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive heuristic evaluation checklist with clear criteria and scoring system"
+        ]
+      },
+      {
+        "name": "Applying Cognitive Biases in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Understand how cognitive biases affect user behavior and design decisions to create more intuitive and effective interfaces.",
+        "practice_points": [
+          "Conduct 3 usability testing sessions using the Zeigarnik Effect and Miller's Law to identify cognitive biases in user behavior"
+        ]
+      },
+      {
+        "name": "Developing a User-Centered Design Process",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate",
+        "summary": "Create a structured design process that incorporates user research, validation, and iteration to deliver high-quality user experiences.",
+        "practice_points": [
+          "Map out the user journey for 2 existing products using the Jobs-to-be-Done framework and identify pain points"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:40:18.527527"
+}

@@ -1,0 +1,174 @@
+{
+  "score": 35,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 43,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 30,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 30,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Write a clear and concise explanation of the Aesthetic-Usability Effect (lawsofux.com) on your blog or Medium, including examples and scenarios. Share with your network. Score improvement: +2% in Collaboration & Communication"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Collaborate with a peer or mentor on a simple design challenge, such as redesigning a button style using the Law of Proximity (lawsofux.com). Share your process and feedback. Score improvement: +5% in Collaboration & Communication"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Write a clear and concise explanation of the Law of Proximity (lawsofux.com) on your blog or Medium, including examples and scenarios. Share with your network. Score improvement: +5% in Collaboration & Communication"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Collaborate with a peer or mentor on a complex design challenge, such as redesigning an entire website using the 8-point grid system. Share your process and feedback. Score improvement: +10% in Collaboration & Communication"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to uncover new insights and design solutions that transform user experiences. To excel in this role, focus on developing a strong foundation in UX fundamentals, collaborating with cross-functional teams, and continuously refining your skills in research, visual design, and product thinking.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Exploring usability heuristics will help you identify and address common design pitfalls, improving your overall UX design skills.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design and document areas for improvement",
+          "Create a comprehensive guide to usability heuristics, explaining each principle with examples and counterexamples",
+          "Develop a set of actionable design recommendations based on the 10 Usability Heuristics, tailored to a specific product or service"
+        ]
+      },
+      {
+        "name": "Applying Cognitive Biases in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Learning about cognitive biases will enable you to design more intuitive and user-friendly products, reducing the impact of these biases on your designs.",
+        "practice_points": [
+          "Conduct 2 interviews using the Zeigarnik Effect framework to understand how users remember unfinished tasks",
+          "Create a list of common cognitive biases in UX design, with examples and explanations",
+          "Develop a set of best practices for mitigating cognitive biases in your own designs"
+        ]
+      },
+      {
+        "name": "Crafting Effective UI Design Systems",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "Mastering UI design systems will help you create cohesive, scalable, and maintainable designs that align with your product's goals.",
+        "practice_points": [
+          "Design a comprehensive style guide for a fictional product using the Aesthetic-Usability Effect principles",
+          "Create 3 interactive prototypes in Figma showcasing different design system variations, including typography, color, and spacing tokens"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:13:13.446800"
+}

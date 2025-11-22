@@ -1,0 +1,201 @@
+{
+  "score": 64,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 53,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 69,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 62,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          {
+            "task": "Create a simple wireframe for a login form using the 8-point grid system, focusing on proper alignment and spacing."
+          },
+          {
+            "task": "Write down 5 common design mistakes that can lead to user frustration, and explain how to avoid them using the Laws of UX"
+          },
+          {
+            "task": "Redesign your portfolio's navigation using a simple, intuitive layout, and document the changes you made in a spreadsheet."
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          {
+            "task": "Create a mood board for a hypothetical product using the Aesthetic-Usability Effect as a guide, including at least 3 colors and 2 textures."
+          },
+          {
+            "task": "Conduct a self-assessment of your collaboration style, identifying areas where you can improve communication with team members and stakeholders."
+          },
+          {
+            "task": "Create a simple prototype for a hypothetical feature using InVision or Figma, focusing on user flow and interaction design."
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          {
+            "task": "Research and create a list of 5 common usability heuristics that are often overlooked in product design, along with examples of how to apply them."
+          },
+          {
+            "task": "Create a case study of a successful design project you worked on, highlighting your role and the design decisions you made."
+          },
+          {
+            "task": "Participate in an online discussion forum or community related to UX design, engaging with at least 2 other users and sharing your expertise."
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          {
+            "task": "Design a comprehensive user experience for a hypothetical product, including wireframes, prototypes, and high-fidelity designs, using the principles of Law of Proximity and Tesler’s Law as guides."
+          },
+          {
+            "task": "Create a video tutorial or screencast demonstrating your design process, from research to launch, and share it on a platform like YouTube or Vimeo."
+          },
+          {
+            "task": "Conduct an A/B testing experiment using a tool like Optimizely or VWO, analyzing the results and documenting what you learned about user behavior."
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape user experiences that drive business results and create lasting connections with your audience. By leveraging your strengths in research, design, and collaboration, you can unlock innovative solutions that exceed user expectations and propel your organization forward.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics effectively will improve the overall user experience and increase design efficiency.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design, identifying areas for improvement and suggesting redesigns"
+        ]
+      },
+      {
+        "name": "Understanding Aesthetic-Usability Effect",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Learning about the aesthetic-usability effect will help you design more visually appealing and user-friendly interfaces.",
+        "practice_points": [
+          "Create 3 wireframes of a hypothetical website, applying the principles of the Aesthetic-Usability Effect to improve visual hierarchy and navigation"
+        ]
+      },
+      {
+        "name": "Applying Tesler’s Law for Consistent Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Mastering Tesler's Law will enable you to create consistent and intuitive navigation systems that reduce cognitive load.",
+        "practice_points": [
+          "Design 2 interactive prototypes in Figma, applying Tesler's Law to ensure consistent navigation patterns across different screens"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:42:09.095962"
+}

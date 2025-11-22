@@ -1,0 +1,182 @@
+{
+  "score": 17,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 21,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 18,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 14,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 16,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 14,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple user persona using the UX Fundamentals' 10 Usability Heuristics for User Interface Design (nngroup.com). Document 3 key characteristics and 2 goals. Score improvement: +5% in UX Fundamentals",
+          "Write a short reflection on your current collaboration style, focusing on how it affects your design process. Identify one area for improvement and create an action plan to address it. Score improvement: +5% in Collaboration & Communication",
+          "Design a basic wireframe of a hypothetical product using the 8-point grid system. Focus on layout and balance. Score improvement: +3% in UI Craft & Visual Design"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview with someone from your network, focusing on their pain points related to [specific topic]. Document 5 key findings using the Jobs-to-be-Done framework. Score improvement: +7% in User Research & Validation",
+          "Create a mind map illustrating the relationships between Jakob’s Law, Aesthetic-Usability Effect, Miller’s Law, and Jakob’s Law. Explain how each concept influences your design decisions. Score improvement: +8% in UX Fundamentals",
+          "Redesign your portfolio's navigation using the 8-point grid system. Focus on simplicity and clarity. Score improvement: +5% in UI Craft & Visual Design"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a simple usability test plan for a hypothetical product, including 2 user scenarios and 4 usability heuristics to evaluate. Score improvement: +10% in User Research & Validation",
+          "Create a short video (5 minutes) explaining the concept of Jakob’s Law and its impact on your design decisions. Share it with your network and gather feedback. Score improvement: +12% in UX Fundamentals",
+          "Design a basic prototype of a hypothetical product using Sketch or Figma, focusing on user flow and interaction. Score improvement: +8% in UI Craft & Visual Design"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive design strategy for a hypothetical product, including user research, usability testing, and design decisions. Share your findings with your network and gather feedback. Score improvement: +20% in Product Thinking & Strategy",
+          "Create a capstone project: redesign a real-world product or service using the principles of UX Fundamentals, UI Craft & Visual Design, User Research & Validation, and Collaboration & Communication. Score improvement: +30% across all categories"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By focusing on empathy-driven design, experimentation, and collaboration, you can unlock new insights and create solutions that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Exploring usability heuristics will help Explorer designers develop a solid foundation in user-centered design principles.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive checklist of usability heuristics to apply during the design process",
+          "Design 3 wireframes for a hypothetical product feature, incorporating at least 2 usability heuristics"
+        ]
+      },
+      {
+        "name": "Conducting Effective User Research",
+        "pillar": "User Research & Validation",
+        "level": "Beginner/Intermediate",
+        "summary": "Gaining experience in user research will enable Explorer designers to develop a deeper understanding of their users' needs and behaviors.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings",
+          "Create a user persona based on existing research data, including demographics, goals, and pain points",
+          "Design a survey to gather feedback from 10 participants about a specific product feature"
+        ]
+      },
+      {
+        "name": "Developing Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Mastering visual design principles will help Explorer designers create visually appealing and user-friendly interfaces.",
+        "practice_points": [
+          "Create a comprehensive style guide with color, typography, and spacing tokens for a hypothetical product",
+          "Design 3 interactive prototypes in Figma with micro-interactions to demonstrate visual hierarchy and feedback",
+          "Analyze the Aesthetic-Usability Effect and apply its principles to redesign a existing website"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:55:33.310647"
+}

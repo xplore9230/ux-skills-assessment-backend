@@ -1,0 +1,178 @@
+{
+  "score": 59,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 57,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 52,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 64,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 50,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system to improve visual design. Focus on aligning elements and creating a clear hierarchy (Reference: https://lawsofux.com/8-point-grid-system).",
+          "Write down 5 pain points from your own experience with collaboration and communication in UX projects. Use the Jobs-to-be-Done framework to identify user needs (Reference: https://lawsofux.com/jobs-to-be-done).",
+          "Design a new navigation menu for your portfolio using the 8-point grid system, focusing on clear typography and consistent spacing (Reference: https://lawsofux.com/8-point-grid-system)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a usability heuristics checklist for your own projects, referencing the 10 Usability Heuristics from nngroup.com. Focus on identifying and addressing common design mistakes (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/).",
+          "Conduct a user interview with someone who has experience working in collaboration and communication roles. Document 3 pain points and 2 success stories using the Jobs-to-be-Done framework.",
+          "Redesign your portfolio's navigation menu to include clear calls-to-action, focusing on visual design principles (Reference: https://lawsofux.com/8-point-grid-system)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a user research plan for a new product idea, including 2 interviews and 1 usability test. Focus on identifying user needs using the Jobs-to-be-Done framework.",
+          "Design a new visual design system for your portfolio, focusing on typography, color palette, and imagery. Use the Aesthetic-Usability Effect to create a consistent look and feel (Reference: https://lawsofux.com/aesthetic-usability-effect).",
+          "Write a case study of a successful collaboration project you worked on, highlighting your role and contributions."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system document for your portfolio, including visual design principles, typography, and color palette. Focus on creating a consistent look and feel (Reference: https://lawsofux.com/8-point-grid-system).",
+          "Conduct a usability test with 3 users to validate your design decisions. Use the Zeigarnik Effect to create a clear call-to-action.",
+          "Develop a strategy for improving collaboration and communication in your future projects, including specific actions you will take and metrics to measure success."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape user experiences that drive business growth and impact people's lives. To unlock your full potential, focus on bridging the gaps in your skills by investing time in learning and practicing UI Craft & Visual Design, Collaboration & Communication, and Product Thinking & Strategy.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics effectively requires a deep understanding of these principles to create intuitive and user-friendly interfaces.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design, identifying areas for improvement and suggesting redesigns",
+          "Create a comprehensive guide outlining the application of each heuristic in UI design, including examples and best practices"
+        ]
+      },
+      {
+        "name": "Developing Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the aesthetic-usability effect is crucial for creating visually appealing and user-friendly designs that guide users through interactions.",
+        "practice_points": [
+          "Design 3 visual design concepts using a consistent color palette, typography, and spacing to demonstrate the aesthetic-usability effect"
+        ]
+      },
+      {
+        "name": "Applying Cognitive Biases in User Research",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Recognizing cognitive biases in user research helps designers create more effective solutions by understanding how users perceive and interact with products.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Zeigarnik Effect framework to identify unresolved issues and suggest potential solutions"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:37:19.260627"
+}

@@ -281,19 +281,18 @@ export function useResultsData(
     };
 
     const generateDeepDive = async () => {
-      // Skip if we already have cached deep dive topics
-      if (cachedResults && cachedResults.deepDiveTopics) {
-        console.log("⏭️  Skipping deep dive API call (using cache)");
-        return;
-      }
-      
+      // Deep Dive should always use fresh AI generation, never pre-generated
       try {
         dispatch({ type: "SET_LOADING_DEEP_DIVE", payload: true });
         
         const response = await fetch(`${PYTHON_API_URL}/api/generate-deep-dive`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ stage, categories }),
+          body: JSON.stringify({ 
+            stage, 
+            categories,
+            force_ai: true // Flag to bypass pre-generated data
+          }),
         });
 
         if (deepDiveAborted) return;

@@ -1,0 +1,183 @@
+{
+  "score": 37,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 41,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 24,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 41,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 42,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 38,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on proper alignment and spacing. (Reference: Law of Proximity, Tesler's Law) - Score Improvement: +3 UI Craft & Visual Design",
+          "Write a short paragraph explaining the Aesthetic-Usability Effect and its impact on design decisions. (Reference: Aesthetic-Usability Effect, lawsofux.com) - Score Improvement: +2 UX Fundamentals",
+          "Sketch 5 different navigation options for your portfolio using the 8-point grid system, considering the Law of Proximity. (Reference: Law of Proximity, Tesler's Law) - Score Improvement: +3 UI Craft & Visual Design"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a low-fidelity sketch of a product feature that incorporates the concept of proximity and alignment. (Reference: Law of Proximity, Tesler's Law) - Score Improvement: +4 UI Craft & Visual Design",
+          "Conduct a solo user research exercise using the Jobs-to-be-Done framework to identify pain points in your current design process. Document 3 insights. (Reference: User Research & Validation, lawsofux.com) - Score Improvement: +5 User Research & Validation",
+          "Write a short reflection on how you can apply the principles of UX Fundamentals to improve your collaboration and communication skills. (Reference: Collaboration & Communication, lawsofux.com) - Score Improvement: +3 Collaboration & Communication"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a high-fidelity wireframe of a product feature that incorporates the concept of proximity and alignment, using the 8-point grid system. (Reference: Law of Proximity, Tesler's Law) - Score Improvement: +5 UI Craft & Visual Design",
+          "Develop a simple prototype of your portfolio navigation using InVision or Figma, incorporating the principles of UX Fundamentals. Share with a peer group for feedback. (Reference: Collaboration & Communication, lawsofux.com) - Score Improvement: +5 Collaboration & Communication",
+          "Write a short article explaining how you can apply the Aesthetic-Usability Effect to improve your design decisions. Publish on a personal blog or Medium. (Reference: Aesthetic-Usability Effect, lawsofux.com) - Score Improvement: +4 UX Fundamentals"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create an interactive prototype of your portfolio navigation using InVision or Figma, incorporating the principles of UX Fundamentals and user research insights. Share with a peer group for feedback. (Reference: Collaboration & Communication, lawsofux.com) - Score Improvement: +7 Collaboration & Communication",
+          "Develop a comprehensive design system document outlining the application of UX Fundamentals in your design process. Share with your team or mentor. (Reference: UX Fundamentals, lawsofux.com) - Score Improvement: +8 UI Craft & Visual Design",
+          "Conduct a peer review of 3 colleagues' designs using the 10 Usability Heuristics for User Interface Design. Provide actionable feedback and score improvements. (Reference: UX Fundamentals, nngroup.com) - Score Improvement: +9 UX Fundamentals"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By leveraging your research skills and collaborating with cross-functional teams, you can drive meaningful design decisions that delight users and propel business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Tesler's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Tesler's Law states that the most accessible information is the first piece of information on a screen, which is crucial for designers to consider when organizing content.",
+        "practice_points": [
+          "Create 3 wireframes with clear and concise navigation menus, applying Tesler's Law to prioritize primary actions",
+          "Conduct 2 usability testing sessions to validate Tesler's Law in real-world scenarios",
+          "Analyze 5 existing websites that effectively apply Tesler's Law and identify best practices"
+        ]
+      },
+      {
+        "name": "Applying the Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "The Aesthetic-Usability Effect suggests that visually appealing designs are more usable, making it essential for designers to consider aesthetics when creating user interfaces.",
+        "practice_points": [
+          "Design 3 visual design concepts using a consistent color palette and typography, applying the Aesthetic-Usability Effect",
+          "Conduct 2 user interviews to validate the impact of visual appeal on usability",
+          "Analyze 5 successful product designs that effectively balance aesthetics and functionality"
+        ]
+      },
+      {
+        "name": "Mastering User Research using the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "The Jobs-to-be-Done framework helps designers understand users' motivations and behaviors, enabling them to create more effective solutions.",
+        "practice_points": [
+          "Conduct 5 user interviews using the Jobs-to-be-Done framework and document findings",
+          "Create a personas document based on user research findings",
+          "Develop a user journey map illustrating the user's goals and pain points"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:15:17.478119"
+}

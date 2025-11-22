@@ -1,0 +1,183 @@
+{
+  "score": 30,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 34,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 26,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 36,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe for a login page using the 8-point grid system, focusing on balancing visual elements and clear typography. (Reference: Redesign your portfolio's navigation using the 8-point grid system)",
+          "Write down 5 usability heuristics from nngroup.com that you're familiar with, and explain how they relate to your current design process.",
+          "Conduct a self-assessment of your current portfolio's navigation, identifying areas where you could improve user flow. (Reference: Redesign your portfolio's navigation using the 8-point grid system)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a low-fidelity wireframe for a product page, focusing on error states and clear calls-to-action. (Reference: Create 3 wireframes for a checkout flow, focusing on error states you missed)",
+          "Apply Tesler's Law to redesign your current design elements, aiming for improved aesthetics while maintaining usability.",
+          "Research Hick’s Law and create a simple diagram illustrating how it applies to your design process."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a high-fidelity wireframe for a product page, incorporating principles of Aesthetic-Usability Effect. (Reference: Apply Tesler's Law to redesign your current design elements)",
+          "Develop a simple strategy document outlining how you would approach a new project, using the Laws of UX as a reference.",
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design strategy document for your portfolio, incorporating principles from Product Thinking & Strategy. (Reference: Develop a simple strategy document outlining how you would approach a new project)",
+          "Redesign your current design elements using the Laws of UX as a reference, aiming to improve both aesthetics and usability.",
+          "Develop a final capstone project that demonstrates your understanding of Product Thinking & Strategy in action."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to shape the user experience and drive business growth by bridging the gap between users' needs and a product's capabilities. To unlock your full potential, focus on developing a strong foundation in UX fundamentals, UI craft, and collaboration, while continuously refining your skills in user research, validation, and product thinking.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick's Law to inform design decisions can improve user experience by optimizing response times.",
+        "practice_points": [
+          "Conduct a usability study on 3-5 websites and analyze the average time it takes for users to complete a specific task, comparing it to the number of options available (Hick's Law).",
+          "Create a case study illustrating how Hick's Law can be applied in UX design, including examples from real-world projects.",
+          "Design an interactive prototype with varying response times and observe user behavior to validate Hick's Law principles."
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide for Consistency",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Establishing a consistent visual language is crucial for effective user experience, and a well-crafted style guide can help achieve this.",
+        "practice_points": [
+          "Create a comprehensive style guide with color, typography, and spacing tokens using Figma or Adobe XD, including examples from 3-5 existing websites.",
+          "Conduct an audit of your own portfolio website or a client project to identify areas where consistency can be improved and document findings in a style guide template.",
+          "Collaborate with a designer or developer to create a shared style guide for a hypothetical product, incorporating feedback and iteration."
+        ]
+      },
+      {
+        "name": "Applying the Zeigarnik Effect in UX Research",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "The Zeigarnik effect can be leveraged to increase user engagement and retention by leaving users with a sense of unfinished business.",
+        "practice_points": [
+          "Conduct 2-3 interviews using the Zeigarnik effect framework, focusing on identifying pain points or unmet needs in users' lives and documenting findings.",
+          "Design an interactive survey or questionnaire incorporating the Zeigarnik effect principles to encourage user participation and engagement.",
+          "Analyze a real-world product's success story and identify how it leverages the Zeigarnik effect to keep users invested, then create a case study illustrating its application."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:08:26.964090"
+}

@@ -1,0 +1,173 @@
+{
+  "score": 50,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 53,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 46,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 49,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 45,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on clear typography and sufficient padding.",
+          "Write down 5 pain points related to collaboration and communication in your current work, and brainstorm potential solutions for each."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Design a visual hierarchy for a product page using the Aesthetic-Usability Effect, Jakob’s Law, and Zeigarnik Effect as references.",
+          "Conduct a self-assessment of your collaboration and communication skills, identifying areas where you need improvement and creating an action plan to address them."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a prototype of a simple UI component (e.g., button, form field) using the Laws of UX as guidelines for usability and visual design.",
+          "Develop a personal project that requires collaboration with others, such as contributing to an open-source project or participating in a design challenge."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive visual design system for a product using the principles of UI Craft & Visual Design, including typography, color palette, and layout.",
+          "Create a case study of a successful collaboration or communication experience in your current work, highlighting key takeaways and lessons learned."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, your skills are on the path to becoming a well-rounded designer. Focus on building upon your strengths in user research and product thinking, while also working to improve your UI craft and collaboration skills to take your design practice to the next level.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for UX Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Occam's Razor will help you make data-driven decisions and avoid over-engineering in your designs.",
+        "practice_points": [
+          "Analyze 3 existing products or services using Occam's Razor, identifying areas where the principle can be applied to simplify design decisions."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Using the Jobs-to-be-Done framework will help you gain a deeper understanding of user motivations and behaviors, leading to more effective design solutions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, documenting findings and identifying patterns in user behavior."
+        ]
+      },
+      {
+        "name": "Creating Micro-Interactions for Figma Prototypes",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Mastering micro-interactions will help you create engaging, interactive designs that enhance the user experience.",
+        "practice_points": [
+          "Build 3 interactive prototypes in Figma with micro-interactions, experimenting with different animation techniques and effects."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:28:29.449149"
+}

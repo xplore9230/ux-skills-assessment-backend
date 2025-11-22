@@ -1,0 +1,231 @@
+{
+  "score": 56,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 42,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 57,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 62,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 58,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Redesign a simple webpage (e.g., https://www.nngroup.com/articles/ten-usability-heuristics/) using the 8-point grid system, focusing on visual hierarchy and typography. Ensure your design meets at least 5 of the 10 usability heuristics.",
+          "Create a mood board for a hypothetical product using the Zeigarnik Effect as inspiration. Document your thought process and the design decisions you made. (Law of UX: Aesthetic-Usability Effect)",
+          "Develop a list of 3 pain points for a common user experience, such as login or checkout processes, using the Jobs-to-be-Done framework. Prioritize these pain points based on their impact on user satisfaction."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create 5 wireframes for a hypothetical product feature that incorporates the Law of Proximity (e.g., placing related elements close together). Focus on clarity and intuitive navigation.",
+          "Conduct 1 user interview using the Zeigarnik Effect as inspiration. Ask open-ended questions to uncover users' thoughts, feelings, or behaviors related to your hypothetical product feature. Document 3 key insights from the conversation.",
+          "Develop a list of 5 potential solutions for addressing the pain points you identified in Week 1. Prioritize these solutions based on their feasibility and impact on user satisfaction."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Redesign your portfolio's navigation using the 8-point grid system, focusing on error states you missed (e.g., what happens when a user enters an invalid URL?). Ensure your design meets at least 2 of the usability heuristics.",
+          "Create a visual hierarchy for a hypothetical product feature using the Laws of UX. Document your thought process and the design decisions you made. (Law of UX: Law of Proximity)",
+          "Develop a list of 3 potential solutions for addressing the pain points you identified in Week 2. Prioritize these solutions based on their feasibility and impact on user satisfaction."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a prototype of your hypothetical product feature using InVision or Figma, incorporating the design decisions you made in previous weeks. Ensure your design meets at least 3 of the usability heuristics.",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework to validate your solutions for addressing pain points. Document 5 key insights from the conversations and prioritize them based on their impact on user satisfaction.",
+          "Develop a comprehensive plan for implementing your hypothetical product feature, including user research, design decisions, and potential roadblocks. Present this plan to a peer or mentor."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the potential to elevate user experiences across industries and touch lives with every design decision. Focus on bridging your skills gaps by refining your UX fundamentals, UI craft, research methods, product thinking, and collaboration skills to become a holistic design leader.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics effectively will significantly improve the user experience and design quality of your products.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive guide to applying Jakob's Law in UI design, including examples and best practices"
+        ]
+      },
+      {
+        "name": "Developing Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Understanding the Aesthetic-Usability Effect will help you create visually appealing and user-friendly designs.",
+        "practice_points": [
+          "Conduct 3 user interviews to understand how users perceive color schemes in UI design, and document findings"
+        ]
+      },
+      {
+        "name": "Applying Occam's Razor for Clearer Product Thinking",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate/Advanced",
+        "summary": "Mastering Occam's Razor will enable you to make more informed design decisions and prioritize features effectively.",
+        "practice_points": [
+          "Analyze 2 existing products using Occam's Razor, identifying areas where the principle can be applied for improvement"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score reflects the practitioner's understanding of fundamental principles in user experience design.",
+        "detailed": "The score indicates that while the practitioner has a solid grasp of UX fundamentals, there is room for improvement in applying these principles to real-world problems. This may involve reviewing industry best practices and staying up-to-date with the latest research and trends in UX design.",
+        "actionable": [
+          "Review industry resources and blogs to stay current on UX best practices",
+          "Participate in online forums or communities to engage with other designers and learn from their experiences",
+          "Take an online course or attend a workshop to refresh your knowledge of UX fundamentals"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score reflects the practitioner's proficiency in creating visually appealing and user-friendly interfaces.",
+        "detailed": "The score suggests that while the practitioner has some skills in UI craft and visual design, there is room for improvement in terms of consistency, creativity, and attention to detail. This may involve reviewing design principles, experimenting with new techniques, and seeking feedback from peers or mentors.",
+        "actionable": [
+          "Create a personal project to practice and refine your UI design skills",
+          "Study the work of other designers and analyze what makes their designs effective",
+          "Join a design community or group to share your work and receive constructive feedback"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score reflects the practitioner's ability to conduct user research and validate design decisions.",
+        "detailed": "The score indicates that while the practitioner has some experience with user research, there may be opportunities to improve in terms of data analysis, interpretation, and presentation. This may involve reviewing research methods, practicing data visualization, and developing your communication skills.",
+        "actionable": [
+          "Take an online course or workshop on user research methods and data analysis",
+          "Participate in a design challenge or hackathon to practice conducting user research and validation",
+          "Seek feedback from peers or mentors on your research reports and presentations"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score reflects the practitioner's understanding of product thinking and strategy.",
+        "detailed": "The score suggests that while the practitioner has a solid grasp of product thinking, there may be opportunities to improve in terms of strategic planning, market analysis, and business acumen. This may involve reviewing industry trends, practicing business modeling, and developing your skills in stakeholder management.",
+        "actionable": [
+          "Read industry reports or books on product strategy and market analysis",
+          "Participate in a design thinking workshop or course to practice strategic planning and problem-solving",
+          "Seek out mentorship from an experienced product manager or strategist"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score reflects the practitioner's ability to collaborate with others and communicate effectively.",
+        "detailed": "The score indicates that while the practitioner has some experience with collaboration and communication, there may be opportunities to improve in terms of active listening, conflict resolution, and presentation skills. This may involve reviewing communication principles, practicing assertive communication, and developing your skills in facilitating team meetings.",
+        "actionable": [
+          "Take an online course or workshop on effective communication and conflict resolution",
+          "Practice active listening and ask clarifying questions during team meetings",
+          "Seek feedback from peers or mentors on your presentation skills and ability to facilitate discussions"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:34:22.823098"
+}

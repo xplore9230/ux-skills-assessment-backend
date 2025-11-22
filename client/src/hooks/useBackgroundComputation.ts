@@ -41,7 +41,7 @@ interface UseBackgroundComputationReturn {
   clearCache: () => void;
 }
 
-const PYTHON_API_URL = "http://localhost:8000";
+const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL || "http://localhost:8000";
 
 /**
  * Hook to manage background precomputation of results

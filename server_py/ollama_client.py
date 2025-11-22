@@ -34,10 +34,15 @@ def check_ollama_availability():
 # Check on startup
 check_ollama_availability()
 
-def call_ollama(prompt: str, model: str = MODEL_NAME) -> Dict[str, Any]:
+def call_ollama(prompt: str, model: str = MODEL_NAME, format_json: bool = True) -> Dict[str, Any]:
     """
-    Generic helper to call Ollama API with JSON format enforcement.
+    Generic helper to call Ollama API with optional JSON format enforcement.
     Returns None if Ollama is not available.
+    
+    Args:
+        prompt: The prompt to send
+        model: Model name to use
+        format_json: If True, expect JSON response. If False, return raw text.
     """
     if not OLLAMA_AVAILABLE:
         return None  # Signal to use fallback
@@ -46,25 +51,32 @@ def call_ollama(prompt: str, model: str = MODEL_NAME) -> Dict[str, Any]:
         payload = {
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
-            "format": "json",
             "stream": False,
             "options": {
                 "temperature": 0.3,  # Lower = faster and more focused
-                "num_predict": 800    # Limit response length for speed
+                "num_predict": 800 if format_json else 200    # Limit response length for speed
             }
         }
+        
+        # Only request JSON format if specified
+        if format_json:
+            payload["format"] = "json"
         
         response = requests.post(f"{OLLAMA_HOST}/api/chat", json=payload, timeout=120)
         response.raise_for_status()
         
         result = response.json()
-        content = result.get("message", {}).get("content", "{}")
+        content = result.get("message", {}).get("content", "{}" if format_json else "")
         
-        try:
-            return json.loads(content)
-        except json.JSONDecodeError:
-            print(f"Failed to parse JSON from Ollama: {content[:200]}...")
-            return None
+        if format_json:
+            try:
+                return json.loads(content)
+            except json.JSONDecodeError:
+                print(f"Failed to parse JSON from Ollama: {content[:200]}...")
+                return None
+        else:
+            # Return as string for non-JSON responses
+            return content
             
     except Exception as e:
         print(f"Ollama API error: {str(e)}")
@@ -186,9 +198,105 @@ Return ONLY valid JSON with this structure:
         return get_fallback_improvement_plan(stage, categories)
     return result
 
+def generate_resource_description(resource: Dict[str, Any], stage: str, category: str) -> str:
+    """
+    Generate contextual description for a resource using AI based on user's profile and resource data.
+    Uses the resource's actual summary/content to create a personalized description.
+    """
+    import re
+    
+    title = resource.get('title', '')
+    summary = resource.get('summary', '') or resource.get('content_preview', '')
+    category_field = resource.get('category', category) or category
+    
+    # Clean and extract meaningful content from summary
+    if summary:
+        # Remove markdown formatting
+        cleaned = re.sub(r'\*\s*\[([^\]]+)\]\([^)]+\)', r'\1', summary)  # Remove markdown links, keep text
+        cleaned = re.sub(r'\*\s*', '', cleaned)  # Remove asterisks
+        cleaned = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', cleaned)  # Remove any remaining links
+        cleaned = re.sub(r'!\[[^\]]*\]\([^\)]+\)', '', cleaned)  # Remove images
+        cleaned = re.sub(r'=+', '', cleaned)  # Remove separator lines
+        cleaned = re.sub(r'^\d+\s+', '', cleaned, flags=re.MULTILINE)  # Remove leading numbers
+        cleaned = re.sub(r'\s+', ' ', cleaned).strip()  # Normalize whitespace
+        
+        # Check if it's just language links
+        if re.match(r'^(English|Español|Francais|عربي|中文|日本語)[\s\w\s\.,]*$', cleaned, re.IGNORECASE):
+            cleaned = ''  # Ignore language-only descriptions
+        
+        summary = cleaned[:400] if cleaned else ''  # Use cleaned version
+    
+    # If no good summary, use title-based fallback
+    if not summary or len(summary) < 30:
+        # Generate simple contextual description
+        return f"Master {title} to strengthen your {category_field} skills as a {stage} designer."
+    
+    # Generate contextual description using AI with actual resource content
+    prompt = f"""Create a brief, contextual description (1 sentence, max 150 chars) for this UX resource.
+
+Resource:
+Title: {title}
+Content: {summary[:250]}
+
+User Context:
+- Career Stage: {stage}
+- Focus Area: {category_field}
+
+Description should:
+- Explain why this resource matters for a {stage} designer
+- Highlight its relevance to {category_field}
+- Be engaging and actionable
+- Use content from the resource
+- Max 150 characters
+- No markdown, no quotes, just plain text
+
+Description:"""
+    
+    try:
+        # Use a simple text prompt (not JSON) for description
+        ai_response = call_ollama(prompt, model=MODEL_NAME, format_json=False)
+        
+        # Extract description from response (should be string)
+        if ai_response:
+            description = ai_response if isinstance(ai_response, str) else str(ai_response)
+            
+            # Clean and validate description
+            description = description.strip()
+            # Remove quotes if present
+            description = re.sub(r'^["\']|["\']$', '', description)
+            # Remove JSON formatting if present
+            description = re.sub(r'^\{"description":\s*"|"}$', '', description)
+            # Remove "Description:" prefix if present
+            description = re.sub(r'^(Description|description):\s*', '', description, flags=re.IGNORECASE)
+            description = description.strip()
+            
+            # Limit length
+            if len(description) > 150:
+                description = description[:147] + '...'
+            
+            # Validate minimum length
+            if len(description) >= 30:
+                return description
+            
+    except Exception as e:
+        print(f"Error generating AI description for {title}: {e}")
+    
+    # Fallback: Create contextual description from cleaned summary
+    if summary and len(summary) >= 30:
+        # Take first sentence or first 120 chars
+        first_sentence = re.split(r'[.!?]\s+', summary)[0]
+        if len(first_sentence) >= 30 and len(first_sentence) <= 150:
+            return f"{first_sentence} Essential for {stage} designers working on {category_field}."
+        # Otherwise, create a contextual summary
+        return f"{summary[:100]}... Essential reading for {stage} designers."
+    
+    # Final fallback
+    return f"Master {title} to strengthen your {category_field} skills as a {stage} designer."
+
 def generate_resources_ollama(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     Uses RAG to retrieve relevant resources and AI to generate inspiring readup text.
+    Generates contextual descriptions for each resource.
     """
     category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']}" for c in categories])
     
@@ -201,13 +309,20 @@ def generate_resources_ollama(stage: str, categories: List[Dict[str, Any]]) -> D
         except Exception as e:
             print(f"RAG retrieval error: {e}")
     
-    # Format resources for response
+    # Get weakest category for contextual descriptions
+    sorted_cats = sorted(categories, key=lambda c: (c['score'] / c['maxScore']) if c['maxScore'] > 0 else 0)
+    weakest_category = sorted_cats[0]['name'] if sorted_cats else "UX skills"
+    
+    # Format resources with contextual descriptions
     formatted_resources = []
     for res in resources:
+        resource_category = res.get('category', weakest_category)
+        contextual_description = generate_resource_description(res, stage, resource_category)
+        
         formatted_resources.append({
             'title': res.get('title', ''),
             'url': res.get('url', ''),
-            'description': res.get('content_preview', '')[:150] + '...',
+            'description': contextual_description,
             'tags': res.get('tags', [])
         })
     

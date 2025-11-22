@@ -1,0 +1,183 @@
+{
+  "score": 66,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 66,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 64,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 71,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (lawsofux.com) and explain how it applies to your current design work. Write a 2-page report detailing at least 3 examples of how Tesler's Law can be used to improve user experience.",
+          "Create a simple wireframe for a login flow, focusing on the importance of clear typography and color contrast. Use the 10 Usability Heuristics for User Interface Design (nngroup.com) as a reference point.",
+          "Conduct a self-assessment of your current design process. Identify at least 2 areas where you can improve your UX Fundamentals skills, and create a plan to address them in the next week."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Hick’s Law (lawsofux.com) to redesign your current navigation menu. Use the Aesthetic-Usability Effect (lawsofux.com) as a reference point to ensure your design is both functional and visually appealing.",
+          "Create a user persona for a hypothetical product, using the Jobs-to-be-Done framework to inform your research. Write a 2-page report detailing at least 3 pain points you identified during your research.",
+          "Review your current portfolio and identify areas where you can improve your UI Craft & Visual Design skills. Create a plan to address these weaknesses in the next week."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a product strategy for a hypothetical product, using the Laws of UX as a reference point. Write a 2-page report detailing at least 3 key takeaways from your research.",
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Use this information to inform your design decisions moving forward.",
+          "Redesign your current homepage using the 8-point grid system. Focus on creating a clear and concise navigation menu, while also ensuring that your visual design is both aesthetically pleasing and functional."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive UX strategy for a hypothetical product, incorporating all of the skills you've learned throughout this program. Write a 2-page report detailing at least 3 key takeaways from your research.",
+          "Develop a prototype for your current design project, using user feedback to inform your design decisions. Focus on creating a functional and visually appealing design that meets the needs of your users.",
+          "Conduct a final self-assessment of your UX Fundamentals skills. Identify at least 2 areas where you've improved, and create a plan to continue growing in these areas moving forward."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, it's time to elevate your skills and take on more complex projects. Focus on bridging the gaps in your strengths - UI Craft & Visual Design and Product Thinking & Strategy - by developing a deeper understanding of user research, validation, and collaboration to drive business outcomes.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick's Law to UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding how the amount of time required to complete a task affects user behavior and designing interfaces accordingly.",
+        "practice_points": [
+          "Conduct 3 usability testing sessions with participants completing a simple task (e.g., filling out a form) and analyze the results using Hick's Law as a guiding principle",
+          "Create a set of 5 UI elements (e.g., buttons, dropdowns, text inputs) with varying response times and evaluate their impact on user experience",
+          "Design 2 interactive prototypes that incorporate Hick's Law principles to optimize the time required for users to complete tasks"
+        ]
+      },
+      {
+        "name": "Crafting Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Understanding how visual design elements influence user perception and designing interfaces that balance aesthetics with usability.",
+        "practice_points": [
+          "Create a mood board with 5 color palettes inspired by different art movements (e.g., Impressionism, Cubism) and evaluate their impact on user experience",
+          "Design 3 wireframes for a hypothetical product using a consistent visual design language that incorporates the Aesthetic-Usability Effect principles",
+          "Conduct 2 usability testing sessions with participants completing a task while exposed to different visual design elements (e.g., color, typography) and analyze the results"
+        ]
+      },
+      {
+        "name": "Validating User Research Findings using Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Understanding how the Zeigarnik Effect influences user behavior and designing interfaces that capitalize on this phenomenon to improve user engagement.",
+        "practice_points": [
+          "Conduct 2 interviews with participants using the Zeigarnik Effect framework to identify pain points and opportunities for improvement",
+          "Create a set of 5 user personas based on research findings and analyze how they relate to the Zeigarnik Effect principles",
+          "Design 3 interactive prototypes that incorporate the Zeigarnik Effect principles to create a sense of engagement and motivation"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:44:23.074897"
+}

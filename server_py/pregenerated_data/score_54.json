@@ -1,0 +1,183 @@
+{
+  "score": 54,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 46,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 56,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 51,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 57,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (lawsofux.com) and apply its principles to a current design project, highlighting at least 3 areas where you can improve usability. (Reference: lawsofux.com/teslers-law/, Score gap: 46% - 50%)",
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on clear typography and sufficient padding. (Reference: https://lawsofux.com/aesthetic-usability-effect/, Score gap: 46% - 52%)",
+          "Write down 5 common design pitfalls that can lead to poor user experience and how you can avoid them in your future projects. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/, Score gap: 46% - 48%)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Hick’s Law to a current design project, identifying at least 3 areas where you can improve the usability of navigation and information architecture. (Reference: https://lawsofux.com/hicks-law/, Score gap: 46% - 50%)",
+          "Redesign your portfolio's navigation using the 8-point grid system, focusing on clear typography and sufficient padding. (Reference: https://lawsofux.com/aesthetic-usability-effect/, Score gap: 51% - 55%)",
+          "Conduct a self-assessment of your design process, identifying at least 3 areas where you can improve the efficiency and effectiveness of your workflow. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/, Score gap: 51% - 53%)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a simple prototype of a product feature using InVision or Figma, applying the principles of Tesler's Law and Hick’s Law to improve usability. (Reference: lawsofux.com/teslers-law/, https://lawsofux.com/hicks-law/, Score gap: 50% - 55%)",
+          "Write down 5 common design patterns that can lead to poor user experience and how you can avoid them in your future projects. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/, Score gap: 52% - 56%)",
+          "Develop a personal project or contribute to an open-source project, applying the principles of UX Fundamentals to improve usability and user experience. (Reference: lawsofux.com/, Score gap: 55% - 60%)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system document outlining the principles and guidelines for your team, applying the laws of UX to improve usability and user experience. (Reference: lawsofux.com/, Score gap: 55% - 60%)",
+          "Conduct a usability testing session with real users, applying the principles of Hick’s Law and Tesler's Law to identify areas for improvement. (Reference: https://lawsofux.com/hicks-law/, lawsofux.com/teslers-law/, Score gap: 55% - 60%)",
+          "Develop a capstone project that demonstrates your understanding of UX Fundamentals, applying the laws of UX to improve usability and user experience in a real-world scenario. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/, lawsofux.com/, Score gap: 60% - 100%)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, you have the power to shape the user experience and drive meaningful design decisions. Take this opportunity to focus on your weaknesses, such as UX Fundamentals, and leverage your strengths in UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication to create innovative solutions that delight users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick's Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Hick's Law states that the time it takes to make a decision increases with the number of options. Practitioners can apply this law to optimize navigation menus and reduce cognitive load.",
+        "practice_points": [
+          "Analyze 3 existing websites' navigation menus and calculate their average response times using Hick's Law",
+          "Design and test 2 new navigation menu prototypes with varying numbers of options",
+          "Conduct A/B testing on a single webpage to compare the impact of different navigation menu sizes on user behavior"
+        ]
+      },
+      {
+        "name": "Crafting Compelling UI Design Using Tesler’s Law",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Tesler's Law states that users prefer consistent and predictable visual design. Practitioners can apply this law to create more intuitive and user-friendly interfaces.",
+        "practice_points": [
+          "Create 3 wireframes for a hypothetical product using consistent typography, spacing, and color schemes",
+          "Design and test 2 interactive prototypes with varying levels of visual consistency",
+          "Conduct an audit of 5 existing websites' UI design and identify areas where Tesler's Law can be applied"
+        ]
+      },
+      {
+        "name": "Validating User Research Using the Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "The Zeigarnik Effect states that users remember uncompleted tasks better than completed ones. Practitioners can apply this effect to validate user research findings and improve product design.",
+        "practice_points": [
+          "Conduct 2 interviews using the Zeigarnik Effect framework to gather insights on user pain points",
+          "Design and test 3 usability tests with varying levels of task completion and feedback",
+          "Analyze 5 existing user research studies and identify instances where the Zeigarnik Effect was applied"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:32:44.274462"
+}

@@ -1,0 +1,178 @@
+{
+  "score": 4,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 1,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 3,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 0,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 6,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 9,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of User Research & Validation",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice User Research & Validation through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the future of products and experiences. By leveraging your skills in user research, collaboration, and product thinking, you can drive meaningful change and create products that truly meet the needs of users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Exploring usability heuristics will help Explorer designers understand the principles of user-centered design and improve their UX fundamentals.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design guide and identify areas for improvement",
+          "Create a mind map illustrating the relationships between each heuristic and its corresponding principles"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Learning about the Aesthetic-Usability Effect will enable Explorer designers to create visually appealing and user-friendly interfaces.",
+        "practice_points": [
+          "Design 3 visual design concepts using the principles of the Aesthetic-Usability Effect, including typography, color palette, and imagery"
+        ]
+      },
+      {
+        "name": "Conducting User Research: Introduction to User Interviews",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Gaining experience in conducting user interviews will help Explorer designers develop essential research skills and improve their ability to validate design decisions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings, including quotes and insights"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:40:27.188967"
+}

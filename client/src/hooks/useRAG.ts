@@ -16,7 +16,7 @@ import type {
   CategoryScore 
 } from '@/types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_PYTHON_API_URL || import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 /**
  * Hook for semantic search in the RAG knowledge base

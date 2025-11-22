@@ -20,9 +20,49 @@ const QuizPage = memo(function QuizPage({ questions, onComplete, onBack, onHalfw
   const [direction, setDirection] = useState(0);
   const halfwayTriggeredRef = useRef(false);
 
-  const currentQuestion = useMemo(() => questions[currentIndex], [questions, currentIndex]);
-  const isLastQuestion = useMemo(() => currentIndex === questions.length - 1, [currentIndex, questions.length]);
-  const canGoNext = useMemo(() => answers[currentQuestion.id] !== undefined, [answers, currentQuestion.id]);
+  // Guard against empty or invalid questions array
+  if (!questions || questions.length === 0) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-muted-foreground">No questions available.</p>
+          <Button onClick={onBack} className="mt-4">Back to Home</Button>
+        </div>
+      </div>
+    );
+  }
+
+  // Ensure currentIndex is within bounds
+  useEffect(() => {
+    const safeIndex = Math.max(0, Math.min(currentIndex, questions.length - 1));
+    if (currentIndex !== safeIndex) {
+      setCurrentIndex(safeIndex);
+    }
+  }, [currentIndex, questions.length]);
+
+  const currentQuestion = useMemo(() => {
+    const safeIndex = Math.max(0, Math.min(currentIndex, questions.length - 1));
+    return questions[safeIndex];
+  }, [questions, currentIndex]);
+  
+  // Guard against undefined currentQuestion
+  if (!currentQuestion) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-muted-foreground">Question not found.</p>
+          <Button onClick={onBack} className="mt-4">Back to Home</Button>
+        </div>
+      </div>
+    );
+  }
+
+  const isLastQuestion = useMemo(() => {
+    const safeIndex = Math.max(0, Math.min(currentIndex, questions.length - 1));
+    return safeIndex === questions.length - 1;
+  }, [currentIndex, questions.length]);
+  
+  const canGoNext = useMemo(() => currentQuestion?.id && answers[currentQuestion.id] !== undefined, [answers, currentQuestion?.id]);
   const canGoPrevious = useMemo(() => currentIndex > 0, [currentIndex]);
   
   // Calculate progress percentage

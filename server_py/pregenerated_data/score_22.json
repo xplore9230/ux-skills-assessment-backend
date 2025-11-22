@@ -1,0 +1,178 @@
+{
+  "score": 22,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 20,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 13,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 32,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 27,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login screen using the 10 Usability Heuristics for User Interface Design (nngroup.com) as a reference. Focus on making sure your design follows at least 5 of the heuristics.",
+          "Write down 3 common pain points users have when logging into an app or website, and explain how they could be addressed using UX Fundamentals.",
+          "Design a basic information architecture for a hypothetical e-commerce website, including at least 5 main categories. Use Occam's Razor to simplify your design."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview with someone who has experience with online shopping and ask them about their pain points when logging into an app or website. Document 3 of the most common issues they mentioned using the Jobs-to-be-Done framework.",
+          "Create a simple A/B test to compare two different navigation options for your portfolio's homepage. Use the Aesthetic-Usability Effect as a reference to make sure your design is visually appealing.",
+          "Write down 5 principles of good user research and explain how they can be applied to improve your designs."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design a more complex wireframe of a checkout flow, including error states for missing information or payment issues. Use the Zeigarnik Effect as a reference to make sure your design keeps users engaged.",
+          "Create a user persona and write down 5 goals they have when using an e-commerce website. Explain how you can use Product Thinking & Strategy to address these goals in future designs.",
+          "Conduct a self-assessment of your current portfolio's navigation and redesign it using the 8-point grid system. Make sure to explain your design decisions."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive user journey map for an e-commerce website, including at least 5 touchpoints and 3 pain points addressed along the way. Use UX Fundamentals to ensure your design is user-centered.",
+          "Design a more advanced A/B test to compare two different design options for a hypothetical app or website feature. Use Occam's Razor to simplify your design and make it more efficient.",
+          "Write down 5 key takeaways from your self-assessment of your portfolio's navigation and explain how you can apply them to future designs."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to shape the user experience and create products that delight and inspire. By leveraging your skills in product thinking and strategy, collaboration, and communication, you can drive meaningful change and make a lasting impact on users' lives.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics to design intuitive interfaces is crucial for Explorer designers, as it directly impacts user experience and conversion rates.",
+        "practice_points": [
+          "Analyze 3 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement in terms of heuristic compliance",
+          "Create a comprehensive guide on how to apply Occam's Razor in UX design, including examples and case studies"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Exploring the Aesthetic-Usability Effect can help Explorer designers create visually appealing interfaces that enhance user engagement and experience.",
+        "practice_points": [
+          "Design 5 wireframes with varying color schemes to demonstrate how the Aesthetic-Usability Effect impacts user perception of usability"
+        ]
+      },
+      {
+        "name": "User Research for UX Design",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Conducting user research is essential for Explorer designers to gain a deep understanding of user needs and behaviors, informing design decisions.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework to understand users' motivations and pain points in relation to a specific product or service"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:00:17.905915"
+}

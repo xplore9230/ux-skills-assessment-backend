@@ -23,6 +23,23 @@ except ImportError:
     RAG_AVAILABLE = False
     print("⚠ RAG system not available")
 
+# Import pre-generated lookup
+try:
+    from pregenerated_lookup import (
+        get_pregenerated_improvement_plan,
+        get_pregenerated_resources,
+        get_pregenerated_deep_dive,
+        get_pregenerated_layout,
+        get_pregenerated_insights
+    )
+    PREGENERATED_AVAILABLE = True
+except ImportError:
+    PREGENERATED_AVAILABLE = False
+    print("⚠ Pre-generated lookup not available")
+
+# Check if pre-generated mode is enabled (default: True if available)
+USE_PREGENERATED = os.getenv("USE_PREGENERATED", "true").lower() == "true" and PREGENERATED_AVAILABLE
+
 app = FastAPI(title="UX Skills Assessment API")
 
 # Enable CORS for local development and production
@@ -61,6 +78,7 @@ class AssessmentInput(BaseModel):
     totalScore: int = 0
     maxScore: int = 100
     categories: List[CategoryScore]
+    force_ai: Optional[bool] = False  # Flag to bypass pre-generated data
 
 # --- Routes ---
 
@@ -71,10 +89,18 @@ def health_check():
 @app.post("/api/generate-improvement-plan")
 def generate_plan(data: AssessmentInput):
     """
-    Generates a 4-week improvement plan using local Ollama LLM.
+    Generates a 4-week improvement plan using local Ollama LLM or pre-generated data.
     """
     try:
-        # Convert pydantic model to dict for helper function
+        # Check for pre-generated response first
+        if USE_PREGENERATED:
+            pregenerated = get_pregenerated_improvement_plan(data.totalScore)
+            if pregenerated is not None:
+                print(f"✓ Using pre-generated improvement plan for score {data.totalScore}")
+                return pregenerated
+        
+        # Fall back to LLM generation
+        print(f"Generating improvement plan via LLM for score {data.totalScore}")
         categories_dict = [c.model_dump() for c in data.categories]
         return generate_improvement_plan_ollama(
             data.stage, 
@@ -91,16 +117,32 @@ def generate_resources(data: AssessmentInput):
     """
     Generates career stage readup using Ollama with RAG-enhanced recommendations.
     Returns resources from the RAG knowledge base based on weakest categories.
+    Resources always get fresh contextual descriptions based on actual resource data.
     """
     try:
-        # Generate resources using RAG-enhanced Ollama function
-        # This now returns both readup text AND RAG-retrieved resources
         categories_dict = [c.model_dump() for c in data.categories]
+        
+        # Always generate fresh resources with contextual descriptions from actual data
+        # Check for pre-generated readup only
+        readup_text = None
+        if USE_PREGENERATED:
+            pregenerated = get_pregenerated_resources(data.totalScore)
+            if pregenerated is not None:
+                readup_text = pregenerated.get("readup")
+                print(f"✓ Using pre-generated readup for score {data.totalScore}")
+        
+        # Always generate fresh resources with contextual descriptions
+        print(f"🔄 Generating fresh resources with contextual descriptions from actual data for score {data.totalScore}")
+        
+        # Generate resources using RAG - this will create contextual descriptions from resource data
         ai_response = generate_resources_ollama(data.stage, categories_dict)
         
-        # The ai_response now contains both readup and resources from RAG
+        # Use pre-generated readup if available, otherwise use AI-generated
+        final_readup = readup_text if readup_text else ai_response.get("readup", "Keep growing your skills!")
+        
+        # Resources always have fresh contextual descriptions
         return {
-            "readup": ai_response.get("readup", "Keep growing your skills!"),
+            "readup": final_readup,
             "resources": ai_response.get("resources", [])
         }
         
@@ -128,8 +170,12 @@ def generate_resources(data: AssessmentInput):
 def generate_deep_dive(data: AssessmentInput):
     """
     Generates deep dive topics using local Ollama LLM and enriches them with curated resources.
+    Deep Dive always uses fresh AI generation (bypasses pre-generated data).
     """
     try:
+        # Deep Dive always uses fresh AI generation, never pre-generated
+        # Always skip pre-generated check to ensure fresh AI responses
+        print(f"🔄 Generating fresh deep dive via AI for score {data.totalScore}")
         categories_dict = [c.model_dump() for c in data.categories]
         ai_response = generate_deep_dive_topics_ollama(data.stage, categories_dict)
         
@@ -194,6 +240,15 @@ def generate_layout(data: AssessmentInput):
     Determines section order, visibility, and content depth.
     """
     try:
+        # Check for pre-generated response first
+        if USE_PREGENERATED:
+            pregenerated = get_pregenerated_layout(data.totalScore)
+            if pregenerated is not None:
+                print(f"✓ Using pre-generated layout for score {data.totalScore}")
+                return pregenerated
+        
+        # Fall back to LLM generation
+        print(f"Generating layout via LLM for score {data.totalScore}")
         categories_dict = [c.model_dump() for c in data.categories]
         layout_strategy = generate_layout_strategy(
             data.stage,
@@ -258,6 +313,15 @@ def generate_insights(data: AssessmentInput):
     Returns brief, detailed, and actionable insights.
     """
     try:
+        # Check for pre-generated response first
+        if USE_PREGENERATED:
+            pregenerated = get_pregenerated_insights(data.totalScore)
+            if pregenerated is not None:
+                print(f"✓ Using pre-generated insights for score {data.totalScore}")
+                return pregenerated
+        
+        # Fall back to LLM generation
+        print(f"Generating insights via LLM for score {data.totalScore}")
         categories_dict = [c.model_dump() for c in data.categories]
         ai_response = generate_category_insights(data.stage, categories_dict)
         
@@ -396,6 +460,39 @@ def rag_stats():
     except Exception as e:
         print(f"Error getting RAG stats: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/pregenerated/stats")
+def pregenerated_stats():
+    """
+    Get statistics about pre-generated LLM responses.
+    Returns how many scores have been pre-generated.
+    """
+    if not PREGENERATED_AVAILABLE:
+        return {
+            "status": "unavailable",
+            "use_pregenerated": USE_PREGENERATED,
+            "message": "Pre-generated lookup not available"
+        }
+    
+    try:
+        from pregenerated_lookup import get_generation_stats
+        stats = get_generation_stats()
+        
+        return {
+            "status": "available",
+            "use_pregenerated": USE_PREGENERATED,
+            "total_generated": stats.get("total_generated", 0),
+            "total_missing": stats.get("total_missing", 0),
+            "completion_percentage": stats.get("completion_percentage", 0),
+            "missing_scores": stats.get("missing_scores", [])
+        }
+        
+    except Exception as e:
+        print(f"Error getting pre-generated stats: {e}")
+        return {
+            "status": "error",
+            "error": str(e)
+        }
 
 
 @app.get("/api/rag/resources/{category}")

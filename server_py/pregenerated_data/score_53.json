@@ -1,0 +1,230 @@
+{
+  "score": 53,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 45,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 53,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 55,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 54,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login screen using the 10 Usability Heuristics for User Interface Design (nngroup.com) as reference. Focus on error states and accessibility.",
+          "Redesign your portfolio's navigation using the 8-point grid system from Aesthetic-Usability Effect (lawsofux.com). Ensure it is visually appealing and easy to use.",
+          "Write a short reflection (approx. 250 words) on how you can improve your UI Craft & Visual Design skills based on the Laws of UX. What specific principles or guidelines do you want to focus on?"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview and document 3 pain points using the Jobs-to-be-Done framework. Focus on understanding your users' motivations and behaviors.",
+          "Create a low-fidelity prototype of a feature you want to design, focusing on usability and accessibility. Use the Law of Proximity as a reference for placement and organization.",
+          "Develop a list of 5-10 questions to ask during user research interviews, based on the Zeigarnik Effect (lawsofux.com). Practice active listening and observation."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design a high-fidelity prototype of a new feature or product, focusing on usability, accessibility, and visual design. Use the Law of Proximity as a reference for placement and organization.",
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Focus on understanding your users' motivations and behaviors.",
+          "Create a mind map or diagram illustrating how you can apply the Laws of UX to improve your design decisions."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive design strategy for a new product or feature, incorporating the Laws of UX. Present your findings and recommendations to a hypothetical team.",
+          "Create a case study of a successful design project, highlighting how you applied the Laws of UX to achieve a positive outcome.",
+          "Design a usability testing plan for a new product or feature, using the Zeigarnik Effect as a reference for participant recruitment and task design."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape the user experience and drive business success. Focus on building your skills in UI Craft & Visual Design, and don't be afraid to experiment with new design tools and techniques to stay ahead of the curve.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing a systematic approach to eliminate unnecessary complexity in design decisions, improving overall user experience.",
+        "practice_points": [
+          "Analyze 3 existing products and identify areas where Occam's Razor can be applied for simplification. Document the changes made and the benefits achieved."
+        ]
+      },
+      {
+        "name": "Conducting User Interviews with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Evaluating user needs and motivations through structured interviews, informing design decisions that meet their goals.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework. Document the interview findings in a clear and concise report."
+        ]
+      },
+      {
+        "name": "Creating a Comprehensive Style Guide with Consistent Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Establishing a consistent visual design language across all product elements, enhancing user experience through clear communication.",
+        "practice_points": [
+          "Develop a comprehensive style guide with color, typography, and spacing tokens. Create 3 interactive prototypes in Figma showcasing the new design."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dve": false,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Practitioner's UX skills are somewhat lacking, with a score of 58/100.",
+        "detailed": "The Practitioner demonstrates a good understanding of UX principles, but may need to brush up on specific techniques and best practices. Additionally, there is room for improvement in terms of applying UX fundamentals in real-world projects.",
+        "actionable": [
+          "Take online courses or attend workshops to improve knowledge of UX design principles and human-centered design methods",
+          "Analyze successful UX designs and case studies to gain insights into effective design strategies",
+          "Join online communities or forums to stay updated on the latest UX trends and best practices"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "The Practitioner's UI craft skills are somewhat limited, with a score of 45/100.",
+        "detailed": "The Practitioner demonstrates some understanding of visual design principles, but may struggle to create visually appealing and consistent designs. There is also room for improvement in terms of applying color theory, typography, and composition effectively.",
+        "actionable": [
+          "Study the work of renowned UI designers and analyze their design decisions",
+          "Practice creating wireframes, prototypes, and high-fidelity designs using design tools like Sketch or Figma",
+          "Learn about color theory, typography, and composition to improve visual design skills"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "The Practitioner's user research skills are somewhat solid, with a score of 53/100.",
+        "detailed": "The Practitioner demonstrates some understanding of user research methods and techniques, but may need to improve in terms of conducting thorough user interviews and usability testing. Additionally, there is room for improvement in terms of analyzing and interpreting research findings.",
+        "actionable": [
+          "Conduct user interviews and usability testing to gather insights into user behavior and needs",
+          "Learn how to analyze and interpret research data using tools like Excel or Tableau",
+          "Join online communities or forums to stay updated on the latest user research trends and best practices"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "The Practitioner's product thinking skills are somewhat strong, with a score of 55/100.",
+        "detailed": "The Practitioner demonstrates some understanding of product strategy and business models, but may need to improve in terms of developing a deep understanding of customer needs and pain points. Additionally, there is room for improvement in terms of creating compelling product pitches and presentations.",
+        "actionable": [
+          "Read books or articles on product strategy and business models to gain deeper insights",
+          "Conduct customer interviews and usability testing to gather insights into user behavior and needs",
+          "Develop a personal project or pitch to practice presenting product ideas to stakeholders"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "The Practitioner's collaboration and communication skills are somewhat strong, with a score of 54/100.",
+        "detailed": "The Practitioner demonstrates some understanding of effective collaboration and communication strategies, but may need to improve in terms of actively listening to feedback and iterating on design solutions. Additionally, there is room for improvement in terms of presenting complex design concepts clearly and concisely.",
+        "actionable": [
+          "Practice active listening skills by asking open-ended questions and paraphrasing feedback",
+          "Join online communities or forums to stay updated on the latest collaboration and communication trends",
+          "Develop a personal project or pitch to practice presenting design solutions to stakeholders"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:31:32.807007"
+}

@@ -1,0 +1,223 @@
+{
+  "score": 21,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 14,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 22,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 22,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 29,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 18,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on error states (e.g., incorrect password). Referencing your score gap in UX Fundamentals: 14/100. (1 hour)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework, focusing on Collaboration & Communication skills. Referencing your score gap in Collaboration & Communication: 18/100. (1 hour)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a list of 5 usability heuristics for user interface design, referencing the nngroup.com resource. Focus on applying these principles to your existing designs. Referencing your score gap in UX Fundamentals: 14/100. (1 hour)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Redesign a simple product or service using the Laws of UX, focusing on Aesthetic-Usability Effect and Zeigarnik Effect principles. Referencing your score gap in UX Fundamentals: 14/100 and Collaboration & Communication: 18/100. (2 hours)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to craft intuitive and user-centered experiences that drive meaningful interactions. By leveraging your skills in research, strategy, and collaboration, you can uncover innovative solutions that delight users and leave a lasting impact.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will help Explorer designers improve user interface design and create a more intuitive experience.",
+        "practice_points": [
+          "Analyze 3 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive guide to applying the Law of Proximity in UI design, including examples and best practices"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Exploring the Aesthetic-Usability Effect will help Explorer designers create visually appealing and user-friendly designs.",
+        "practice_points": [
+          "Design 3 wireframes for a hypothetical product using the Aesthetic-Usability Effect principles to guide visual design decisions"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Using the Jobs-to-be-Done framework will help Explorer designers gain a deeper understanding of user needs and behaviors.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework to understand user motivations and pain points for a specific product or service"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score meaning for UX Fundamentals",
+        "detailed": "The score of 14 indicates that the Explorer designer needs to focus on developing a solid understanding of user-centered design principles, such as user research, wireframing, and usability testing. This will help create an intuitive and accessible experience for users.",
+        "actionable": [
+          "Conduct user research to understand user pain points and behaviors",
+          "Create low-fidelity wireframes to visualize the information architecture",
+          "Test prototypes with real users to gather feedback and iterate on design"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score meaning for UI Craft & Visual Design",
+        "detailed": "The score of 22 indicates that the Explorer designer needs to focus on developing a strong visual language, including typography, color palette, and imagery. This will help create a visually appealing and cohesive experience for users.",
+        "actionable": [
+          "Develop a consistent typography system across all screens",
+          "Create a color palette that aligns with the brand's identity",
+          "Use high-quality images that support the content and message"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score meaning for User Research & Validation",
+        "detailed": "The score of 22 indicates that the Explorer designer needs to focus on validating assumptions through user research and testing. This will help ensure that the design meets user needs and expectations.",
+        "actionable": [
+          "Conduct usability testing with real users to validate design decisions",
+          "Create user personas to guide research and testing efforts",
+          "Use A/B testing to validate design hypotheses"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score meaning for Product Thinking & Strategy",
+        "detailed": "The score of 29 indicates that the Explorer designer needs to focus on developing a deep understanding of the product's goals, target audience, and market trends. This will help create a product that meets user needs and stays competitive in the market.",
+        "actionable": [
+          "Develop a product roadmap that aligns with business objectives",
+          "Conduct competitor analysis to identify market gaps and opportunities",
+          "Create customer journey maps to understand user behavior and pain points"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score meaning for Collaboration & Communication",
+        "detailed": "The score of 18 indicates that the Explorer designer needs to focus on improving collaboration and communication with stakeholders, including designers, developers, and product managers. This will help ensure that everyone is aligned on design decisions and goals.",
+        "actionable": [
+          "Schedule regular design reviews with cross-functional teams",
+          "Create a shared design language guide for consistency across projects",
+          "Use collaboration tools to facilitate feedback and iteration"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T17:59:18.482388"
+}

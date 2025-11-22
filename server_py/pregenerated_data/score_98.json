@@ -1,0 +1,178 @@
+{
+  "score": 98,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 90,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 100,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of User Research & Validation",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice User Research & Validation through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design across entire product ecosystems. With your expertise in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, you can make a lasting impact on users' lives by crafting intuitive, engaging, and effective digital experiences that meet their evolving needs.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, you'll face complex design decisions; mastering Occam's Razor will help you simplify and prioritize effectively.",
+        "practice_points": [
+          "Analyze 3 existing product designs using Occam's Razor to identify areas for simplification. Document your findings and propose 2 simplified solutions",
+          "Create a decision-making framework incorporating Occam's Razor, including pros and cons of each option. Practice applying it to a hypothetical design project"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "As a Strategic Lead, understanding users' motivations and needs is crucial. Mastering the Jobs-to-be-Done framework will enhance your research skills.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework to identify pain points and opportunities for improvement. Document key findings"
+        ]
+      },
+      {
+        "name": "Visual Design Principles: Applying Jakob's Law",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Jakob's Law is a fundamental principle guiding visual design; mastering it will help you create more effective and user-friendly interfaces.",
+        "practice_points": [
+          "Analyze 3 existing product designs using Jakob's Law to identify areas for improvement. Propose 2 redesigns incorporating the law"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:18:42.217761"
+}

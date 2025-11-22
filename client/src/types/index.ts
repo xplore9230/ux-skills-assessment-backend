@@ -39,8 +39,8 @@ export interface DeepDiveTopic {
   pillar: string;
   level: string;
   summary: string;
-  practice_points: string[];
-  resources: DeepDiveResource[];
+  practice_points?: string[];
+  resources?: DeepDiveResource[];
 }
 
 export interface JobLinks {

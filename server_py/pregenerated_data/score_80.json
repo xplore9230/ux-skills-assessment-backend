@@ -1,0 +1,183 @@
+{
+  "score": 80,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 85,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 81,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 79,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 usability heuristics for user interface design and explain each one in 50 words or less, referencing the nngroup.com article. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/) Score improvement: +4 points",
+          "Redesign your portfolio's navigation using the 8-point grid system to improve user flow and accessibility. Document your design decisions in a written report. (Score improvement: +2 points)",
+          "Conduct a self-assessment of your current UX research skills, identifying areas for improvement and creating a plan to address them. Focus on validating user needs and pain points. (Reference: https://lawsofux.com/zeigarnik-effect/) Score improvement: +3 points"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a mind map illustrating the relationships between the 10 usability heuristics, highlighting key connections and trade-offs. (Reference: https://lawsofux.com/law-of-uniform-connectedness/) Score improvement: +4 points",
+          "Write a short essay (max 500 words) explaining the Aesthetic-Usability Effect and its implications for UX design, referencing the lawsofux.com article. (Reference: https://lawsofux.com/aesthetic-usability-effect/) Score improvement: +3 points",
+          "Participate in an online discussion forum or community related to UX design, engaging with others on a specific topic and sharing your own insights and experiences. (Score improvement: +2 points)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a comprehensive plan for conducting user research, including methods, tools, and timelines. Present your plan to a colleague or mentor and receive feedback. (Reference: https://lawsofux.com/10-usability-heuristics/) Score improvement: +4 points",
+          "Create a case study of a successful UX design project, highlighting the challenges overcome and the user-centered solutions implemented. Use visual aids to illustrate your points. (Score improvement: +3 points)",
+          "Practice active listening during a meeting or conversation by paraphrasing and summarizing key points, ensuring you understand the other person's perspective. Record yourself and reflect on areas for improvement. (Reference: https://lawsofux.com/zeigarnik-effect/) Score improvement: +2 points"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive UX strategy document, outlining your approach to user-centered design and the key principles guiding your work. (Score improvement: +5 points)",
+          "Develop a prototype of a new product or feature using a tool like Sketch or Figma, incorporating feedback from stakeholders and users. Document your design decisions and iterations. (Reference: https://lawsofux.com/law-of-uniform-connectedness/) Score improvement: +4 points",
+          "Create a video tutorial or screencast demonstrating a specific UX skill or technique, such as user research methods or wireframing best practices. Share it on a platform like YouTube or Vimeo. (Score improvement: +3 points)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, your unique blend of skills and strengths positions you to drive meaningful design solutions that balance user needs with business goals. By continuing to hone your craft in areas like research, strategy, and collaboration, you'll unlock even greater impact and influence within your organization.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying the Law of Proximity in UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding how proximity affects user behavior and improving design decisions with clear relationships between elements.",
+        "practice_points": [
+          "Create 5 wireframes for a navigation menu, applying the Law of Proximity to group related items together",
+          "Conduct an analysis of 3 existing websites, identifying instances where proximity is used effectively or ineffectively",
+          "Design and test 2 prototypes with improved proximity in UI elements (e.g., grouping related buttons)"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Designing for Visual Hierarchy",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Understanding how visual hierarchy impacts user experience and applying design principles to create a clear and intuitive interface.",
+        "practice_points": [
+          "Design 3 wireframes with varying levels of visual hierarchy, using color, size, and placement to guide the user's attention",
+          "Conduct an experiment testing the Aesthetic-Usability Effect on a simple task (e.g., finding information on a website)",
+          "Create a style guide for a hypothetical project, incorporating principles of visual hierarchy"
+        ]
+      },
+      {
+        "name": "Serial Position Effect: Optimizing Content Organization",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding how the Serial Position Effect influences user behavior and applying design strategies to optimize content organization.",
+        "practice_points": [
+          "Analyze 5 existing websites, identifying instances where the Serial Position Effect is used effectively or ineffectively in content organization",
+          "Design and test 2 prototypes with optimized content organization using the Serial Position Effect (e.g., listing items in a specific order)",
+          "Create a content strategy for a hypothetical project, incorporating principles of the Serial Position Effect"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:59:37.882385"
+}

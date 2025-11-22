@@ -1,0 +1,183 @@
+{
+  "score": 47,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 47,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 38,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 49,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 53,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 50,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system to improve visual design and layout. Focus on centering the username and password fields.",
+          "Write down 5 usability heuristics from the nngroup.com article '10 Usability Heuristics for User Interface Design' and explain how they apply to your current work. Reference your score gap of 47% in UX Fundamentals.",
+          "Redesign a single page on your portfolio using Occam's Razor to simplify visual elements and improve user experience."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your current UI craft & visual design skills. Identify 3 areas where you'd like to improve and create a rough sketch of how you would address each issue.",
+          "Apply Miller's Law to a recent project, identifying one area where the law can help simplify the user experience. Document your thought process in a blog post or video.",
+          "Create a mood board for a hypothetical product design using Aesthetic-Usability Effect principles to guide your color palette and typography choices."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a comprehensive design system document outlining the visual design principles, color palette, and typography used in your portfolio. Include examples of how these elements work together.",
+          "Use Laws of UX to analyze a recent project's user research findings. Identify one area where the law can help improve the product strategy and document your reasoning.",
+          "Create 3 personas for a hypothetical product using Jobs-to-be-Done framework principles. Document their motivations, pain points, and desired outcomes."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive user flow for a complex product feature using the 8-point grid system to ensure clear navigation and visual hierarchy.",
+          "Develop a case study of your own UX design process, highlighting one area where you successfully applied UX Fundamentals principles. Document your thought process and outcomes.",
+          "Create a final portfolio piece that showcases your improved UI craft & visual design skills, incorporating all the principles learned throughout this 4-week improvement plan."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the potential to drive meaningful change in people's lives through your design work. Focus on building upon your strengths and addressing areas for improvement, such as developing your UI craft skills and enhancing collaboration with cross-functional teams.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Occam's Razor will help you eliminate unnecessary design elements, resulting in a more efficient and effective user experience.",
+        "practice_points": [
+          "Create 3 wireframes of a simple e-commerce website using only the most essential features, applying Occam's Razor to guide your design decisions",
+          "Analyze 5 existing websites for simplicity and identify areas where Occam's Razor could be applied to improve usability",
+          "Design a new feature or module for an existing product, considering how it can be simplified using Occam's Razor"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Using the Jobs-to-be-Done framework will help you uncover users' underlying motivations and behaviors, leading to more effective design decisions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings in a clear, concise report",
+          "Create a personas document based on user research conducted with the Jobs-to-be-Done framework",
+          "Analyze existing user research data to identify patterns and trends related to users' motivations and behaviors"
+        ]
+      },
+      {
+        "name": "Applying Aesthetic-Usability Effect Principles for Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the Aesthetic-Usability Effect will help you create visually appealing designs that also improve usability.",
+        "practice_points": [
+          "Design 3 visual design concepts for a new website feature, considering how color, typography, and imagery can enhance user experience",
+          "Analyze existing websites to identify instances of effective use of the Aesthetic-Usability Effect in visual design",
+          "Create a mood board or style guide that incorporates principles of the Aesthetic-Usability Effect"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:25:36.570969"
+}

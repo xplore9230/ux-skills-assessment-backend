@@ -1,0 +1,183 @@
+{
+  "score": 82,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 87,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 88,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 81,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 77,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 heuristics that are commonly overlooked in UX design. Create a mind map or diagram illustrating how these heuristics can be applied to improve user experience.",
+          "Create a simple wireframe of a login page using the 8-point grid system, focusing on typography and color scheme. Ensure the wireframe is visually appealing and easy to navigate.",
+          "Write a short reflection (approx. 250 words) on how Tesler's Law applies to your current design work. How can you apply this principle to improve user experience in future projects?"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your UX Fundamentals knowledge by reviewing the Laws of UX (lawsofux.com) resources. Identify 3 areas where you need improvement and create a plan to address them. Document your findings in a short report (approx. 500 words).",
+          "Redesign your portfolio's navigation using the 8-point grid system, focusing on simplicity and consistency. Ensure the new design is visually appealing and easy to use.",
+          "Create a list of 5 common UX mistakes that you've seen in other designers' work. Research each mistake and provide recommendations for how to avoid them in future projects."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a user research plan for a hypothetical product, focusing on the Aesthetic-Usability Effect (lawsofux.com). Identify 3 key research questions and create an outline of your methodology. Document your findings in a short report (approx. 500 words).",
+          "Create 3 wireframes for a checkout flow, focusing on error states you missed. Ensure each wireframe is visually appealing and easy to navigate.",
+          "Write a short reflection (approx. 250 words) on how the Law of Uniform Connectedness applies to your current design work. How can you apply this principle to improve user experience in future projects?"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive UX strategy for a hypothetical product, focusing on collaboration and communication. Identify 3 key stakeholders and create an outline of your approach. Document your findings in a short report (approx. 500 words).",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework to identify pain points in a current project. Document 5 key insights from each interview and provide recommendations for how to address them.",
+          "Create a case study of a successful UX design project, highlighting your role and contributions. Ensure the case study is visually appealing and easy to follow."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Emerging Senior UX designer, you have a solid foundation in UX Fundamentals and a keen eye for UI Craft & Visual Design. To take your career to the next level, focus on integrating your strengths across all aspects of product development, from research and strategy to collaboration and communication.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Hick's Law for Better Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Advanced",
+        "summary": "Applying Hick's Law to optimize navigation and reduce cognitive load for Emerging Senior designers.",
+        "practice_points": [
+          "Analyze 3 existing websites using Hick's Law and identify areas for improvement (deliverable: written report)",
+          "Create a heuristic evaluation checklist based on Hick's Law and apply it to 2 new website designs (deliverable: video walkthrough)",
+          "Design an A/B test to validate the impact of Hick's Law on navigation on user behavior (deliverable: data analysis report)"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate/Advanced",
+        "summary": "Creating a style guide that ensures consistency and clarity in visual design for Emerging Senior designers.",
+        "practice_points": [
+          "Research 5 existing style guides (e.g., Google, Apple, Material-UI) and document key takeaways (deliverable: written report)",
+          "Create a comprehensive style guide with color, typography, and spacing tokens using Figma (deliverable: style guide file)",
+          "Conduct a usability test to validate the effectiveness of the new style guide on user behavior (deliverable: data analysis report)"
+        ]
+      },
+      {
+        "name": "Applying Miller's Law for Better Information Organization",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Advanced",
+        "summary": "Using Miller's Law to optimize information organization and reduce cognitive load for Emerging Senior designers.",
+        "practice_points": [
+          "Analyze 3 existing websites using Miller's Law and identify areas for improvement (deliverable: written report)",
+          "Create a heuristic evaluation checklist based on Miller's Law and apply it to 2 new website designs (deliverable: video walkthrough)",
+          "Design an A/B test to validate the impact of Miller's Law on information organization on user behavior (deliverable: data analysis report)"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:01:47.479493"
+}

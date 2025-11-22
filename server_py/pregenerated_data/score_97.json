@@ -1,0 +1,171 @@
+{
+  "score": 97,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 94,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 99,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 89,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 100,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 areas where you can apply these principles to improve your UX Fundamentals score. Document your findings in a 1-page report.",
+          "Create a simple wireframe of a common user interface element (e.g., login form, search bar) using the 8-point grid system. Focus on creating a clear and consistent layout. Measure its usability using Hick's Law (lawsofux.com).",
+          "Write a short reflection (200-300 words) on how you can apply Occam's Razor to simplify your design decisions as a Strategic Lead."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your current UX Fundamentals knowledge. Identify 5 areas where you need improvement and create a plan to address them. Document your plan in a 1-page report.",
+          "Redesign the navigation menu for your portfolio using the 8-point grid system. Focus on creating a clear and consistent layout. Measure its usability using Miller's Law (lawsofux.com).",
+          "Write a short case study (500-750 words) of a successful UX design project you've worked on in the past. Apply the Laws of UX to analyze your design decisions."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a simple prototype of a new feature using InVision or Figma. Focus on testing its usability using Hick's Law (lawsofux.com). Document your findings in a 1-page report.",
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Analyze how these pain points can be addressed through UX design principles.",
+          "Write a short reflection (200-300 words) on how you can apply Occam's Razor to simplify your product thinking as a Strategic Lead."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive UX strategy document for a new product feature. Apply the Laws of UX and the Jobs-to-be-Done framework to analyze user needs and design decisions.",
+          "Redesign your portfolio's navigation using the 8-point grid system. Focus on creating a clear and consistent layout. Measure its usability using Miller's Law (lawsofux.com).",
+          "Write a short case study (500-750 words) of a successful UX design project you've worked on in the past. Apply the Laws of UX to analyze your design decisions and document your findings in a 1-page report."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design decisions that shape the future of products and businesses. With your exceptional skills in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, you are poised to lead teams and deliver innovative solutions that exceed user expectations.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick's Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, understanding how the number of options affects user decision-making can inform design decisions and improve overall UX.",
+        "practice_points": [
+          "Analyze 3 existing websites that have been criticized for poor navigation and identify areas where Hick's Law is being violated. Propose 2 redesigns that address these issues, including clear and concise labeling and reduced number of options."
+        ]
+      },
+      {
+        "name": "Conducting Aesthetic-Usability Effect Research",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "As a Strategic Lead, recognizing the impact of aesthetics on user experience can inform design decisions and improve overall UX. This topic will help you understand how to apply this principle effectively."
+      },
+      {
+        "name": "Developing a Product Strategy using Occam's Razor",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate",
+        "summary": "As a Strategic Lead, applying Occam's Razor can help simplify product decisions and ensure alignment with business goals. This topic will help you develop a clear and concise strategy."
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:17:33.656055"
+}
