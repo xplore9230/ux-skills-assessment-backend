@@ -5,6 +5,9 @@ pydantic==2.10.6
 python-dotenv==1.0.1
 tqdm==4.66.5
 
+# Pin NumPy to a 1.x version that is compatible with chromadb 0.4.22
+numpy==1.26.4
+
 # RAG System Dependencies
 chromadb==0.4.22
 sentence-transformers==2.3.1
