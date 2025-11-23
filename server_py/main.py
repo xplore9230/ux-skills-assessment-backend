@@ -1,3 +1,13 @@
+# CRITICAL: Patch NumPy compatibility BEFORE any chromadb imports
+# ChromaDB 0.4.22 uses np.float_, np.uint, np.int_ which were removed in NumPy 2.0
+import numpy as np
+if not hasattr(np, "float_"):
+    np.float_ = np.float64  # type: ignore[attr-defined]
+if not hasattr(np, "uint"):
+    np.uint = np.uint64  # type: ignore[attr-defined]
+if not hasattr(np, "int_"):
+    np.int_ = np.int64  # type: ignore[attr-defined]
+
 import json
 import os
 from typing import List, Optional, Dict, Any

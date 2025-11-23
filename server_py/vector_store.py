@@ -8,14 +8,18 @@ using ChromaDB for the RAG system.
 import os
 from typing import List, Dict, Any, Optional
 
-# Compatibility shim for NumPy 2.0+ where np.float_ and friends were removed.
-# ChromaDB 0.4.x still references np.float_, so we alias it when missing.
+# Compatibility shim for NumPy 2.0+ where np.float_, np.uint, and np.int_ were removed.
+# ChromaDB 0.4.x still references these, so we alias them when missing.
 import numpy as np  # type: ignore
 
 if not hasattr(np, "float_"):
     # NumPy 2.0 removed np.float_, but chromadb expects it.
     # Alias it to the closest modern equivalent.
     np.float_ = np.float64  # type: ignore[attr-defined]
+if not hasattr(np, "uint"):
+    np.uint = np.uint64  # type: ignore[attr-defined]
+if not hasattr(np, "int_"):
+    np.int_ = np.int64  # type: ignore[attr-defined]
 
 import chromadb
 from chromadb.config import Settings
