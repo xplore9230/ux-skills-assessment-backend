@@ -5,11 +5,41 @@ import path from "node:path";
 import { storage } from "./storage";
 
 // Path to pre-generated JSON data from the Python backend
-const PREGNERATED_DATA_DIR = path.resolve(
-  process.cwd(),
-  "server_py",
-  "pregenerated_data",
-);
+// Try multiple possible locations for Vercel serverless and local dev
+function findPregeneratedDataDir(): string | null {
+  const possiblePaths = [
+    path.resolve(process.cwd(), "api", "pregenerated_data"), // Vercel serverless (copied during build)
+    path.resolve(process.cwd(), "server_py", "pregenerated_data"), // Local dev
+    path.resolve(process.cwd(), "..", "server_py", "pregenerated_data"), // Alternative Vercel path
+    path.join(__dirname, "..", "api", "pregenerated_data"), // Compiled location (api folder)
+    path.join(__dirname, "..", "server_py", "pregenerated_data"), // Compiled location (server_py folder)
+    path.join(__dirname, "server_py", "pregenerated_data"),
+  ];
+
+  for (const dirPath of possiblePaths) {
+    if (fs.existsSync(dirPath)) {
+      const stats = fs.statSync(dirPath);
+      if (stats.isDirectory()) {
+        // Check if directory has at least one JSON file
+        try {
+          const files = fs.readdirSync(dirPath);
+          if (files.some((f) => f.endsWith(".json"))) {
+            console.log(`Found pregenerated data at: ${dirPath}`);
+            return dirPath;
+          }
+        } catch (e) {
+          // Directory exists but can't read it
+          continue;
+        }
+      }
+    }
+  }
+
+  console.warn("Pregenerated data directory not found. Tried:", possiblePaths);
+  return null;
+}
+
+const PREGNERATED_DATA_DIR = findPregeneratedDataDir();
 
 type PregeneratedScoreData = {
   score?: number;
@@ -42,9 +72,56 @@ type PregeneratedScoreData = {
   insights?: any[] | null;
 };
 
-function loadPregeneratedForScore(rawScore: unknown): PregeneratedScoreData | null {
-  const numericScore = typeof rawScore === "number" ? rawScore : Number(rawScore);
-  if (!Number.isFinite(numericScore)) {
+function deriveScoreFromCategories(categories: any[] | undefined): number | null {
+  if (!Array.isArray(categories) || categories.length === 0) {
+    return null;
+  }
+
+  const numericScores = categories
+    .map((cat) => {
+      const value =
+        typeof cat?.score === "number"
+          ? cat.score
+          : Number(cat?.score ?? Number.NaN);
+      return Number.isFinite(value) ? value : null;
+    })
+    .filter((value): value is number => value !== null);
+
+  if (numericScores.length === 0) {
+    return null;
+  }
+
+  const sum = numericScores.reduce((acc, value) => acc + value, 0);
+  const avg = sum / numericScores.length;
+  return Math.round(avg);
+}
+
+function loadPregeneratedForScore(
+  rawScore: unknown,
+  categories?: any[],
+): PregeneratedScoreData | null {
+  if (!PREGNERATED_DATA_DIR) {
+    console.warn("Pregenerated data directory not available");
+    return null;
+  }
+
+  let numericScore: number | null = null;
+
+  if (typeof rawScore === "number" && Number.isFinite(rawScore)) {
+    numericScore = rawScore;
+  } else if (typeof rawScore === "string" && rawScore.trim().length > 0) {
+    const parsed = Number(rawScore);
+    if (Number.isFinite(parsed)) {
+      numericScore = parsed;
+    }
+  }
+
+  if (numericScore === null) {
+    numericScore = deriveScoreFromCategories(categories);
+  }
+
+  if (numericScore === null) {
+    console.warn("Could not determine score from:", { rawScore, categories });
     return null;
   }
 
@@ -52,12 +129,15 @@ function loadPregeneratedForScore(rawScore: unknown): PregeneratedScoreData | nu
   const filePath = path.join(PREGNERATED_DATA_DIR, `score_${clamped}.json`);
 
   if (!fs.existsSync(filePath)) {
+    console.warn(`Pregenerated file not found: ${filePath} (score: ${clamped})`);
     return null;
   }
 
   try {
     const json = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(json) as PregeneratedScoreData;
+    const data = JSON.parse(json) as PregeneratedScoreData;
+    console.log(`Loaded pregenerated data for score ${clamped}`);
+    return data;
   } catch (error) {
     console.error("Error reading pregenerated data for score", clamped, error);
     return null;
@@ -166,8 +246,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Improvement plan – returns { weeks: [...] }
   app.post("/api/generate-improvement-plan", (req, res) => {
     try {
-      const { totalScore } = req.body ?? {};
-      const data = loadPregeneratedForScore(totalScore);
+      const { totalScore, categories } = req.body ?? {};
+      const data = loadPregeneratedForScore(totalScore, categories);
 
       const weeks = data?.improvement_plan?.weeks;
       if (!weeks || !Array.isArray(weeks)) {
@@ -186,27 +266,39 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Resources + stage readup – returns { readup, resources: [...] }
   app.post("/api/generate-resources", (req, res) => {
     try {
-      const { totalScore } = req.body ?? {};
-      const data = loadPregeneratedForScore(totalScore);
+      const { totalScore, categories, stage } = req.body ?? {};
+      console.log("generate-resources called with:", { totalScore, categoriesLength: categories?.length, stage });
+      
+      const data = loadPregeneratedForScore(totalScore, categories);
       const resourcesBlock = data?.resources;
 
-      return res.json({
+      if (!data) {
+        console.warn("No pregenerated data found for score:", totalScore);
+      } else if (!resourcesBlock) {
+        console.warn("Pregenerated data found but no resources block");
+      } else {
+        console.log("Found resources:", resourcesBlock.resources?.length || 0);
+      }
+
+      const result = {
         readup: resourcesBlock?.readup ?? "",
         resources: Array.isArray(resourcesBlock?.resources)
           ? resourcesBlock!.resources
           : [],
-      });
+      };
+
+      return res.json(result);
     } catch (error) {
       console.error("Error serving pregenerated resources:", error);
-      return res.status(500).json({ error: "Failed to load resources" });
+      return res.status(500).json({ error: "Failed to load resources", details: String(error) });
     }
   });
 
   // Deep dive topics – returns { topics: [...] }
   app.post("/api/generate-deep-dive", (req, res) => {
     try {
-      const { totalScore } = req.body ?? {};
-      const data = loadPregeneratedForScore(totalScore);
+      const { totalScore, categories } = req.body ?? {};
+      const data = loadPregeneratedForScore(totalScore, categories);
       const topics = data?.deep_dive?.topics;
 
       return res.json({
@@ -222,7 +314,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate-layout", (req, res) => {
     try {
       const { stage, totalScore, maxScore, categories } = req.body ?? {};
-      const data = loadPregeneratedForScore(totalScore);
+      const data = loadPregeneratedForScore(totalScore, categories);
       const layout = data?.layout;
 
       if (layout && layout.section_order && layout.section_visibility) {
@@ -271,7 +363,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/generate-category-insights", (req, res) => {
     try {
       const { totalScore, categories } = req.body ?? {};
-      const data = loadPregeneratedForScore(totalScore);
+      const data = loadPregeneratedForScore(totalScore, categories);
 
       let insights: any[] | null | undefined = data?.insights;
 

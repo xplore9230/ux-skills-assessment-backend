@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"NODE_ENV=development tsx server/index-dev.ts\" \"cd server_py && uvicorn main:app --reload --port 8000\"",
-    "build": "vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js && esbuild server/index-vercel.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index-vercel.js",
+    "build": "vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js && esbuild server/index-vercel.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index-vercel.js && node scripts/copy-pregenerated.js",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
     "db:push": "drizzle-kit push"

@@ -13,8 +13,12 @@ WORKDIR /code
 # Copy the backend source and Python requirements (keep requirements with the code for consistent paths)
 COPY server_py/ /code/server_py/
 
-# Install Python dependencies from the backend directory
-RUN pip install --no-cache-dir -r /code/server_py/requirements.txt
+# Install numpy first with pinned version to prevent upgrades
+# Then install other dependencies
+# Verify numpy version after installation
+RUN pip install --no-cache-dir numpy==1.26.4 && \
+    pip install --no-cache-dir -r /code/server_py/requirements.txt && \
+    python -c "import numpy; assert numpy.__version__.startswith('1.26'), f'Wrong numpy version: {numpy.__version__}'"
 
 # Switch into the backend directory for runtime so the start command doesn't rely on `cd`
 WORKDIR /code/server_py
