@@ -1,4 +1,4 @@
-import { memo, useMemo, useState, useEffect, useRef } from "react";
+import { memo, useMemo } from "react";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -93,65 +93,7 @@ const ResultsPage = memo(function ResultsPage({
     isLoadingInsights,
   } = useResultsData(stage, categories, totalScore, maxScore, cachedResults);
 
-  // Animated score counter
-  // Use a ref to track if this is the first render with a valid score
-  const isFirstRenderRef = useRef(true);
-  const [displayScore, setDisplayScore] = useState(0);
-  const hasAnimatedRef = useRef(false);
-  const animationIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  const initialScoreRef = useRef<number | null>(null);
-  
-  useEffect(() => {
-    // On first render with valid score, capture it and start animation
-    if (isFirstRenderRef.current && totalScore > 0) {
-      initialScoreRef.current = totalScore;
-      isFirstRenderRef.current = false;
-      
-      // Start animation from 0 to target
-      const duration = 1.2; // seconds
-      const start = 0;
-      const target = totalScore;
-      const totalFrames = Math.max(1, duration * 60);
-      const increment = (target - start) / totalFrames;
-      
-      setDisplayScore(0);
-      
-      let current = start;
-      const interval = setInterval(() => {
-        current += increment;
-        if ((increment >= 0 && current >= target) || (increment < 0 && current <= target)) {
-          setDisplayScore(target);
-          clearInterval(interval);
-          hasAnimatedRef.current = true;
-          animationIntervalRef.current = null;
-        } else {
-          setDisplayScore(Math.max(0, Math.floor(current)));
-        }
-      }, 1000 / 60);
-
-      animationIntervalRef.current = interval;
-      
-      return () => {
-        if (animationIntervalRef.current) {
-          clearInterval(animationIntervalRef.current);
-          animationIntervalRef.current = null;
-        }
-      };
-    }
-    
-    // If totalScore changes after initial animation, update directly without animating
-    if (hasAnimatedRef.current && totalScore !== initialScoreRef.current && totalScore > 0) {
-      setDisplayScore(totalScore);
-      initialScoreRef.current = totalScore;
-      return;
-    }
-    
-    // If totalScore is invalid, set to 0
-    if (totalScore <= 0) {
-      setDisplayScore(0);
-      return;
-    }
-  }, [totalScore]);
+  // Score is displayed immediately - no animation needed
 
   // Map category insights by category name for easy lookup
   const insightsMap = useMemo(() => {
@@ -314,7 +256,7 @@ const ResultsPage = memo(function ResultsPage({
             className="flex items-baseline justify-center mt-0 w-full px-4"
           >
             <span className="font-serif text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-tight text-foreground leading-none select-none break-all overflow-visible whitespace-nowrap">
-              {displayScore}
+              {totalScore}
             </span>
           </motion.div>
 
