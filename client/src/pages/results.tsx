@@ -1,4 +1,4 @@
-import { memo, useMemo, useState, useEffect } from "react";
+import { memo, useMemo, useState, useEffect, useRef } from "react";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -95,8 +95,29 @@ const ResultsPage = memo(function ResultsPage({
 
   // Animated score counter
   const [displayScore, setDisplayScore] = useState(0);
+  const hasAnimatedRef = useRef(false);
+  const animationIntervalRef = useRef<NodeJS.Timeout | null>(null);
   
   useEffect(() => {
+    // If totalScore is invalid, don't animate
+    if (totalScore <= 0) {
+      setDisplayScore(0);
+      return;
+    }
+
+    // If animation has already completed, just update the score directly
+    // This prevents the animation from restarting if totalScore prop changes
+    if (hasAnimatedRef.current) {
+      setDisplayScore(totalScore);
+      return;
+    }
+
+    // Clear any existing interval
+    if (animationIntervalRef.current) {
+      clearInterval(animationIntervalRef.current);
+    }
+
+    // Start animation only once
     const duration = 1.2; // seconds
     const start = 0;
     const target = totalScore;
@@ -109,12 +130,21 @@ const ResultsPage = memo(function ResultsPage({
       if ((increment >= 0 && current >= target) || (increment < 0 && current <= target)) {
         setDisplayScore(target);
         clearInterval(interval);
+        hasAnimatedRef.current = true;
+        animationIntervalRef.current = null;
       } else {
         setDisplayScore(Math.max(0, Math.floor(current)));
       }
     }, 1000 / 60);
 
-    return () => clearInterval(interval);
+    animationIntervalRef.current = interval;
+
+    return () => {
+      if (animationIntervalRef.current) {
+        clearInterval(animationIntervalRef.current);
+        animationIntervalRef.current = null;
+      }
+    };
   }, [totalScore]);
 
   // Map category insights by category name for easy lookup
