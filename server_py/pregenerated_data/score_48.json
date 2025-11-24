@@ -1,0 +1,183 @@
+{
+  "score": 48,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 52,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 45,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 52,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 52,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login screen using the 10 Usability Heuristics for User Interface Design (nngroup.com) as reference. Focus on error states and usability, aiming to improve your score in UI Craft & Visual Design by 5 points.",
+          "Conduct a self-assessment of your current design process, identifying 3 areas where you can apply the Occam's Razor principle from Laws of UX (lawsofux.com) to streamline your workflow. Document these insights and share with a colleague or mentor for feedback.",
+          "Redesign your existing portfolio's navigation using the 8-point grid system. This will help you improve your UI Craft & Visual Design skills and increase your score by 3 points."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user persona for a fictional product, focusing on the Zeigarnik Effect (lawsofux.com) to guide your design decisions. Write a 1-page report detailing your thought process and design choices.",
+          "Conduct a usability test of an existing product or service using the Jobs-to-be-Done framework. Identify 3 pain points that users experience and document them in a clear, concise manner. This will help you improve your User Research & Validation skills by 5 points.",
+          "Develop a simple prototype of a feature using a tool like Figma or Sketch. Apply the Aesthetic-Usability Effect (lawsofux.com) to create an intuitive and visually appealing design."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a design system for a hypothetical product, incorporating the principles of Occam's Razor (lawsofux.com). Document your design decisions and share with a colleague or mentor for feedback.",
+          "Conduct user interviews to validate your existing design assumptions. Use the Zeigarnik Effect to guide your questioning and take detailed notes on user pain points. This will help you improve your User Research & Validation skills by 5 points.",
+          "Redesign an existing product's UI using the 10 Usability Heuristics for User Interface Design (nngroup.com) as reference. Focus on improving error states and usability, aiming to increase your score in UI Craft & Visual Design by 3 points."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive design strategy document for a hypothetical product, incorporating the principles of Laws of UX (lawsofux.com). Share with a colleague or mentor and receive feedback.",
+          "Create a case study of your own design process, highlighting areas where you applied the Occam's Razor principle to streamline your workflow. Document your thought process and share with a colleague or mentor for feedback.",
+          "Conduct a usability test of an existing product or service using the Jobs-to-be-Done framework. Identify 3 pain points that users experience and document them in a clear, concise manner. This will help you improve your User Research & Validation skills by 5 points."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, you have the power to shape the user experience and create products that truly make a difference in people's lives. Take this opportunity to focus on building your skills, particularly in areas where you need improvement, such as user research and validation, UI craft, and visual design.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics to design intuitive interfaces will improve user experience and increase efficiency.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive guide to applying Occam's Razor, Jakob's Law, and Miller's Law in UX design",
+          "Conduct an A/B testing experiment to validate the effectiveness of the Zeigarnik Effect on user engagement"
+        ]
+      },
+      {
+        "name": "Improving Visual Design with Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Understanding the Aesthetic-Usability Effect will help designers create visually appealing and user-friendly interfaces.",
+        "practice_points": [
+          "Design 3 wireframes for a hypothetical website using the Aesthetic-Usability Effect to guide color palette selection",
+          "Research and document the impact of typography on user experience, focusing on legibility and readability",
+          "Create a mood board showcasing visually appealing design elements that incorporate the Aesthetic-Usability Effect"
+        ]
+      },
+      {
+        "name": "Enhancing User Research with Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Applying the Jobs-to-be-Done framework will enable designers to gain deeper insights into user needs and behaviors.",
+        "practice_points": [
+          "Conduct 5 user interviews using the Jobs-to-be-Done framework, documenting findings in a comprehensive report",
+          "Analyze existing research on user motivations and behaviors, identifying patterns and trends related to the Jobs-to-be-Done framework",
+          "Develop a user persona based on job descriptions and identify potential pain points in their workflows"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:26:42.020582"
+}

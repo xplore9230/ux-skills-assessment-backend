@@ -1,0 +1,183 @@
+{
+  "score": 84,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 85,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 77,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 91,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 92,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a low-fidelity wireframe of a product feature using only the 10 Usability Heuristics for User Interface Design (nngroup.com). Focus on applying Tesler’s Law to improve usability.",
+          "Write down 5 common errors in UI Craft & Visual Design and brainstorm ways to mitigate them. Refer to Hick’s Law and Aesthetic-Usability Effect for inspiration.",
+          "Design a simple, high-contrast color scheme using the 8-point grid system. Apply this design principle to your own portfolio's navigation."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview and document 3 pain points using the Jobs-to-be-Done framework. Focus on understanding the motivations behind users' behaviors.",
+          "Create a mind map of product thinking & strategy concepts, highlighting key differences between them. Use Tesler’s Law to inform your approach.",
+          "Redesign a simple product feature (e.g., a login form) using UI Craft & Visual Design principles, focusing on error states and feedback mechanisms."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a user research plan for a new product feature. Apply the 10 Usability Heuristics to ensure usability.",
+          "Create a visual design system for a fictional company, incorporating Tesler’s Law and Hick’s Law into your design decisions.",
+          "Write a short article (approx. 500 words) on the importance of collaboration & communication in UX design, referencing specific examples from your own experience."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive usability testing plan for a new product feature. Apply the Jobs-to-be-Done framework to understand user motivations.",
+          "Develop a case study of a successful UX design project, highlighting key takeaways and lessons learned. Use Tesler’s Law to inform your approach.",
+          "Create a capstone project: redesign a existing product or service using UI Craft & Visual Design principles, focusing on error states and feedback mechanisms."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in user research and validation, allowing you to craft intuitive and user-centered designs. Focus on building upon your strengths in UI Craft & Visual Design and Product Thinking & Strategy to elevate your portfolio and take on more complex projects.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick’s Law and its Impact on UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As an Emerging Senior, mastering Hick’s Law will help you optimize navigation and reduce cognitive load in your designs.",
+        "practice_points": [
+          "Create a usability test with 3-5 participants to demonstrate the impact of Hick’s Law on real-world interactions (deliverable: video analysis and written report)",
+          "Design a new navigation system for an existing website or app, incorporating Hick’s Law principles to reduce cognitive load",
+          "Develop a heuristic evaluation checklist based on Hick’s Law to ensure consistency in your design reviews"
+        ]
+      },
+      {
+        "name": "Crafting Effective Micro-Interactions using Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "By applying the Aesthetic-Usability Effect, you can create engaging and intuitive micro-interactions that enhance user experience.",
+        "practice_points": [
+          "Create 3 interactive prototypes in Figma with micro-interactions using the Aesthetic-Usability Effect (deliverable: video walkthrough of each prototype)",
+          "Conduct a usability test to evaluate the effectiveness of micro-interactions on user behavior and engagement",
+          "Design a new feature or button that incorporates the Aesthetic-Usability Effect to improve user experience"
+        ]
+      },
+      {
+        "name": "Applying Tesler’s Law for Consistent Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "By understanding and applying Tesler’s Law, you can create consistent navigation patterns that reduce cognitive load and improve user trust.",
+        "practice_points": [
+          "Analyze an existing website or app to identify areas where Tesler’s Law is not being applied (deliverable: written report with recommendations)",
+          "Design a new navigation system for a hypothetical project, incorporating Tesler’s Law principles to ensure consistency",
+          "Develop a set of guidelines for consistent navigation patterns in your design process"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:03:46.344171"
+}

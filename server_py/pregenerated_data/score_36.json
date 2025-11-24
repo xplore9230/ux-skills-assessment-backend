@@ -1,0 +1,177 @@
+{
+  "score": 36,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 42,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 33,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 32,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 41,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 34,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on proper spacing and alignment (Reference: https://lawsofux.com/8-point-grid-system).",
+          "Conduct a self-assessment of your current user research skills by reviewing 2 existing case studies and identifying areas for improvement. Document your findings in a short report.",
+          "Redesign the navigation menu of this website using the 10 Usability Heuristics for User Interface Design (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/)."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a low-fidelity sketch of a product feature that addresses one of the pain points you identified in your user research report from Week 1. Focus on simplicity and usability.",
+          "Practice using the Zeigarnik Effect by creating a to-do list with 5 tasks and then removing 2 of them. Reflect on how this exercise makes you think about incomplete tasks in design.",
+          "Design a simple error message for a common user mistake, such as entering an invalid email address. Use the Law of Proximity to place the error message near the input field."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a high-fidelity wireframe of a product feature that addresses one of the pain points you identified in your user research report from Week 1. Focus on usability and accessibility.",
+          "Practice using the Aesthetic-Usability Effect by designing a simple visual hierarchy for a website. Use color, size, and position to guide the user's attention.",
+          "Redesign the navigation menu of this website again, but this time incorporating the Law of Proximity to reduce cognitive load."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a functional prototype of a product feature that addresses one of the pain points you identified in your user research report from Week 1. Focus on usability and accessibility.",
+          "Practice using the Law of Proximity by designing an error message for a complex task, such as uploading a large file. Use the Law of Proximity to reduce cognitive load.",
+          "Design a comprehensive design system for this website, incorporating all the principles you've learned throughout this 4-week program. Document your design decisions and rationale."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to craft intuitive and user-centered experiences that drive meaningful connections with your audience. By leveraging your skills in research, strategy, and collaboration, you can uncover innovative solutions that exceed user expectations and leave a lasting impact.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified Wireframes",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Developing a clear understanding of Occam's Razor will help you create more efficient and effective wireframes, which is crucial for Explorer designers.",
+        "practice_points": [
+          "Create 3 wireframes for a hypothetical product using Occam's Razor to guide your design decisions"
+        ]
+      },
+      {
+        "name": "Conducting User Interviews with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Mastering the Jobs-to-be-Done framework will enable you to conduct more effective user interviews and gain a deeper understanding of your users' needs.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide with Color, Typography, and Spacing Tokens",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Creating a style guide will help you establish a consistent visual language for your designs, which is essential for Explorer designers looking to build their portfolio.",
+        "practice_points": [
+          "Create a comprehensive style guide with color, typography, and spacing tokens"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:14:11.265458"
+}

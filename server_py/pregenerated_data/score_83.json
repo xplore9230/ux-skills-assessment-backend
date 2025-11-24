@@ -1,0 +1,178 @@
+{
+  "score": 83,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 89,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 88,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 78,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 86,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a user persona for an existing product using the 10 Usability Heuristics from nngroup.com, focusing on the 'Visibility of System Status' heuristic (Score gap: 76%)",
+          "Design a simple wireframe for a login flow using the 8-point grid system, ensuring clear typography and sufficient padding (Reference: https://lawsofux.com/aesthetic-usability-effect/)",
+          "Write down 5 common pain points users experience when interacting with digital products, using Occam's Razor to prioritize them (Score gap: 76%)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview and document 3 pain points using the Jobs-to-be-Done framework, focusing on understanding users' motivations (Reference: https://lawsofux.com/occams-razor/)",
+          "Create a mind map illustrating the relationships between different UX principles, such as usability, accessibility, and information architecture (Score gap: 78%)",
+          "Develop a simple prototype for a product feature using Sketch or Figma, incorporating Miller's Law to optimize user experience"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create an A/B testing plan for a specific product feature, using the Laws of UX as a guide (Reference: https://lawsofux.com/laws-of-ux/)",
+          "Design a visual hierarchy for a product page using the principles outlined in 'Aesthetic Usability Effect', ensuring clear typography and sufficient whitespace",
+          "Write a short reflection on how you can apply Occam's Razor to simplify your design decisions, reducing cognitive load for users"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive UX strategy document outlining the principles and guidelines for a new product launch (Score gap: 78%)",
+          "Create an interactive prototype using InVision or Adobe XD, incorporating user research findings to inform design decisions",
+          "Conduct a usability testing session with real users, applying the Laws of UX to identify areas for improvement"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and UI craft, but there's still room for growth in user research, product thinking, and collaboration. Focus on developing your skills in these areas to take your career to the next level and deliver exceptional user experiences that drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Emerging Seniors",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics effectively to design intuitive and user-friendly interfaces is crucial for Emerging Senior designers.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive guide on how to apply Occam's Razor in UX design, including examples and case studies"
+        ]
+      },
+      {
+        "name": "Deep Dive into Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Understanding visual design principles is essential for Emerging Senior designers to create cohesive and engaging user experiences.",
+        "practice_points": [
+          "Research and document the Aesthetic-Usability Effect, including its implications on UX design"
+        ]
+      },
+      {
+        "name": "Enhancing Collaboration Skills through User Research",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Effective collaboration with stakeholders requires strong user research skills, which are essential for Emerging Senior designers.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework and document findings to improve product understanding"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:02:45.051987"
+}

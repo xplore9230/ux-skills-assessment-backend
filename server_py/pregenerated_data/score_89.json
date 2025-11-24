@@ -1,0 +1,177 @@
+{
+  "score": 89,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 82,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 99,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 88,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 84,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 91,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of UX Fundamentals",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice UX Fundamentals through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design across multiple products and teams. By leveraging your exceptional UI Craft & Visual Design skills (99/100) and Product Thinking & Strategy expertise (84/100), you can craft intuitive experiences that delight users and propel business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Effective UX Decision Making",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to prioritize features based on user needs will help Strategic Leads make data-driven decisions and drive business value.",
+        "practice_points": [
+          "Analyze a recent project and identify 3 areas where Occam's Razor could have been applied for better UX outcomes. Document your thought process and proposed solutions."
+        ]
+      },
+      {
+        "name": "Conducting Usability Heuristic Audits for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering usability heuristics will enable Strategic Leads to identify and address common UX pitfalls, leading to improved user experience and reduced redesign costs.",
+        "practice_points": [
+          "Choose a publicly available website (e.g., Amazon, Google) and conduct a usability heuristic audit using the 10 Usability Heuristics for User Interface Design. Document your findings and propose improvements."
+        ]
+      },
+      {
+        "name": "Developing Aesthetic-Usability Effect Strategies",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding the aesthetic-usability effect will help Strategic Leads create visually appealing and user-friendly designs that drive engagement and conversion.",
+        "practice_points": [
+          "Create 3 wireframes for a hypothetical e-commerce product, incorporating Aesthetic-Usability Effect principles (e.g., color contrast, typography). Present your design decisions to a peer group or mentor."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:09:19.635107"
+}

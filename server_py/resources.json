@@ -1,0 +1,103 @@
+{
+  "UX Fundamentals": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com/",
+      "description": "A collection of best practices that designers can consider when building user interfaces.",
+      "tags": ["Heuristics", "Psychology"]
+    },
+    {
+      "title": "Nielsen Norman Group: UX Research Cheat Sheet",
+      "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/",
+      "description": "A comprehensive guide to different UX research methods and when to use them.",
+      "tags": ["Research", "Reference"]
+    },
+    {
+      "title": "Information Architecture Basics",
+      "url": "https://www.usability.gov/what-and-why/information-architecture.html",
+      "description": "Understanding how to organize information clearly for users.",
+      "tags": ["IA", "Structure"]
+    }
+  ],
+  "UI Craft & Visual Design": [
+    {
+      "title": "Refactoring UI",
+      "url": "https://www.refactoringui.com/",
+      "description": "Learn how to design beautiful user interfaces by yourself using specific tactics.",
+      "tags": ["Visual Design", "Guide"]
+    },
+    {
+      "title": "Material Design Guidelines",
+      "url": "https://m3.material.io/",
+      "description": "Google's open-source design system that provides comprehensive UI guidelines.",
+      "tags": ["Design System", "Reference"]
+    },
+    {
+      "title": "The 8-Point Grid System",
+      "url": "https://spec.fm/specifics/8-pt-grid",
+      "description": "A guide to using the 8-point grid for consistent spacing and sizing.",
+      "tags": ["Layout", "Grid"]
+    }
+  ],
+  "User Research & Validation": [
+    {
+      "title": "The Mom Test",
+      "url": "http://momtestbook.com/",
+      "description": "How to talk to customers & learn if your business is a good idea when everyone is lying to you.",
+      "tags": ["Interviews", "Validation"]
+    },
+    {
+      "title": "A Guide to Usability Testing",
+      "url": "https://www.interaction-design.org/literature/topics/usability-testing",
+      "description": "Everything you need to know about running effective usability tests.",
+      "tags": ["Testing", "Methods"]
+    },
+    {
+      "title": "Just Enough Research",
+      "url": "https://alistapart.com/article/just-enough-research/",
+      "description": "Conducting research that is sufficient for your project needs without overdoing it.",
+      "tags": ["Strategy", "Process"]
+    }
+  ],
+  "Product Thinking & Strategy": [
+    {
+      "title": "Product Thinking 101",
+      "url": "https://uxdesign.cc/product-thinking-101-1d71a0784f60",
+      "description": "Understanding the problem, the audience, and the goal before designing solutions.",
+      "tags": ["Strategy", "Basics"]
+    },
+    {
+      "title": "Jobs to be Done Framework",
+      "url": "https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca",
+      "description": "A framework for understanding customer needs and motivations.",
+      "tags": ["Framework", "User Needs"]
+    },
+    {
+      "title": "Measuring the User Experience",
+      "url": "https://measuringu.com/",
+      "description": "Quantitative methods for measuring usability and user experience.",
+      "tags": ["Metrics", "Data"]
+    }
+  ],
+  "Collaboration & Communication": [
+    {
+      "title": "Articulating Design Decisions",
+      "url": "https://www.oreilly.com/library/view/articulating-design-decisions/9781491921555/",
+      "description": "How to communicate with stakeholders, keep your sanity, and deliver the best user experience.",
+      "tags": ["Communication", "Stakeholders"]
+    },
+    {
+      "title": "Design Reviews: A Guide",
+      "url": "https://www.nngroup.com/articles/design-reviews/",
+      "description": "How to conduct and participate in effective design reviews.",
+      "tags": ["Critique", "Feedback"]
+    },
+    {
+      "title": "Collaborating with Developers",
+      "url": "https://css-tricks.com/designers-guide-to-working-with-developers/",
+      "description": "Tips for smoother handoffs and better collaboration with engineering teams.",
+      "tags": ["Handoff", "Teamwork"]
+    }
+  ]
+}
+

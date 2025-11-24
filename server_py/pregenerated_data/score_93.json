@@ -1,0 +1,231 @@
+{
+  "score": 93,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 98,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 94,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 86,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 85,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a mind map illustrating the 10 Usability Heuristics for User Interface Design (https://www.nngroup.com/articles/ten-usability-heuristics/). Focus on explaining why each heuristic is important in your design process. (Reference: Your UX Fundamentals score gap of 2%)",
+          "Write a short reflection (approx. 250 words) on how Jakob's Law applies to your current design work. How do you ensure that your designs follow this principle? (Reference: Your UX Fundamentals score gap of 2%)",
+          "Design a simple wireframe for a homepage, incorporating the Aesthetic-Usability Effect (https://lawsofux.com/aesthetic-usability-effect/) in your layout. (Reference: Your UX Fundamentals score gap of 2%)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your current collaboration and communication skills. Identify areas for improvement and create a plan to work on them. (Reference: Your Collaboration & Communication score gap of 15%)",
+          "Create a visual representation of Miller's Law (https://lawsofux.com/millers-law/) in your design process. How do you apply this principle when designing? (Reference: Your UX Fundamentals score gap of 2%)",
+          "Design a new product feature using the Laws of UX as a guide. Ensure that your design follows at least three of the laws. (Reference: Your Product Thinking & Strategy score gap of 14%)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a plan to improve your collaboration and communication skills with colleagues and stakeholders. Include specific actions you will take and metrics to measure success. (Reference: Your Collaboration & Communication score gap of 15%)",
+          "Create an interactive prototype using InVision or Figma, applying the principles of Jakob's Law and Miller's Law. Ensure that your design is intuitive and user-friendly. (Reference: Your UX Fundamentals score gap of 2%)",
+          "Research and present on a successful product redesign that incorporates effective product thinking and strategy. Analyze what made it successful and how you can apply those principles to your own work. (Reference: Your Product Thinking & Strategy score gap of 14%)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system that incorporates the Laws of UX, Jakob's Law, Miller's Law, and Aesthetic-Usability Effect. Ensure that your design is consistent across all touchpoints. (Reference: Your overall score gap)",
+          "Develop a case study on how you applied effective product thinking and strategy in a recent project. Include metrics and results to demonstrate the impact of your design decisions. (Reference: Your Product Thinking & Strategy score gap)",
+          "Conduct a peer review of your portfolio, providing constructive feedback on areas for improvement. Ensure that you apply the principles of collaboration and communication in your review process. (Reference: Your Collaboration & Communication score gap)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX designer, you have the unique opportunity to drive business growth through user-centered design and strategic product decisions. With your expertise in UI Craft & Visual Design, User Research & Validation, and strong collaboration skills, you can leverage your strengths to lead cross-functional teams and shape the future of products that delight users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Strategic Decision-Making",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to prioritize and simplify design decisions will enhance your strategic lead role.",
+        "practice_points": [
+          "Analyze a recent design project and identify 3 areas where Occam's Razor could be applied. Document the decision-making process and outcomes.",
+          "Create a 'Simplify' checklist for product decisions, incorporating principles from Occam's Razor. Test it with a colleague or manager."
+        ]
+      },
+      {
+        "name": "Conducting Effective User Research with Jakob’s Law",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Understanding how users perceive and interact with interfaces will help you make data-driven design decisions as a Strategic Lead.",
+        "practice_points": [
+          "Design an experiment to test the impact of Jakob's Law on user behavior. Recruit 10 participants and collect usability data."
+        ]
+      },
+      {
+        "name": "Developing a Product Thinking Framework with Tesler’s Law",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Advanced",
+        "summary": "Integrating Tesler's Law into your product thinking will enable you to create more intuitive and user-centered designs.",
+        "practice_points": [
+          "Create a 'Design Decision Framework' incorporating Tesler's Law. Apply it to a current design project, documenting the thought process and results."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Strategic Leads should prioritize user-centered design principles to ensure a solid foundation for the product.",
+        "detailed": "A strong understanding of UX fundamentals is crucial for Strategic Leads, as it enables them to create intuitive and accessible products. However, there may be a gap between the expected performance and the actual delivery of UX best practices in their work.",
+        "actionable": [
+          "Attend UX design workshops or conferences to stay updated on industry trends and best practices",
+          "Conduct regular usability testing with real users to validate design decisions",
+          "Develop a comprehensive design system that incorporates accessibility guidelines"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Strategic Leads should focus on creating visually appealing and consistent UI elements that enhance the user experience.",
+        "detailed": "A high score in UI Craft & Visual Design indicates a strong understanding of visual design principles, but it's essential to ensure that this expertise is applied consistently throughout the product. Strategic Leads may need to balance their creative vision with business objectives and technical constraints.",
+        "actionable": [
+          "Create a style guide that outlines the visual design language for the product",
+          "Develop a system for consistent typography, color schemes, and iconography",
+          "Collaborate with cross-functional teams to ensure design consistency across different features and platforms"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Strategic Leads should prioritize user research and validation to inform product decisions and ensure that the product meets user needs.",
+        "detailed": "A strong understanding of user research and validation is critical for Strategic Leads, as it enables them to create products that are relevant and useful to users. However, there may be a gap between the expected performance and the actual delivery of user-centered design principles in their work.",
+        "actionable": [
+          "Conduct regular user interviews and surveys to gather feedback on product ideas",
+          "Use A/B testing and analytics data to validate design decisions and identify areas for improvement",
+          "Develop a framework for prioritizing user research and validation efforts"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Strategic Leads should focus on developing a deep understanding of the product's business goals and market trends to inform strategic decisions.",
+        "detailed": "A strong score in Product Thinking & Strategy indicates a solid foundation for Strategic Leads, but it's essential to ensure that this expertise is applied consistently throughout the product development process. Strategic Leads may need to balance their technical expertise with business objectives and market analysis.",
+        "actionable": [
+          "Develop a deep understanding of the target market and customer needs through market research and analysis",
+          "Create a product roadmap that aligns with business goals and market trends",
+          "Collaborate with cross-functional teams to ensure that product decisions are informed by market analysis and business objectives"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Strategic Leads should prioritize effective collaboration and communication to ensure that stakeholders are aligned and informed throughout the product development process.",
+        "detailed": "A strong score in Collaboration & Communication indicates a solid foundation for Strategic Leads, but it's essential to ensure that this expertise is applied consistently throughout the product development process. Strategic Leads may need to balance their technical expertise with business objectives and stakeholder management.",
+        "actionable": [
+          "Develop a communication plan that outlines key milestones and stakeholders involved in the product development process",
+          "Create a collaborative project management framework that incorporates regular check-ins and feedback loops",
+          "Establish clear expectations and roles for cross-functional teams to ensure effective collaboration"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T19:13:29.554682"
+}

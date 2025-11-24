@@ -1,0 +1,183 @@
+{
+  "score": 61,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 55,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 67,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 56,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 60,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Redesign the navigation menu for a popular e-commerce website using the 8-point grid system, focusing on improving accessibility and reducing cognitive load.",
+          "Create a mood board for a hypothetical new product launch, incorporating Tesler's Law to guide color palette decisions.",
+          "Develop a list of 10 usability heuristics for user interface design, referencing the nngroup.com article 'Ten Usability Heuristics' as a resource."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 3 user interviews and document 5 pain points using the Jobs-to-be-Done framework, focusing on understanding user motivations for a specific product feature.",
+          "Create a wireframe prototype of a hypothetical new feature that incorporates the Zeigarnik Effect to improve user engagement.",
+          "Develop a list of 5 aesthetic principles for visual design, referencing the 'Aesthetic-Usability Effect' article from lawsofux.com as a resource."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Redesign the error states for a popular mobile app using the 8-point grid system, focusing on improving user experience and reducing frustration.",
+          "Create a strategic plan for a hypothetical new product launch, incorporating Laws of UX to guide design decisions.",
+          "Develop a list of 10 potential solutions for a common pain point in a specific industry, referencing the 'Laws of UX' article from lawsofux.com as a resource."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for a hypothetical new product launch, incorporating Tesler's Law to guide color palette decisions and the Aesthetic-Usability Effect to improve visual design.",
+          "Develop a strategic plan for a specific industry, focusing on improving user experience and reducing cognitive load through design decisions.",
+          "Conduct a usability testing session with 3 users and document 5 pain points using the Jobs-to-be-Done framework, referencing the nngroup.com article 'Ten Usability Heuristics' as a resource."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape user experiences that drive business success and create lasting connections with your audience. Focus on building upon your strengths in User Research & Validation and Product Thinking & Strategy, while nurturing your skills in UI Craft & Visual Design and Collaboration & Communication to elevate your practice and deliver exceptional results.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick's Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Hick's Law states that the time taken to make a decision is directly proportional to the number of options available. By applying this law, practitioners can optimize navigation and reduce cognitive load.",
+        "practice_points": [
+          "Analyze 3 existing websites' navigation menus using Hick's Law as a framework for improvement",
+          "Create a new wireframe with reduced options (e.g., 5-7 main categories) to test the impact on user behavior",
+          "Conduct A/B testing to compare user completion rates and time taken to complete tasks between two versions of a navigation menu"
+        ]
+      },
+      {
+        "name": "Designing for Proximity using Jakob's Law",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Jakob's Law states that users tend to follow the path of least resistance. By applying this law, practitioners can design interfaces that guide users through the most efficient flow.",
+        "practice_points": [
+          "Analyze 2 existing websites' use of proximity in their layouts and identify areas for improvement",
+          "Create a new wireframe with strategically placed visual cues (e.g., arrows, icons) to guide the user's attention",
+          "Design an interactive prototype that demonstrates how proximity can be used to reduce cognitive load"
+        ]
+      },
+      {
+        "name": "Conducting User Research using the Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "The Zeigarnik Effect states that users tend to remember uncompleted tasks better than completed ones. By applying this effect, practitioners can design research studies that elicit more accurate user feedback.",
+        "practice_points": [
+          "Design a survey or interview study using the Zeigarnik Effect as a framework for eliciting user feedback on a specific task",
+          "Conduct 2-3 interviews with users to gather data on their thoughts and feelings about a particular design concept",
+          "Analyze the results of the research study and identify patterns or trends that can inform design decisions"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:39:26.619776"
+}

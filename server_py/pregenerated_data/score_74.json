@@ -1,0 +1,183 @@
+{
+  "score": 74,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 83,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 67,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 74,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 67,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a user persona for an existing product or service using the 10 Usability Heuristics from nngroup.com. Focus on identifying 3 pain points and 2 opportunities for improvement.",
+          "Redesign your portfolio's navigation using the 8-point grid system to improve user flow and accessibility. Document your design decisions and provide a before-and-after comparison.",
+          "Conduct a self-assessment of your current research skills by reviewing 3 recent projects. Identify areas where you could have improved user research and validation, and document your findings."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Jakob's Law to redesign the onboarding process for a new product feature. Create a wireframe of the flow and document how you ensured that users can quickly find what they need.",
+          "Create a mind map or diagram illustrating Miller’s Law, Aesthetic-Usability Effect, and Jakob’s Law. Explain how each principle applies to your current work and provide examples.",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework to identify pain points in an existing product or service. Document 3 actionable insights and suggest potential solutions."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a comprehensive design system for a new project, incorporating principles from Laws of UX. Create a style guide and document how you ensured consistency across the design.",
+          "Create a case study illustrating how you applied user research and validation to inform design decisions in a recent project. Highlight 2 key insights and how they impacted the final product.",
+          "Collaborate with a colleague or peer on a small design challenge (e.g., redesigning a simple UI element). Document your communication strategy, design decisions, and final outcome."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create an advanced usability test plan for a complex product feature. Document how you will recruit participants, prepare the testing environment, and analyze results.",
+          "Develop a comprehensive UX strategy document outlining your approach to user research, design, and iteration. Highlight key principles from Laws of UX and provide examples.",
+          "Conduct 2 user interviews using a structured framework (e.g., Empathy Mapping) to identify pain points in an existing product or service. Document 3 actionable insights and suggest potential solutions."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and UI craft, but there's room for growth in user research, product thinking, and collaboration. Focus on developing your skills in these areas to take your design career to the next level and drive meaningful impact for users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to make design decisions that prioritize simplicity and effectiveness will improve overall UX quality.",
+        "practice_points": [
+          "Analyze 3 existing designs (e.g., websites, apps) using Occam's Razor and provide a written explanation of how each decision contributes to the overall user experience",
+          "Create a set of 5 hypothetical design scenarios where Occam's Razor is applied, with clear justification for each choice",
+          "Develop a personal style guide that incorporates Occam's Razor principles, including typography, color palette, and layout"
+        ]
+      },
+      {
+        "name": "Conducting Effective User Interviews using the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Mastering user research techniques will enable more accurate design decisions and better meet user needs.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, documenting findings in a clear and concise report",
+          "Create a list of 5 open-ended questions that can be used to gather insights on users' motivations and pain points",
+          "Develop a script for conducting user interviews, including tips for active listening and note-taking"
+        ]
+      },
+      {
+        "name": "Integrating Product Thinking into Design Decisions",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Advanced",
+        "summary": "Understanding product thinking will enable designers to make more informed decisions that align with business goals.",
+        "practice_points": [
+          "Analyze 2 existing products (e.g., apps, websites) using the product thinking framework, identifying areas for improvement and potential solutions",
+          "Develop a set of 3 hypothetical product scenarios where design decisions are guided by product thinking principles",
+          "Create a personal portfolio piece that demonstrates how you've applied product thinking to a real-world design challenge"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:52:51.931532"
+}

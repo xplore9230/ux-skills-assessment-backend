@@ -1,0 +1,231 @@
+{
+  "score": 67,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 60,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 61,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 71,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 72,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 71,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login page using the 10 Usability Heuristics for User Interface Design as a reference. Focus on ensuring that your design meets at least 7 out of the 10 heuristics.",
+          "Redesign the navigation menu of your portfolio website using Occam's Razor to guide your decisions. Explain in 1-2 sentences why you chose each design element.",
+          "Write down 3 common mistakes designers make when designing for mobile devices, and explain how to avoid them using Miller’s Law as a reference."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview with someone who uses your portfolio website, and ask them to walk you through their thought process while completing a task. Document 5 pain points they mentioned using the Jobs-to-be-Done framework.",
+          "Create a mood board for a hypothetical product design using Aesthetic-Usability Effect as inspiration. Explain in 1 paragraph how you used this principle to guide your color palette and typography choices.",
+          "Design a simple error message for a common user mistake, such as entering an invalid email address. Use the 8-point grid system to ensure that your design is visually appealing and easy to read."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a case study of a successful product redesign using Laws of UX as a reference. Explain how you applied each law to improve the user experience.",
+          "Design a new icon set for your portfolio website, focusing on simplicity and consistency with existing branding. Use Occam's Razor to guide your design decisions.",
+          "Write a short reflection (1-2 pages) on what you learned about UX Fundamentals in Week 1 and how it has impacted your design approach."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for your portfolio website, including guidelines for typography, color palette, and icon usage. Use the principles of Aesthetic-Usability Effect to guide your decisions.",
+          "Design a new product concept using the Laws of UX as a reference. Explain in 1-2 paragraphs how you applied each law to improve the user experience.",
+          "Conduct a peer review of your portfolio website, providing constructive feedback on design elements that could be improved using UX Fundamentals principles."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in the fundamentals of UX design and are making significant strides in UI craft, user research, product thinking, and collaboration. To take your career to the next level, focus on refining your skills in each area, staying up-to-date with industry trends, and continuously seeking opportunities for growth and learning.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Effective Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Emerging Senior designers need to understand the underlying principles of usability heuristics to create intuitive and user-friendly designs.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design, identifying areas for improvement and suggesting design changes",
+          "Create a comprehensive guide to applying Occam's Razor in UX design, including examples and case studies"
+        ]
+      },
+      {
+        "name": "Deepening Collaboration & Communication Skills",
+        "pillar": "Collaboration & Communication",
+        "level": "Intermediate",
+        "summary": "Emerging Senior designers need to develop strong collaboration and communication skills to effectively work with cross-functional teams.",
+        "practice_points": [
+          "Conduct 2 workshops on active listening and empathy in UX design, facilitating discussions and providing feedback"
+        ]
+      },
+      {
+        "name": "Enhancing User Research & Validation Skills",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Emerging Senior designers need to refine their user research skills to gather high-quality insights that inform design decisions.",
+        "practice_points": [
+          "Conduct 2 usability testing sessions using the Zeigarnik Effect, analyzing results and providing actionable recommendations"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Emerging Seniors need to improve their understanding of UX principles and best practices.",
+        "detailed": "The current score indicates that Emerging Seniors have a solid foundation in UX fundamentals, but there is room for growth in areas such as user journey mapping, wireframing, and usability testing. Developing a deeper understanding of these concepts will help them create more effective and user-centered designs.",
+        "actionable": [
+          "Take online courses or attend workshops to improve your knowledge of UX principles and best practices.",
+          "Practice designing with real-world projects or contributing to open-source design initiatives.",
+          "Join online communities or forums to stay updated on the latest trends and best practices in UX."
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Emerging Seniors should focus on refining their visual design skills and attention to detail.",
+        "detailed": "The current score suggests that Emerging Seniors have a good grasp of UI craft and visual design, but there is room for improvement in areas such as typography, color theory, and composition. Developing their skills in these areas will help them create more visually appealing and effective designs.",
+        "actionable": [
+          "Study the work of professional designers and analyze what makes their designs successful.",
+          "Practice designing with a focus on visual hierarchy, balance, and contrast.",
+          "Experiment with different design tools and software to find your preferred workflow."
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Emerging Seniors should prioritize user research and validation in their design process.",
+        "detailed": "The current score indicates that Emerging Seniors have a good understanding of user research methods, but there is room for growth in areas such as data analysis and interpretation. Developing their skills in these areas will help them create more informed and effective designs.",
+        "actionable": [
+          "Take courses or attend workshops on user research methods, data analysis, and interpretation.",
+          "Practice conducting user interviews, surveys, and usability testing with real-world projects.",
+          "Join online communities or forums to stay updated on the latest trends and best practices in user research."
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Emerging Seniors should focus on developing their product thinking skills and understanding of business goals.",
+        "detailed": "The current score suggests that Emerging Seniors have a good grasp of product thinking principles, but there is room for improvement in areas such as market analysis, competitive research, and business model development. Developing their skills in these areas will help them create more effective and user-centered products.",
+        "actionable": [
+          "Study the work of successful product designers and analyze what makes their products successful.",
+          "Practice designing with a focus on solving real-world problems and meeting business goals.",
+          "Take courses or attend workshops on market analysis, competitive research, and business model development."
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Emerging Seniors should prioritize collaboration and effective communication in their design process.",
+        "detailed": "The current score indicates that Emerging Seniors have a good understanding of collaboration principles, but there is room for growth in areas such as conflict resolution, stakeholder management, and project management. Developing their skills in these areas will help them work more effectively with teams and stakeholders.",
+        "actionable": [
+          "Practice collaborating with designers, developers, and other stakeholders on real-world projects.",
+          "Take courses or attend workshops on conflict resolution, stakeholder management, and project management.",
+          "Join online communities or forums to stay updated on the latest trends and best practices in collaboration and communication."
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:45:21.159512"
+}

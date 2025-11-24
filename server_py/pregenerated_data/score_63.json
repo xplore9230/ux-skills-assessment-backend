@@ -1,0 +1,231 @@
+{
+  "score": 63,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 60,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 66,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple user journey map for a current project, highlighting pain points and areas for improvement (Reference: nngroup.com).",
+          "Develop a list of 5 potential research questions using the Jobs-to-be-Done framework to validate your design decisions.",
+          "Redesign a single page on your portfolio using Occam's Razor to minimize visual noise."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework. Analyze your findings and create a list of potential design solutions.",
+          "Apply Miller's Law to redesign a current wireframe, focusing on reducing cognitive load.",
+          "Create an annotated bibliography of relevant articles on UX Fundamentals, including at least one source from nngroup.com."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a list of 10 potential research questions using the Tesler's Law to validate your design decisions. Prioritize and select 2-3 questions for further investigation.",
+          "Redesign a current prototype using Tesler's Law, focusing on reducing complexity.",
+          "Create a visual representation of Occam's Razor using a diagram or infographic."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Analyze your findings and create a list of potential design solutions.",
+          "Apply Occam's Razor to redesign a current project, focusing on minimizing visual noise.",
+          "Create a comprehensive portfolio redesign using the 8-point grid system, incorporating all previous tasks."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape user experiences that drive business growth and create lasting connections. Focus on refining your skills in User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication to unlock your full potential and deliver innovative solutions that exceed user expectations.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of usability heuristics to create intuitive and user-friendly interfaces.",
+        "practice_points": [
+          "Analyze 3 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement, documenting changes in a design specification document",
+          "Create a comprehensive usability heuristic checklist for your own projects, including clear explanations and examples"
+        ]
+      },
+      {
+        "name": "Applying Cognitive Biases to UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Understand how cognitive biases affect user behavior and design interfaces that mitigate these biases.",
+        "practice_points": [
+          "Conduct 2 experiments using Hick's Law and Miller's Law to test the impact of cognitive load on user performance, documenting results in a report"
+        ]
+      },
+      {
+        "name": "Developing a Personalized Design Language",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "Create a consistent and recognizable design language that reflects your brand's identity.",
+        "practice_points": [
+          "Design 3 visual systems for different product types (e.g., mobile app, web, software) using Jakob's Law as a guide"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Practitioner's UX skills are average, with room for improvement in understanding user needs and behaviors.",
+        "detailed": "The Practitioner demonstrates a solid grasp of UX principles, but may struggle to apply them effectively in real-world scenarios. To improve, the Practitioner should focus on developing a deeper understanding of user research methods and how to analyze complex data sets.",
+        "actionable": [
+          "Take an online course or workshop to enhance your knowledge of user research methods",
+          "Practice analyzing case studies or real-world UX projects to develop your skills",
+          "Seek feedback from peers or mentors on your current project work"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "The Practitioner's UI design skills are solid, but could benefit from more creativity and innovation.",
+        "detailed": "The Practitioner demonstrates a good understanding of UI principles and design patterns, but may rely too heavily on established best practices rather than taking risks to create something truly unique. To improve, the Practitioner should focus on developing their own visual style and experimenting with new design techniques.",
+        "actionable": [
+          "Study the work of other designers who are pushing the boundaries of UI design",
+          "Experiment with new design tools or software to expand your creative possibilities",
+          "Create a personal project that allows you to explore different design styles and techniques"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "The Practitioner's user research skills are average, with room for improvement in conducting effective usability testing.",
+        "detailed": "The Practitioner demonstrates a good understanding of user research methods, but may struggle to design and conduct effective usability tests. To improve, the Practitioner should focus on developing their ability to identify key research questions and create clear, actionable recommendations based on their findings.",
+        "actionable": [
+          "Take an online course or workshop to learn more about usability testing and how to design effective tests",
+          "Practice conducting usability testing with real-world projects or case studies to develop your skills",
+          "Seek feedback from peers or mentors on your current project work to identify areas for improvement"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "The Practitioner's product thinking and strategy skills are average, with room for improvement in understanding business goals and market trends.",
+        "detailed": "The Practitioner demonstrates a good understanding of product principles and design thinking, but may struggle to connect their work to broader business objectives. To improve, the Practitioner should focus on developing their ability to analyze market trends and identify opportunities for innovation.",
+        "actionable": [
+          "Study the work of other designers who are successful in driving product strategy",
+          "Take an online course or workshop to learn more about market research and analysis",
+          "Seek feedback from peers or mentors on your current project work to identify areas for improvement"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "The Practitioner's collaboration and communication skills are strong, with a solid foundation in working with cross-functional teams.",
+        "detailed": "The Practitioner demonstrates excellent communication and collaboration skills, but may struggle to articulate their design decisions and rationale to non-design stakeholders. To improve, the Practitioner should focus on developing their ability to distill complex design concepts into clear, concise language.",
+        "actionable": [
+          "Practice presenting your design work to non-design stakeholders to develop your skills",
+          "Take an online course or workshop to learn more about effective communication and stakeholder management",
+          "Seek feedback from peers or mentors on your current project work to identify areas for improvement"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:41:11.967017"
+}

@@ -1,0 +1,230 @@
+{
+  "score": 14,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 4,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 20,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 21,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 8,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of UX Fundamentals",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice UX Fundamentals through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By leveraging your skills in UI Craft & Visual Design, User Research & Validation, and Product Thinking & Strategy, you can craft intuitive and engaging experiences that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Impact on UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Applying Hick's Law to design intuitive navigation and reducing cognitive load for users.",
+        "practice_points": [
+          "Create a heuristic evaluation report for 3 existing websites using Hick's Law as a guiding principle"
+        ]
+      },
+      {
+        "name": "Developing a Consistent Visual Language through Tesler’s Law",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Applying Tesler’s Law to design consistent and recognizable visual elements across the product.",
+        "practice_points": [
+          "Design 3 consistent icons using Tesler’s Law principles and document the design decisions"
+        ]
+      },
+      {
+        "name": "Improving User Research Skills with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Conducting user interviews using the Jobs-to-be-Done framework to gain a deeper understanding of user needs and motivations.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document the findings in a clear, concise report"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score meaning for UX Fundamentals",
+        "detailed": "The score of 4 indicates a need to improve fundamental understanding of user experience principles, including user research, usability, and accessibility. This includes learning about design patterns, human-centered design, and the importance of testing and iteration.",
+        "actionable": [
+          "Take an online course or attend workshops on UX fundamentals to fill knowledge gaps",
+          "Read books and articles on UX best practices and stay updated with industry trends",
+          "Join online communities or forums to discuss UX-related topics and learn from others"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score meaning for UI Craft & Visual Design",
+        "detailed": "The score of 20 indicates a need to improve skills in visual design, color theory, typography, and layout. This includes learning about design tools like Sketch or Figma, and practicing creating visually appealing designs.",
+        "actionable": [
+          "Enroll in online courses or tutorials on UI design principles and visual design tools",
+          "Practice designing for different devices and screen sizes to improve adaptability",
+          "Join a design community or find a mentor to get feedback on your work"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score meaning for User Research & Validation",
+        "detailed": "The score of 21 indicates a need to improve skills in user research methods, including interviews, surveys, and usability testing. This includes learning about participant recruitment, data analysis, and reporting findings.",
+        "actionable": [
+          "Take an online course or attend workshops on user research methods",
+          "Practice conducting user interviews and usability tests with real participants",
+          "Learn to analyze and report research findings effectively"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score meaning for Product Thinking & Strategy",
+        "detailed": "The score of 17 indicates a need to improve skills in product thinking, including understanding customer needs, defining product vision, and prioritizing features. This includes learning about design sprints, agile methodologies, and lean startup principles.",
+        "actionable": [
+          "Read books or articles on product thinking and strategy",
+          "Take an online course or attend workshops on product development methodologies",
+          "Join a product community or find a mentor to discuss product-related topics"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score meaning for Collaboration & Communication",
+        "detailed": "The score of 8 indicates a need to improve skills in collaboration and communication, including effective team management, conflict resolution, and stakeholder engagement. This includes learning about active listening, clear communication, and empathy.",
+        "actionable": [
+          "Take an online course or attend workshops on collaboration and communication",
+          "Practice active listening and ask clarifying questions in meetings",
+          "Learn to negotiate effectively and manage conflicts in a team"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T17:51:02.215728"
+}

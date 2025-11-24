@@ -1,0 +1,236 @@
+{
+  "score": 70,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 64,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 75,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 75,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 65,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 areas where you can improve your UX Fundamentals. Write a brief report (max 500 words) explaining how each heuristic applies to your current work and what changes you would make to incorporate these principles into your design process.",
+          "Create a mind map illustrating the Laws of UX, including the Aesthetic-Usability Effect, Zeigarnik Effect, and Law of Uniform Connectedness. Use arrows and connections to show how these laws relate to each other and to your current work.",
+          "Design a simple wireframe for a hypothetical product feature that demonstrates an understanding of the 8-point grid system. Focus on creating a clear and intuitive layout."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your collaboration and communication skills, using the 5 Love Languages framework to identify areas where you excel and areas for improvement. Write a reflective essay (max 750 words) on how you can apply this framework to improve your team interactions.",
+          "Create a prototype of a hypothetical product feature that incorporates the Zeigarnik Effect. Use user research findings to inform the design decisions and ensure the prototype is engaging and effective.",
+          "Write a case study of a successful collaboration project, highlighting your role in the team and how you contributed to its success."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a comprehensive plan for improving your UX Fundamentals, including specific goals, strategies, and metrics for measuring progress. Present this plan to a peer or mentor and receive feedback.",
+          "Design an information architecture for a hypothetical product feature that incorporates the Law of Uniform Connectedness. Use user research findings to inform the design decisions and ensure the navigation is intuitive.",
+          "Create a video tutorial (max 10 minutes) explaining how to apply the Aesthetic-Usability Effect in UX design, using examples from your current work."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive portfolio that showcases your skills in both UX Fundamentals and Collaboration & Communication. Include case studies, wireframes, prototypes, and written reflections on your design process.",
+          "Conduct a usability study of a hypothetical product feature using the 5 Love Languages framework to inform the design decisions. Present the findings and recommendations to a peer or mentor.",
+          "Create a capstone project that demonstrates your ability to apply UX Fundamentals and Collaboration & Communication principles in a real-world context. Present this project to a panel of peers, mentors, or industry experts."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in the fundamentals of user-centered design and a keen eye for visual design. To take your career to the next level, focus on developing your product thinking skills, collaborating effectively with cross-functional teams, and continuously refining your research and validation methods to deliver high-quality solutions that meet users' needs.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Effective Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will help Emerging Seniors create more user-centered designs and improve overall UX.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design and identify areas for improvement, documenting key findings and recommendations",
+          "Create a comprehensive guide to usability heuristics, explaining each principle and providing examples of successful implementation in design",
+          "Conduct an A/B testing experiment using one of the heuristics (e.g., Law of Proximity) to inform design decisions and document results"
+        ]
+      },
+      {
+        "name": "Crafting Compelling Visual Design with Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the aesthetic-usability effect will enable Emerging Seniors to create visually appealing designs that enhance user experience.",
+        "practice_points": [
+          "Design 3 wireframes for a hypothetical product, incorporating principles of visual hierarchy and color theory to apply the Aesthetic-Usability Effect",
+          "Research and document real-world examples of successful aesthetic-usability effect in design, analyzing what makes them effective",
+          "Create a mood board or style guide that incorporates the Aesthetic-Usability Effect, showcasing 3-5 design concepts"
+        ]
+      },
+      {
+        "name": "Validating Design Decisions with User Research and Validation",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Conducting user research will help Emerging Seniors validate design decisions, ensure user needs are met, and create more effective designs.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework to understand user motivations and behaviors, documenting findings in a report",
+          "Create a survey or usability test plan to gather data on user experience with a hypothetical product or feature",
+          "Analyze and present research findings from an existing design project, identifying areas for improvement and recommending design changes"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Emerging Seniors need to improve their understanding of UX principles and best practices to deliver high-quality designs.",
+        "detailed": "Current score of 64 indicates a need for improvement in areas such as user journey mapping, wireframing, and usability testing. Emerging Seniors should focus on building a strong foundation in UX fundamentals to effectively design intuitive and user-friendly products.",
+        "actionable": [
+          "Take online courses or attend workshops to enhance understanding of UX principles and best practices",
+          "Join online communities or forums to stay updated with industry trends and best practices",
+          "Participate in design challenges or projects that focus on UX fundamentals"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Emerging Seniors should prioritize developing their visual design skills to create visually appealing and consistent designs.",
+        "detailed": "Current score of 70 indicates a solid foundation in UI craft, but room for improvement in areas such as color theory, typography, and composition. Emerging Seniors should focus on refining their visual design skills to deliver high-quality designs that align with brand guidelines.",
+        "actionable": [
+          "Study the work of renowned designers and analyze their design decisions",
+          "Practice creating visual design concepts and iterate on feedback from peers or mentors",
+          "Experiment with different design tools and software to improve proficiency"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Emerging Seniors should prioritize user research and validation to ensure designs meet user needs and expectations.",
+        "detailed": "Current score of 75 indicates a solid foundation in user research, but room for improvement in areas such as data analysis and interpretation. Emerging Seniors should focus on developing their skills in user research to deliver designs that are grounded in user insights.",
+        "actionable": [
+          "Take courses or attend workshops on user research methods and data analysis",
+          "Participate in user research projects or studies to gain hands-on experience",
+          "Join online communities or forums to stay updated with best practices in user research"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Emerging Seniors should prioritize developing their product thinking and strategy skills to deliver designs that align with business goals.",
+        "detailed": "Current score of 75 indicates a solid foundation in product thinking, but room for improvement in areas such as market analysis and competitive research. Emerging Seniors should focus on refining their product thinking skills to deliver designs that meet business objectives.",
+        "actionable": [
+          "Study the work of product designers and analyze their design decisions",
+          "Participate in product design projects or studies to gain hands-on experience",
+          "Join online communities or forums to stay updated with best practices in product thinking"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Emerging Seniors should prioritize developing their collaboration and communication skills to effectively work with cross-functional teams.",
+        "detailed": "Current score of 65 indicates a need for improvement in areas such as active listening, conflict resolution, and stakeholder management. Emerging Seniors should focus on building strong collaboration and communication skills to deliver designs that meet business objectives.",
+        "actionable": [
+          "Take courses or attend workshops on effective communication and collaboration",
+          "Practice working with cross-functional teams on design projects",
+          "Join online communities or forums to stay updated with best practices in collaboration and communication"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:48:39.082567"
+}

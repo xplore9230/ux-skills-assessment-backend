@@ -1,0 +1,183 @@
+{
+  "score": 78,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 73,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 79,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 78,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 83,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a wireframe of a simple login form using the 10 Usability Heuristics for User Interface Design as a reference. Focus on usability and error prevention, highlighting at least 2 heuristics in your design.",
+          "Design a visual hierarchy for a hypothetical e-commerce website using Tesler’s Law and Hick’s Law. Explain how these laws influence your design decisions.",
+          "Write a short reflection (approx. 250 words) on the Aesthetic-Usability Effect, discussing its implications for UX design."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview and create a persona based on the results. Use this persona to inform your redesign of a simple UI element (e.g., a button). Focus on usability and accessibility.",
+          "Redesign your portfolio's navigation using the 8-point grid system. Ensure it is visually appealing, easy to navigate, and accessible for users with disabilities.",
+          "Create a mind map illustrating the relationships between UX Fundamentals and UI Craft & Visual Design. Explain how each fundamental influences your design decisions in both areas."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a user journey map for an existing product or service, highlighting pain points and opportunities for improvement using the Jobs-to-be-Done framework. Present your findings to a peer group or mentor.",
+          "Create a mood board for a hypothetical UX project, incorporating principles of Aesthetic-Usability Effect and Tesler’s Law. Explain how these principles guide your design decisions.",
+          "Write a short essay (approx. 500 words) on the importance of collaboration in UX design, discussing strategies for effective communication with stakeholders and team members."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive usability test plan for an existing product or service, incorporating principles from Hick’s Law and Tesler’s Law. Present your findings to a peer group or mentor.",
+          "Create a UX design system document outlining the principles and guidelines for designing user interfaces. Ensure it is accessible, visually appealing, and easy to use.",
+          "Develop a capstone project: Redesign an existing product or service using all the skills and knowledge gained throughout this 4-week improvement plan. Present your findings to a peer group or mentor."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Emerging Senior UX designer, you have a solid foundation in UX Fundamentals and User Research & Validation, but there's room for growth in UI Craft & Visual Design and Product Thinking & Strategy. Focus on developing your skills in these areas to take your design career to the next level and deliver exceptional user experiences that drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick's Law to inform design decisions and optimize user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites and identify areas where Hick's Law is being applied (or not) and provide recommendations for improvement",
+          "Design a new interface element that takes into account the limitations of human processing speed, using Hick's Law as a guiding principle",
+          "Conduct an A/B test to validate the effectiveness of a design decision based on Hick's Law"
+        ]
+      },
+      {
+        "name": "Crafting Compelling Visual Design with the Laws of UX",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Mastering the visual design principles that drive user engagement and conversion.",
+        "practice_points": [
+          "Create 3 wireframes for a new product feature, applying Tesler's Law to inform typography choices",
+          "Design a color palette for a brand, using the Aesthetic-Usability Effect as a guide",
+          "Build an interactive prototype in Figma that demonstrates the impact of visual hierarchy on user behavior"
+        ]
+      },
+      {
+        "name": "In-depth User Research with the Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Using the Zeigarnik Effect to design research studies that uncover hidden motivations and behaviors.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Zeigarnik Effect framework, focusing on identifying unmet needs and desires",
+          "Design a survey or usability study that leverages the Zeigarnik Effect to elicit detailed user feedback",
+          "Analyze existing research studies that applied the Zeigarnik Effect and provide recommendations for improvement"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:57:16.783709"
+}

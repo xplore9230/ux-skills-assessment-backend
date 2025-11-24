@@ -1,0 +1,183 @@
+{
+  "score": 43,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 44,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 49,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 46,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 areas where you can apply them to your current work, focusing on UX Fundamentals. Document your findings in a 2-page report.",
+          "Create a simple wireframe of a common UI element (e.g., button, form field) using the 8-point grid system. Focus on symmetry and balance. Measure your design's adherence to these principles and calculate the score gap for this task.",
+          "Conduct a self-assessment of your current UX Fundamentals knowledge. Create a list of 5 areas where you feel uncertain or need improvement, and research one area in-depth using the Laws of UX website (lawsofux.com)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Occam's Razor to a recent design project. Identify 3 assumptions you made about your users and test them through user research or validation. Document your findings in a 2-page report.",
+          "Create a persona for a common user type (e.g., young adult, senior citizen) using the Jobs-to-be-Done framework. Focus on understanding their pain points and motivations. Measure your design's adherence to these principles and calculate the score gap for this task.",
+          "Redesign your portfolio's navigation using the 8-point grid system. Focus on simplicity and clarity. Measure your design's adherence to these principles and calculate the score gap for this task."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Conduct a user interview with someone from your target audience (e.g., young adult, senior citizen) using the Zeigarnik Effect. Focus on understanding their pain points and motivations. Document your findings in a 2-page report.",
+          "Create a heuristic evaluation of a recent design project using the 10 Usability Heuristics for User Interface Design (nngroup.com). Identify areas where you can improve usability and document your findings in a 2-page report.",
+          "Apply Aesthetic-Usability Effect to a recent design project. Focus on creating an intuitive and visually appealing design. Measure your design's adherence to these principles and calculate the score gap for this task."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive UX Fundamentals plan, outlining specific goals and strategies for improvement. Document your plan in a 2-page report.",
+          "Conduct a user research project using the Jobs-to-be-Done framework. Focus on understanding your users' pain points and motivations. Measure your design's adherence to these principles and calculate the score gap for this task.",
+          "Redesign a complex UI element (e.g., login form, payment gateway) using the 8-point grid system. Focus on simplicity and clarity. Measure your design's adherence to these principles and calculate the score gap for this task."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the power to shape user experiences and drive business success. Focus on building your skills in User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication to unlock your full potential and become a sought-after expert in the field.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Effective Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will improve your design decisions and user experience outcomes.",
+        "practice_points": [
+          "Analyze 5 existing products using the 10 Usability Heuristics for User Interface Design and identify areas for improvement in each product's design.",
+          "Create a comprehensive guide to applying Occam’s Razor, Zeigarnik Effect, Miller’s Law, Jakob’s Law, and Serial Position Effect in UX design.",
+          "Design an interactive prototype using Figma that incorporates 3 usability heuristics (e.g., visibility of system status, error prevention, and user control) and test it with real users."
+        ]
+      },
+      {
+        "name": "Developing a Deep Understanding of User Research",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Conducting effective user research is crucial for creating user-centered designs.",
+        "practice_points": [
+          "Conduct 2 in-depth interviews using the Jobs-to-be-Done framework and document findings, then analyze and present insights to stakeholders.",
+          "Create a comprehensive user research plan for a hypothetical product, including participant recruitment strategies, data collection methods, and analysis techniques.",
+          "Analyze existing user research studies (e.g., those published on UX Collective or ResearchGate) and extract actionable insights for your own design work."
+        ]
+      },
+      {
+        "name": "Enhancing Collaboration and Communication Skills",
+        "pillar": "Collaboration & Communication",
+        "level": "Intermediate",
+        "summary": "Effective collaboration and communication are essential for successful UX projects.",
+        "practice_points": [
+          "Participate in a virtual design workshop with 3-4 colleagues, where you'll work on a shared project and practice active listening, clear communication, and constructive feedback.",
+          "Create a comprehensive collaboration guide for your team, including best practices for remote work, conflict resolution, and stakeholder management.",
+          "Conduct 2 usability testing sessions with stakeholders (e.g., product managers or business owners) to gather feedback on your design decisions and iterate accordingly."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:21:29.716801"
+}

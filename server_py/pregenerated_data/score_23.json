@@ -1,0 +1,183 @@
+{
+  "score": 23,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 24,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 15,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 33,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 24,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on proper spacing and alignment.",
+          "Conduct a self-assessment exercise: Write down 3 common usability issues you've encountered in your own design work. Then, research 2 solutions to each issue using the Laws of UX resources (https://lawsofux.com/).",
+          "Redesign your own navigation menu using the same principles as the 8-point grid system. Measure and document any improvements."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user persona for a hypothetical e-commerce website, focusing on identifying 3 key pain points using the Jobs-to-be-Done framework (document 5 pain points).",
+          "Conduct 1 user interview and document 2 insights using the Aesthetic-Usability Effect principles. Analyze your own design work to identify areas where you can apply these principles.",
+          "Redesign a simple UI element (e.g., a button) using Occam's Razor, focusing on simplicity and minimalism."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a usability heuristics audit for your own portfolio website. Identify 5 areas where you can improve the user experience using the 10 Usability Heuristics (https://www.nngroup.com/articles/ten-usability-heuristics/).",
+          "Conduct 2 user interviews and document 3 insights using Zeigarnik Effect principles. Analyze your own design work to identify areas where you can apply these principles.",
+          "Redesign a complex UI element (e.g., a dropdown menu) using the same principles as the 10 Usability Heuristics."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for your own portfolio website, focusing on consistency and usability. Document 5 key principles and 3 user research findings.",
+          "Conduct a self-assessment exercise: Evaluate your own design work using the Laws of UX resources (https://lawsofux.com/). Identify areas where you can improve and document 2 actionable insights.",
+          "Create a capstone project: Redesign a complex product or service using all the skills and principles learned throughout this 4-week improvement plan."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to uncover hidden user needs and create intuitive experiences that drive meaningful interactions. By leveraging your skills in product thinking and strategy, collaboration, and communication, you can craft a compelling narrative for your design solutions and bring value to users and stakeholders alike.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will help Explorer designers identify and address common design flaws, improving overall user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites using the 10 Usability Heuristics for User Interface Design and create a list of potential improvements",
+          "Create a new wireframe for a hypothetical website or app that incorporates at least 2 usability heuristics from the list",
+          "Develop a case study on how one company successfully applied usability heuristics to improve user experience"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Exploring the aesthetic-usability effect will help Explorer designers create visually appealing designs that also improve user experience.",
+        "practice_points": [
+          "Design 3 different color palettes using the Aesthetic-Usability Effect principles and choose one to apply to a hypothetical website or app",
+          "Create a mood board for a new product design incorporating elements of the aesthetic-usability effect",
+          "Research and document 5 examples of successful visual design applications that incorporate the aesthetic-usability effect"
+        ]
+      },
+      {
+        "name": "Applying Occam's Razor in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Learning to apply Occam's Razor will enable Explorer designers to make data-driven decisions and prioritize features that benefit users the most.",
+        "practice_points": [
+          "Analyze 2 existing products or services using Occam's Razor and document potential improvements",
+          "Create a list of 5 questions to ask during user research that can help identify opportunities for applying Occam's Razor",
+          "Develop a case study on how Occam's Razor was applied in a successful UX design project"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:01:19.376492"
+}

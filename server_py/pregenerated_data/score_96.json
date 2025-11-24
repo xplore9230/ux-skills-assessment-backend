@@ -1,0 +1,183 @@
+{
+  "score": 96,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 99,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 98,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 94,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 91,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a mind map illustrating the 10 Usability Heuristics for User Interface Design, highlighting at least 3 key principles and their corresponding benefits (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/).",
+          "Write a short reflection (max. 250 words) on how Tesler's Law applies to your current design work, including specific examples of how it has impacted your design decisions.",
+          "Develop a simple Aesthetic-Usability Effect experiment using a hypothetical product, outlining the research question, methodology, and expected outcomes."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment exercise on your current collaboration style, identifying areas for improvement and documenting specific strategies you can implement to enhance communication with team members.",
+          "Create a visual representation (e.g., infographic or diagram) illustrating the Zeigarnik Effect's impact on user engagement, including its relevance to your current design projects.",
+          "Develop a basic prototype of a product feature using a tool like Sketch or Figma, focusing on incorporating the Laws of UX principles you've learned so far."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design and conduct a usability study on a hypothetical feature, applying the Jobs-to-be-Done framework to identify user pain points and develop solutions.",
+          "Create a case study detailing how you applied the Laws of UX principles in a recent design project, highlighting specific successes and areas for improvement.",
+          "Develop an advanced Aesthetic-Usability Effect experiment using real-world data, outlining the research question, methodology, and expected outcomes."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive portfolio piece showcasing your design process, including wireframes, prototypes, and final designs that demonstrate your mastery of Product Thinking & Strategy principles.",
+          "Develop an in-depth analysis (max. 500 words) on how you've applied the Laws of UX principles to improve user experience in your current design work, highlighting specific successes and lessons learned.",
+          "Design a product roadmap for a hypothetical company, incorporating strategic thinking and collaboration with stakeholders to drive user-centered design decisions."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design across entire product lines, leveraging your expertise in UX Fundamentals, UI Craft & Visual Design, and User Research & Validation. By combining your skills with strong Product Thinking & Strategy and effective Collaboration & Communication, you can make a lasting impact on the products you touch, delivering exceptional user experiences that exceed expectations.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Jakob's Law and its Impact on Information Architecture",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, understanding how users process information can inform design decisions to improve user experience.",
+        "practice_points": [
+          "Analyze 5 existing websites using Jakob's Law and document the results in a spreadsheet",
+          "Create a new website wireframe with clear navigation and typography following Jakob's principles",
+          "Conduct an A/B testing experiment to validate Jakob's Law on a specific product feature"
+        ]
+      },
+      {
+        "name": "Applying Tesler’s Law for Consistent Branding",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, mastering Tesler’s Law can ensure consistent branding across all touchpoints, enhancing user trust and loyalty.",
+        "practice_points": [
+          "Create 3 brand style guides with typography, color palette, and spacing tokens using Tesler’s principles",
+          "Analyze 5 existing brands that successfully apply Tesler’s Law and document the results in a case study",
+          "Design a new product packaging design following Tesler’s guidelines for consistent branding"
+        ]
+      },
+      {
+        "name": "Evaluating the Zeigarnik Effect on User Engagement",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, understanding how to leverage the Zeigarnik Effect can increase user engagement and retention.",
+        "practice_points": [
+          "Conduct 2 usability testing sessions with participants who have been left with an unresolved task or question",
+          "Analyze existing products that successfully apply the Zeigarnik Effect and document the results in a report",
+          "Design a new product feature that incorporates the Zeigarnik Effect to increase user engagement"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:16:34.247879"
+}

@@ -1,0 +1,183 @@
+{
+  "score": 12,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 16,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 9,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 12,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 5,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of Collaboration & Communication",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice Collaboration & Communication through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, your role is to uncover innovative solutions by immersing yourself in user needs and pain points. To excel in this position, focus on developing a solid foundation in UX fundamentals, UI craft, and collaboration skills, while continuously seeking opportunities for growth and learning.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Intermediate",
+        "summary": "Applying Hick's Law to optimize button sizes and layout for better user experience.",
+        "practice_points": [
+          "Analyze 5 existing websites that have successfully applied Hick's Law in their design.",
+          "Create a wireframe of a login form with varying button sizes and measure the impact on user behavior using A/B testing.",
+          "Design an experiment to test the effect of Hick's Law on user performance and document findings."
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Designing for Emotional Engagement",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Intermediate",
+        "summary": "Using the Aesthetic-Usability Effect to create an emotionally engaging user interface that balances form and function.",
+        "practice_points": [
+          "Conduct 3 usability testing sessions with participants who have strong opinions on color schemes and analyze their feedback using the Aesthetic-Usability Effect framework.",
+          "Create a mood board with 5 inspiring color palettes and use them to design an interactive prototype that incorporates the Aesthetic-Usability Effect.",
+          "Design an experiment to test the impact of color scheme on user engagement and document findings."
+        ]
+      },
+      {
+        "name": "Law of Proximity: Organizing Content for Clarity",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Intermediate",
+        "summary": "Applying the Law of Proximity to organize content in a clear and concise manner, reducing cognitive load on users.",
+        "practice_points": [
+          "Analyze 5 existing websites that have successfully applied the Law of Proximity in their design.",
+          "Create a wireframe of an information dashboard with grouped related elements using the Law of Proximity and measure the impact on user behavior using A/B testing.",
+          "Design an experiment to test the effect of proximity on user comprehension and document findings."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:49:00.895984"
+}

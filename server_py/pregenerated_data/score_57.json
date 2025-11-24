@@ -1,0 +1,175 @@
+{
+  "score": 57,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 48,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 66,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 47,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 common UX principles and explain how they can be applied to a design project, referencing the Laws of UX resources (https://lawsofux.com/). Focus on clarifying your understanding of these principles in relation to your current score gap in UX Fundamentals (48%). (Measurable: 1-2 pages written, Score improvement: +5%)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment exercise using the 10 Usability Heuristics for User Interface Design (https://www.nngroup.com/articles/ten-usability-heuristics/) to identify areas where you can improve your design process. Document 3 specific heuristics and provide examples of how they apply to your current work, focusing on error states or missed opportunities. (Measurable: 1-2 pages written, Score improvement: +5%)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a visual representation of the Aesthetic-Usability Effect (https://lawsofux.com/aesthetic-usability-effect/) and explain its significance in UX design. Use this concept to redesign a simple UI element, such as a button or form field, incorporating the effect into your design decisions. (Measurable: 1-2 pages written, Score improvement: +5%)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive plan to improve Collaboration & Communication skills, including strategies for active listening, clear documentation, and effective feedback. Implement these strategies in a real-world project or with a colleague, tracking progress and results. (Measurable: 2-3 pages written, Score improvement: +10%)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, you have the power to shape the user experience and create products that delight and empower people. Focus on building your skills in User Research & Validation, Collaboration & Communication, and Product Thinking & Strategy to take your design career to the next level.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Tesler’s Law in UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Tesler’s Law states that the more information is presented at once, the less easily it can be understood. Practitioners will apply this law to optimize their designs and improve user experience.",
+        "practice_points": [
+          "Create a wireframe with 5-7 main sections and document how Tesler’s Law affects the design's usability",
+          "Conduct an A/B test to compare two versions of a UI element: one with more information presented at once, and another with less. Analyze the results and apply Tesler’s Law to improve the winning version",
+          "Design a new feature or page that incorporates Tesler’s Law, ensuring that it is intuitive and easy to use"
+        ]
+      },
+      {
+        "name": "Improving Collaboration through Clear Communication",
+        "pillar": "Collaboration & Communication",
+        "level": "Beginner",
+        "summary": "Effective collaboration requires clear communication among team members. Practitioners will focus on improving their communication skills to enhance teamwork and project outcomes.",
+        "practice_points": [
+          "Create a guide for communicating design decisions to non-design stakeholders, including examples of successful communication strategies",
+          "Record a 10-minute video explaining your design process and decisions to a colleague or peer. Share the recording with feedback and discuss areas for improvement",
+          "Participate in a virtual design meeting where you will present your work and receive feedback from colleagues. Practice active listening and ask clarifying questions"
+        ]
+      },
+      {
+        "name": "Applying the Law of Proximity in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "The Law of Proximity states that related elements should be grouped together to improve usability. Practitioners will apply this law to create more intuitive and user-friendly designs.",
+        "practice_points": [
+          "Design a new navigation menu with related links grouped together, using the Law of Proximity to guide your decisions",
+          "Conduct an analysis of existing UI elements on a website or app, identifying areas where the Law of Proximity could be applied to improve usability. Propose changes and document the results",
+          "Create a visual design system that incorporates the Law of Proximity, ensuring consistency across different pages and features"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:35:23.076964"
+}

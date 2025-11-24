@@ -1,0 +1,183 @@
+{
+  "score": 24,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 27,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 33,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 20,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 21,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 20,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 pain points for a hypothetical product using the Jobs-to-be-Done framework ( reference: https://lawsofux.com/jobs-to-be-done/). Document each point with a brief description and potential solutions. Score improvement: +5% in User Research & Validation category",
+          "Conduct 2 user interviews on a topic of your choice, taking detailed notes on the participants' thoughts and feelings (reference: https://nngroup.com/articles/usability-interviews/). Aim to identify at least 3 pain points. Score improvement: +5% in User Research & Validation category",
+          "Develop a basic understanding of Jakob's Law by creating a simple wireframe for a website with clear typography and color scheme (reference: https://lawsofux.com/jakobs-law/). Ensure the design is accessible and easy to read. Score improvement: +2% in UX Fundamentals category"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply the Aesthetic-Usability Effect by designing a simple UI component (e.g., button or form field) with clear typography, color contrast, and sufficient padding. Test your design on 3 users to ensure usability (reference: https://lawsofux.com/aesthetic-usability-effect/). Score improvement: +2% in UX Fundamentals category",
+          "Create a basic prototype of a product using Figma or Adobe XD, incorporating the principles of Miller's Law (reference: https://lawsofux.com/millers-law/). Ensure the design is intuitive and easy to use. Score improvement: +3% in UI Craft & Visual Design category",
+          "Develop your collaboration skills by participating in a 1-hour online discussion forum on UX topics, actively engaging with others' ideas and providing constructive feedback (reference: https://lawsofux.com/). Score improvement: +2% in Collaboration & Communication category"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a more advanced understanding of the 10 Usability Heuristics by creating a case study on how to apply one heuristic (e.g., visibility of system status) to a real-world product. Score improvement: +5% in UX Fundamentals category",
+          "Create a wireframe for a complex UI component (e.g., a dashboard or settings panel), applying the principles of Jakob's Law and Aesthetic-Usability Effect. Test your design on 3 users to ensure usability. Score improvement: +4% in UI Craft & Visual Design category",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, documenting at least 5 pain points and potential solutions. Score improvement: +5% in User Research & Validation category"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for a hypothetical product, incorporating principles from Miller's Law and Jakob's Law. Ensure the design is accessible, intuitive, and visually appealing. Score improvement: +5% in UI Craft & Visual Design category",
+          "Develop an advanced understanding of the 10 Usability Heuristics by creating a case study on how to apply multiple heuristics to a real-world product. Score improvement: +5% in UX Fundamentals category",
+          "Create a final portfolio piece that showcases your skills in collaboration and communication, including a written explanation of your design decisions and user research findings. Score improvement: +5% in Collaboration & Communication category"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. To excel in this role, focus on developing a strong foundation in UX fundamentals, refining your visual design skills, and honing your research and collaboration abilities through targeted learning and practice.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Mastering Occam's Razor will help Explorer designers simplify complex design decisions and prioritize user needs.",
+        "practice_points": [
+          "Analyze 3 existing products and identify areas where Occam's Razor could be applied to improve design decisions. Document findings in a written report (approx. 500 words).",
+          "Create a simple wireframe of a hypothetical product feature, applying Occam's Razor to prioritize functionality over aesthetics. Justify design choices with evidence from the law.",
+          "Conduct an interview with a UX designer who has experience applying Occam's Razor in their work. Ask them to share specific examples and challenges they faced. Document insights and takeaways."
+        ]
+      },
+      {
+        "name": "Understanding Jakob’s Law for Effective Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Mastering Jakob’s Law will help Explorer designers create intuitive navigation systems that reduce cognitive load. ",
+        "practice_points": [
+          "Analyze 3 existing websites and identify areas where Jakob’s Law could be improved. Suggest specific changes to enhance navigation, supported by evidence from the law.",
+          "Create a simple wireframe of a hypothetical website feature, applying Jakob’s Law to prioritize clear labeling and concise menus. Justify design choices with reference to the law.",
+          "Conduct an experiment testing the effect of label placement on user behavior (e.g., using A/B testing tools). Document findings and discuss implications for design decisions."
+        ]
+      },
+      {
+        "name": "Integrating Law of Proximity in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Applying the Law of Proximity will help Explorer designers create visually appealing and intuitive designs that reduce visual noise. ",
+        "practice_points": [
+          "Analyze 3 existing products with effective use of proximity in their design. Identify specific design elements that contribute to this effect and document findings.",
+          "Create a simple wireframe of a hypothetical product feature, applying the Law of Proximity to group related elements together. Justify design choices with reference to the law.",
+          "Conduct an exercise testing the effect of grouping on user behavior (e.g., using Figma or Adobe XD). Document findings and discuss implications for design decisions."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:02:31.702387"
+}

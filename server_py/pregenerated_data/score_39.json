@@ -1,0 +1,178 @@
+{
+  "score": 39,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 41,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 45,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 33,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 39,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (https://lawsofux.com/teslers-law/) and create a simple diagram illustrating how it applies to your current design process. (Score improvement: +3% in UX Fundamentals)",
+          "Identify 2 areas where you can apply Hick’s Law (https://lawsofux.com/hicks-law/) in your existing projects. Write down specific examples and potential solutions. (Score improvement: +2% in UX Fundamentals)",
+          "Familiarize yourself with the 8-point grid system for layout design. Create a simple wireframe using this system to improve your navigation skills. (Score improvement: +1% in UI Craft & Visual Design)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Apply Aesthetic-Usability Effect (https://lawsofux.com/aesthetic-usability-effect/) to redesign a simple product page, focusing on color schemes and typography. (Score improvement: +4% in UX Fundamentals)",
+          "Conduct a user interview using the Jobs-to-be-Done framework to identify pain points in your current design process. Document 3 key findings and potential solutions. (Score improvement: +5% in User Research & Validation)",
+          "Create a simple usability test plan for a hypothetical product feature, including heuristics from the NNGroup's 10 Usability Heuristics (https://www.nngroup.com/articles/ten-usability-heuristics/). (Score improvement: +2% in UX Fundamentals)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a basic product strategy document using the Laws of UX as a foundation. Focus on one key aspect, such as user research or design principles. (Score improvement: +6% in Product Thinking & Strategy)",
+          "Create a simple wireframe for a hypothetical feature, applying the 8-point grid system and considering Hick’s Law. Document your thought process and design decisions. (Score improvement: +3% in UI Craft & Visual Design)",
+          "Conduct a usability test of your own design work using the NNGroup's 10 Usability Heuristics. Identify areas for improvement and document your findings. (Score improvement: +4% in UX Fundamentals)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive product strategy document, incorporating all key aspects of the Laws of UX. Focus on one key aspect, such as user research or design principles. (Score improvement: +10% in Product Thinking & Strategy)",
+          "Create a simple prototype for a hypothetical feature using your new skills and knowledge. Document your thought process and design decisions. (Score improvement: +5% in UI Craft & Visual Design)",
+          "Conduct an in-depth user interview using the Jobs-to-be-Done framework to identify pain points in your current design process. Document 5 key findings and potential solutions, including a clear plan for implementation. (Score improvement: +8% in User Research & Validation)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By leveraging your skills in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, you can help create seamless and intuitive interactions that leave a lasting impact on users.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick’s Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Applying Hick's Law to design interfaces that minimize decision fatigue and maximize user efficiency.",
+        "practice_points": [
+          "Analyze 3 existing websites for Hick's Law violations and propose redesigns to improve usability",
+          "Create a heuristic evaluation checklist using Hick’s Law as a starting point"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Using the Jobs-to-be-Done framework to uncover user motivations and pain points in a real-world context.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework with users from different demographics"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Designing for Visual Hierarchy",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Applying the Aesthetic-Usability Effect to create visually appealing and intuitive interfaces.",
+        "practice_points": [
+          "Design 3 wireframes with varying levels of visual hierarchy using color, typography, and spacing"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:17:16.892231"
+}

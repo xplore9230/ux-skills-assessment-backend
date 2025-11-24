@@ -1,0 +1,183 @@
+{
+  "score": 88,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 89,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 83,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 87,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 82,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 97,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 common product thinking and strategy mistakes to avoid in UX design, referencing the 10 Usability Heuristics for User Interface Design (nngroup.com). Score your own understanding on a scale of 1-5, with 1 being 'I'm not sure' and 5 being 'I fully understand'.",
+          "Redesign the navigation menu of a popular design tool using Occam's Razor (lawsofux.com) to simplify it. Document your thought process and decisions in a 2-page report.",
+          "Sketch out 3 different wireframe prototypes for a hypothetical product feature, focusing on UI Craft & Visual Design principles from Aesthetic-Usability Effect (lawsofux.com). Get feedback from at least one peer or mentor."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Develop a 5-point plan to improve Product Thinking & Strategy in your current projects, incorporating the concepts learned from Occam's Razor and Miller’s Law (lawsofux.com). Present it to your team or manager for feedback.",
+          "Conduct a user research study on a specific pain point using the Jobs-to-be-Done framework. Document 5 key findings and propose solutions in a 3-page report.",
+          "Create an interactive prototype of a hypothetical product feature, focusing on UI Craft & Visual Design principles from Occam’s Razor (lawsofux.com). Get feedback from at least one peer or mentor."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a comprehensive guide to Product Thinking & Strategy for UX designers, incorporating the concepts learned from Occam's Razor and Miller’s Law (lawsofux.com). Share it with your team or online community.",
+          "Create a user research study on a specific pain point using the Jobs-to-be-Done framework. Document 10 key findings and propose solutions in a 5-page report.",
+          "Design an e-commerce product feature, focusing on UI Craft & Visual Design principles from Occam’s Razor (lawsofux.com). Get feedback from at least one peer or mentor."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive case study of how you applied Product Thinking & Strategy in a previous project, incorporating the concepts learned throughout this 4-week plan. Share it with your team or online community.",
+          "Create an interactive prototype of a hypothetical product feature, focusing on UI Craft & Visual Design principles from Occam’s Razor (lawsofux.com). Get feedback from at least one peer or mentor and incorporate their suggestions into the final design.",
+          "Design a comprehensive UX strategy for a new product feature, incorporating all the concepts learned throughout this 4-week plan. Present it to your team or manager for feedback."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design decisions that shape the future of products and services. By leveraging your strengths in collaboration, communication, and product thinking, you can foster a culture of empathy and inclusivity, creating experiences that delight and empower users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for UI Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing a clear understanding of Occam's Razor will help Strategic Leads make data-driven design decisions and avoid unnecessary complexity in their designs.",
+        "practice_points": [
+          "Analyze 3 existing UI designs that could be simplified using Occam's Razor and propose 2 alternative, simpler solutions for each",
+          "Create a style guide that incorporates Occam's Razor principles, including clear typography and limited color palettes",
+          "Conduct a usability testing session with 5 participants and analyze the results to identify areas where Occam's Razor could be applied"
+        ]
+      },
+      {
+        "name": "Using Tesler’s Law for Information Architecture",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding Tesler’s Law will enable Strategic Leads to create more intuitive and user-friendly information architectures that minimize cognitive load.",
+        "practice_points": [
+          "Design an information architecture for a new e-commerce website using Tesler’s Law, including clear navigation and categorization",
+          "Analyze the existing info architecture of 3 popular websites and propose improvements based on Tesler’s Law",
+          "Create a set of heuristics for evaluating the usability of information architectures against Tesler’s Law"
+        ]
+      },
+      {
+        "name": "Integrating Hick’s Law into Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick’s Law will help Strategic Leads optimize the speed and efficiency of their designs, reducing user frustration and increasing overall satisfaction.",
+        "practice_points": [
+          "Conduct a usability testing session with 5 participants to evaluate the impact of response time on user performance, using Hick’s Law as a guide",
+          "Analyze the existing design decisions of 3 colleagues and propose improvements based on Hick’s Law",
+          "Create a set of guidelines for designing interactive elements that balance speed and accuracy"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:08:10.602333"
+}

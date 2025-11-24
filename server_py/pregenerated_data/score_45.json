@@ -1,0 +1,178 @@
+{
+  "score": 45,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 44,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 49,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 51,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 44,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 38,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login form using the 8-point grid system, focusing on layout and spacing.",
+          "Write down 5 common UX principles (e.g. user-centered design, simplicity) and explain how they apply to your current work.",
+          "Conduct a self-assessment of your current portfolio's navigation, identifying areas where you can improve usability."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign the login form wireframe from Week 1 using Tesler’s Law and the Aesthetic-Usability Effect, focusing on visual hierarchy.",
+          "Create a mind map of the 10 Usability Heuristics for User Interface Design, highlighting key principles and how they relate to your work.",
+          "Develop a list of 5 common UX mistakes you've seen in other designers' work and explain how you can avoid them."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a usability test plan for a hypothetical product feature, using the Law of Uniform Connectedness to guide your design decisions.",
+          "Write a short essay (approx. 250 words) on the importance of UX Fundamentals in design, referencing at least two Laws of UX.",
+          "Design and document a simple user flow map for a common task (e.g. booking a flight), using a clear and concise language."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Conduct a peer review of your own design work, focusing on Collaboration & Communication aspects (e.g. providing clear instructions, asking for feedback).",
+          "Create a presentation (approx. 10 minutes) on how you've applied UX Fundamentals in a recent project, highlighting key takeaways and lessons learned.",
+          "Develop a case study of a successful UX design project, using the Jobs-to-be-Done framework to analyze user needs and pain points."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, you have the power to shape the user experience and create products that positively impact people's lives. To take your skills to the next level, focus on bridging the gaps in your strengths and weaknesses by developing a deeper understanding of product thinking, strategy, and collaboration - these will be key drivers of success in your career.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Improving UI Craft & Visual Design through Aesthetic Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Understanding the Aesthetic-Usability Effect and Von Restorff Effect is crucial for creating visually appealing and user-friendly interfaces.",
+        "practice_points": [
+          "Create 5 wireframes of a product page using only primary colors, with clear typography and spacing guidelines",
+          "Conduct 3 usability testing sessions to validate design decisions made during the Aesthetic-Usability Effect exercise"
+        ]
+      },
+      {
+        "name": "Enhancing Collaboration & Communication through Storytelling",
+        "pillar": "Collaboration & Communication",
+        "level": "Beginner",
+        "summary": "Developing effective storytelling skills can help UX designers communicate design decisions and user needs more effectively to stakeholders.",
+        "practice_points": [
+          "Create a 2-minute video showcasing your design process, using the 'Show, Don't Tell' principle"
+        ]
+      },
+      {
+        "name": "Deepening Product Thinking & Strategy through User Research",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate",
+        "summary": "Applying user research methods like Jobs-to-be-Done can help UX designers develop a deeper understanding of user needs and create more effective solutions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, documenting findings in a comprehensive report"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:23:33.960353"
+}

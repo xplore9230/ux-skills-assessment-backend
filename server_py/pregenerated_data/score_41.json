@@ -1,0 +1,171 @@
+{
+  "score": 41,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 44,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 42,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 37,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 44,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 potential user personas for an e-commerce website, using the 'Jobs-to-be-Done' framework to inform their characteristics and motivations.",
+          "Develop a simple decision tree to help you identify potential pain points in your own design process, focusing on areas where you struggle with User Research & Validation.",
+          "Write down 5 specific examples of how you've applied Occam's Razor in previous design projects, highlighting the benefits it brought to the outcome."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a usability test on your own portfolio website, identifying at least 3 areas where users are getting stuck or experiencing friction. Use these insights to inform a redesign of those sections.",
+          "Create a simple user journey map for a hypothetical product feature, using the 'Aesthetic-Usability Effect' principles to guide your design decisions.",
+          "Develop a basic prototype of an error state for a login form, using 10 Usability Heuristics as a reference point. Document your thought process and design choices."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Write a short essay (approx. 250-300 words) explaining how you would apply Miller's Law to optimize the navigation of an e-commerce website, including specific examples and design decisions.",
+          "Create a list of 5 potential user research questions for a hypothetical product feature, using the 'Laws of UX' principles to guide your question development.",
+          "Develop a basic wireframe of a hypothetical product feature, focusing on how it meets the needs of users with disabilities. Document your design choices and accessibility considerations."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Conduct a user interview with someone from your target audience, using the 'Jobs-to-be-Done' framework to guide your questions and ensure you're understanding their motivations and pain points.",
+          "Create a comprehensive design strategy document for an e-commerce website, outlining how you would apply the principles of Product Thinking & Strategy to inform every aspect of the design process.",
+          "Develop a final capstone project that demonstrates your mastery of User Research & Validation, including a written report and visual presentation of your findings."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a UX practitioner, your skills are a great foundation for growth. Focus on developing your product thinking and strategy skills to elevate your practice and drive meaningful user experiences.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Occam's Razor will help you create intuitive and efficient user interfaces by eliminating unnecessary complexity.",
+        "practice_points": [
+          "Analyze 3 existing products and identify areas where Occam's Razor can be applied to simplify their UI design. Document your findings and propose simplified solutions."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Using the Jobs-to-be-Done framework will help you gain a deeper understanding of users' motivations and behaviors, leading to more effective design solutions."
+      },
+      {
+        "name": "Creating Visual Hierarchy with Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the aesthetic-usability effect will help you create visually appealing and user-friendly designs that guide users through your product."
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:19:21.979882"
+}

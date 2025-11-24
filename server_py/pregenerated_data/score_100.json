@@ -1,0 +1,177 @@
+{
+  "score": 100,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 97,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 97,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 100,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (https://lawsofux.com/teslers-law/) and create a mind map illustrating how it applies to your current design work. Focus on identifying areas where you can improve the usability of existing designs. (Score improvement: +3% in UX Fundamentals)",
+          "Create 2 wireframes for a simple product page, focusing on clear typography and color scheme. Use the 8-point grid system to ensure consistency. (Reference your UI Craft & Visual Design score gap)",
+          "Write a short reflection (150-200 words) on how you can apply Hick's Law to improve navigation menus in your designs. Be specific about changes you'd make. (Score improvement: +2% in UX Fundamentals)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your current design process, identifying areas where you can streamline tasks and improve efficiency. Document your findings using the Jobs-to-be-Done framework. (Reference your Product Thinking & Strategy score gap)",
+          "Create a list of 5 usability heuristics from the nngroup.com article (https://www.nngroup.com/articles/ten-usability-heuristics/) that you can apply to your current design work. Write a brief explanation for each heuristic and how it applies to your strengths as a Strategic Lead designer. (Score improvement: +2% in UX Fundamentals)",
+          "Design a new icon set using the Aesthetic-Usability Effect principles from lawsofux.com. Create 3 icons that demonstrate clear visual hierarchy and color contrast. (Reference your UI Craft & Visual Design score gap)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a design concept for an existing product or service, applying the principles of Hick's Law to improve navigation menus. Create a wireframe and visual design prototype showcasing your changes. (Reference your UI Craft & Visual Design score gap)",
+          "Write a short case study (300-400 words) on how you can apply Tesler's Law to improve the usability of an existing product or service. Be specific about changes you'd make and how they would benefit users. (Score improvement: +3% in UX Fundamentals)",
+          "Create a design system document outlining your approach to typography, color scheme, and iconography for future projects. Include examples from your current portfolio. (Reference your UI Craft & Visual Design score gap)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive usability testing plan for an existing product or service, applying the principles of Hick's Law and Tesler's Law to identify areas for improvement. Create a detailed report outlining your findings and recommendations. (Capstone task)",
+          "Develop a design concept for a new product or service that incorporates the principles of Aesthetic-Usability Effect. Create a wireframe and visual design prototype showcasing your changes. (Final push)",
+          "Create a final reflection (300-400 words) on what you've learned throughout this 4-week improvement plan, highlighting specific strategies and techniques you'll apply to future projects as a Strategic Lead designer. (Capstone task)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX Designer, you have the unique opportunity to drive user-centered design decisions that shape the future of products and experiences. By leveraging your expertise in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, you can empower teams to create innovative solutions that meet the needs of users, driving business success and growth.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick’s Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "As a Strategic Lead, understanding the limitations of human decision-making can inform more effective navigation designs.",
+        "practice_points": [
+          "Analyze 3 existing websites and identify areas where Hick’s Law is at play (e.g., menu options, search functionality). Document findings and suggest improvements."
+        ]
+      },
+      {
+        "name": "Conducting User Research with Tesler’s Law",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Tesler's Law highlights the importance of clear and consistent labeling in UX design. Apply this principle to inform user research methods.",
+        "practice_points": [
+          "Conduct 2 user interviews using Tesler’s Law as a guiding principle (e.g., ask users to identify and explain the purpose of specific UI elements). Document findings and analyze results."
+        ]
+      },
+      {
+        "name": "Designing for Cognitive Load with Serial Position Effect",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "By understanding how humans process information, Strategic Leads can design more efficient workflows and reduce cognitive load.",
+        "practice_points": [
+          "Create 2 wireframes of a hypothetical e-commerce website that incorporate the Serial Position Effect (e.g., listing products in a specific order). Test with 3 users and gather feedback."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:20:47.330175"
+}

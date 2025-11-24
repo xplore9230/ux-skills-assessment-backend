@@ -1,0 +1,190 @@
+{
+  "score": 55,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 52,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 56,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 54,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 59,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 52,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login screen using the 10 Usability Heuristics for User Interface Design (nngroup.com) as reference. Focus on making sure your design follows at least 5 of these heuristics.",
+          "Write down 3 common UX mistakes you've seen in real-world designs and explain how they can be avoided using Jakob’s Law (lawsofux.com).",
+          "Design a basic color palette for a hypothetical product using the Aesthetic-Usability Effect (lawsofux.com) as inspiration."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a solo user research exercise by asking yourself 5 questions about your own design process. Use these insights to inform a redesign of your portfolio's navigation using the 8-point grid system.",
+          "Create a mind map or diagram illustrating how Miller’s Law (lawsofux.com) applies to your current work. Explain how you can use this law in future projects.",
+          "Write a short reflection on what Collaboration & Communication means to you as a UX Practitioner, and how you plan to improve these skills in the next 3 months."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a user persona for a hypothetical product using the Jobs-to-be-Done framework. Document at least 5 pain points that this persona might experience.",
+          "Redesign your own project's wireframes, focusing on error states you missed in your initial design. Use the Laws of UX as reference.",
+          "Conduct a self-assessment of your current collaboration and communication skills with colleagues. Identify one area for improvement and create an action plan to address it."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive user flow map for a hypothetical product, incorporating at least 3 of the Laws of UX. Explain how these laws inform your design decisions.",
+          "Create a video or presentation showcasing your portfolio's redesign using the 8-point grid system and explaining the thought process behind it.",
+          "Write a reflective essay on what you've learned throughout this 4-week improvement plan, highlighting specific successes and areas for continued growth as a UX Practitioner."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the opportunity to shape user experiences that drive business success and create lasting connections with your audience. To elevate your skills, focus on bridging gaps in your strengths - UI Craft & Visual Design, Product Thinking & Strategy, and Collaboration & Communication - while continuing to build a solid foundation in UX Fundamentals and User Research & Validation.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Jakob's Law and its Impact on UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Jakob's Law to design intuitive navigation can significantly improve user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites using Jakob's Law and identify areas for improvement",
+          "Design a new website navigation system that incorporates Jakob's Law principles",
+          "Conduct A/B testing on a website to validate the effectiveness of Jakob's Law in improving user behavior"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide using Occam's Razor",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Applying Occam's Razor to design can help eliminate unnecessary complexity and improve visual consistency.",
+        "practice_points": [
+          "Create a style guide for a hypothetical product using Occam's Razor principles",
+          "Analyze 2 existing style guides and identify areas where Occam's Razor could be applied",
+          "Conduct user testing on a website with an inconsistent design system to validate the effectiveness of Occam's Razor"
+        ]
+      },
+      {
+        "name": "Applying the Law of Uniform Connectedness to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding the Law of Uniform Connectedness can help designers create more intuitive navigation systems.",
+        "practice_points": [
+          "Analyze 3 existing websites using the Law of Uniform Connectedness and identify areas for improvement",
+          "Design a new website navigation system that incorporates the Law of Uniform Connectedness principles",
+          "Conduct A/B testing on a website to validate the effectiveness of the Law of Uniform Connectedness in improving user behavior"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score reflects the practitioner's understanding of fundamental UX principles, such as user-centered design and usability."
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:33:23.150792"
+}

@@ -1,0 +1,180 @@
+{
+  "score": 68,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 68,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 70,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 57,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 73,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 72,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple usability heuristic checklist using the 10 Usability Heuristics for User Interface Design (nngroup.com) as a reference. Document 5 key points and provide examples for each.",
+          "Redesign your portfolio's navigation using the 8-point grid system to improve visual hierarchy and accessibility. Measure the improvement in time taken to navigate and user satisfaction.",
+          "Conduct a self-assessment of your current UX Fundamentals knowledge by reviewing the Laws of UX (lawsofux.com) and Aesthetic-Usability Effect (lawsofux.com). Identify 3 areas for improvement and create a plan to address them."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user research plan for a hypothetical product, focusing on User Research & Validation. Document the research methods, participant recruitment strategy, and data analysis plan.",
+          "Develop a basic wireframe of a hypothetical product using the Occam's Razor (lawsofux.com) principle to minimize complexity. Ensure the design is intuitive and easy to use.",
+          "Create a mind map or diagram illustrating how to apply the Zeigarnik Effect in UX design. Explain the concept and provide examples of successful implementation."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework (documented in your portfolio) to identify pain points and areas for improvement. Analyze the data and present findings with recommendations.",
+          "Design a simple usability test plan to evaluate the effectiveness of a hypothetical product feature. Document the testing methodology, participant recruitment strategy, and results analysis plan.",
+          "Create an infographic summarizing the key principles of UX Fundamentals, including Laws of UX, Aesthetic-Usability Effect, Occam's Razor, and Zeigarnik Effect. Share with your team or mentor for feedback."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive UX strategy document for a hypothetical product, incorporating all the principles learned throughout the 4-week program. Present the plan to your team or mentor and receive feedback.",
+          "Create an advanced usability heuristic checklist using the Laws of UX as a reference. Document 10 key points and provide examples for each, highlighting how they can be applied in real-world scenarios.",
+          "Design a case study demonstrating the successful implementation of UX Fundamentals principles in a real-world project. Share with your team or mentor and receive feedback on its effectiveness."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, it's time to take your skills to the next level by focusing on user research and validation. By investing in these areas, you can elevate your design decisions and create products that truly meet the needs of your users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Effective Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Emerging Senior designers need to apply usability heuristics to create intuitive and user-friendly interfaces, improving overall UX design.",
+        "practice_points": [
+          "Analyze 5 existing products using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive heuristic evaluation guide for future projects, including clear criteria and scoring system"
+        ]
+      },
+      {
+        "name": "Deepening Understanding of Cognitive Biases in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner/Intermediate",
+        "summary": "Emerging Senior designers should familiarize themselves with cognitive biases to make more informed design decisions and create more effective user experiences.",
+        "practice_points": [
+          "Read and apply the Zeigarnik Effect, Occam's Razor, Jakob's Law, Miller’s Law, Serial Position Effect, Aesthetic-Usability Effect, and Laws of UX in 3 different design projects",
+          "Conduct a case study on how cognitive biases influenced the design of a popular app or website"
+        ]
+      },
+      {
+        "name": "Developing Effective User Research Skills for Informed Design",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Emerging Senior designers need to develop their user research skills to gather actionable insights and create more effective user experiences.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings, including quotes and insights",
+          "Create a comprehensive user research plan for an upcoming project, outlining methods, tools, and timelines"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:46:21.803732"
+}

@@ -1,0 +1,168 @@
+{
+  "score": 77,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 78,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 77,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 76,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a user persona for an existing company, focusing on their target audience's pain points and motivations (Reference: 'Jobs-to-be-Done' framework). Document your thought process and assumptions in a 2-page report.",
+          "Conduct 2 usability tests using the 10 Usability Heuristics from nngroup.com. Analyze the results and provide actionable feedback for improvement.",
+          "Develop a simple wireframe of a hypothetical product feature, focusing on clear typography and color scheme (Reference: Jakob's Law)."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user research plan for an upcoming project, outlining the methods you'll use to gather insights. Present your plan to a colleague or mentor.",
+          "Redesign the navigation of your portfolio using the 8-point grid system. Document your design decisions and provide examples of how they improve user experience.",
+          "Develop a 'Design System' document for a hypothetical company, outlining their visual design principles and guidelines."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Conduct 2 user interviews using the Aesthetic-Usability Effect framework. Analyze your findings and provide recommendations for improving the overall aesthetic of a product.",
+          "Create a 'User Journey Map' for an existing company, highlighting pain points and areas for improvement. Present your map to stakeholders.",
+          "Develop a 'Design System' component library for a hypothetical company, outlining reusable UI elements and their design principles."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive 'Design System' document for an existing company, outlining their visual design principles, guidelines, and components. Present your document to stakeholders.",
+          "Develop a 'User Research' plan for a hypothetical project, outlining the methods you'll use to gather insights. Conduct 2 usability tests using the '10 Usability Heuristics' from nngroup.com. Analyze the results and provide actionable feedback for improvement.",
+          "Create a 'Portfolio' redesign using the 'Law of UX' principles (Miller's Law, Jakob's Law). Document your design decisions and provide examples of how they improve user experience."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and a keen eye for visual design. To take your career to the next level, focus on developing a deeper understanding of product thinking and strategy, while continuing to refine your research and validation skills.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Enhanced UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of usability heuristics to create intuitive and user-friendly interfaces, addressing the Emerging Senior's weakest area (78/100)."
+      },
+      {
+        "name": "Applying Cognitive Psychology Principles for Effective User Research",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Acquire expertise in cognitive psychology principles to design more effective user research methods, addressing the Emerging Senior's weakest area (76/100)."
+      },
+      {
+        "name": "Crafting Compelling UI Design with Aesthetic-Usability Effect and Visual Hierarchy",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "Develop a solid understanding of the aesthetic-usability effect and visual hierarchy to create visually appealing and user-friendly interfaces, addressing the Emerging Senior's weakest area (80/100)."
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:56:13.724573"
+}

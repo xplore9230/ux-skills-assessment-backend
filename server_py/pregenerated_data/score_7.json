@@ -1,0 +1,226 @@
+{
+  "score": 7,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 7,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 1,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 9,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 17,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 0,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Conduct a solo user research exercise: Ask yourself 5 questions about your own UX workflow and document your answers using the Zeigarnik Effect framework. (9% score gap reference)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Write a 2-page reflection on your collaboration and communication skills, highlighting areas for improvement and strategies for growth. (0% score gap reference)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a video showcasing your design process for a hypothetical project, highlighting your ability to communicate design decisions effectively. (0% score gap reference)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a showcase of 3 successful UX design projects that demonstrate your ability to apply the Laws of UX in real-world contexts. (7% score gap reference)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, your role is to uncover the hidden patterns and behaviors of users, but it starts with building a strong foundation in UX Fundamentals. Focus on developing a solid understanding of user research methods, usability principles, and design thinking to unlock your full potential and take your skills from 7/100 to 90/100.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics will help Explorer designers identify and address common UX pitfalls, leading to more effective design decisions.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics for User Interface Design and document areas for improvement",
+          "Create a comprehensive list of potential heuristics violations in a hypothetical product and propose solutions",
+          "Design 2 new interfaces that incorporate at least 5 usability heuristics, with clear explanations for design choices"
+        ]
+      },
+      {
+        "name": "Law of Proximity and Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Mastering the Law of Proximity will help Explorer designers create more intuitive and visually appealing interfaces.",
+        "practice_points": [
+          "Create 5 wireframes with varying levels of proximity (e.g., adjacent, near, far) to demonstrate its impact on user experience",
+          "Design a color palette that adheres to the Law of Proximity, including a minimum of 3 distinct colors and their corresponding usage guidelines"
+        ]
+      },
+      {
+        "name": "Conducting Effective User Interviews for UX Research",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Developing strong user interview skills will enable Explorer designers to gather valuable insights from users, informing design decisions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings in a clear, concise report",
+          "Create a comprehensive guide for conducting user interviews, including tips for active listening and note-taking"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Current score indicates a need for improvement in understanding user needs and behaviors.",
+        "detailed": "The low score suggests that the designer may not be adequately considering user-centered design principles, such as user research, usability testing, and accessibility. This could lead to a product that is frustrating or unintuitive for users.",
+        "actionable": [
+          "Conduct user interviews and surveys to gain a deeper understanding of user needs and pain points",
+          "Review existing user research and validate findings through usability testing",
+          "Study industry benchmarks and best practices in UX design"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Current score highlights the need for improvement in visual design skills.",
+        "detailed": "The low score indicates that the designer may not have a strong foundation in visual design principles, such as color theory, typography, and composition. This could result in a product with poor visual appeal or user experience.",
+        "actionable": [
+          "Take online courses or attend workshops to improve visual design skills",
+          "Study the work of other designers and analyze what makes their designs effective",
+          "Join design communities or forums to stay up-to-date on industry trends"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Current score suggests a strong foundation in user research methods.",
+        "detailed": "The high score indicates that the designer is well-versed in user research techniques, such as user interviews and usability testing. However, it's essential to continue refining these skills to ensure that research is conducted effectively and efficiently.",
+        "actionable": [
+          "Attend user research workshops or conferences to stay current on best practices",
+          "Participate in online communities or forums focused on user research",
+          "Collaborate with other designers or researchers to gain new insights"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Current score indicates a need for improvement in understanding product strategy.",
+        "detailed": "The low score suggests that the designer may not be adequately considering product goals, target audience, and market trends. This could result in a product that is unclear or unappealing to users.",
+        "actionable": [
+          "Read industry publications or blogs focused on product strategy",
+          "Take online courses or attend workshops on product thinking and strategy",
+          "Join product-focused communities or forums to stay informed"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Current score highlights the need for improvement in collaboration and communication skills.",
+        "detailed": "The low score indicates that the designer may struggle with effective communication, teamwork, and stakeholder management. This could lead to misunderstandings, missed deadlines, or poor product quality.",
+        "actionable": [
+          "Take courses or attend workshops on collaboration and communication",
+          "Join professional organizations or networking groups focused on design and product development",
+          "Practice active listening and clear communication with team members and stakeholders"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T17:43:43.055385"
+}
