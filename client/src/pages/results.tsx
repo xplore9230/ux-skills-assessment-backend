@@ -255,7 +255,7 @@ const ResultsPage = memo(function ResultsPage({
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex items-baseline justify-center mt-0 w-full px-4"
           >
-            <span className="font-serif text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-tight text-foreground leading-none select-none break-all overflow-visible whitespace-nowrap">
+            <span className="font-sans text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-tight text-black leading-none select-none break-all overflow-visible whitespace-nowrap">
               {totalScore}
             </span>
           </motion.div>
@@ -276,7 +276,7 @@ const ResultsPage = memo(function ResultsPage({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mt-6 sm:mt-8 px-4 break-words"
+            className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mt-6 sm:mt-8 px-4 break-words"
           >
             {stage}
           </motion.h1>

@@ -54,27 +54,7 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
             className="space-y-4 text-center"
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" data-testid="text-hero-title">
-              <>Find Your <motion.span 
-                className="font-playfair font-bold italic relative inline-block"
-              >
-                UX Career
-                <motion.span
-                  className="absolute bottom-0 h-[2px] bg-current"
-                  initial={{ left: "0%", y: 0, opacity: 0, width: "0%" }}
-                  animate={{
-                    left: ["0%", "0%", "100%"],
-                    y: 0,
-                    opacity: [0, 1, 1],
-                    width: ["0%", "100%", "0%"]
-                  }}
-                  transition={{ 
-                    duration: 1.2, 
-                    delay: 1, 
-                    ease: "easeInOut",
-                    times: [0, 0.5, 1]
-                  }}
-                />
-              </motion.span> Stage</>
+              <>Find Your <span className="font-playfair font-bold italic">UX Career</span> Stage</>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Take a comprehensive skills assessment to discover where you stand and what to focus on next in your UX career journey.
