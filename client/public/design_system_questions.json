@@ -1,0 +1,4052 @@
+[
+  {
+    "id": "DS-Foundations-1",
+    "text": "How well do you understand design principles as the 'constitution' of a design system that guides all decision-making?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-2",
+    "text": "How experienced are you with creating comprehensive color systems that include primary, secondary, and functional colors with semantic meaning?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-3",
+    "text": "How comfortable are you with establishing typographic systems including type scales with specific font sizes, weights, and line heights?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-4",
+    "text": "How well do you understand iconography systems and maintaining visual consistency (filled vs outline, stroke weight, standard grid)?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-5",
+    "text": "How familiar are you with standardized spacing scales (4dp or 8dp grids) for margins, padding, and element distances?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-6",
+    "text": "How well do you understand the strategic imperative of design systems - the virtuous cycle of efficiency, consistency, scalability, and collaboration?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-7",
+    "text": "How comfortable are you with WCAG accessibility guidelines, ensuring minimum color contrast ratios (4.5:1 for normal text)?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-8",
+    "text": "How well do you understand that color should never be the sole means of conveying information - it needs icons, text labels, or shapes?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-9",
+    "text": "How experienced are you with motion design principles that provide feedback, guide user focus, and create meaningful experiences?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-10",
+    "text": "How well do you understand content guidelines including voice, tone, UX writing best practices, and capitalization rules?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-11",
+    "text": "How familiar are you with the concept of a design system as a 'living product' versus a static style guide?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-12",
+    "text": "How well do you understand how design foundations create a 'single source of truth' for all design decisions?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-13",
+    "text": "How comfortable are you with defining a unified design language that guides the design of a suite of products?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-14",
+    "text": "How experienced are you with ensuring color contrast ratios meet WCAG AA standards (4.5:1 for normal, 3:1 for large text)?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-15",
+    "text": "How well do you understand the interconnection between foundations - how changing a color affects typography, components, etc.?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-16",
+    "text": "How familiar are you with Dynamic Type and ensuring UI reflows gracefully for user-defined text sizes?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-17",
+    "text": "How comfortable are you with creating icon libraries that maintain consistent style and visual weight?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-18",
+    "text": "How well do you understand layout grids as foundation elements that define how content is structured on pages?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-19",
+    "text": "How experienced are you with defining systematic interaction states (hover, focus, active, disabled, pressed) in foundations?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-20",
+    "text": "How well do you understand how design tokens bridge abstract foundations to concrete implementation?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-21",
+    "text": "How comfortable are you with theming systems that use color tokens to enable features like light and dark modes?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-22",
+    "text": "How familiar are you with ARIA attributes and semantic HTML for screen reader accessibility in foundations?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-23",
+    "text": "How well do you understand keyboard navigation requirements - ensuring all interactive elements are keyboard accessible?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-24",
+    "text": "How experienced are you with ensuring touch target sizes meet minimum requirements (44×44px) for mobile accessibility?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Foundations-25",
+    "text": "How well do you understand that documentation is essential for foundations to explain the 'why', 'when', and 'how'?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-1",
+    "text": "How well do you understand what design tokens are - named entities that store visual design attributes as data?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-2",
+    "text": "How experienced are you with naming conventions for design tokens (e.g., $color-brand-primary-blue vs hardcoded #0052cc)?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-3",
+    "text": "How comfortable are you with token architecture - primitive tokens vs semantic tokens vs component tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-4",
+    "text": "How well do you understand platform translation of tokens (CSS variables for web, XML for Android, Swift for iOS)?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-5",
+    "text": "How familiar are you with token formats (JSON, YAML) and how they're converted to platform-specific code?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-6",
+    "text": "How well do you understand how tokens bridge design and development, maintaining a single source of truth?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-7",
+    "text": "How experienced are you with color tokens specifically - creating semantic color token systems?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-8",
+    "text": "How comfortable are you with spacing tokens (margin, padding, gap) that ensure consistent spacing throughout?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-9",
+    "text": "How well do you understand typography tokens (font size, line height, font weight) as part of token systems?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-10",
+    "text": "How familiar are you with shadow and elevation tokens that create visual hierarchy?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-11",
+    "text": "How well do you understand token aliasing and referencing - how tokens can reference other tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-12",
+    "text": "How experienced are you with managing token versions and updates across products?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-13",
+    "text": "How comfortable are you with token inheritance and composition - building token hierarchies?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-14",
+    "text": "How well do you understand how tokens enable theming (light/dark modes) through token variants?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-15",
+    "text": "How familiar are you with border radius tokens and shape tokens in design systems?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-16",
+    "text": "How well do you understand animation and transition tokens (duration, easing, delay)?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-17",
+    "text": "How experienced are you with token tools like Style Dictionary or Theo for managing tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-18",
+    "text": "How comfortable are you with exporting tokens from design tools (Figma plugins) to code?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-19",
+    "text": "How well do you understand token naming strategies and conventions (BEM-style, namespacing)?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-20",
+    "text": "How familiar are you with semantic vs primitive tokens - when to use each approach?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-21",
+    "text": "How well do you understand token scale and hierarchy - creating systematic token scales?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-22",
+    "text": "How experienced are you with token documentation and specifications for teams?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-23",
+    "text": "How comfortable are you with token testing and validation to ensure quality?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-24",
+    "text": "How well do you understand token maintenance and evolution as systems grow?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Tokens-25",
+    "text": "How familiar are you with token APIs and programmatic access for consuming applications?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-1",
+    "text": "How well do you understand layout grid systems that define how content is structured on pages?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-2",
+    "text": "How experienced are you with type scale systems that manage typographic hierarchy consistently?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-3",
+    "text": "How comfortable are you with theming systems that use color tokens to enable light and dark modes?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-4",
+    "text": "How well do you understand breakpoint systems for responsive design across devices?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-5",
+    "text": "How familiar are you with elevation systems that use subtle value shifts to create visual hierarchy?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-6",
+    "text": "How well do you understand how core systems codify how design decisions work together (vs single tokens)?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-7",
+    "text": "How experienced are you with sizing systems that provide consistent dimensions for components?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-8",
+    "text": "How comfortable are you with responsive typography systems that adapt to screen sizes?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-9",
+    "text": "How well do you understand z-index systems that manage layering and stacking context?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-10",
+    "text": "How familiar are you with animation systems that define timing, easing, and motion principles?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-11",
+    "text": "How well do you understand how core systems provide solutions for common, recurring interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-12",
+    "text": "How experienced are you with overlay systems that create depth and layering in UIs?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-13",
+    "text": "How comfortable are you with container systems that define content width and constraints?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-14",
+    "text": "How well do you understand responsive grid systems that adapt from mobile to desktop?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-15",
+    "text": "How familiar are you with aspect ratio systems for consistent media display?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-16",
+    "text": "How well do you understand how core systems build upon tokens to provide higher-level solutions?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-17",
+    "text": "How experienced are you with shadow systems that create depth and elevation hierarchy?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-18",
+    "text": "How comfortable are you with border systems that define consistent border styles and widths?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-19",
+    "text": "How well do you understand opacity systems for creating layered visual effects?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-20",
+    "text": "How familiar are you with backdrop filter systems for blur and overlay effects?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-21",
+    "text": "How well do you understand how core systems ensure consistency across complex layouts?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-22",
+    "text": "How experienced are you with fluid typography systems that scale smoothly between breakpoints?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-23",
+    "text": "How comfortable are you with container query systems for component-level responsive design?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-24",
+    "text": "How well do you understand how core systems document tried-and-true approaches to UI problems?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-CoreSystems-25",
+    "text": "How familiar are you with multi-column layout systems for complex content structures?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-1",
+    "text": "How experienced are you with building reusable UI components that encapsulate design and behavior?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-2",
+    "text": "How comfortable are you with component composition - building complex components from simpler ones?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-3",
+    "text": "How well do you understand component variants (size, style, state) and when to create them?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-4",
+    "text": "How familiar are you with component APIs and props design for flexibility and reusability?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-5",
+    "text": "How experienced are you with component documentation including usage guidelines and code examples?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-6",
+    "text": "How well do you understand that components should be composites of tokens and core systems?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-7",
+    "text": "How comfortable are you with building component libraries (e.g., React, Vue, Angular) from design specs?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-8",
+    "text": "How well do you understand component categorization - Actions, Containment, Communication, Navigation, Selection?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-9",
+    "text": "How familiar are you with component accessibility - ensuring keyboard navigation, ARIA attributes, focus management?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-10",
+    "text": "How experienced are you with component testing - unit tests, visual regression, accessibility testing?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-11",
+    "text": "How well do you understand component state management - controlled vs uncontrolled components?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-12",
+    "text": "How comfortable are you with component theming - ensuring components work with theme systems?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-13",
+    "text": "How well do you understand component composition patterns - slots, children, render props?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-14",
+    "text": "How familiar are you with component versioning and breaking changes management?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-15",
+    "text": "How experienced are you with component design systems like Material UI, Ant Design, or Chakra UI?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-16",
+    "text": "How well do you understand component lifecycle - when to create, update, or deprecate components?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-17",
+    "text": "How comfortable are you with component performance optimization - lazy loading, code splitting?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-18",
+    "text": "How well do you understand component error boundaries and error handling patterns?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-19",
+    "text": "How familiar are you with component design kits in Figma - syncing design and code components?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-20",
+    "text": "How experienced are you with component APIs that balance flexibility with constraints?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-21",
+    "text": "How well do you understand component dependencies and avoiding circular dependencies?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-22",
+    "text": "How comfortable are you with component migration strategies when systems evolve?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-23",
+    "text": "How well do you understand component contribution workflows - submitting new components to systems?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-24",
+    "text": "How familiar are you with component analytics - tracking usage and adoption?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Components-25",
+    "text": "How experienced are you with component maintenance - keeping components updated and relevant?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-1",
+    "text": "How well do you understand design patterns vs components - patterns are 'how to' combine components to solve user goals?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-2",
+    "text": "How experienced are you with form patterns - combining inputs, labels, validation, and buttons effectively?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-3",
+    "text": "How comfortable are you with navigation patterns - breadcrumbs, pagination, tabs, steppers?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-4",
+    "text": "How well do you understand loading state patterns - spinners, skeletons, progress indicators?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-5",
+    "text": "How familiar are you with error handling patterns - inline errors, toast notifications, error pages?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-6",
+    "text": "How well do you understand empty state patterns - providing helpful context and clear CTAs?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-7",
+    "text": "How experienced are you with data display patterns - tables, lists, cards, grids?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-8",
+    "text": "How comfortable are you with search patterns - type-ahead, filters, results display, 'no results' handling?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-9",
+    "text": "How well do you understand notification patterns - when to use modals vs snackbars vs banners?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-10",
+    "text": "How familiar are you with onboarding patterns - progressive disclosure, tutorials, guided flows?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-11",
+    "text": "How well do you understand that patterns provide tested recipes for common user objectives?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-12",
+    "text": "How experienced are you with authentication patterns - login flows, registration, password reset?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-13",
+    "text": "How comfortable are you with filtering and sorting patterns for data-heavy interfaces?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-14",
+    "text": "How well do you understand user feedback patterns - confirmations, undo actions, status updates?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-15",
+    "text": "How familiar are you with wizard patterns - multi-step processes, progress indication, validation?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-16",
+    "text": "How well do you understand pattern documentation - usage guidelines, examples, anti-patterns?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-17",
+    "text": "How experienced are you with responsive patterns - how patterns adapt across screen sizes?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-18",
+    "text": "How comfortable are you with accessibility patterns - ensuring patterns work for all users?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-19",
+    "text": "How well do you understand that patterns shift burden from product teams to design system teams?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-20",
+    "text": "How familiar are you with dashboard patterns - layout, widgets, data visualization?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-21",
+    "text": "How experienced are you with modal patterns - dialogs, drawers, overlays for different contexts?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-22",
+    "text": "How well do you understand pattern variations - when and how to adapt patterns for specific needs?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-23",
+    "text": "How comfortable are you with pattern testing - validating patterns work well for users?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-24",
+    "text": "How well do you understand pattern evolution - how patterns improve based on usage and feedback?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Patterns-25",
+    "text": "How familiar are you with pattern libraries and how they complement component libraries?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-1",
+    "text": "How well do you understand design system governance models - centralized vs federated vs hybrid?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-2",
+    "text": "How experienced are you with contribution workflows - proposal, design, build, review, publish?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-3",
+    "text": "How comfortable are you with versioning strategies (Semantic Versioning) for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-4",
+    "text": "How well do you understand team models - centralized core team vs federated contributors?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-5",
+    "text": "How familiar are you with design system maintenance - ongoing updates, bug fixes, improvements?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-6",
+    "text": "How well do you understand that governance makes a design system a living product, not a project?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-7",
+    "text": "How experienced are you with decision-making processes - who decides what goes into the system?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-8",
+    "text": "How comfortable are you with communication strategies - changelogs, announcements, office hours?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-9",
+    "text": "How well do you understand contribution guidelines - standards for code, design, and documentation quality?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-10",
+    "text": "How familiar are you with review processes - design review, code review, accessibility review?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-11",
+    "text": "How well do you understand roadmap planning for design systems - prioritizing work, managing backlogs?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-12",
+    "text": "How experienced are you with adoption strategies - getting teams to use the design system?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-13",
+    "text": "How comfortable are you with metrics and KPIs for design systems - usage, adoption, impact?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-14",
+    "text": "How well do you understand the federated model - empowering contributors while maintaining quality?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-15",
+    "text": "How familiar are you with breaking change management - deprecation policies, migration guides?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-16",
+    "text": "How well do you understand that robust processes make systems trustworthy and sustainable?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-17",
+    "text": "How experienced are you with stakeholder management - getting buy-in, managing expectations?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-18",
+    "text": "How comfortable are you with community building around design systems - fostering collaboration?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-19",
+    "text": "How well do you understand design system maturity models - from initial to federated?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-20",
+    "text": "How familiar are you with design system documentation processes - keeping docs up to date?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-21",
+    "text": "How experienced are you with quality gates - ensuring contributions meet standards before merge?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-22",
+    "text": "How comfortable are you with design system retrospectives and continuous improvement?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-23",
+    "text": "How well do you understand design system product ownership - treating it as a product, not a project?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-24",
+    "text": "How familiar are you with design system evangelism - promoting adoption across the organization?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  },
+  {
+    "id": "DS-Governance-25",
+    "text": "How experienced are you with design system strategy - long-term vision and evolution planning?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 1,
+        "label": "Not familiar"
+      },
+      {
+        "value": 2,
+        "label": "Basic understanding"
+      },
+      {
+        "value": 3,
+        "label": "Good understanding"
+      },
+      {
+        "value": 4,
+        "label": "Strong understanding"
+      },
+      {
+        "value": 5,
+        "label": "Expert level"
+      }
+    ]
+  }
+]

@@ -86,6 +86,7 @@ export default {
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+        playfair: ["var(--font-playfair)"],
       },
       keyframes: {
         "accordion-down": {
@@ -100,6 +101,152 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "none",
+            color: "hsl(var(--foreground))",
+            fontFamily: "var(--font-serif)",
+            '[class~="lead"]': {
+              color: "hsl(var(--muted-foreground))",
+            },
+            a: {
+              color: "hsl(var(--foreground))",
+              textDecoration: "underline",
+              textDecorationColor: "hsl(var(--border))",
+              "&:hover": {
+                color: "hsl(var(--foreground))",
+                textDecorationColor: "hsl(var(--foreground))",
+              },
+            },
+            strong: {
+              color: "hsl(var(--foreground))",
+              fontWeight: "600",
+            },
+            "ol > li::marker": {
+              color: "hsl(var(--muted-foreground))",
+            },
+            "ul > li::marker": {
+              color: "hsl(var(--muted-foreground))",
+            },
+            h1: {
+              color: "hsl(var(--foreground))",
+              fontFamily: "var(--font-serif)",
+              fontWeight: "700",
+            },
+            h2: {
+              color: "hsl(var(--foreground))",
+              fontFamily: "var(--font-serif)",
+              fontWeight: "700",
+            },
+            h3: {
+              color: "hsl(var(--foreground))",
+              fontFamily: "var(--font-serif)",
+              fontWeight: "600",
+            },
+            h4: {
+              color: "hsl(var(--foreground))",
+              fontFamily: "var(--font-serif)",
+              fontWeight: "600",
+            },
+            blockquote: {
+              color: "hsl(var(--muted-foreground))",
+              borderLeftColor: "hsl(var(--border))",
+            },
+            code: {
+              color: "hsl(var(--foreground))",
+              backgroundColor: "hsl(var(--muted))",
+              padding: "0.125rem 0.375rem",
+              borderRadius: "0.375rem",
+              fontWeight: "400",
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            pre: {
+              color: "hsl(var(--foreground))",
+              backgroundColor: "hsl(var(--muted))",
+              border: "1px solid hsl(var(--border))",
+            },
+            "pre code": {
+              backgroundColor: "transparent",
+              padding: 0,
+            },
+            hr: {
+              borderColor: "hsl(var(--border))",
+            },
+            table: {
+              borderColor: "hsl(var(--border))",
+            },
+            "thead th": {
+              color: "hsl(var(--foreground))",
+              borderColor: "hsl(var(--border))",
+            },
+            "tbody tr": {
+              borderColor: "hsl(var(--border))",
+            },
+          },
+        },
+        invert: {
+          css: {
+            color: "hsl(var(--foreground))",
+            '[class~="lead"]': {
+              color: "hsl(var(--muted-foreground))",
+            },
+            a: {
+              color: "hsl(var(--foreground))",
+            },
+            strong: {
+              color: "hsl(var(--foreground))",
+            },
+            "ol > li::marker": {
+              color: "hsl(var(--muted-foreground))",
+            },
+            "ul > li::marker": {
+              color: "hsl(var(--muted-foreground))",
+            },
+            h1: {
+              color: "hsl(var(--foreground))",
+            },
+            h2: {
+              color: "hsl(var(--foreground))",
+            },
+            h3: {
+              color: "hsl(var(--foreground))",
+            },
+            h4: {
+              color: "hsl(var(--foreground))",
+            },
+            blockquote: {
+              color: "hsl(var(--muted-foreground))",
+              borderLeftColor: "hsl(var(--border))",
+            },
+            code: {
+              color: "hsl(var(--foreground))",
+              backgroundColor: "hsl(var(--muted))",
+            },
+            "pre code": {
+              backgroundColor: "transparent",
+            },
+            hr: {
+              borderColor: "hsl(var(--border))",
+            },
+            table: {
+              borderColor: "hsl(var(--border))",
+            },
+            "thead th": {
+              color: "hsl(var(--foreground))",
+              borderColor: "hsl(var(--border))",
+            },
+            "tbody tr": {
+              borderColor: "hsl(var(--border))",
+            },
+          },
+        },
       },
     },
   },

@@ -1,0 +1,4978 @@
+[
+  {
+    "id": "DS-Foundations-1",
+    "text": "What is the primary purpose of design principles in a design system?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "To serve as the 'constitution' that guides all design decisions"
+      },
+      {
+        "value": 1,
+        "label": "To list all available colors and fonts"
+      },
+      {
+        "value": 2,
+        "label": "To document component usage"
+      },
+      {
+        "value": 3,
+        "label": "To track project timelines"
+      },
+      {
+        "value": 4,
+        "label": "To manage user research data"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Design principles are high-level, guiding values that answer 'What does good design mean for our organization?' They act as a 'silent ambassador' for the brand's identity.",
+    "relatedTopics": [
+      "design principles"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-2",
+    "text": "What is the minimum color contrast ratio required by WCAG AA standards for normal text?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "4.5:1"
+      },
+      {
+        "value": 1,
+        "label": "3:1"
+      },
+      {
+        "value": 2,
+        "label": "2:1"
+      },
+      {
+        "value": 3,
+        "label": "7:1"
+      },
+      {
+        "value": 4,
+        "label": "1.5:1"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "WCAG AA standards require a minimum contrast ratio of 4.5:1 for normal text (and 3:1 for large text) to ensure legibility for users with visual impairments.",
+    "relatedTopics": [
+      "accessibility",
+      "WCAG"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-3",
+    "text": "According to accessibility guidelines, color should NEVER be used as:",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "The sole means of conveying information"
+      },
+      {
+        "value": 1,
+        "label": "A visual design element"
+      },
+      {
+        "value": 2,
+        "label": "Part of brand identity"
+      },
+      {
+        "value": 3,
+        "label": "An indicator of interactivity"
+      },
+      {
+        "value": 4,
+        "label": "A way to create hierarchy"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Color should never be the sole means of conveying information. It must always be paired with other visual cues like icons, text labels, or shapes for accessibility.",
+    "relatedTopics": [
+      "accessibility"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-4",
+    "text": "What is a type scale in design systems?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "A predefined set of contrasting styles with specific font sizes, weights, and line heights"
+      },
+      {
+        "value": 1,
+        "label": "A tool to measure font readability"
+      },
+      {
+        "value": 2,
+        "label": "A list of available fonts"
+      },
+      {
+        "value": 3,
+        "label": "A method to calculate line height"
+      },
+      {
+        "value": 4,
+        "label": "A grid system for typography"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "A type scale is a predefined set of contrasting styles (Headline 1, Body Text, Caption) with specific font sizes, weights, and line heights for consistent typography.",
+    "relatedTopics": [
+      "typography"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-5",
+    "text": "What is the recommended optimal line length for comfortable reading?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "40-60 characters"
+      },
+      {
+        "value": 1,
+        "label": "20-30 characters"
+      },
+      {
+        "value": 2,
+        "label": "70-90 characters"
+      },
+      {
+        "value": 3,
+        "label": "100-120 characters"
+      },
+      {
+        "value": 4,
+        "label": "30-50 characters"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Optimal line length is typically 40-60 characters to ensure text is neither too narrow (excessive breaks) nor too wide (eye strain).",
+    "relatedTopics": [
+      "typography"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-6",
+    "text": "What is Dynamic Type?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "A feature that allows users to adjust text size on their device to personal preference"
+      },
+      {
+        "value": 1,
+        "label": "A type system that changes automatically based on screen size"
+      },
+      {
+        "value": 2,
+        "label": "A typography animation technique"
+      },
+      {
+        "value": 3,
+        "label": "A font loading optimization method"
+      },
+      {
+        "value": 4,
+        "label": "A responsive typography framework"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Dynamic Type is an accessibility feature that allows users to adjust text size. A well-built design system ensures UI reflows gracefully to accommodate user-defined sizes.",
+    "relatedTopics": [
+      "typography",
+      "accessibility"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-7",
+    "text": "What are the three essential parts that each layer of a design system must have?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Assets, Documentation, and Processes"
+      },
+      {
+        "value": 1,
+        "label": "Design, Code, and Testing"
+      },
+      {
+        "value": 2,
+        "label": "Colors, Typography, and Spacing"
+      },
+      {
+        "value": 3,
+        "label": "Components, Patterns, and Guidelines"
+      },
+      {
+        "value": 4,
+        "label": "Frontend, Backend, and Database"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Each layer must have Assets (tangible artifacts), Documentation (explaining why/when/how), and Processes (workflows for maintenance and evolution).",
+    "relatedTopics": [
+      "design systems",
+      "architecture"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Foundations-8",
+    "text": "What spacing scale do most design systems use?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "4dp or 8dp grid"
+      },
+      {
+        "value": 1,
+        "label": "10px grid"
+      },
+      {
+        "value": 2,
+        "label": "5px grid"
+      },
+      {
+        "value": 3,
+        "label": "12px grid"
+      },
+      {
+        "value": 4,
+        "label": "Variable spacing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Most design systems use a standardized spacing scale based on a 4dp or 8dp grid to define all margins, padding, and distances for consistent rhythm.",
+    "relatedTopics": [
+      "spacing",
+      "layout"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-9",
+    "text": "What is the minimum touch target size for mobile accessibility?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "44×44px"
+      },
+      {
+        "value": 1,
+        "label": "32×32px"
+      },
+      {
+        "value": 2,
+        "label": "48×48px"
+      },
+      {
+        "value": 3,
+        "label": "40×40px"
+      },
+      {
+        "value": 4,
+        "label": "36×36px"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The minimum touch target size for mobile accessibility is 44×44px to ensure interactive elements are easily tappable.",
+    "relatedTopics": [
+      "accessibility",
+      "mobile"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-10",
+    "text": "What does ARIA stand for in accessibility?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Accessible Rich Internet Applications"
+      },
+      {
+        "value": 1,
+        "label": "Accessible Responsive Interface Attributes"
+      },
+      {
+        "value": 2,
+        "label": "Advanced Responsive Interface Architecture"
+      },
+      {
+        "value": 3,
+        "label": "Accessibility Requirements and Implementation Attributes"
+      },
+      {
+        "value": 4,
+        "label": "Automated Responsive Interface Adaptation"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "ARIA (Accessible Rich Internet Applications) attributes make web content accessible to screen readers and assistive technologies.",
+    "relatedTopics": [
+      "accessibility",
+      "ARIA"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-11",
+    "text": "What is the primary role of the Foundations layer?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "To define fundamental principles and identity"
+      },
+      {
+        "value": 1,
+        "label": "To create UI components"
+      },
+      {
+        "value": 2,
+        "label": "To manage tokens"
+      },
+      {
+        "value": 3,
+        "label": "To organize libraries"
+      },
+      {
+        "value": 4,
+        "label": "To track usage"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The Foundations layer is the soul of the design system, defining fundamental principles and identity.",
+    "relatedTopics": [
+      "foundations"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Foundations-12",
+    "text": "In motion design, animations should:",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Provide feedback and guide user focus purposefully"
+      },
+      {
+        "value": 1,
+        "label": "Make interfaces look modern"
+      },
+      {
+        "value": 2,
+        "label": "Hide loading times"
+      },
+      {
+        "value": 3,
+        "label": "Entertain users"
+      },
+      {
+        "value": 4,
+        "label": "Slow interactions"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Motion should be used purposefully to provide feedback, guide focus, and create meaningful experiences without being distracting.",
+    "relatedTopics": [
+      "motion"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-13",
+    "text": "What is the main benefit of a consistent spacing scale?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Creates rhythm, harmony, and clear visual structure"
+      },
+      {
+        "value": 1,
+        "label": "Reduces file sizes"
+      },
+      {
+        "value": 2,
+        "label": "Increases speed"
+      },
+      {
+        "value": 3,
+        "label": "Simplifies coding"
+      },
+      {
+        "value": 4,
+        "label": "Automates testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Consistent spacing creates rhythm, harmony, and clear visual structure in the UI.",
+    "relatedTopics": [
+      "spacing"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-14",
+    "text": "What do content guidelines establish?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Voice, tone, and UX writing best practices"
+      },
+      {
+        "value": 1,
+        "label": "Content delivery methods"
+      },
+      {
+        "value": 2,
+        "label": "Content organization"
+      },
+      {
+        "value": 3,
+        "label": "Content metrics"
+      },
+      {
+        "value": 4,
+        "label": "Content automation"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Content guidelines cover voice, tone, UX writing best practices, and guidance for clear labels and messages.",
+    "relatedTopics": [
+      "content"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-15",
+    "text": "Why are foundational decisions critical?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "They have cascading effects throughout all components"
+      },
+      {
+        "value": 1,
+        "label": "They are expensive"
+      },
+      {
+        "value": 2,
+        "label": "They need approval"
+      },
+      {
+        "value": 3,
+        "label": "They affect only colors"
+      },
+      {
+        "value": 4,
+        "label": "They need frequent updates"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Foundational decisions are critical because they have cascading effects throughout every component and pattern.",
+    "relatedTopics": [
+      "foundations"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-16",
+    "text": "What is a typical color system structure?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Primary, secondary, and functional colors"
+      },
+      {
+        "value": 1,
+        "label": "Only primary"
+      },
+      {
+        "value": 2,
+        "label": "Unlimited colors"
+      },
+      {
+        "value": 3,
+        "label": "Only grayscale"
+      },
+      {
+        "value": 4,
+        "label": "Only RGB"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "A typical color system defines primary, optional secondary, and functional colors for surfaces, backgrounds, and errors.",
+    "relatedTopics": [
+      "color"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-17",
+    "text": "What should iconography guidelines define?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Consistent style, grid, and usage principles"
+      },
+      {
+        "value": 1,
+        "label": "Only sizes"
+      },
+      {
+        "value": 2,
+        "label": "Only names"
+      },
+      {
+        "value": 3,
+        "label": "Only colors"
+      },
+      {
+        "value": 4,
+        "label": "Only formats"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Iconography guidelines should define consistent visual style, standard grid, and creation/usage principles.",
+    "relatedTopics": [
+      "iconography"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-18",
+    "text": "What is the purpose of a layout grid?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "To define how components are arranged"
+      },
+      {
+        "value": 1,
+        "label": "To measure sizes"
+      },
+      {
+        "value": 2,
+        "label": "To color code"
+      },
+      {
+        "value": 3,
+        "label": "To animate"
+      },
+      {
+        "value": 4,
+        "label": "To test"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Layout guidelines define how components are arranged on screen with responsive grid systems.",
+    "relatedTopics": [
+      "layout"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-19",
+    "text": "What happens when changing a primary brand color?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Triggers dependent checks for accessibility and consistency"
+      },
+      {
+        "value": 1,
+        "label": "Nothing"
+      },
+      {
+        "value": 2,
+        "label": "Affects one component"
+      },
+      {
+        "value": 3,
+        "label": "Requires rewrite"
+      },
+      {
+        "value": 4,
+        "label": "Auto-updates"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Changing primary color triggers dependent checks - new color must be tested against all backgrounds for WCAG contrast ratios.",
+    "relatedTopics": [
+      "color"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-20",
+    "text": "What does the foundation layer include?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Design principles, color palette, typography, iconography, spacing/motion rules"
+      },
+      {
+        "value": 1,
+        "label": "Only components"
+      },
+      {
+        "value": 2,
+        "label": "Only code"
+      },
+      {
+        "value": 3,
+        "label": "Only files"
+      },
+      {
+        "value": 4,
+        "label": "Only docs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Foundations include design principles, color palette, typographic system, iconography styles, and spacing/motion rules.",
+    "relatedTopics": [
+      "foundations"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Foundations-21",
+    "text": "What is recommended for font weights?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Avoid overly thin weights"
+      },
+      {
+        "value": 1,
+        "label": "Use many weights"
+      },
+      {
+        "value": 2,
+        "label": "Use one weight"
+      },
+      {
+        "value": 3,
+        "label": "Use thin for aesthetics"
+      },
+      {
+        "value": 4,
+        "label": "Vary randomly"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Typography guidelines recommend avoiding overly thin weights that are hard to read.",
+    "relatedTopics": [
+      "typography"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-22",
+    "text": "How should motion guidelines describe animation?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "As purposeful tools for feedback and focus"
+      },
+      {
+        "value": 1,
+        "label": "As optional decoration"
+      },
+      {
+        "value": 2,
+        "label": "To slow interactions"
+      },
+      {
+        "value": 3,
+        "label": "For entertainment"
+      },
+      {
+        "value": 4,
+        "label": "To hide errors"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Motion guidelines explain purposeful use of animation for feedback and focus without distraction.",
+    "relatedTopics": [
+      "motion"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-23",
+    "text": "What makes foundational elements interconnected?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "A decision in one area has ripple effects across others"
+      },
+      {
+        "value": 1,
+        "label": "Shared files"
+      },
+      {
+        "value": 2,
+        "label": "Same colors"
+      },
+      {
+        "value": 3,
+        "label": "Designed together"
+      },
+      {
+        "value": 4,
+        "label": "Same version"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Foundational elements are interconnected - a decision in one area has ripple effects across others.",
+    "relatedTopics": [
+      "foundations"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-24",
+    "text": "What is the purpose of accessibility guidelines?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "Comprehensive guidelines for keyboard nav, focus, touch targets, ARIA"
+      },
+      {
+        "value": 1,
+        "label": "Disable features"
+      },
+      {
+        "value": 2,
+        "label": "Limit options"
+      },
+      {
+        "value": 3,
+        "label": "Simplify"
+      },
+      {
+        "value": 4,
+        "label": "Reduce complexity"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Accessibility guidelines provide comprehensive guidance for keyboard navigation, focus states, touch targets, and ARIA attributes.",
+    "relatedTopics": [
+      "accessibility"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-Foundations-25",
+    "text": "What does the foundation layer answer?",
+    "category": "Foundations",
+    "options": [
+      {
+        "value": 0,
+        "label": "What are the fundamental rules of our design language?"
+      },
+      {
+        "value": 1,
+        "label": "How many components exist?"
+      },
+      {
+        "value": 2,
+        "label": "What tools to use?"
+      },
+      {
+        "value": 3,
+        "label": "When to update?"
+      },
+      {
+        "value": 4,
+        "label": "Who owns it?"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The Foundations layer answers: 'What are the fundamental rules of our design language?'",
+    "relatedTopics": [
+      "foundations"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-11",
+    "text": "What is the benefit of tokens over hard-coded values?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Single change propagates to all platforms"
+      },
+      {
+        "value": 1,
+        "label": "Faster loading"
+      },
+      {
+        "value": 2,
+        "label": "Smaller files"
+      },
+      {
+        "value": 3,
+        "label": "Prevent errors"
+      },
+      {
+        "value": 4,
+        "label": "Easier deletion"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "When a token changes, that change propagates automatically to all platforms. Update once, propagate everywhere.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-12",
+    "text": "What can be stored as tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Colors, spacing, typography, shadows, borders, and more"
+      },
+      {
+        "value": 1,
+        "label": "Only colors"
+      },
+      {
+        "value": 2,
+        "label": "Only spacing"
+      },
+      {
+        "value": 3,
+        "label": "Only typography"
+      },
+      {
+        "value": 4,
+        "label": "Only components"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens can store any visual design attribute: colors, spacing, typography, shadows, border radius, opacity, animation timing.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-13",
+    "text": "What is token composition?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Building complex tokens from simpler ones"
+      },
+      {
+        "value": 1,
+        "label": "Combining files"
+      },
+      {
+        "value": 2,
+        "label": "Merging values"
+      },
+      {
+        "value": 3,
+        "label": "Converting to components"
+      },
+      {
+        "value": 4,
+        "label": "Organizing alphabetically"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token composition allows building complex tokens from simpler ones through references.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-14",
+    "text": "How should tokens be named?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Clear, consistent conventions reflecting hierarchy"
+      },
+      {
+        "value": 1,
+        "label": "Random names"
+      },
+      {
+        "value": 2,
+        "label": "Only numbers"
+      },
+      {
+        "value": 3,
+        "label": "Only acronyms"
+      },
+      {
+        "value": 4,
+        "label": "Single letters"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token naming should follow clear conventions (BEM-style or namespacing) reflecting hierarchy and purpose.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-15",
+    "text": "What is the relationship between tokens and Foundations?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Tokens codify Foundations values into usable data"
+      },
+      {
+        "value": 1,
+        "label": "Unrelated"
+      },
+      {
+        "value": 2,
+        "label": "Tokens replace Foundations"
+      },
+      {
+        "value": 3,
+        "label": "Foundations optional"
+      },
+      {
+        "value": 4,
+        "label": "Tokens first"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens codify Foundation layer values into named, reusable data, bridging abstract Foundations and concrete implementation.",
+    "relatedTopics": [
+      "tokens",
+      "foundations"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-16",
+    "text": "What enables multi-platform token systems?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Technology-agnostic format with platform translation"
+      },
+      {
+        "value": 1,
+        "label": "Single format"
+      },
+      {
+        "value": 2,
+        "label": "Platform-specific only"
+      },
+      {
+        "value": 3,
+        "label": "Manual conversion"
+      },
+      {
+        "value": 4,
+        "label": "No translation"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens are technology-agnostic - defined once, then automatically translated into any format needed for different platforms.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-17",
+    "text": "What is a token hierarchy?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Primitive → Semantic → Component tokens"
+      },
+      {
+        "value": 1,
+        "label": "Random order"
+      },
+      {
+        "value": 2,
+        "label": "Alphabetical"
+      },
+      {
+        "value": 3,
+        "label": "By file size"
+      },
+      {
+        "value": 4,
+        "label": "By usage count"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token hierarchy flows from primitive (raw values) to semantic (contextual meaning) to component (specific use).",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-18",
+    "text": "Why are tokens versioned?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "To manage changes and ensure compatibility"
+      },
+      {
+        "value": 1,
+        "label": "To track usage"
+      },
+      {
+        "value": 2,
+        "label": "To limit access"
+      },
+      {
+        "value": 3,
+        "label": "To organize files"
+      },
+      {
+        "value": 4,
+        "label": "To delete old ones"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token versioning helps manage changes across products, ensuring compatibility and controlled evolution.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-19",
+    "text": "What happens when you update a token value?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Change propagates to all consuming applications"
+      },
+      {
+        "value": 1,
+        "label": "Nothing"
+      },
+      {
+        "value": 2,
+        "label": "Requires manual update"
+      },
+      {
+        "value": 3,
+        "label": "Breaks everything"
+      },
+      {
+        "value": 4,
+        "label": "Creates duplicates"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Updating a token value propagates automatically to all applications consuming that token, maintaining consistency.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-20",
+    "text": "How do tokens support design system maintenance?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Centralized changes reduce maintenance effort"
+      },
+      {
+        "value": 1,
+        "label": "They don't help"
+      },
+      {
+        "value": 2,
+        "label": "Increase maintenance"
+      },
+      {
+        "value": 3,
+        "label": "Require more files"
+      },
+      {
+        "value": 4,
+        "label": "Complicate updates"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens centralize design values, so changes made once propagate everywhere, drastically reducing maintenance effort.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-21",
+    "text": "What is token inheritance?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Tokens referencing other tokens in a hierarchy"
+      },
+      {
+        "value": 1,
+        "label": "Copying tokens"
+      },
+      {
+        "value": 2,
+        "label": "Deleting tokens"
+      },
+      {
+        "value": 3,
+        "label": "Merging tokens"
+      },
+      {
+        "value": 4,
+        "label": "Renaming tokens"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token inheritance allows tokens to reference other tokens, creating relationships and hierarchies.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-22",
+    "text": "How are tokens documented?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "In specifications explaining meaning and usage"
+      },
+      {
+        "value": 1,
+        "label": "Not documented"
+      },
+      {
+        "value": 2,
+        "label": "Only in code"
+      },
+      {
+        "value": 3,
+        "label": "Only in design files"
+      },
+      {
+        "value": 4,
+        "label": "Verbally"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token documentation includes specifications explaining the meaning, usage, and relationships between tokens.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-23",
+    "text": "What makes tokens maintainable?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Single source of truth with automatic propagation"
+      },
+      {
+        "value": 1,
+        "label": "Multiple sources"
+      },
+      {
+        "value": 2,
+        "label": "Manual updates"
+      },
+      {
+        "value": 3,
+        "label": "No changes allowed"
+      },
+      {
+        "value": 4,
+        "label": "Complex structure"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens are maintainable because they provide a single source of truth - changes propagate automatically.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-24",
+    "text": "How do tokens relate to components?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Components use tokens for their properties"
+      },
+      {
+        "value": 1,
+        "label": "No relation"
+      },
+      {
+        "value": 2,
+        "label": "Replace components"
+      },
+      {
+        "value": 3,
+        "label": "Same as components"
+      },
+      {
+        "value": 4,
+        "label": "Generate components"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components use tokens for their properties - colors, spacing, typography are all defined by tokens.",
+    "relatedTopics": [
+      "tokens",
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-25",
+    "text": "What is token scalability?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Ability to grow system without proportional effort increase"
+      },
+      {
+        "value": 1,
+        "label": "Growing file size"
+      },
+      {
+        "value": 2,
+        "label": "Adding more values"
+      },
+      {
+        "value": 3,
+        "label": "Creating duplicates"
+      },
+      {
+        "value": 4,
+        "label": "Expanding files"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens enable scalability - as the system grows, tokens provide consistency without proportional effort increase.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-1",
+    "text": "What are design tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Named entities that store visual design attributes as data"
+      },
+      {
+        "value": 1,
+        "label": "UI component files"
+      },
+      {
+        "value": 2,
+        "label": "Design documentation"
+      },
+      {
+        "value": 3,
+        "label": "Animation scripts"
+      },
+      {
+        "value": 4,
+        "label": "UI templates"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Design tokens are named entities that store visual design attributes as data. For example, $color-brand-primary-blue instead of hard-coding #0052cc.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-2",
+    "text": "What makes design tokens technology-agnostic?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "They can be defined once and translated to any format (CSS, XML, Swift)"
+      },
+      {
+        "value": 1,
+        "label": "They work only on web"
+      },
+      {
+        "value": 2,
+        "label": "They require specific frameworks"
+      },
+      {
+        "value": 3,
+        "label": "They are platform-specific"
+      },
+      {
+        "value": 4,
+        "label": "They can't be converted"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens can be defined once and automatically translated into any format needed - CSS variables for web, XML for Android, Swift for iOS.",
+    "relatedTopics": [
+      "tokens",
+      "platform"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-3",
+    "text": "What is the primary purpose of design tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "To maintain consistency and enable maintainability at scale"
+      },
+      {
+        "value": 1,
+        "label": "To store user data"
+      },
+      {
+        "value": 2,
+        "label": "To manage timelines"
+      },
+      {
+        "value": 3,
+        "label": "To conduct research"
+      },
+      {
+        "value": 4,
+        "label": "To track analytics"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Design tokens are the critical mechanism for maintaining consistency and enabling maintainability at scale, bridging abstract Foundations and concrete implementation.",
+    "relatedTopics": [
+      "tokens",
+      "consistency"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-4",
+    "text": "What are primitive tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Base-level tokens representing raw design values"
+      },
+      {
+        "value": 1,
+        "label": "Complex component tokens"
+      },
+      {
+        "value": 2,
+        "label": "Animation tokens"
+      },
+      {
+        "value": 3,
+        "label": "Documentation tokens"
+      },
+      {
+        "value": 4,
+        "label": "User-generated tokens"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Primitive tokens are base-level tokens that represent raw design values, such as specific color hex codes or spacing values.",
+    "relatedTopics": [
+      "tokens",
+      "primitive"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-5",
+    "text": "What are semantic tokens?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Tokens with contextual meaning like 'primary' or 'success'"
+      },
+      {
+        "value": 1,
+        "label": "Tokens in semantic HTML"
+      },
+      {
+        "value": 2,
+        "label": "Tokens that change automatically"
+      },
+      {
+        "value": 3,
+        "label": "AI-generated tokens"
+      },
+      {
+        "value": 4,
+        "label": "Animation-only tokens"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Semantic tokens have contextual meaning and are mapped to use cases. Examples: 'color-primary' or 'spacing-medium'.",
+    "relatedTopics": [
+      "tokens",
+      "semantic"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-6",
+    "text": "What format are tokens typically stored in?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "JSON or YAML files"
+      },
+      {
+        "value": 1,
+        "label": "Word documents"
+      },
+      {
+        "value": 2,
+        "label": "PDF files"
+      },
+      {
+        "value": 3,
+        "label": "Excel spreadsheets"
+      },
+      {
+        "value": 4,
+        "label": "Image files"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token data is typically stored in JSON or YAML format, which can be transformed into platform-specific formats using tools like Style Dictionary.",
+    "relatedTopics": [
+      "tokens",
+      "format"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-7",
+    "text": "What is token aliasing?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "When tokens reference other tokens to create relationships"
+      },
+      {
+        "value": 1,
+        "label": "When tokens are duplicated"
+      },
+      {
+        "value": 2,
+        "label": "When tokens are renamed"
+      },
+      {
+        "value": 3,
+        "label": "When tokens are deleted"
+      },
+      {
+        "value": 4,
+        "label": "When tokens are merged"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Token aliasing allows tokens to reference other tokens, creating a hierarchical structure where semantic tokens reference primitive tokens.",
+    "relatedTopics": [
+      "tokens",
+      "aliasing"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-8",
+    "text": "How do tokens enable theming (light/dark modes)?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "By defining token variants that can be swapped based on theme"
+      },
+      {
+        "value": 1,
+        "label": "By using different files"
+      },
+      {
+        "value": 2,
+        "label": "By hard-coding values"
+      },
+      {
+        "value": 3,
+        "label": "By using CSS only"
+      },
+      {
+        "value": 4,
+        "label": "By requiring separate components"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens enable theming by defining variants. Each color token can have light and dark variants, and switching themes means using different token values.",
+    "relatedTopics": [
+      "tokens",
+      "theming"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-9",
+    "text": "What tool is commonly used to transform tokens across platforms?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "Style Dictionary"
+      },
+      {
+        "value": 1,
+        "label": "Figma"
+      },
+      {
+        "value": 2,
+        "label": "Sketch"
+      },
+      {
+        "value": 3,
+        "label": "Adobe XD"
+      },
+      {
+        "value": 4,
+        "label": "InVision"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Style Dictionary is a popular tool that takes design tokens and transforms them into platform-specific formats (CSS, iOS, Android).",
+    "relatedTopics": [
+      "tokens",
+      "tooling"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Tokens-10",
+    "text": "Why are tokens called the 'bridge' between design and development?",
+    "category": "Tokens",
+    "options": [
+      {
+        "value": 0,
+        "label": "They connect abstract design decisions to concrete code"
+      },
+      {
+        "value": 1,
+        "label": "They are stored in both places"
+      },
+      {
+        "value": 2,
+        "label": "They require coding"
+      },
+      {
+        "value": 3,
+        "label": "They are the same as code"
+      },
+      {
+        "value": 4,
+        "label": "They replace tools"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tokens bridge design and development by translating abstract design decisions into concrete, usable values in code, maintaining a single source of truth.",
+    "relatedTopics": [
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-1",
+    "text": "What is a layout grid system?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "A system defining how content is structured on pages"
+      },
+      {
+        "value": 1,
+        "label": "A color grid"
+      },
+      {
+        "value": 2,
+        "label": "An animation system"
+      },
+      {
+        "value": 3,
+        "label": "A component library"
+      },
+      {
+        "value": 4,
+        "label": "A token system"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Layout grid systems define how content is structured on pages, providing consistent spacing and alignment.",
+    "relatedTopics": [
+      "layout",
+      "grid"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-CoreSystems-2",
+    "text": "What is a type scale system?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "A system managing typographic hierarchy consistently"
+      },
+      {
+        "value": 1,
+        "label": "A font loading system"
+      },
+      {
+        "value": 2,
+        "label": "A text animation system"
+      },
+      {
+        "value": 3,
+        "label": "A font discovery tool"
+      },
+      {
+        "value": 4,
+        "label": "A text editor"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Type scale systems manage typographic hierarchy consistently across the design system.",
+    "relatedTopics": [
+      "typography"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-CoreSystems-3",
+    "text": "How do theming systems work with tokens?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "They use color tokens to enable features like light/dark modes"
+      },
+      {
+        "value": 1,
+        "label": "They replace tokens"
+      },
+      {
+        "value": 2,
+        "label": "They ignore tokens"
+      },
+      {
+        "value": 3,
+        "label": "They create new tokens"
+      },
+      {
+        "value": 4,
+        "label": "They delete tokens"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Theming systems use color tokens with variants to enable features like light and dark modes through token swapping.",
+    "relatedTopics": [
+      "theming",
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-4",
+    "text": "What is a breakpoint system?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "A system for responsive design across devices"
+      },
+      {
+        "value": 1,
+        "label": "A debugging tool"
+      },
+      {
+        "value": 2,
+        "label": "An animation system"
+      },
+      {
+        "value": 3,
+        "label": "A code break system"
+      },
+      {
+        "value": 4,
+        "label": "A testing framework"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Breakpoint systems define responsive design breakpoints for different screen sizes and devices.",
+    "relatedTopics": [
+      "responsive",
+      "breakpoints"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-CoreSystems-5",
+    "text": "What is an elevation system?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "A system using subtle value shifts to create visual hierarchy"
+      },
+      {
+        "value": 1,
+        "label": "A height measurement"
+      },
+      {
+        "value": 2,
+        "label": "A 3D system"
+      },
+      {
+        "value": 3,
+        "label": "A shadow calculator"
+      },
+      {
+        "value": 4,
+        "label": "A z-index manager"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Elevation systems use subtle value shifts (like shadow depth) to create visual hierarchy and layering.",
+    "relatedTopics": [
+      "elevation",
+      "hierarchy"
+    ],
+    "relatedSection": "Section 3"
+  },
+  {
+    "id": "DS-CoreSystems-6",
+    "text": "What do core systems provide?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "Solutions for common, recurring interface challenges"
+      },
+      {
+        "value": 1,
+        "label": "Only components"
+      },
+      {
+        "value": 2,
+        "label": "Only tokens"
+      },
+      {
+        "value": 3,
+        "label": "Only documentation"
+      },
+      {
+        "value": 4,
+        "label": "Only processes"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems provide tried-and-true approaches to foundational UI problems, codifying how design decisions work together.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-7",
+    "text": "How do core systems relate to tokens?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "They build upon tokens to provide higher-level solutions"
+      },
+      {
+        "value": 1,
+        "label": "They replace tokens"
+      },
+      {
+        "value": 2,
+        "label": "They ignore tokens"
+      },
+      {
+        "value": 3,
+        "label": "They create tokens"
+      },
+      {
+        "value": 4,
+        "label": "They delete tokens"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems build upon tokens to provide solutions for common interface challenges.",
+    "relatedTopics": [
+      "core systems",
+      "tokens"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-8",
+    "text": "What is an example of a core system?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "Layout grid, type scale, or theming system"
+      },
+      {
+        "value": 1,
+        "label": "A button component"
+      },
+      {
+        "value": 2,
+        "label": "A color token"
+      },
+      {
+        "value": 3,
+        "label": "A design file"
+      },
+      {
+        "value": 4,
+        "label": "A code file"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Examples include layout grid systems, type scale systems, and theming systems that use tokens.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-9",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-10",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-11",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-12",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-13",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-14",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-15",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-16",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-17",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-18",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-19",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-20",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-21",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-22",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-23",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-24",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-CoreSystems-25",
+    "text": "How do core systems solve interface challenges?",
+    "category": "Core Systems",
+    "options": [
+      {
+        "value": 0,
+        "label": "By codifying how design decisions work together"
+      },
+      {
+        "value": 1,
+        "label": "By creating components"
+      },
+      {
+        "value": 2,
+        "label": "By writing code"
+      },
+      {
+        "value": 3,
+        "label": "By designing screens"
+      },
+      {
+        "value": 4,
+        "label": "By testing"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Core systems codify how design decisions work together, providing reusable solutions for interface challenges.",
+    "relatedTopics": [
+      "core systems"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-6",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-7",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-8",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-9",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-10",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-11",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-12",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-13",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-14",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-15",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-16",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-17",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-18",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-19",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-20",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-21",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-22",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-23",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-24",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-25",
+    "text": "What makes components reusable?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Encapsulated design and behavior with clear APIs"
+      },
+      {
+        "value": 1,
+        "label": "Large file size"
+      },
+      {
+        "value": 2,
+        "label": "Complex code"
+      },
+      {
+        "value": 3,
+        "label": "Many dependencies"
+      },
+      {
+        "value": 4,
+        "label": "Platform-specific"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are reusable when they encapsulate design and behavior with clear APIs and props.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-1",
+    "text": "What are design system components?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Tangible, reusable parts of the interface that users interact with"
+      },
+      {
+        "value": 1,
+        "label": "Design files only"
+      },
+      {
+        "value": 2,
+        "label": "Code only"
+      },
+      {
+        "value": 3,
+        "label": "Documentation only"
+      },
+      {
+        "value": 4,
+        "label": "Tokens only"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Components are the tangible, reusable parts of the interface that users directly interact with, ranging from buttons to complex structures like navigation bars.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-2",
+    "text": "How should components be built?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "As composites of tokens and core systems"
+      },
+      {
+        "value": 1,
+        "label": "Independently"
+      },
+      {
+        "value": 2,
+        "label": "Without tokens"
+      },
+      {
+        "value": 3,
+        "label": "Without systems"
+      },
+      {
+        "value": 4,
+        "label": "As isolated elements"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "When built correctly, every component is a composite: colors from tokens, typography from type scale, structure from layout system.",
+    "relatedTopics": [
+      "components",
+      "composition"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-3",
+    "text": "What is component composition?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Building complex components from simpler ones"
+      },
+      {
+        "value": 1,
+        "label": "Combining files"
+      },
+      {
+        "value": 2,
+        "label": "Merging code"
+      },
+      {
+        "value": 3,
+        "label": "Deleting components"
+      },
+      {
+        "value": 4,
+        "label": "Organizing components"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Component composition allows building complex components from simpler ones, following composition patterns.",
+    "relatedTopics": [
+      "components"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-4",
+    "text": "What are component variants?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Different versions of a component (size, style, state)"
+      },
+      {
+        "value": 1,
+        "label": "Different components"
+      },
+      {
+        "value": 2,
+        "label": "Different files"
+      },
+      {
+        "value": 3,
+        "label": "Different frameworks"
+      },
+      {
+        "value": 4,
+        "label": "Different platforms"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Component variants are different versions (size, style, state) of the same component, providing flexibility while maintaining consistency.",
+    "relatedTopics": [
+      "components",
+      "variants"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Components-5",
+    "text": "What is component documentation?",
+    "category": "Components",
+    "options": [
+      {
+        "value": 0,
+        "label": "Usage guidelines, accessibility notes, and code examples"
+      },
+      {
+        "value": 1,
+        "label": "Only code"
+      },
+      {
+        "value": 2,
+        "label": "Only design"
+      },
+      {
+        "value": 3,
+        "label": "Only testing"
+      },
+      {
+        "value": 4,
+        "label": "Only deployment"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Component documentation provides detailed usage guidelines, accessibility notes, and code examples for developers and designers.",
+    "relatedTopics": [
+      "components",
+      "documentation"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Patterns-1",
+    "text": "What are design patterns?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "Recipes for combining components to solve user goals"
+      },
+      {
+        "value": 1,
+        "label": "Individual components"
+      },
+      {
+        "value": 2,
+        "label": "Tokens"
+      },
+      {
+        "value": 3,
+        "label": "Core systems"
+      },
+      {
+        "value": 4,
+        "label": "Documentation"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns are recipes for combining components to solve user goals - they shift burden from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-2",
+    "text": "How do patterns differ from components?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "Patterns are 'how to' combine components; components are individual elements"
+      },
+      {
+        "value": 1,
+        "label": "They are the same"
+      },
+      {
+        "value": 2,
+        "label": "Patterns are smaller"
+      },
+      {
+        "value": 3,
+        "label": "Components are patterns"
+      },
+      {
+        "value": 4,
+        "label": "No difference"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns show how to combine components to solve user objectives, while components are individual reusable elements.",
+    "relatedTopics": [
+      "patterns",
+      "components"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-3",
+    "text": "What is a form pattern?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "A recipe for combining inputs, labels, validation, and buttons effectively"
+      },
+      {
+        "value": 1,
+        "label": "A single input"
+      },
+      {
+        "value": 2,
+        "label": "A button only"
+      },
+      {
+        "value": 3,
+        "label": "A label only"
+      },
+      {
+        "value": 4,
+        "label": "A validation rule"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Form patterns provide tested recipes for combining form elements (inputs, labels, validation, buttons) to create effective forms.",
+    "relatedTopics": [
+      "patterns",
+      "forms"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-4",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-5",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-6",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-7",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-8",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-9",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-10",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-11",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-12",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-13",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-14",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-15",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-16",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-17",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-18",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-19",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-20",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-21",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-22",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-23",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-24",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Patterns-25",
+    "text": "What value do patterns provide?",
+    "category": "Patterns",
+    "options": [
+      {
+        "value": 0,
+        "label": "They shift burden from product teams to design system teams"
+      },
+      {
+        "value": 1,
+        "label": "They increase work"
+      },
+      {
+        "value": 2,
+        "label": "They complicate design"
+      },
+      {
+        "value": 3,
+        "label": "They limit creativity"
+      },
+      {
+        "value": 4,
+        "label": "They slow development"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Patterns provide tested recipes, shifting the burden of figuring out 'how to' from product teams to design system teams.",
+    "relatedTopics": [
+      "patterns"
+    ],
+    "relatedSection": "Section 4"
+  },
+  {
+    "id": "DS-Governance-1",
+    "text": "What is design system governance?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "Defined workflows for maintaining and evolving the system"
+      },
+      {
+        "value": 1,
+        "label": "Designing components"
+      },
+      {
+        "value": 2,
+        "label": "Writing code"
+      },
+      {
+        "value": 3,
+        "label": "Creating tokens"
+      },
+      {
+        "value": 4,
+        "label": "Making decisions"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance includes defined human workflows that govern how the system is maintained and evolved - who does what, and how.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-2",
+    "text": "What makes a design system a 'living product'?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "Robust processes for maintenance and evolution"
+      },
+      {
+        "value": 1,
+        "label": "Static documentation"
+      },
+      {
+        "value": 2,
+        "label": "One-time creation"
+      },
+      {
+        "value": 3,
+        "label": "No updates"
+      },
+      {
+        "value": 4,
+        "label": "Fixed components"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Robust processes make a design system a living, trustworthy, sustainable product rather than a one-off project that becomes obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-3",
+    "text": "What do governance processes answer?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "Who does what, and how"
+      },
+      {
+        "value": 1,
+        "label": "What colors to use"
+      },
+      {
+        "value": 2,
+        "label": "What fonts to use"
+      },
+      {
+        "value": 3,
+        "label": "What components exist"
+      },
+      {
+        "value": 4,
+        "label": "What tokens exist"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Processes answer the question: 'Who does what, and how?' - including procedures for requesting components, contributing fixes, and making decisions.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-4",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-5",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-6",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-7",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-8",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-9",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-10",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-11",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-12",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-13",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-14",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-15",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-16",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-17",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-18",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-19",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-20",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-21",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-22",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-23",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-24",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  },
+  {
+    "id": "DS-Governance-25",
+    "text": "Why is governance essential for design systems?",
+    "category": "Governance",
+    "options": [
+      {
+        "value": 0,
+        "label": "It makes systems trustworthy, sustainable, and living products"
+      },
+      {
+        "value": 1,
+        "label": "It's not essential"
+      },
+      {
+        "value": 2,
+        "label": "It slows development"
+      },
+      {
+        "value": 3,
+        "label": "It limits creativity"
+      },
+      {
+        "value": 4,
+        "label": "It increases costs"
+      }
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Governance makes design systems trustworthy, sustainable, living products rather than one-off projects that become obsolete.",
+    "relatedTopics": [
+      "governance"
+    ],
+    "relatedSection": "Section 2"
+  }
+]

@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Badge, getTagVariant } from "@/components/ui/badge";
 import { LoadingSpinner } from "./LoadingSpinner";
 
 interface DeepDiveResource {
@@ -88,8 +88,22 @@ const DeepDiveSection = memo(function DeepDiveSection({
                 <div className="space-y-2 flex-1">
                   <h3 className="text-2xl font-bold">{topic.name}</h3>
                   <div className="flex gap-2 flex-wrap">
-                    <Badge variant="outline">Pillar: {topic.pillar}</Badge>
-                    <Badge variant="outline">Level: {topic.level}</Badge>
+                    <Badge 
+                      variant={getTagVariant(`Pillar-${topic.pillar}`)} 
+                      animated={true}
+                      delay={0.7 + topicIndex * 0.1}
+                      className="text-xs font-medium"
+                    >
+                      Pillar: {topic.pillar}
+                    </Badge>
+                    <Badge 
+                      variant={getTagVariant(`Level-${topic.level}`)} 
+                      animated={true}
+                      delay={0.7 + topicIndex * 0.1 + 0.05}
+                      className="text-xs font-medium"
+                    >
+                      Level: {topic.level}
+                    </Badge>
                   </div>
                 </div>
               </div>
@@ -138,9 +152,15 @@ const DeepDiveSection = memo(function DeepDiveSection({
                       <p className="text-xs text-muted-foreground mt-1">
                         {resource.type === "video" ? "Video" : resource.type === "guide" ? "Guide" : "Article"} · {resource.estimated_read_time} · {resource.source}
                       </p>
-                      <div className="flex gap-1 flex-wrap mt-2">
-                        {resource.tags.map((tag) => (
-                          <Badge key={tag} variant="secondary" className="text-xs">
+                      <div className="flex gap-1.5 flex-wrap mt-2.5 p-1.5 -m-1.5 rounded-lg bg-gradient-to-br from-transparent via-transparent to-foreground/5">
+                        {resource.tags.map((tag, tagIndex) => (
+                          <Badge 
+                            key={tag} 
+                            variant={getTagVariant(tag)} 
+                            animated={true}
+                            delay={0.8 + resIdx * 0.1 + tagIndex * 0.05}
+                            className="text-xs font-medium shadow-sm"
+                          >
                             {tag}
                           </Badge>
                         ))}

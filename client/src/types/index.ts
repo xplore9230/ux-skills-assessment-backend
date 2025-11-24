@@ -7,6 +7,13 @@ export interface Question {
   options: { value: number; label: string }[];
 }
 
+export interface LearningQuestion extends Question {
+  correctAnswerIndex: number; // Index of correct option (0-4)
+  explanation: string; // Detailed explanation of the answer
+  relatedTopics?: string[]; // Topics this question covers
+  relatedSection?: string; // Section in ebook/blog (for linking)
+}
+
 export interface CategoryScore {
   name: string;
   score: number;
