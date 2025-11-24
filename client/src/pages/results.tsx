@@ -154,7 +154,7 @@ const ResultsPage = memo(function ResultsPage({
         // - container mx-auto = centers the container and adds horizontal margin
         // - max-w-5xl = max width of 80rem (1280px) - change to max-w-4xl (896px) or max-w-6xl (1152px)
         // - overflow-hidden = clips content that goes outside
-        className="relative flex flex-col items-center text-center pt-12 sm:pt-16 pb-8 sm:pb-12 px-4 sm:px-6 container mx-auto max-w-5xl overflow-hidden"
+        className="relative flex flex-col items-center text-center pt-12 sm:pt-16 pb-8 sm:pb-12 px-4 sm:px-6 container mx-auto max-w-5xl overflow-visible"
       >
         {/* 
           GRADIENT OVAL BLUR EFFECT (Desktop - tablets and up):
