@@ -1,8 +1,8 @@
 import { memo } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Sparkle, ShareNetwork, ChartBar, Briefcase, Brain } from "phosphor-react";
 import illustrationImage from "@assets/Gemini_Generated_Image_x6n1ydx6n1ydx6n1_1763725243475.jpeg";
 
 interface LandingPageProps {
@@ -12,18 +12,6 @@ interface LandingPageProps {
 const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation Bar */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="border-b border-border"
-      >
-        <div className="container mx-auto px-6 py-4">
-          {/* Navigation content removed */}
-        </div>
-      </motion.div>
-
       <div className="container mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -45,7 +33,7 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-2xl mx-auto space-y-6"
+          className="max-w-2xl mx-auto space-y-4"
         >
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
@@ -53,6 +41,19 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
             transition={{ duration: 0.5 }}
             className="space-y-4 text-center"
           >
+            {/* Powered by Ollama Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex items-center justify-center gap-2 mb-4"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/50 bg-background/50 backdrop-blur-sm">
+                <Brain weight="duotone" className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-muted-foreground">Powered by Ollama</span>
+              </div>
+            </motion.div>
+            
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" data-testid="text-hero-title">
               <>Find Your <motion.span 
                 className="font-playfair font-bold italic relative inline-block"
@@ -85,7 +86,7 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: 0.4 }}
-            className="flex justify-center pt-6"
+            className="flex justify-center pt-2"
           >
             <Button
               size="lg"
@@ -97,55 +98,79 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true" />
             </Button>
           </motion.div>
-          
+
           <motion.div 
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-3 text-center pt-6"
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="pt-8 md:pt-12 max-w-4xl mx-auto"
           >
-            <p className="text-sm text-muted-foreground font-semibold uppercase tracking-wide">What you'll discover:</p>
-            {/* Showcase colorful animated tags */}
-            <div className="flex gap-2 flex-wrap justify-center mb-4">
-              {["UX Research", "Design Systems", "User Testing", "Prototyping", "Accessibility"].map((tag, idx) => (
-                <Badge
-                  key={tag}
-                  variant="outline"
-                  className="text-xs font-medium"
-                >
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-            <ul className="space-y-2 text-muted-foreground inline-flex flex-col items-start gap-3 max-w-md">
-              <motion.li 
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 }}
-                className="flex items-start gap-3"
-              >
-                <span className="text-primary flex-shrink-0 text-lg">✓</span>
-                <span>Your current career stage from Explorer to Strategic Lead</span>
-              </motion.li>
-              <motion.li 
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.3 }}
-                className="flex items-start gap-3"
-              >
-                <span className="text-primary flex-shrink-0 text-lg">✓</span>
-                <span>Detailed breakdown across 5 key skill areas</span>
-              </motion.li>
-              <motion.li 
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.4 }}
-                className="flex items-start gap-3"
-              >
-                <span className="text-primary flex-shrink-0 text-lg">✓</span>
-                <span>Personalized 4-week improvement plan</span>
-              </motion.li>
-            </ul>
+            <motion.h2 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4 md:mb-6"
+            >
+              What You'll Learn
+            </motion.h2>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                {[
+                  {
+                    icon: Sparkle,
+                    title: "AI Feedback",
+                    description: "Personalized AI feedback on your UX skills and performance",
+                    delay: 0.9,
+                  },
+                  {
+                    icon: ShareNetwork,
+                    title: "Learning Graph",
+                    description: "Curated learning graph with tailored resources and recommendations",
+                    delay: 1.0,
+                  },
+                  {
+                    icon: ChartBar,
+                    title: "Score Assessment",
+                    description: "AI-powered score level assessment across key skill areas",
+                    delay: 1.1,
+                  },
+                  {
+                    icon: Briefcase,
+                    title: "Job Opportunities",
+                    description: "Job opportunity insights matched to your skill level",
+                    delay: 1.2,
+                  }
+                ].map((feature, index) => {
+                  const Icon = feature.icon;
+                  return (
+                    <motion.div
+                      key={feature.title}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: feature.delay }}
+                      className="flex items-start gap-4 group"
+                    >
+                      <div className="flex-shrink-0 flex items-center justify-center pt-1">
+                        <Icon weight="duotone" className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-lg font-semibold text-foreground mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
+                          {feature.title}
+                        </h3>
+                        <p className="text-sm md:text-base text-muted-foreground leading-normal">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
