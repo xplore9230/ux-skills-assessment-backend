@@ -15,8 +15,11 @@ from ollama_client import (
     generate_deep_dive_topics_ollama,
     generate_layout_strategy,
     generate_category_insights,
-    quick_ollama_check
+    quick_ollama_check,
+    generate_design_system_improvement_plan,
+    generate_design_system_insights
 )
+from generate_design_system_questions import generate_all_design_system_questions
 from job_links import build_job_search_links
 
 # Import RAG components
@@ -232,6 +235,55 @@ def health_check():
     
     return response
 
+@app.get("/api/ollama-status")
+def ollama_status():
+    """
+    Get detailed status of Ollama availability and pregenerated data.
+    Returns information about which content generation method is available.
+    """
+    from ollama_client import OLLAMA_AVAILABLE as OLLAMA_AVAIL
+    ollama_ready = quick_ollama_check(timeout=2.0)
+    
+    return {
+        "ollama_available": OLLAMA_AVAIL,
+        "ollama_ready": ollama_ready,
+        "pregenerated_available": PREGENERATED_AVAILABLE,
+        "use_pregenerated": USE_PREGENERATED,
+        "model_status": "ready" if ollama_ready else ("not_available" if not OLLAMA_AVAIL else "checking")
+    }
+
+@app.post("/api/generate-design-system-questions")
+def generate_design_system_questions():
+    """
+    Generate 30 design system questions using Llama.
+    Returns questions across 6 categories (5 questions per category).
+    """
+    try:
+        print("Generating design system questions...")
+        questions = generate_all_design_system_questions()
+        print(f"✓ Generated {len(questions)} design system questions")
+        return {"questions": questions}
+    except Exception as e:
+        print(f"Error generating design system questions: {e}")
+        # Return fallback questions
+        return {
+            "questions": [
+                {
+                    "id": f"DS-Fallback-{i}",
+                    "text": f"Design system question {i+1}",
+                    "category": "Foundations",
+                    "options": [
+                        {"value": 1, "label": "Not familiar"},
+                        {"value": 2, "label": "Basic understanding"},
+                        {"value": 3, "label": "Good understanding"},
+                        {"value": 4, "label": "Strong understanding"},
+                        {"value": 5, "label": "Expert level"}
+                    ]
+                }
+                for i in range(30)
+            ]
+        }
+
 @app.post("/api/generate-improvement-plan")
 def generate_plan(data: AssessmentInput):
     """
@@ -264,6 +316,11 @@ def generate_resources(data: AssessmentInput):
     Returns curated resources immediately for fast loading.
     Optionally enhances with AI descriptions if Ollama is ready and fast.
     """
+    print(f"Checking Ollama availability for /api/generate-resources")
+    source = "curated"
+    ollama_available = False
+    pregenerated_available = USE_PREGENERATED and PREGENERATED_AVAILABLE
+    
     try:
         categories_dict = [c.model_dump() for c in data.categories]
         
@@ -274,6 +331,7 @@ def generate_resources(data: AssessmentInput):
             if pregenerated is not None:
                 readup_text = pregenerated.get("readup")
                 print(f"✓ Using pre-generated readup for score {data.totalScore}")
+                source = "pregenerated"
         
         # FAST PATH: Return curated resources immediately (no AI wait)
         sorted_categories = sorted(
@@ -293,6 +351,10 @@ def generate_resources(data: AssessmentInput):
             first_key = list(CURATED_RESOURCES.keys())[0]
             selected_resources = CURATED_RESOURCES[first_key][:3]
         
+        # Final safety: if still no resources, use hardcoded fallback
+        if not selected_resources:
+            selected_resources = fallback_resources.get("UX Fundamentals", [])[:3]
+        
         # Format curated resources (use description from JSON, no AI needed)
         formatted_resources = []
         for res in selected_resources:
@@ -305,34 +367,45 @@ def generate_resources(data: AssessmentInput):
         
         # Quick check if Ollama is ready for enhancement (non-blocking, < 2s)
         ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_available = ollama_ready
+        print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         # ENHANCEMENT PATH: Only enhance with AI if Ollama is ready and fast
         if ollama_ready and formatted_resources:
             try:
-                print(f"⚡ Ollama ready - enhancing {len(formatted_resources)} resources with AI descriptions")
+                print(f"⚡ Calling Ollama to generate /api/generate-resources content")
                 # Enhance descriptions with AI in background (non-blocking)
                 # For now, return curated resources immediately
                 # AI enhancement can happen async if needed
                 ai_response = generate_resources_ollama(data.stage, categories_dict)
-                if ai_response and ai_response.get("resources"):
+                if ai_response and isinstance(ai_response, dict) and ai_response.get("resources") and len(ai_response.get("resources", [])) > 0:
                     # Use AI-enhanced resources if available
                     formatted_resources = ai_response.get("resources", formatted_resources)
                     readup_text = readup_text or ai_response.get("readup", "Keep growing your skills!")
+                    source = "ollama"
+                    print(f"Final source: ollama")
+                else:
+                    print(f"⚠ Ollama generation failed or returned empty, using fallback")
             except Exception as e:
-                print(f"⚠ AI enhancement failed, using curated resources: {e}")
+                print(f"⚠ Ollama generation failed, using fallback: {e}")
                 # Continue with curated resources
         else:
             if not ollama_ready:
                 print(f"✓ Using curated resources (Ollama not ready)")
             else:
                 print(f"✓ Using curated resources (fast path)")
+            if source != "pregenerated":
+                source = "curated"
         
         # Use pre-generated readup if available, otherwise default
         final_readup = readup_text if readup_text else "Keep growing your UX skills!"
         
         return {
             "readup": final_readup,
-            "resources": formatted_resources
+            "resources": formatted_resources,
+            "source": source,
+            "ollama_available": ollama_available,
+            "pregenerated_available": pregenerated_available
         }
         
     except Exception as e:
@@ -361,9 +434,29 @@ def generate_resources(data: AssessmentInput):
                 'tags': res.get('tags', [])
             })
         
+        # Final safety: if still no resources, use hardcoded fallback
+        if not formatted_resources:
+            formatted_resources = [
+                {
+                    'title': 'Laws of UX',
+                    'url': 'https://lawsofux.com/',
+                    'description': 'A collection of best practices that designers can consider when building user interfaces.',
+                    'tags': ['Heuristics', 'Psychology']
+                },
+                {
+                    'title': 'Nielsen Norman Group',
+                    'url': 'https://www.nngroup.com/',
+                    'description': 'Evidence-based user experience research, training, and consulting.',
+                    'tags': ['Research', 'Reference']
+                }
+            ]
+        
         return {
             "readup": "Keep growing your UX skills!",
-            "resources": formatted_resources
+            "resources": formatted_resources,
+            "source": "fallback",
+            "ollama_available": False,
+            "pregenerated_available": USE_PREGENERATED and PREGENERATED_AVAILABLE
         }
 
 @app.post("/api/generate-deep-dive")
@@ -372,6 +465,11 @@ def generate_deep_dive(data: AssessmentInput):
     Generates deep dive topics using local Ollama LLM and enriches them with curated resources.
     Returns curated resources if AI times out or fails.
     """
+    print(f"Checking Ollama availability for /api/generate-deep-dive")
+    source = "curated"
+    ollama_available = False
+    pregenerated_available = USE_PREGENERATED and PREGENERATED_AVAILABLE
+    
     import signal
     from contextlib import contextmanager
     
@@ -399,16 +497,32 @@ def generate_deep_dive(data: AssessmentInput):
         
         # Quick check if Ollama is ready
         ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_available = ollama_ready
+        print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         ai_response = None
         if ollama_ready:
             try:
-                print(f"🔄 Generating deep dive via AI for score {data.totalScore}")
+                print(f"⚡ Calling Ollama to generate /api/generate-deep-dive content")
                 # Try AI generation with timeout (15s max)
                 # Note: Actual timeout is handled by call_ollama (15s), but we add extra safety
                 ai_response = generate_deep_dive_topics_ollama(data.stage, categories_dict)
+                if ai_response and isinstance(ai_response, dict) and ai_response.get("topics") and len(ai_response.get("topics", [])) > 0:
+                    source = "ollama"
+                    print(f"Final source: ollama")
+                    return {
+                        "topics": ai_response.get("topics"),
+                        "source": source,
+                        "ollama_available": ollama_available,
+                        "pregenerated_available": pregenerated_available
+                    }
+                else:
+                    print(f"⚠ Ollama returned None or invalid response, using fallback")
+                    ai_response = None
             except Exception as e:
-                print(f"⚠ AI generation failed: {e}, using curated resources")
+                print(f"⚠ Ollama generation failed, using fallback: {e}")
+                import traceback
+                traceback.print_exc()
                 ai_response = None
         else:
             print(f"✓ Ollama not ready, using curated resources for deep dive")
@@ -416,6 +530,7 @@ def generate_deep_dive(data: AssessmentInput):
         # If AI failed or not ready, create topics from curated resources
         if not ai_response or not ai_response.get("topics"):
             print(f"✓ Creating deep dive topics from curated resources")
+            source = "curated"
             # Create topics based on weakest categories
             sorted_categories = sorted(
                 data.categories, 
@@ -467,7 +582,13 @@ def generate_deep_dive(data: AssessmentInput):
                         "resources": topic_resources
                     })
             
-            return {"topics": topics}
+            print(f"Final source: curated")
+            return {
+                "topics": topics,
+                "source": source,
+                "ollama_available": ollama_available,
+                "pregenerated_available": pregenerated_available
+            }
         
         # Enrich AI-generated topics with curated resources
         topics = ai_response.get("topics", [])
@@ -558,22 +679,56 @@ def generate_layout(data: AssessmentInput):
     Determines section order, visibility, and content depth.
     """
     try:
+        print(f"Checking Ollama availability for /api/generate-layout")
+        source = "curated"
+        ollama_available = False
+        pregenerated_available = USE_PREGENERATED and PREGENERATED_AVAILABLE
+        
         # Check for pre-generated response first
         if USE_PREGENERATED:
             pregenerated = get_pregenerated_layout(data.totalScore)
             if pregenerated is not None:
                 print(f"✓ Using pre-generated layout for score {data.totalScore}")
+                source = "pregenerated"
+                pregenerated["source"] = source
+                pregenerated["ollama_available"] = False
+                pregenerated["pregenerated_available"] = pregenerated_available
+                print(f"Final source: pregenerated")
                 return pregenerated
         
+        # Check Ollama availability
+        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_available = ollama_ready
+        print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
+        
         # Fall back to LLM generation
-        print(f"Generating layout via LLM for score {data.totalScore}")
-        categories_dict = [c.model_dump() for c in data.categories]
-        layout_strategy = generate_layout_strategy(
-            data.stage,
-            data.totalScore,
-            data.maxScore,
-            categories_dict
-        )
+        if ollama_ready:
+            try:
+                print(f"⚡ Calling Ollama to generate /api/generate-layout content")
+                categories_dict = [c.model_dump() for c in data.categories]
+                layout_strategy = generate_layout_strategy(
+                    data.stage,
+                    data.totalScore,
+                    data.maxScore,
+                    categories_dict
+                )
+                
+                if layout_strategy and isinstance(layout_strategy, dict) and layout_strategy.get("section_order") and layout_strategy.get("section_visibility"):
+                    source = "ollama"
+                    print(f"Final source: ollama")
+                else:
+                    source = "curated"
+                    print(f"⚠ Ollama returned None or invalid layout, using fallback")
+                    layout_strategy = None
+            except Exception as e:
+                print(f"⚠ Ollama generation failed, using fallback: {e}")
+                import traceback
+                traceback.print_exc()
+                source = "curated"
+                layout_strategy = None
+        else:
+            source = "curated"
+            layout_strategy = None
         
         # Ensure we have valid defaults if AI fails
         if not layout_strategy or not layout_strategy.get("section_order"):
@@ -600,6 +755,10 @@ def generate_layout(data: AssessmentInput):
         if "section_visibility" in layout_strategy:
             layout_strategy["section_visibility"]["jobs"] = True
         
+        layout_strategy["source"] = source
+        layout_strategy["ollama_available"] = ollama_available
+        layout_strategy["pregenerated_available"] = pregenerated_available
+        
         return layout_strategy
         
     except Exception as e:
@@ -624,6 +783,71 @@ def generate_layout(data: AssessmentInput):
             "priority_message": "Let's review your UX skills assessment results."
         }
 
+@app.post("/api/generate-design-system-improvement-plan")
+def generate_ds_improvement_plan(data: AssessmentInput):
+    """
+    Generates a 4-week improvement plan specifically for Design Systems knowledge.
+    """
+    try:
+        print(f"Generating design system improvement plan for {data.stage} level")
+        categories_dict = [c.model_dump() for c in data.categories]
+        return generate_design_system_improvement_plan(
+            data.stage,
+            data.totalScore,
+            data.maxScore,
+            categories_dict
+        )
+    except Exception as e:
+        print(f"Error generating design system improvement plan: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/generate-design-system-insights")
+def generate_ds_insights(data: AssessmentInput):
+    """
+    Generates personalized insights for Design Systems categories.
+    """
+    try:
+        print(f"Generating design system insights for {data.stage} level")
+        categories_dict = [c.model_dump() for c in data.categories]
+        ai_response = generate_design_system_insights(data.stage, categories_dict)
+        
+        insights = ai_response.get("insights", [])
+        
+        # Ensure we have insights for all categories
+        if not insights or len(insights) == 0:
+            insights = []
+            for cat in data.categories:
+                percentage = round((cat.score / cat.maxScore * 100)) if cat.maxScore > 0 else 0
+                insights.append({
+                    "category": cat.name,
+                    "brief": f"You scored {percentage}% in {cat.name}.",
+                    "detailed": f"Your Design Systems knowledge in {cat.name} shows room for growth.",
+                    "actionable": [
+                        f"Review {cat.name} concepts in the Design Systems guide",
+                        f"Practice applying {cat.name} in your work",
+                        f"Build a project focusing on {cat.name}"
+                    ]
+                })
+        
+        return {"insights": insights}
+    except Exception as e:
+        print(f"Error generating design system insights: {e}")
+        # Return fallback insights
+        insights = []
+        for cat in data.categories:
+            percentage = round((cat.score / cat.maxScore * 100)) if cat.maxScore > 0 else 0
+            insights.append({
+                "category": cat.name,
+                "brief": f"You scored {percentage}% in {cat.name}.",
+                "detailed": f"Your Design Systems knowledge in {cat.name} can be improved.",
+                "actionable": [
+                    f"Study {cat.name} in design systems",
+                    f"Practice {cat.name} concepts",
+                    f"Apply {cat.name} to projects"
+                ]
+            })
+        return {"insights": insights}
+
 @app.post("/api/generate-category-insights")
 def generate_insights(data: AssessmentInput):
     """
@@ -631,23 +855,60 @@ def generate_insights(data: AssessmentInput):
     Returns brief, detailed, and actionable insights.
     """
     try:
+        print(f"Checking Ollama availability for /api/generate-category-insights")
+        source = "curated"
+        ollama_available = False
+        pregenerated_available = USE_PREGENERATED and PREGENERATED_AVAILABLE
+        
         # Check for pre-generated response first
         if USE_PREGENERATED:
             pregenerated = get_pregenerated_insights(data.totalScore)
             if pregenerated is not None:
                 print(f"✓ Using pre-generated insights for score {data.totalScore}")
+                source = "pregenerated"
+                pregenerated["source"] = source
+                pregenerated["ollama_available"] = False
+                pregenerated["pregenerated_available"] = pregenerated_available
+                print(f"Final source: pregenerated")
                 return pregenerated
         
-        # Fall back to LLM generation
-        print(f"Generating insights via LLM for score {data.totalScore}")
-        categories_dict = [c.model_dump() for c in data.categories]
-        ai_response = generate_category_insights(data.stage, categories_dict)
+        # Check Ollama availability
+        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_available = ollama_ready
+        print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
-        insights = ai_response.get("insights", [])
+        # Fall back to LLM generation
+        insights = []
+        if ollama_ready:
+            try:
+                print(f"⚡ Calling Ollama to generate /api/generate-category-insights content")
+                categories_dict = [c.model_dump() for c in data.categories]
+                ai_response = generate_category_insights(data.stage, categories_dict)
+                if ai_response and isinstance(ai_response, dict):
+                    insights = ai_response.get("insights", [])
+                    
+                    if insights and len(insights) > 0:
+                        source = "ollama"
+                        print(f"Final source: ollama")
+                    else:
+                        source = "curated"
+                        print(f"⚠ Ollama returned empty insights, using fallback")
+                        insights = []
+                else:
+                    source = "curated"
+                    print(f"⚠ Ollama returned None or invalid response, using fallback")
+                    insights = []
+            except Exception as e:
+                print(f"⚠ Ollama generation failed, using fallback: {e}")
+                import traceback
+                traceback.print_exc()
+                source = "curated"
+                insights = []
         
         # Ensure we have insights for all categories
         if not insights or len(insights) == 0:
             # Generate fallback insights
+            source = "curated"
             insights = []
             for cat in data.categories:
                 percentage = round((cat.score / cat.maxScore * 100)) if cat.maxScore > 0 else 0
@@ -661,8 +922,14 @@ def generate_insights(data: AssessmentInput):
                         f"Seek feedback on your {cat.name} work"
                     ]
                 })
+            print(f"Final source: curated")
         
-        return {"insights": insights}
+        return {
+            "insights": insights,
+            "source": source,
+            "ollama_available": ollama_available,
+            "pregenerated_available": pregenerated_available
+        }
         
     except Exception as e:
         print(f"Error generating category insights: {e}")
@@ -680,7 +947,12 @@ def generate_insights(data: AssessmentInput):
                     f"Seek feedback on your {cat.name} work"
                 ]
             })
-        return {"insights": insights}
+        return {
+            "insights": insights,
+            "source": "fallback",
+            "ollama_available": False,
+            "pregenerated_available": USE_PREGENERATED and PREGENERATED_AVAILABLE
+        }
 
 
 # ============================================================================
