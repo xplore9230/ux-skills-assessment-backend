@@ -55,7 +55,7 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" data-testid="text-hero-title">
               <>Find Your <motion.span 
-                className="font-playfair font-bold italic relative inline-block"
+                className="relative inline-block"
               >
                 UX Career
                 <motion.span
