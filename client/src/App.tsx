@@ -6,7 +6,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import LandingPage from "@/pages/landing";
-import BlogPage from "@/pages/blog.tsx";
+import BlogPage from "@/pages/blog";
 import { QuizFlow } from "@/components/QuizFlow";
 import { DesignSystemsQuizFlow } from "@/components/DesignSystemsQuizFlow";
 
