@@ -172,10 +172,11 @@ const ResultsPage = memo(function ResultsPage({
         <div 
           className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[30%] pointer-events-none hidden md:block"
           style={{
-            width: 'min(1356px, 100vw)',
+            width: '1356px',
+            maxWidth: '100vw',
             height: '403px',
             background: '#54FF51',
-            opacity: 0.1,
+            opacity: 0.05,
             borderRadius: '50%',
             filter: 'blur(144px)',
             zIndex: 0,
@@ -196,9 +197,10 @@ const ResultsPage = memo(function ResultsPage({
           className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[20%] pointer-events-none md:hidden"
           style={{
             width: '100vw',
+            maxWidth: '100vw',
             height: '300px',
             background: '#54FF51',
-            opacity: 0.1,
+            opacity: 0.05,
             borderRadius: '50%',
             filter: 'blur(100px)',
             zIndex: 0,
@@ -273,9 +275,9 @@ const ResultsPage = memo(function ResultsPage({
             initial={{ opacity: 0, scale: 0.9, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="flex items-baseline justify-center mt-0"
+            className="flex items-baseline justify-center mt-0 w-full px-4"
           >
-            <span className="font-serif text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-tight text-foreground leading-none select-none break-words overflow-hidden">
+            <span className="font-serif text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold tracking-tight text-foreground leading-none select-none break-all overflow-visible whitespace-nowrap">
               {displayScore}
             </span>
           </motion.div>
