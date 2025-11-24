@@ -1,7 +1,9 @@
 import { memo, useMemo } from "react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Home } from "lucide-react";
+import { Link } from "react-router-dom";
 import WeekCard from "@/components/WeekCard";
 import DeepDiveSection from "@/components/DeepDiveSection";
 import CategoryCard from "@/components/CategoryCard";
@@ -570,6 +572,23 @@ const ResultsPage = memo(function ResultsPage({
 
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-foreground/10">
+      {/* Floating Action Button - Go to Home (bottom right) */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+        className="fixed bottom-6 right-6 z-50"
+      >
+        <Link to="/">
+          <Button
+            size="lg"
+            className="rounded-full h-14 w-14 p-0 shadow-lg hover:shadow-xl transition-shadow"
+            aria-label="Go to Home"
+          >
+            <Home className="h-5 w-5" />
+          </Button>
+        </Link>
+      </motion.div>
       {/* 
         MAIN PAGE CONTAINER:
         min-h-screen = minimum height of full screen (keeps page from being too short)
