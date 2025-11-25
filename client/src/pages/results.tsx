@@ -313,33 +313,31 @@ const ResultsPage = memo(function ResultsPage({
       </motion.div>
     ),
 
-    "stage-readup": stageReadup || isLoadingResources ? (
-      stageReadup ? (
-        <motion.div
-          key="stage-readup"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-3xl mx-auto text-center border-t border-border/40 pt-8 sm:pt-10 pb-4 sm:pb-6 space-y-5 px-4"
-        >
-          <h2 className="text-2xl font-serif font-bold italic break-words">What this means for you</h2>
-          <p className="text-lg leading-relaxed text-muted-foreground/90 font-medium break-words">
-            {stageReadup}
-          </p>
-        </motion.div>
-      ) : (
-        <motion.div
-          key="stage-readup-loading"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="max-w-3xl mx-auto text-center py-12 space-y-4"
-        >
-          <div className="flex justify-center">
-            <div className="w-8 h-8 border-4 border-foreground/20 border-t-foreground rounded-full animate-spin" />
-          </div>
-          <p className="text-muted-foreground animate-pulse">AI analyzing your career stage...</p>
-        </motion.div>
-      )
+    "stage-readup": isLoadingResources && !stageReadup ? (
+      <motion.div
+        key="stage-readup-loading"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="max-w-3xl mx-auto text-center py-12 space-y-4"
+      >
+        <div className="flex justify-center">
+          <div className="w-8 h-8 border-4 border-foreground/20 border-t-foreground rounded-full animate-spin" />
+        </div>
+        <p className="text-muted-foreground animate-pulse">Loading your personalized insights...</p>
+      </motion.div>
+    ) : stageReadup ? (
+      <motion.div
+        key="stage-readup"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="max-w-3xl mx-auto text-center border-t border-border/40 pt-8 sm:pt-10 pb-4 sm:pb-6 space-y-5 px-4"
+      >
+        <h2 className="text-2xl font-serif font-bold italic break-words">What this means for you</h2>
+        <p className="text-lg leading-relaxed text-muted-foreground/90 font-medium break-words">
+          {stageReadup}
+        </p>
+      </motion.div>
     ) : null,
 
     "skill-breakdown": (

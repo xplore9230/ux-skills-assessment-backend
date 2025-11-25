@@ -55,12 +55,14 @@ export function calculateResults(answers: Record<string, number>): {
     const categories: CategoryScore[] = Object.entries(categoryScores).map(([name, score]) => {
       const count = categoryCounts[name];
       const categoryMaxScore = count * 5;
+      // Calculate percentage: (raw score / max possible score) * 100
+      // Math.round ensures consistent rounding (no floating point discrepancies)
       const percentage = categoryMaxScore > 0 ? Math.round((score / categoryMaxScore) * 100) : 0;
       
       return {
         name,
-        score: percentage, // Return percentage as the score
-        maxScore: 100,    // Normalized to 100
+        score: percentage, // Return percentage as the score (0-100)
+        maxScore: 100,    // Normalized to 100 for consistency
         status: percentage >= 80 ? "strong" : percentage >= 60 ? "decent" : "needs-work"
       };
     });

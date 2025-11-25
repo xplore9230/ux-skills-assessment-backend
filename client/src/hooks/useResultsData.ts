@@ -275,7 +275,7 @@ export function useResultsData(
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ stage, categories }),
+            body: JSON.stringify({ stage, categories, totalScore, maxScore }),
           },
           10000 // 10 second timeout
         );

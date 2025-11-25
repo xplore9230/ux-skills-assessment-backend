@@ -2,7 +2,12 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { storage } from "./storage";
+
+// ES module equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Path to pre-generated JSON data from the Python backend
 // Try multiple possible locations for Vercel serverless and local dev
@@ -263,6 +268,40 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Helper function to replace hardcoded stage references in readup text
+  function replaceStageReferences(readup: string, actualStage: string): string {
+    if (!readup || !actualStage) return readup;
+    
+    // Map of stage variations that might appear in pregenerated data
+    const stagePatterns = [
+      { pattern: /As an Explorer UX designer/gi, replacement: `As an ${actualStage} UX designer` },
+      { pattern: /As a Practitioner UX designer/gi, replacement: `As a ${actualStage} UX designer` },
+      { pattern: /As an Emerging Senior UX designer/gi, replacement: `As an ${actualStage} UX designer` },
+      { pattern: /As a Strategic Lead UX designer/gi, replacement: `As a ${actualStage} UX designer` },
+      { pattern: /As an Explorer UX Designer/gi, replacement: `As an ${actualStage} UX Designer` },
+      { pattern: /As a Practitioner UX Designer/gi, replacement: `As a ${actualStage} UX Designer` },
+      { pattern: /As an Emerging Senior UX Designer/gi, replacement: `As an ${actualStage} UX Designer` },
+      { pattern: /As a Strategic Lead UX Designer/gi, replacement: `As a ${actualStage} UX Designer` },
+      { pattern: /As an Explorer/gi, replacement: `As an ${actualStage}` },
+      { pattern: /As a Practitioner/gi, replacement: `As a ${actualStage}` },
+      { pattern: /As an Emerging Senior/gi, replacement: `As an ${actualStage}` },
+      { pattern: /As a Strategic Lead/gi, replacement: `As a ${actualStage}` },
+      { pattern: /As a UX practitioner/gi, replacement: `As a ${actualStage} UX designer` },
+      { pattern: /As an emerging senior UX designer/gi, replacement: `As an ${actualStage} UX designer` },
+      { pattern: /as an Explorer/gi, replacement: `as an ${actualStage}` },
+      { pattern: /as a Practitioner/gi, replacement: `as a ${actualStage}` },
+      { pattern: /as an Emerging Senior/gi, replacement: `as an ${actualStage}` },
+      { pattern: /as a Strategic Lead/gi, replacement: `as a ${actualStage}` },
+    ];
+    
+    let updatedReadup = readup;
+    for (const { pattern, replacement } of stagePatterns) {
+      updatedReadup = updatedReadup.replace(pattern, replacement);
+    }
+    
+    return updatedReadup;
+  }
+
   // Resources + stage readup – returns { readup, resources: [...] }
   app.post("/api/generate-resources", (req, res) => {
     try {
@@ -280,8 +319,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.log("Found resources:", resourcesBlock.resources?.length || 0);
       }
 
+      // Replace hardcoded stage references with actual stage
+      let readupText = resourcesBlock?.readup ?? "";
+      if (readupText && stage && typeof stage === "string") {
+        readupText = replaceStageReferences(readupText, stage);
+      }
+
       const result = {
-        readup: resourcesBlock?.readup ?? "",
+        readup: readupText,
         resources: Array.isArray(resourcesBlock?.resources)
           ? resourcesBlock!.resources
           : [],
@@ -367,25 +412,59 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       let insights: any[] | null | undefined = data?.insights;
 
-      // If pregenerated insights are not available, fall back to simple computed ones
+      // If pregenerated insights are not available, fall back to score-aware computed ones
       if (!insights || !Array.isArray(insights) || insights.length === 0) {
         if (Array.isArray(categories)) {
           insights = categories.map((cat: any) => {
-            const score = typeof cat.score === "number" ? cat.score : 0;
-            const max = typeof cat.maxScore === "number" ? cat.maxScore : 100;
-            const percentage = max > 0 ? Math.round((score / max) * 100) : 0;
+            // Score is already a percentage (0-100), so use it directly
+            const percentage = typeof cat.score === "number" ? Math.round(cat.score) : 0;
+
+            // Generate score-appropriate messages
+            let detailed: string;
+            let actionable: string[];
+
+            if (percentage >= 90) {
+              detailed = `Excellent work! Your ${cat.name} skills are at an advanced level. Continue refining your expertise and consider mentoring others or contributing to design systems.`;
+              actionable = [
+                `Share your ${cat.name} expertise through mentorship or writing`,
+                `Contribute to design systems or industry best practices`,
+                `Explore advanced techniques and emerging trends in ${cat.name}`,
+              ];
+            } else if (percentage >= 80) {
+              detailed = `Strong performance in ${cat.name}! You have a solid foundation. Focus on refining advanced techniques and expanding your knowledge in specialized areas.`;
+              actionable = [
+                `Deepen your understanding of advanced ${cat.name} concepts`,
+                `Practice applying ${cat.name} principles to complex projects`,
+                `Seek feedback from senior designers on your ${cat.name} work`,
+              ];
+            } else if (percentage >= 60) {
+              detailed = `Your ${cat.name} skills are developing well. Continue building on your foundation and practice applying these concepts in real projects.`;
+              actionable = [
+                `Practice ${cat.name} skills through hands-on projects`,
+                `Study case studies and examples of strong ${cat.name} work`,
+                `Get feedback on your ${cat.name} work from peers or mentors`,
+              ];
+            } else if (percentage >= 40) {
+              detailed = `Your performance in ${cat.name} shows room for growth. Focus on building stronger foundations through structured learning and practice.`;
+              actionable = [
+                `Review core concepts in ${cat.name}`,
+                `Complete beginner-friendly ${cat.name} tutorials or courses`,
+                `Practice ${cat.name} skills daily with small projects`,
+              ];
+            } else {
+              detailed = `Your ${cat.name} skills need significant development. Start with fundamentals and build gradually through consistent practice and learning.`;
+              actionable = [
+                `Start with beginner ${cat.name} courses or resources`,
+                `Practice basic ${cat.name} concepts regularly`,
+                `Seek guidance from experienced designers in ${cat.name}`,
+              ];
+            }
 
             return {
               category: cat.name ?? "Category",
               brief: `You scored ${percentage}% in ${cat.name}.`,
-              detailed:
-                `Your performance in ${cat.name} shows room for growth. ` +
-                "Focus on building stronger foundations in this area.",
-              actionable: [
-                `Review core concepts in ${cat.name}`,
-                `Practice ${cat.name} skills daily`,
-                `Seek feedback on your ${cat.name} work`,
-              ],
+              detailed,
+              actionable,
             };
           });
         } else {

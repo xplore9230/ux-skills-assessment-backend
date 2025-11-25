@@ -21,7 +21,8 @@ const CategoryInsightModal = memo(function CategoryInsightModal({
 }: CategoryInsightModalProps) {
   if (!insight) return null;
 
-  const percentage = maxScore > 0 ? Math.round((score / maxScore) * 100) : 0;
+  // Score is already a percentage (0-100), so use it directly
+  const percentage = score;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>

@@ -18,12 +18,15 @@ export default function QuizWrapper() {
     const results = calculateResults(answers);
     
     // Navigate to results page with state
+    // Add timestamp to detect stale data on refresh
     navigate("/results", {
       state: {
         ...results,
         cachedResults: cachedResults,
         precomputationStatus: precomputationStatus,
+        timestamp: Date.now(), // Add timestamp to prevent stale data
       },
+      replace: false, // Allow back navigation
     });
   };
 

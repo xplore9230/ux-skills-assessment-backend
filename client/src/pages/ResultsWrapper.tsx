@@ -14,6 +14,20 @@ interface ResultsLocationState {
   improvementPlan: ImprovementWeek[];
   cachedResults?: PrecomputedResults | null;
   precomputationStatus?: PrecomputationStatus;
+  timestamp?: number; // Timestamp to detect stale data
+}
+
+// Validate that state has all required fields
+function isValidResultsState(state: any): state is ResultsLocationState {
+  return (
+    state &&
+    typeof state.stage === "string" &&
+    typeof state.totalScore === "number" &&
+    typeof state.maxScore === "number" &&
+    typeof state.summary === "string" &&
+    Array.isArray(state.categories) &&
+    Array.isArray(state.improvementPlan)
+  );
 }
 
 export default function ResultsWrapper() {
@@ -22,14 +36,34 @@ export default function ResultsWrapper() {
   const [showLoading, setShowLoading] = useState(true);
 
   // Get results from location state
-  const state = location.state as ResultsLocationState | null;
+  const rawState = location.state as ResultsLocationState | null;
 
-  // If no state, redirect to home
+  // Validate state structure and check for stale data
   useEffect(() => {
-    if (!state) {
-      navigate("/");
+    if (!rawState || !isValidResultsState(rawState)) {
+      // Invalid or missing state - redirect to home
+      navigate("/", { replace: true });
+      return;
     }
-  }, [state, navigate]);
+
+    // Check for stale data (older than 1 hour)
+    if (rawState.timestamp) {
+      const age = Date.now() - rawState.timestamp;
+      const oneHour = 60 * 60 * 1000;
+      if (age > oneHour) {
+        // Stale data - redirect to home
+        navigate("/", { replace: true });
+        return;
+      }
+    }
+  }, [rawState, navigate]);
+
+  // If no valid state, don't render anything
+  if (!rawState || !isValidResultsState(rawState)) {
+    return null;
+  }
+
+  const state = rawState;
 
   // If no state, don't render anything
   if (!state) {
