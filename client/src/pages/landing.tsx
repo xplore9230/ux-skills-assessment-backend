@@ -1,4 +1,4 @@
-import { memo, useRef, useEffect } from "react";
+import { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -9,27 +9,6 @@ interface LandingPageProps {
 }
 
 const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleEnded = () => {
-      video.pause();
-      // keep the last frame visible by snapping to the duration timestamp
-      if (!Number.isNaN(video.duration)) {
-        video.currentTime = video.duration;
-      }
-    };
-
-    video.addEventListener("ended", handleEnded);
-
-    return () => {
-      video.removeEventListener("ended", handleEnded);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-14 md:py-12">
@@ -39,17 +18,38 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-8 md:mb-6"
         >
-          <video 
-            ref={videoRef}
-            src="/Landing.mov"
-            className="w-full max-w-2xl rounded-lg"
-            autoPlay
-            muted
-            loop={false}
-            playsInline
-            preload="auto"
-            data-testid="landing-video"
-          />
+          {/* ORB Animation */}
+          <div className="relative w-full max-w-2xl flex items-center justify-center">
+            <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] flex items-center justify-center">
+              {/* Rotating Orb */}
+              <img 
+                src="/orb.webp" 
+                alt="" 
+                className="absolute inset-0 w-full h-full object-contain opacity-100"
+                style={{ animation: "spin-slow 20s linear infinite" }}
+              />
+              
+              {/* White transparency gradient in center */}
+              <div className="absolute inset-0 rounded-full bg-radial-gradient from-background via-transparent to-transparent w-full h-full scale-75" />
+              
+              {/* UX Text at center */}
+              <div className="relative z-10 flex items-center justify-center">
+                <motion.span 
+                  className="text-[100px] md:text-[100px] font-black text-blue-500 opacity-50 blur-sm"
+                  animate={{ 
+                    y: [0, -2, 0, 2, 0]
+                  }}
+                  transition={{ 
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  UX
+                </motion.span>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
