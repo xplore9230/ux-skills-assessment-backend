@@ -1,15 +1,56 @@
-import { memo } from "react";
+import { memo, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Sparkle, ShareNetwork, ChartBar, Briefcase, Brain } from "@phosphor-icons/react";
-import illustrationImage from "@assets/Gemini_Generated_Image_x6n1ydx6n1ydx6n1_1763725243475.jpeg";
 
 interface LandingPageProps {
   onStart: () => void;
 }
 
 const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    let animationFrameId: number;
+    let lastTimestamp: number = 0;
+
+    const reversePlayback = (timestamp: number) => {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      
+      const deltaTime = (timestamp - lastTimestamp) / 1000; // Convert ms to seconds
+      lastTimestamp = timestamp;
+
+      // Decrement current time
+      // We can adjust the multiplier to control reverse speed if needed (e.g., * 1.0)
+      video.currentTime = Math.max(0, video.currentTime - deltaTime);
+
+      if (video.currentTime > 0) {
+        animationFrameId = requestAnimationFrame(reversePlayback);
+      } else {
+        // Reached the start, play forward again
+        video.play().catch(console.error); // catch play errors
+      }
+    };
+
+    const handleEnded = () => {
+      // Video finished playing forward
+      video.pause();
+      lastTimestamp = 0; // Reset timestamp for the new animation loop
+      animationFrameId = requestAnimationFrame(reversePlayback);
+    };
+
+    video.addEventListener('ended', handleEnded);
+
+    return () => {
+      video.removeEventListener('ended', handleEnded);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-14 md:py-12">
@@ -19,13 +60,14 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-8 md:mb-6"
         >
-          <img 
-            src={illustrationImage} 
-            alt="UX Skills Assessment - Discover your career stage with personalized insights and recommendations" 
+          <video 
+            ref={videoRef}
+            src="/Landing.mov"
             className="w-full max-w-2xl rounded-lg"
-            loading="eager"
-            fetchPriority="high"
-            data-testid="landing-illustration"
+            autoPlay
+            muted
+            playsInline
+            data-testid="landing-video"
           />
         </motion.div>
 
@@ -50,7 +92,7 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/50 bg-background/50 backdrop-blur-sm">
                 <Brain weight="duotone" className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-muted-foreground">Powered by Ollama</span>
+                <span className="text-sm font-medium text-muted-foreground">AI + RAG enhanced recommendations</span>
               </div>
             </motion.div>
             
