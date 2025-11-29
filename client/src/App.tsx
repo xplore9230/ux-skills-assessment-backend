@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import LandingPage from "@/pages/landing";
 import QuizWrapper from "@/pages/QuizWrapper";
-import ResultsWrapper from "@/pages/ResultsWrapper";
+import ResultsEntry from "@/pages/results";
 
 // Conditionally load Analytics component
 function ConditionalAnalytics() {
@@ -62,7 +62,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<LandingPageWrapper />} />
                 <Route path="/quiz" element={<QuizWrapper />} />
-                <Route path="/results" element={<ResultsWrapper />} />
+                <Route path="/results" element={<ResultsEntry />} />
               </Routes>
             </main>
           </TooltipProvider>
