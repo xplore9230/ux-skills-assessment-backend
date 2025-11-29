@@ -69,7 +69,7 @@ export default function ScoreHero({ data }: ScoreHeroProps) {
       
       {/* Score Display */}
       <div className="relative z-10 flex flex-col items-center justify-center mb-2">
-        <span className="font-playfair text-[120px] md:text-[200px] font-bold text-foreground leading-[0.8] tracking-tight">
+        <span className="font-sans text-[120px] md:text-[200px] font-bold text-foreground leading-[0.8] tracking-tight">
           {animatedScore}
         </span>
       </div>
