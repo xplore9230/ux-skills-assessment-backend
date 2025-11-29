@@ -17,7 +17,10 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
 
     const handleEnded = () => {
       video.pause();
-      video.currentTime = 0;
+      // keep the last frame visible by snapping to the duration timestamp
+      if (!Number.isNaN(video.duration)) {
+        video.currentTime = video.duration;
+      }
     };
 
     video.addEventListener("ended", handleEnded);
