@@ -63,6 +63,7 @@ function App() {
                 <Route path="/" element={<LandingPageWrapper />} />
                 <Route path="/quiz" element={<QuizWrapper />} />
                 <Route path="/results" element={<ResultsEntry />} />
+                <Route path="/results/:resultId" element={<ResultsEntry />} />
               </Routes>
             </main>
           </TooltipProvider>

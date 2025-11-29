@@ -64,4 +64,15 @@ export {
   initializeCache,
 } from "./cache";
 
+// Storage utilities (URL persistence)
+export {
+  generateResultId,
+  saveResult,
+  loadResult,
+  resultExists,
+  deleteResult,
+  getMostRecentResultId,
+  type StoredResult,
+} from "./storage";
+
 

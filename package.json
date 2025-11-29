@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"NODE_ENV=development npx tsx --watch server/index-dev.ts\" \"cd server_py && uvicorn main:app --reload --port 8000\"",
+    "dev": "concurrently \"vite\" \"NODE_ENV=development npx tsx --watch server/index-dev.ts\" \"cd server_py && uvicorn main:app --reload --port 8000\"",
     "build": "vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js && esbuild server/index-vercel.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index-vercel.js && node scripts/copy-pregenerated.js",
     "build:vercel": "npx vite build && npx esbuild server/index-vercel.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index-vercel.js && node scripts/copy-pregenerated.js || true",
     "start": "NODE_ENV=production node dist/index.js",

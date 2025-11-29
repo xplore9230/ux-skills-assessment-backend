@@ -6,6 +6,8 @@
  */
 
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { House } from "@phosphor-icons/react";
 import type { 
   QuizResults,
   ScoreHeroData,
@@ -122,8 +124,28 @@ export default function ResultsPage({
   nextRole,
   aiInsightTeaser,
 }: ResultsPageProps) {
+  const navigate = useNavigate();
+  
+  const handleGoHome = () => {
+    navigate("/");
+  };
+  
   return (
     <div className="min-h-screen bg-background">
+      {/* Home FAB Button */}
+      <motion.button
+        onClick={handleGoHome}
+        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-foreground text-background shadow-lg flex items-center justify-center hover:bg-foreground/90 transition-colors"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        aria-label="Go to home page"
+        title="Go to home"
+      >
+        <House size={24} weight="duotone" />
+      </motion.button>
       {/* Main content container */}
       <motion.div
         className="max-w-[1200px] mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16"

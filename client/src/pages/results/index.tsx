@@ -2,12 +2,20 @@
  * Results Page Entry Point
  * 
  * Orchestrates data fetching and renders the results page.
- * Receives quiz answers from router state and calculates results.
+ * Supports two modes:
+ * 1. Fresh results: Receives quiz answers from router state
+ * 2. Restored results: Loads from localStorage via URL parameter
  */
 
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState, useMemo } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { initializeCache } from "@/lib/results/cache";
+import { 
+  generateResultId, 
+  saveResult, 
+  loadResult 
+} from "@/lib/results/storage";
+import { calculateQuizResults } from "@/lib/results/scoring";
 import { 
   useScoreCalculation,
   useMeaning,
@@ -19,7 +27,7 @@ import {
 } from "@/hooks/results";
 import { getTitleForStage, getAIInsightTeaserData } from "@/lib/results/stage-config";
 import { getTopPodcastsData } from "@/data/podcasts";
-import type { QuizAnswers } from "@/lib/results/types";
+import type { QuizAnswers, QuizResults } from "@/lib/results/types";
 import ResultsPage from "./ResultsPage";
 
 /**
@@ -37,34 +45,70 @@ const SHOW_MEANING_BLOCK = false;
 export default function ResultsEntry() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { resultId } = useParams<{ resultId?: string }>();
   const state = location.state as LocationState | null;
+  
+  // Track if we've initialized
+  const [initialized, setInitialized] = useState(false);
+  
+  // Store the resolved answers and results
+  const [resolvedAnswers, setResolvedAnswers] = useState<QuizAnswers | null>(null);
+  const [restoredResults, setRestoredResults] = useState<QuizResults | null>(null);
   
   // Initialize cache on mount
   useEffect(() => {
     initializeCache();
   }, []);
   
-  // Get answers from router state
-  const answers = state?.answers;
+  // Resolve answers from either router state or localStorage
+  useEffect(() => {
+    if (initialized) return;
+    
+    // Case 1: Fresh results from quiz submission
+    if (state?.answers) {
+      const answers = state.answers;
+      const newId = generateResultId();
+      
+      // Calculate results to save
+      const results = calculateQuizResults(answers);
+      
+      // Save to localStorage
+      saveResult(newId, answers, results);
+      
+      // Update URL without triggering navigation (replace state)
+      navigate(`/results/${newId}`, { replace: true });
+      
+      setResolvedAnswers(answers);
+      setInitialized(true);
+      return;
+    }
+    
+    // Case 2: Restored results from URL parameter
+    if (resultId) {
+      const stored = loadResult(resultId);
+      if (stored) {
+        setResolvedAnswers(stored.answers);
+        setRestoredResults(stored.results);
+        setInitialized(true);
+        return;
+      }
+    }
+    
+    // Case 3: No valid source, redirect to home
+    navigate("/", { replace: true });
+    setInitialized(true);
+  }, [state, resultId, navigate, initialized]);
   
-  // Calculate quiz results (client-side)
-  const { results, isValid, error: scoreError } = useScoreCalculation(answers);
+  // Calculate quiz results (client-side) - only if not restored
+  const { results: calculatedResults, isValid } = useScoreCalculation(
+    restoredResults ? null : resolvedAnswers
+  );
+  
+  // Use restored results if available, otherwise use calculated
+  const results = restoredResults || calculatedResults;
   
   // Track if main sections are ready (for lazy loading improvement plan)
   const [mainSectionsReady, setMainSectionsReady] = useState(false);
-  
-  // Redirect to home if no valid answers
-  useEffect(() => {
-    if (!answers || !isValid) {
-      // Small delay to allow for state restoration
-      const timer = setTimeout(() => {
-        if (!answers || !isValid) {
-          navigate("/", { replace: true });
-        }
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [answers, isValid, navigate]);
   
   // Hooks are always called (with enabled flag to control fetching)
   const hasResults = !!results;
@@ -141,8 +185,8 @@ export default function ResultsEntry() {
     enabled: hasResults && mainSectionsReady,
   });
   
-  // If no valid results, show nothing (will redirect)
-  if (!results) {
+  // If not initialized or no valid results, show nothing (will redirect)
+  if (!initialized || !results) {
     return null;
   }
   
@@ -196,5 +240,3 @@ export default function ResultsEntry() {
     />
   );
 }
-
-
