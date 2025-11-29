@@ -34,7 +34,7 @@ const AnswerOption = memo(function AnswerOption({
         duration: 0.3,
         scale: { duration: 0.2 }
       }}
-      className="flex gap-4 md:gap-4 items-start w-full cursor-pointer p-4 md:p-4 rounded-lg transition-all hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-95"
+      className="flex gap-4 md:gap-4 items-start w-full cursor-pointer p-3 md:p-4 rounded-lg transition-all hover:bg-muted/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-95"
       onClick={onClick}
       onKeyDown={handleKeyDown}
       data-testid={`option-${value}`}

@@ -160,22 +160,35 @@ const QuizMobile = memo(function QuizMobile({ questions, onComplete, onBack, onH
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="w-full px-[15px] py-5">
-        <div className="w-full">
+      <div className="w-full px-4 py-5">
+        <div className="w-full max-w-md mx-auto">
           <ProgressBar current={currentIndex + 1} total={questions.length} />
           
-          {/* Card Container - Mobile: 345px width, 0.8 scale */}
-          <div ref={cardContainerRef} className="relative scale-[0.8] origin-center w-[345px]" style={{ height: "600px", maxHeight: "600px", margin: "15px auto" }}>
-            {/* Placeholder cards behind (3 cards) */}
-            {[1, 2, 3].map((index) => (
-              <StackedCard
-                key={`placeholder-${index}`}
-                isPlaceholder={true}
-                stackIndex={index}
-              />
-            ))}
+          {/* Card Container - Mobile: Full width, no scaling, proper sizing */}
+          <div 
+            ref={cardContainerRef} 
+            className="relative w-full mx-auto mt-4"
+            style={{ 
+              height: "calc(100vh - 200px)",
+              minHeight: "500px",
+              maxHeight: "700px"
+            }}
+          >
+            {/* Stacked placeholder cards behind - exactly 2 cards */}
+            <StackedCard
+              key="placeholder-1"
+              isPlaceholder={true}
+              stackIndex={1}
+              isMobile={true}
+            />
+            <StackedCard
+              key="placeholder-2"
+              isPlaceholder={true}
+              stackIndex={2}
+              isMobile={true}
+            />
 
-            {/* Main card with question content */}
+            {/* Main card with question content - top of stack */}
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 ref={cardContentRef}
@@ -185,42 +198,44 @@ const QuizMobile = memo(function QuizMobile({ questions, onComplete, onBack, onH
                 animate={{ 
                   x: 0, 
                   opacity: 1, 
-                  zIndex: 10,
+                  scale: 1,
                 }}
                 exit={
                   shouldAnimateExit && exitingQuestionId === currentQuestion.id
                     ? {
                         x: "-100%",
                         opacity: 0,
-                        zIndex: 0,
+                        scale: 0.95,
                         transition: {
-                          x: { duration: 0.4, ease: [0.42, 0, 1, 1] }, // ease in
-                          opacity: { duration: 0.4, ease: [0.42, 0, 1, 1] }, // ease in
+                          x: { duration: 0.4, ease: [0.42, 0, 1, 1] },
+                          opacity: { duration: 0.4, ease: [0.42, 0, 1, 1] },
+                          scale: { duration: 0.4, ease: [0.42, 0, 1, 1] },
                         },
                       }
                     : { opacity: 0, transition: { duration: 0 } }
                 }
                 transition={{
-                  delay: shouldAnimateExit && exitingQuestionId !== currentQuestion.id ? 0.3 : 0, // 300ms delay before new card appears
-                  duration: 0, // No animation for new card, instant appearance
+                  delay: shouldAnimateExit && exitingQuestionId !== currentQuestion.id ? 0.3 : 0,
+                  duration: 0.3,
+                  ease: [0.42, 0, 1, 1],
                 }}
                 style={{
                   position: "absolute",
                   top: 0,
                   left: 0,
                   right: 0,
-                  height: "600px",
-                  maxHeight: "600px",
+                  height: "100%",
                   borderRadius: "24px",
                   backgroundColor: "#FFFFFF",
                   border: "1px solid rgba(0, 0, 0, 0.04)",
                   boxShadow: "0px 1px 164px 0px rgba(0, 0, 0, 0.1)",
                   willChange: "transform",
                   overflowY: "auto",
+                  zIndex: 10,
                 }}
-                className="rounded-[24px] p-0 flex flex-col justify-center"
+                className="rounded-[24px] p-6 flex flex-col justify-center"
               >
-                <div className="px-4 space-y-3 text-center">
+                <div className="space-y-3 text-center">
                   <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                     {currentQuestion.category}
                   </p>
@@ -232,7 +247,7 @@ const QuizMobile = memo(function QuizMobile({ questions, onComplete, onBack, onH
                 <div 
                   role="radiogroup" 
                   aria-labelledby="question-text"
-                  className="px-4 space-y-2 w-full"
+                  className="w-full mt-4"
                 >
                   {missingOptions ? (
                     <div className="rounded-xl border border-dashed border-border/60 bg-muted/40 p-4 text-center text-sm text-muted-foreground">
@@ -254,7 +269,7 @@ const QuizMobile = memo(function QuizMobile({ questions, onComplete, onBack, onH
             </AnimatePresence>
           </div>
 
-          <div className="flex items-center justify-between" style={{ marginTop: "15px", paddingTop: 0 }}>
+          <div className="flex items-center justify-between mt-4">
             <Button
               variant="ghost"
               onClick={handlePrevious}
