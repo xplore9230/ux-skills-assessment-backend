@@ -82,25 +82,27 @@ const LandingPage = memo(function LandingPage({ onStart }: LandingPageProps) {
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-none md:leading-tight" data-testid="text-hero-title">
               <>Find Your <motion.span 
-                className="font-playfair font-bold italic relative inline-block"
+                className="font-playfair font-black italic relative inline-block"
               >
-                UX Career
-                <motion.span
-                  className="absolute bottom-0 h-[2px] bg-current"
-                  initial={{ left: "0%", y: 0, opacity: 0, width: "0%" }}
-                  animate={{
-                    left: ["0%", "0%", "100%"],
-                    y: 0,
-                    opacity: [0, 1, 1],
-                    width: ["0%", "100%", "0%"]
-                  }}
-                  transition={{ 
-                    duration: 1.2, 
-                    delay: 1, 
-                    ease: "easeInOut",
-                    times: [0, 0.5, 1]
-                  }}
-                />
+                {"UX Career".split("").map((char, index) => (
+                  <motion.span
+                    key={index}
+                    className="inline-block"
+                    initial={{
+                      filter: "blur(8px)"
+                    }}
+                    animate={{
+                      filter: "blur(0px)"
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.3 + index * 0.1,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </motion.span>
+                ))}
               </motion.span> Stage</>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground leading-normal md:leading-relaxed">
