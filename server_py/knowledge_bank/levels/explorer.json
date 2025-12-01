@@ -1,0 +1,33 @@
+{
+  "id": "explorer",
+  "level": "Explorer",
+  "meaning": "You're in the early stage of your UX journey. Your main focus now is building strong fundamentals and getting hands-on with small projects.",
+  "dayToDayReality": [
+    "Learning core UX concepts through courses, articles, and practice projects.",
+    "Working on small features or redesigns with guidance from more experienced designers.",
+    "Building your portfolio with real projects, even if they're personal or volunteer work.",
+    "Practicing wireframing, user flows, and basic usability principles.",
+    "Getting feedback from peers and mentors to improve your work."
+  ],
+  "commonMistakes": [
+    "Jumping straight to high-fidelity designs without understanding the problem first.",
+    "Focusing too much on visual polish without learning UX fundamentals.",
+    "Not seeking feedback early and often in the design process.",
+    "Trying to learn everything at once instead of focusing on core skills."
+  ],
+  "nextGrowthFocus": [
+    "Master the basics: problem statements, user flows, wireframes, and usability principles.",
+    "Build a habit of user research, even if it's just talking to 2-3 people.",
+    "Learn to work with design systems and component libraries.",
+    "Practice presenting your work and explaining your design decisions."
+  ],
+  "recommendedCategories": [
+    "ux_fundamentals",
+    "ui_visual"
+  ]
+}
+
+
+
+
+

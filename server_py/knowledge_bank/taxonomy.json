@@ -1,0 +1,83 @@
+{
+  "levels": [
+    {
+      "id": "explorer",
+      "label": "Explorer",
+      "description": "Early UX journey, building fundamentals.",
+      "range": { "min": 0, "max": 40 },
+      "colorToken": "level.explorer",
+      "order": 1
+    },
+    {
+      "id": "practitioner",
+      "label": "Practitioner",
+      "description": "Can handle features with guidance, focusing on depth.",
+      "range": { "min": 41, "max": 65 },
+      "colorToken": "level.practitioner",
+      "order": 2
+    },
+    {
+      "id": "emerging_senior",
+      "label": "Emerging Senior",
+      "description": "Driving flows end-to-end, sharpening strategy and systems thinking.",
+      "range": { "min": 66, "max": 85 },
+      "colorToken": "level.emerging_senior",
+      "order": 3
+    },
+    {
+      "id": "strategic_lead",
+      "label": "Strategic Lead",
+      "description": "High-level, focusing on strategy, org influence, and systems.",
+      "range": { "min": 86, "max": 100 },
+      "colorToken": "level.strategic_lead",
+      "order": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": "ux_fundamentals",
+      "label": "UX Fundamentals",
+      "shortLabel": "UX Fundamentals",
+      "description": "Core UX basics: flows, states, IA, heuristics.",
+      "icon": "ux-fundamentals",
+      "order": 1
+    },
+    {
+      "id": "ui_visual",
+      "label": "UI & Visual Design",
+      "shortLabel": "UI & Visual",
+      "description": "Visual hierarchy, typography, color, layout.",
+      "icon": "ui-visual",
+      "order": 2
+    },
+    {
+      "id": "user_research",
+      "label": "User Research & Validation",
+      "shortLabel": "Research",
+      "description": "Interviews, usability testing, discovery & validation.",
+      "icon": "user-research",
+      "order": 3
+    },
+    {
+      "id": "product_strategy",
+      "label": "Product Thinking & Strategy",
+      "shortLabel": "Product Thinking",
+      "description": "Problem framing, metrics, roadmaps, trade-offs.",
+      "icon": "product-thinking",
+      "order": 4
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration & Communication",
+      "shortLabel": "Collab & Comms",
+      "description": "Working with PMs, devs, and stakeholders effectively.",
+      "icon": "collaboration",
+      "order": 5
+    }
+  ]
+}
+
+
+
+
+

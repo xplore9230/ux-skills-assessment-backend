@@ -1,0 +1,46 @@
+{
+  "explorer": {
+    "stage": "explorer",
+    "emotionalTheme": "Momentum & Discovery",
+    "heading": "What this means to you",
+    "detailedMeaning": "You are at the very start of your UX journey, and that's not a weakness. It's an open door. Right now, you are building awareness of how design actually works in real life, not just how it looks on the surface. You may still feel unsure about where to begin, what really matters, or whether you are doing it right. That uncertainty is normal here.\n\nAt this stage, you are learning how users think, discovering what good UX actually feels like, and starting to separate design from decoration. This phase is about exposure, repetition, and building confidence through small wins. You don't need to master everything right now. What matters is momentum.\n\nIf you stay consistent, this is the stage where your improvement will feel fastest and most visible. The habits you form here will quietly decide how strong your foundation becomes later.",
+    "supportingHighlights": [
+      "You are building awareness, not perfection",
+      "Every project sharpens your instincts",
+      "This is where confidence begins forming"
+    ]
+  },
+  "practitioner": {
+    "stage": "practitioner",
+    "emotionalTheme": "Confidence & Breakthrough",
+    "heading": "What this means to you",
+    "detailedMeaning": "You are no longer guessing your way through UX. You have real experience. You can take a defined problem, break it down, design a solution, collaborate with others, and push work to completion. That already puts you far ahead of most people who only talk about design.\n\nAt the same time, this is the stage where many designers feel stuck between confidence and doubt. You know you can design, but you sometimes question your decisions. You can execute well, but complex strategy still feels heavy. You may rely on intuition, yet want stronger reasoning behind your work.\n\nYou are standing right at the edge of your next big leap. The gap between you and senior designers right now is not talent. It is structure, reasoning, and consistency. Once your fundamentals, research habits, and strategic thinking align with your execution, your confidence will stop fluctuating. Your work will feel solid across projects.\n\nYou already belong in the room. Now you are building the depth that keeps you there.",
+    "supportingHighlights": [
+      "You already ship real work",
+      "Your next leap is driven by thinking, not tools",
+      "Consistency will unlock senior confidence"
+    ]
+  },
+  "emerging_senior": {
+    "stage": "emerging_senior",
+    "emotionalTheme": "Influence & Leadership",
+    "heading": "What this means to you",
+    "detailedMeaning": "You are operating at a level where your work influences more than just screens. You think in journeys, systems, and outcomes. You understand trade-offs. You see how product decisions affect users and the business at the same time.\n\nPeople trust your design judgment. Your suggestions shape direction. Your feedback improves the work of others. You are no longer just a designer who executes. You are becoming a designer who drives outcomes.\n\nYour growth now is less about learning techniques and more about how clearly you frame problems, how confidently you guide decisions, and how effectively you influence without forcing. This is the phase where your impact starts to compound.\n\nWith the right focus, your work can move from being important to being foundational inside your team.",
+    "supportingHighlights": [
+      "You influence outcomes, not just outputs",
+      "Your thinking is shaping product direction",
+      "Leadership is beginning to form"
+    ]
+  },
+  "strategic_lead": {
+    "stage": "strategic_lead",
+    "emotionalTheme": "Vision & Scale",
+    "heading": "What this means to you",
+    "detailedMeaning": "You are operating at a strategic level. Your thinking shapes not just interfaces, but priorities, systems, and long-term direction. You influence how design works across teams, not just what gets built.\n\nYou connect user value with business strategy. You mentor, guide, and unblock others. You create clarity where there is ambiguity. Your growth is no longer about personal skill mastery. It is about vision, influence, and scale.\n\nYour decisions ripple outward. The environments you create decide whether great design can happen consistently, even without your direct involvement. You are not just part of the design function anymore. You are shaping what good design means for the people around you.",
+    "supportingHighlights": [
+      "You operate at an org-wide level",
+      "Your influence multiplies through others",
+      "You shape culture, not just products"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "category": "UX Fundamentals",
+  "categoryId": "ux_fundamentals",
+  "description": "Your ability to design user-centered experiences using core UX principles, flows, and usability heuristics.",
+  "scoreMeaning": {
+    "strong": "You systematically apply UX principles and design flows that cover all states and edge cases. You think problem-first, not screen-first.",
+    "decent": "You understand UX basics and can create functional flows, but may miss edge cases or struggle with complex problem framing.",
+    "needsImprovement": "You're still learning core UX concepts. You may jump to solutions before understanding problems, or miss important user states."
+  },
+  "dayToDayActionables": {
+    "strong": [
+      "Document your problem-framing process and share it with the team.",
+      "Create reusable flow templates for common patterns (onboarding, checkout, etc.).",
+      "Mentor juniors on wireframing and state mapping.",
+      "Contribute to design system documentation with UX rationale."
+    ],
+    "decent": [
+      "Write a problem statement before starting each new feature.",
+      "Map all user states (loading, error, empty, success) for one key flow.",
+      "Review one existing flow and identify where it violates usability heuristics.",
+      "Practice explaining your design decisions using UX principles."
+    ],
+    "needsImprovement": [
+      "Start each design with a one-sentence problem statement before opening Figma.",
+      "Learn the 10 usability heuristics and apply them to review existing products.",
+      "Practice sketching user flows on paper before designing screens.",
+      "Take a UX fundamentals course or read a foundational book."
+    ]
+  },
+  "examplesOfStrong": [
+    "You propose research activities as part of planning, not as an afterthought.",
+    "You push back on risky assumptions with lightweight tests.",
+    "You create flow diagrams that include error states and edge cases."
+  ],
+  "examplesOfWeak": [
+    "Features ship without any user touchpoints or validation.",
+    "Research is only done for big redesigns, not everyday work.",
+    "You design screens without considering the full user journey."
+  ]
+}
+
+
+
+
+

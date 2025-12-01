@@ -1,0 +1,45 @@
+{
+  "category": "Collaboration & Communication",
+  "categoryId": "collaboration",
+  "description": "Your ability to work effectively with PMs, developers, and stakeholders through clear communication and collaboration.",
+  "scoreMeaning": {
+    "strong": "You build strong partnerships with PMs and devs. You communicate design rationale clearly and collaborate effectively throughout the product process.",
+    "decent": "You can work with cross-functional partners, but may struggle with communication, handoffs, or building strategic partnerships.",
+    "needsImprovement": "You work mostly in isolation or struggle with collaboration. Handoffs are unclear, or you have difficulty explaining design decisions."
+  },
+  "dayToDayActionables": {
+    "strong": [
+      "Set up recurring design-PM 1:1s focused on roadmap and strategy, not just tickets.",
+      "Standardize handoff process with clear documentation (states, specs, edge cases).",
+      "Involve devs early in design process through design reviews or pairing.",
+      "Create design system documentation that helps devs implement consistently."
+    ],
+    "decent": [
+      "Share early sketches with PMs instead of polished flows.",
+      "Add a short design walkthrough before each major implementation starts.",
+      "Standardize handoff with a simple checklist (states, specs, edge cases).",
+      "Practice presenting a design in 2-3 minutes focusing on user and outcome."
+    ],
+    "needsImprovement": [
+      "Schedule a design walkthrough with devs before implementation starts.",
+      "Create a simple handoff checklist and use it for every feature.",
+      "Practice explaining your design decisions in plain language.",
+      "Read about design-dev collaboration and PM-designer partnerships."
+    ]
+  },
+  "examplesOfStrong": [
+    "You build strong partnerships with PMs and devs that improve product outcomes.",
+    "Design handoffs are smooth with clear documentation and communication.",
+    "You influence product decisions through effective communication and collaboration."
+  ],
+  "examplesOfWeak": [
+    "Handoffs are unclear, leading to implementation issues or rework.",
+    "You struggle to explain design decisions to non-designers.",
+    "You work in isolation without building cross-functional partnerships."
+  ]
+}
+
+
+
+
+

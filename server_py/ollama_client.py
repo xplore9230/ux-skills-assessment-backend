@@ -309,54 +309,75 @@ Description:"""
     # Final fallback
     return f"Master {title} to strengthen your {category_field} skills as a {stage} designer."
 
-def generate_resources_ollama(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_resources_ollama(stage: str, categories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     """
     Uses RAG to retrieve relevant resources and AI to generate inspiring readup text.
     Generates contextual descriptions for each resource.
+    Returns None if AI generation fails.
     """
-    category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']}" for c in categories])
-    
-    # Retrieve resources using RAG
-    resources = []
-    if RAG_AVAILABLE:
-        try:
-            rag = get_rag_retriever()
-            resources = rag.retrieve_resources_for_user(stage, categories, top_k=5)
-        except Exception as e:
-            print(f"RAG retrieval error: {e}")
-    
-    # Get weakest category for contextual descriptions
-    sorted_cats = sorted(categories, key=lambda c: (c['score'] / c['maxScore']) if c['maxScore'] > 0 else 0)
-    weakest_category = sorted_cats[0]['name'] if sorted_cats else "UX skills"
-    
-    # Format resources with contextual descriptions
-    formatted_resources = []
-    for res in resources:
-        resource_category = res.get('category', weakest_category)
-        contextual_description = generate_resource_description(res, stage, resource_category)
+    try:
+        category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']}" for c in categories])
         
-        formatted_resources.append({
-            'title': res.get('title', ''),
-            'url': res.get('url', ''),
-            'description': contextual_description,
-            'tags': res.get('tags', [])
-        })
-    
-    prompt = f"""Brief inspiring readup for {stage} UX designer (2 sentences).
+        # Retrieve resources using RAG
+        resources = []
+        if RAG_AVAILABLE:
+            try:
+                rag = get_rag_retriever()
+                resources = rag.retrieve_resources_for_user(stage, categories, top_k=5)
+            except Exception as e:
+                print(f"RAG retrieval error: {e}")
+        
+        # Get weakest category for contextual descriptions
+        sorted_cats = sorted(categories, key=lambda c: (c['score'] / c['maxScore']) if c['maxScore'] > 0 else 0)
+        weakest_category = sorted_cats[0]['name'] if sorted_cats else "UX skills"
+        
+        # Format resources with contextual descriptions
+        formatted_resources = []
+        for res in resources:
+            try:
+                resource_category = res.get('category', weakest_category)
+                contextual_description = generate_resource_description(res, stage, resource_category)
+                
+                formatted_resources.append({
+                    'title': res.get('title', ''),
+                    'url': res.get('url', ''),
+                    'description': contextual_description,
+                    'tags': res.get('tags', [])
+                })
+            except Exception as e:
+                print(f"Error formatting resource {res.get('title', 'unknown')}: {e}")
+                continue
+        
+        # If no resources, return None to use fallback
+        if not formatted_resources:
+            print("⚠ No resources found in generate_resources_ollama, returning None")
+            return None
+        
+        prompt = f"""Brief inspiring readup for {stage} UX designer (2 sentences).
 
 Skills: {category_details}
 
 JSON: {{"readup": "Your message"}}"""
-    
-    ai_response = call_ollama(prompt)
-    
-    # Combine AI readup with RAG resources
-    return {
-        'readup': ai_response.get('readup', 'Keep growing your skills!'),
-        'resources': formatted_resources
-    }
+        
+        ai_response = call_ollama(prompt)
+        
+        # Handle None response from Ollama
+        if ai_response is None:
+            print("⚠ Ollama returned None in generate_resources_ollama")
+            return None
+        
+        # Combine AI readup with RAG resources
+        return {
+            'readup': ai_response.get('readup', 'Keep growing your skills!') if isinstance(ai_response, dict) else 'Keep growing your skills!',
+            'resources': formatted_resources
+        }
+    except Exception as e:
+        print(f"Error in generate_resources_ollama: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 
-def generate_deep_dive_topics_ollama(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_deep_dive_topics_ollama(stage: str, categories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']}" for c in categories])
     
     # Retrieve resources for context
@@ -414,9 +435,18 @@ Return ONLY valid JSON with this structure:
   ]
 }}"""
     
-    return call_ollama(prompt)
+    try:
+        result = call_ollama(prompt)
+        if result is None:
+            print("⚠ Ollama returned None in generate_deep_dive_topics_ollama")
+        return result
+    except Exception as e:
+        print(f"Error in generate_deep_dive_topics_ollama: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 
-def generate_layout_strategy(stage: str, total_score: int, max_score: int, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_layout_strategy(stage: str, total_score: int, max_score: int, categories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     """
     Uses AI to determine the optimal layout strategy for the results page based on user's performance.
     """
@@ -439,9 +469,18 @@ JSON:
   "priority_message": "Focus message"
 }}"""
     
-    return call_ollama(prompt)
+    try:
+        result = call_ollama(prompt)
+        if result is None:
+            print("⚠ Ollama returned None in generate_layout_strategy")
+        return result
+    except Exception as e:
+        print(f"Error in generate_layout_strategy: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 
-def generate_category_insights(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+def generate_category_insights(stage: str, categories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     """
     Generates personalized insights for each skill category.
     Returns brief, detailed, and actionable insights per category.
@@ -462,6 +501,140 @@ JSON:
       "brief": "Score meaning for {stage}",
       "detailed": "Performance vs {stage} expectations",
       "actionable": ["step1", "step2", "step3"]
+    }}
+  ]
+}}"""
+    
+    try:
+        result = call_ollama(prompt)
+        if result is None:
+            print("⚠ Ollama returned None in generate_category_insights")
+        return result
+    except Exception as e:
+        print(f"Error in generate_category_insights: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
+
+def generate_design_system_improvement_plan(stage: str, total_score: int, max_score: int, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Generate a 4-week improvement plan specifically for Design Systems knowledge.
+    Uses blog content as context.
+    """
+    sorted_cats = sorted(categories, key=lambda c: (c['score'] / c['maxScore']) if c['maxScore'] > 0 else 0)
+    weakest_two = sorted_cats[:2]
+    
+    category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']} ({round((c['score']/c['maxScore']*100)) if c['maxScore'] > 0 else 0}%)" for c in categories])
+    weakest_details = "\n".join([f"- {c['name']}: {c['score']}/{c['maxScore']} ({round((c['score']/c['maxScore']*100)) if c['maxScore'] > 0 else 0}%)" for c in weakest_two])
+    
+    percentage = round((total_score / max_score * 100)) if max_score > 0 else 0
+    
+    prompt = f"""You are a Design Systems expert and coach. Create a highly personalized 4-week improvement plan for someone at the {stage} level in Design Systems.
+
+Design System Level: {stage}
+Total Score: {total_score}/{max_score} ({percentage}%)
+
+Full Category Breakdown:
+{category_details}
+
+WEAKEST AREAS (focus here):
+{weakest_details}
+
+IMPORTANT GUIDELINES:
+1. This is a {stage} level person in Design Systems - tasks must match their current capabilities
+2. Focus HEAVILY on the 2 weakest categories above
+3. Each task must be:
+   - Specific and actionable (not generic advice)
+   - Completable in 1-2 hours
+   - Measurable (clear done criteria)
+   - Reference their actual score gaps
+   - Design system-specific (tokens, components, patterns, governance, etc.)
+4. Build progressively: Week 1 = basics, Week 4 = advanced
+5. Reference concepts from Design Systems (foundations, tokens, components, patterns, governance)
+6. Tasks should involve hands-on work with design systems
+
+EXAMPLES OF GOOD TASKS:
+- "Create a color token system with 5 semantic tokens for your brand"
+- "Build a button component with 3 variants (primary, secondary, outline) using design tokens"
+- "Design a contribution workflow document for your design system"
+- "Create a pattern library entry for a form with validation states"
+
+EXAMPLES OF BAD TASKS:
+- "Learn more about design systems" (too vague)
+- "Read articles" (not specific enough)
+- "Study design systems" (not actionable)
+
+Return ONLY valid JSON with this structure:
+{{
+  "weeks": [
+    {{"week": 1, "tasks": ["Specific design system task", "Another concrete task", "Third actionable task"]}},
+    {{"week": 2, "tasks": ["Build on week 1", "More advanced task", "Third task"]}},
+    {{"week": 3, "tasks": ["Even more advanced", "Task 2", "Task 3"]}},
+    {{"week": 4, "tasks": ["Most advanced task", "Final push", "Capstone task"]}}
+  ]
+}}"""
+    
+    result = call_ollama(prompt, model="llama3.2")
+    if result is None:
+        # Fallback plan
+        return {
+            "weeks": [
+                {
+                    "week": 1,
+                    "tasks": [
+                        f"Review {weakest_two[0]['name'] if weakest_two else 'Foundations'} concepts",
+                        "Study the Design Systems blog post",
+                        "Create a simple color palette"
+                    ]
+                },
+                {
+                    "week": 2,
+                    "tasks": [
+                        "Build your first design tokens",
+                        "Create a component documentation template",
+                        "Practice using a design system"
+                    ]
+                },
+                {
+                    "week": 3,
+                    "tasks": [
+                        "Design a pattern for a common UI challenge",
+                        "Establish governance guidelines",
+                        "Document your learnings"
+                    ]
+                },
+                {
+                    "week": 4,
+                    "tasks": [
+                        "Apply your knowledge to a real project",
+                        "Share your work with others",
+                        "Plan your next steps"
+                    ]
+                }
+            ]
+        }
+    return result
+
+def generate_design_system_insights(stage: str, categories: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Generate category-specific insights for Design Systems quiz results.
+    """
+    category_details = "\n".join([f"{c['name']}: {c['score']}/{c['maxScore']}" for c in categories])
+    
+    prompt = f"""You are a Design Systems expert. Generate insights for a {stage} level person's Design Systems assessment.
+
+Categories: {category_details}
+
+For each category: brief (1 sentence), detailed (2 sentences), actionable (3 design system-specific steps).
+
+JSON:
+{{
+  "insights": [
+    {{
+      "category": "Category Name",
+      "brief": "What their score means for Design Systems",
+      "detailed": "Specific insight about their Design Systems knowledge in this area",
+      "actionable": ["design system-specific step 1", "step 2", "step 3"]
     }}
   ]
 }}"""

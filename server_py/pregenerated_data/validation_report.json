@@ -1,0 +1,1436 @@
+{
+  "results": [
+    {
+      "score": 0,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 1,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 2,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 3,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 4,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 5,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 6,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 7,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 8,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 9,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 10,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 11,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 12,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 13,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 14,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 15,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 16,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 17,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 18,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 19,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 20,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 21,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 22,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 23,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 24,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 25,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 26,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 27,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 28,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 29,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 30,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 31,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 32,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 33,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insight for UX Fundamentals missing or empty 'actionable' list",
+        "Insight for UI Craft & Visual Design missing or empty 'actionable' list",
+        "Insight for User Research & Validation missing or empty 'actionable' list",
+        "Insight for Product Thinking & Strategy missing or empty 'actionable' list",
+        "Insight for Collaboration & Communication missing or empty 'actionable' list"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 34,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 35,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 36,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 37,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 38,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 39,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 40,
+      "exists": true,
+      "stage": "Explorer",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 41,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 42,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 43,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 44,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 45,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UX Fundamentals, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 46,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 47,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 48,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 49,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 50,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 51,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, UX Fundamentals",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 52,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 53,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 54,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 55,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Missing insights for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Insight for UX Fundamentals missing 'detailed'",
+        "Insight for UX Fundamentals missing or empty 'actionable' list"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 56,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 57,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 58,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 59,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 60,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 61,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 62,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 63,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 64,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 65,
+      "exists": true,
+      "stage": "Practitioner",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 66,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 67,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 68,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 69,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 70,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 71,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 72,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 73,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insight for User Research & Validation missing or empty 'actionable' list",
+        "Insight for Product Thinking & Strategy missing or empty 'actionable' list",
+        "Insight for Collaboration & Communication missing or empty 'actionable' list"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 74,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 75,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 76,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 77,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 78,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 79,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 80,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 81,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 82,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 83,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 84,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 85,
+      "exists": true,
+      "stage": "Emerging Senior",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 86,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 87,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 88,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 89,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 90,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 91,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 92,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 93,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 94,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 95,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 96,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 97,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 98,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    },
+    {
+      "score": 99,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": true
+    },
+    {
+      "score": 100,
+      "exists": true,
+      "stage": "Strategic Lead",
+      "issues": [
+        "Insights field is null"
+      ],
+      "warnings": [
+        "Deep dive missing topics for categories: UI Craft & Visual Design, Collaboration & Communication, User Research & Validation, Product Thinking & Strategy",
+        "Missing continuous_learning field (new requirement)"
+      ],
+      "is_valid": false
+    }
+  ],
+  "summary": {
+    "total_files": 101,
+    "files_with_issues": 67,
+    "files_with_warnings": 101,
+    "total_issues": 75,
+    "total_warnings": 202,
+    "scores_with_issues": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      13,
+      17,
+      22,
+      23,
+      24,
+      25,
+      30,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      41,
+      43,
+      44,
+      45,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      54,
+      55,
+      57,
+      59,
+      60,
+      61,
+      62,
+      64,
+      65,
+      66,
+      68,
+      69,
+      71,
+      72,
+      73,
+      74,
+      75,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      91,
+      95,
+      96,
+      97,
+      98,
+      100
+    ],
+    "scores_with_warnings": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ]
+  }
+}

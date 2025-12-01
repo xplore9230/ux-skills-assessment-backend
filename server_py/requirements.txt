@@ -3,16 +3,11 @@ uvicorn==0.34.0
 requests==2.32.3
 pydantic==2.10.6
 python-dotenv==1.0.1
-tqdm==4.66.5
 
-# Pin NumPy to a 1.x version that is compatible with chromadb 0.4.22
-numpy==1.26.4
-
-# RAG System Dependencies
-chromadb==0.4.22
-sentence-transformers==2.3.1
-beautifulsoup4==4.12.3
-lxml==5.1.0
-markdownify==0.11.6
-urllib3==2.2.0
+# Social / RSS / scheduling dependencies
+feedparser==6.0.10
+tweepy==4.14.0
+googlesearch-python==1.2.3
+schedule==1.2.0
+youtube-transcript-api==0.6.1
 

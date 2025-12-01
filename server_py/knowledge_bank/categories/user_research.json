@@ -1,0 +1,45 @@
+{
+  "category": "User Research & Validation",
+  "categoryId": "user_research",
+  "description": "Your ability to understand users, validate ideas, and turn insights into product decisions.",
+  "scoreMeaning": {
+    "strong": "You systematically validate designs with users and use research insights to shape product decisions. Research is a regular habit, not a rare event.",
+    "decent": "You do some research or usability checks, but it's not yet a consistent part of your process. You may struggle with method selection or synthesis.",
+    "needsImprovement": "You mostly design from assumptions and internal opinions, with limited user validation. Research feels like a big, intimidating project."
+  },
+  "dayToDayActionables": {
+    "strong": [
+      "Create simple research templates (test scripts, discussion guides) for your team.",
+      "Involve PMs and devs in at least one research session per month.",
+      "Turn research findings into reusable frameworks (personas, journeys).",
+      "Run small, fast tests for incremental changes instead of waiting for big projects."
+    ],
+    "decent": [
+      "Run 1 quick usability test for each major flow before release.",
+      "Write a problem statement and hypothesis before starting design.",
+      "Document findings in a single shared space for future reference.",
+      "Ask PMs or support for 3-5 real user tickets or calls each month."
+    ],
+    "needsImprovement": [
+      "Talk to at least 2 real users or proxies this month.",
+      "Start with simple think-aloud tests using your current screens.",
+      "Summarize feedback into a short list of 'what worked' vs 'what confused users'.",
+      "Shadow support or ops for one hour to hear real user problems."
+    ]
+  },
+  "examplesOfStrong": [
+    "You propose research activities as part of planning, not as an afterthought.",
+    "You push back on risky assumptions with lightweight tests.",
+    "You synthesize research into actionable insights that drive design decisions."
+  ],
+  "examplesOfWeak": [
+    "Features ship without any user touchpoints or validation.",
+    "Research is only done for big redesigns, not everyday work.",
+    "You design based on internal opinions without checking with users."
+  ]
+}
+
+
+
+
+

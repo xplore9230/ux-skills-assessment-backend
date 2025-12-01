@@ -1,0 +1,38 @@
+{
+  "rss_feeds": {
+    "youtube_channels": [
+      {
+        "id": "UCxxxxxxxx",
+        "name": "Example UX Channel",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxxxxxxxx",
+        "category": "UX Fundamentals",
+        "level": "explorer"
+      }
+    ],
+    "podcasts": [
+      {
+        "name": "Example UX Podcast",
+        "url": "https://example.com/feed.xml",
+        "category": "User Research & Validation",
+        "level": "practitioner"
+      }
+    ]
+  },
+  "twitter": {
+    "api_key": "optional",
+    "search_queries": ["UX design", "user experience"],
+    "min_engagement": 100
+  },
+  "google_search": {
+    "queries": ["UX tutorial", "UX podcast", "UX tips"],
+    "max_results_per_query": 10
+  },
+  "update_schedule": {
+    "frequency": "weekly",
+    "day": "monday",
+    "time": "09:00"
+  }
+}
+
+
+

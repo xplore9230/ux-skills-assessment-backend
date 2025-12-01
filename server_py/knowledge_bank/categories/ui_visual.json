@@ -1,0 +1,45 @@
+{
+  "category": "UI & Visual Design",
+  "categoryId": "ui_visual",
+  "description": "Your ability to create clear, visually appealing interfaces using hierarchy, typography, color, and layout principles.",
+  "scoreMeaning": {
+    "strong": "You create visually clear interfaces with strong hierarchy and consistent visual language. Your designs guide users' attention effectively.",
+    "decent": "You understand visual design basics and can create functional UIs, but may struggle with hierarchy or consistency across screens.",
+    "needsImprovement": "You're still learning visual design principles. Your interfaces may lack clear hierarchy or consistent styling."
+  },
+  "dayToDayActionables": {
+    "strong": [
+      "Document your visual design system (type scale, color tokens, spacing rules).",
+      "Create reusable component patterns for common UI elements.",
+      "Mentor others on visual hierarchy and layout principles.",
+      "Audit existing product screens for visual consistency and propose improvements."
+    ],
+    "decent": [
+      "Define a simple type scale and apply it consistently across 3-5 key screens.",
+      "Audit current product colors and map them to semantic roles (primary, error, success).",
+      "Take one existing screen and improve its visual hierarchy using size and contrast.",
+      "Run a quick 5-second test with a peer to see what they notice first."
+    ],
+    "needsImprovement": [
+      "Learn basic visual hierarchy principles (size, contrast, spacing).",
+      "Study one well-designed product and identify how they use typography and color.",
+      "Practice creating clear visual hierarchy in simple layouts.",
+      "Take a visual design course or read about Gestalt principles."
+    ]
+  },
+  "examplesOfStrong": [
+    "You create interfaces where users can quickly identify primary actions.",
+    "You maintain consistent visual language across all product screens.",
+    "You use spacing and typography to guide users through complex information."
+  ],
+  "examplesOfWeak": [
+    "Screens have unclear visual hierarchy - everything looks equally important.",
+    "Inconsistent spacing, colors, or typography across different screens.",
+    "Users struggle to find primary actions or important information."
+  ]
+}
+
+
+
+
+

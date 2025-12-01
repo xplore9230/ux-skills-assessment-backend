@@ -114,7 +114,12 @@ class VectorStore:
                     "chunk_index": chunk.chunk_index,
                     "total_chunks": chunk.total_chunks,
                     "tags": ",".join(resource.tags),  # Store as comma-separated
-                    "estimated_read_time": resource.estimated_read_time
+                    "estimated_read_time": resource.estimated_read_time,
+                    # Social / engagement metadata (optional)
+                    "engagement_score": getattr(resource, "engagement_score", 0),
+                    "view_count": getattr(resource, "view_count", 0),
+                    "episode_number": getattr(resource, "episode_number", 0),
+                    "status": getattr(resource, "status", "approved"),
                 }
                 metadatas.append(metadata)
             
@@ -258,6 +263,10 @@ class VectorStore:
                     'source': metadata.get('source', ''),
                     'tags': metadata.get('tags', '').split(',') if metadata.get('tags') else [],
                     'estimated_read_time': metadata.get('estimated_read_time', 0),
+                            # Social / moderation metadata (may not exist on older data)
+                            'status': metadata.get('status', 'approved'),
+                            'engagement_score': metadata.get('engagement_score', 0),
+                            'view_count': metadata.get('view_count', 0),
                     'content_preview': chunk.get('content', '')[:300],
                     'relevance_score': 1 - chunk.get('distance', 0)  # Convert distance to similarity
                 }

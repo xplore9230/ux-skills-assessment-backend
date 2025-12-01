@@ -1,0 +1,34 @@
+{
+  "id": "practitioner",
+  "level": "Practitioner",
+  "meaning": "You can independently handle well-defined UX problems with guidance on complex strategy.",
+  "dayToDayReality": [
+    "Designs feature-level flows with PM/lead direction.",
+    "Uses design systems and patterns to ship consistently.",
+    "Participates in usability testing and applies insights.",
+    "Collaborates closely with devs during implementation and QA.",
+    "Works on multiple features simultaneously with some autonomy."
+  ],
+  "commonMistakes": [
+    "Treating business, tech, and UX as separate instead of integrated.",
+    "Doing research occasionally instead of as a habit.",
+    "Designing only for the happy path and missing edge cases.",
+    "Not connecting design decisions to metrics or outcomes."
+  ],
+  "nextGrowthFocus": [
+    "Take ownership of end-to-end flows, not just isolated screens.",
+    "Actively connect metrics, user insights, and design decisions.",
+    "Start mentoring juniors in smaller areas (e.g., visual polish or flows).",
+    "Build deeper expertise in one or two categories (research, strategy, or systems)."
+  ],
+  "recommendedCategories": [
+    "ux_fundamentals",
+    "user_research",
+    "product_strategy"
+  ]
+}
+
+
+
+
+

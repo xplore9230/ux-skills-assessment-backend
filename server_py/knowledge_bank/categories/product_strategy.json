@@ -1,0 +1,45 @@
+{
+  "category": "Product Thinking & Strategy",
+  "categoryId": "product_strategy",
+  "description": "Your ability to connect design decisions to business goals, frame problems strategically, and work effectively with product managers.",
+  "scoreMeaning": {
+    "strong": "You connect design decisions to product metrics and business outcomes. You co-own product strategy with PMs and influence roadmaps.",
+    "decent": "You understand product goals and can work with PMs, but may struggle with strategic thinking or connecting design to metrics.",
+    "needsImprovement": "You focus mainly on UI craft without connecting to product strategy. You may receive requirements rather than co-creating them."
+  },
+  "dayToDayActionables": {
+    "strong": [
+      "Co-create problem statements and success metrics with PMs for major initiatives.",
+      "Document how design choices support product metrics and business goals.",
+      "Propose design-driven product improvements based on user insights and data.",
+      "Lead design reviews that discuss trade-offs and strategy, not just visuals."
+    ],
+    "decent": [
+      "For each feature you own, identify one primary success metric with your PM.",
+      "Before starting design, write a short problem framing doc: who, what, why now.",
+      "Brainstorm at least three solution directions and compare trade-offs.",
+      "Align with PM/eng on scope and success criteria before detailed design."
+    ],
+    "needsImprovement": [
+      "Ask PMs for explicit problem statements and success metrics if missing.",
+      "Learn about common product metrics (DAU, retention, conversion) and how design affects them.",
+      "Practice framing problems before jumping to solutions.",
+      "Read about product thinking and how designers work with PMs."
+    ]
+  },
+  "examplesOfStrong": [
+    "You influence product roadmap through design insights and user research.",
+    "You connect design changes to measurable business outcomes.",
+    "You co-create product strategy with PMs, not just execute on requirements."
+  ],
+  "examplesOfWeak": [
+    "You receive requirements and design without understanding the 'why'.",
+    "Design decisions aren't connected to product goals or metrics.",
+    "You work in isolation from product strategy and business context."
+  ]
+}
+
+
+
+
+

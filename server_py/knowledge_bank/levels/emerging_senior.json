@@ -1,0 +1,34 @@
+{
+  "id": "emerging_senior",
+  "level": "Emerging Senior",
+  "meaning": "You're operating at a high level, driving flows end-to-end. The next step is sharpening strategy, systems thinking, and mentorship.",
+  "dayToDayReality": [
+    "Owns complex, multi-screen flows from discovery to launch.",
+    "Works closely with PMs on problem framing and success metrics.",
+    "Leads design reviews and provides strategic direction.",
+    "Mentors junior designers and helps level up the team.",
+    "Makes trade-off decisions balancing user needs, business goals, and technical constraints."
+  ],
+  "commonMistakes": [
+    "Focusing only on craft without developing strategic thinking.",
+    "Not investing time in mentorship and team growth.",
+    "Working in isolation instead of building cross-functional partnerships.",
+    "Not documenting systems, patterns, or processes for others to learn from."
+  ],
+  "nextGrowthFocus": [
+    "Develop product strategy skills: roadmaps, prioritization, and business impact.",
+    "Build design systems or establish design ops practices.",
+    "Take on larger scope: entire product areas or cross-functional initiatives.",
+    "Improve communication and influence with stakeholders and leadership."
+  ],
+  "recommendedCategories": [
+    "product_strategy",
+    "user_research",
+    "collaboration"
+  ]
+}
+
+
+
+
+
