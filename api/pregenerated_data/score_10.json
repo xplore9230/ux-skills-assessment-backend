@@ -1,0 +1,183 @@
+{
+  "score": 10,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 15,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 0,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 10,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 12,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 15,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login screen using the 8-point grid system, focusing on typography and color scheme.",
+          "Write down 5 common errors that occur during user research and validation, and brainstorm ways to mitigate them.",
+          "Sketch out 3 possible solutions for a common pain point in your own life or a friend's, using the Jobs-to-be-Done framework."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign your existing wireframes from Week 1 to improve typography and color scheme.",
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework, focusing on a specific user persona.",
+          "Create a simple usability test plan for a hypothetical app feature, including 5 possible scenarios and expected outcomes."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design a new wireframe for a common UI element (e.g. button, form field) using the 10 Usability Heuristics as a guide.",
+          "Create a user research plan for a hypothetical product feature, including 2 possible personas and 5 research questions.",
+          "Sketch out 3 possible solutions for a complex design problem using Occam's Razor and the Aesthetic-Usability Effect."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Redesign your entire portfolio website using the Laws of UX as a guide, including typography, color scheme, and layout.",
+          "Conduct 2 user interviews and document 5 pain points using the Zeigarnik Effect to create a compelling narrative.",
+          "Create a comprehensive design system for a hypothetical app or product feature, including guidelines for typography, color scheme, and layout."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to craft a user's first impression of a product or service. To excel in this role, focus on building your skills in UI Craft & Visual Design, User Research & Validation, and Product Thinking & Strategy, while also honing your Collaboration & Communication skills to effectively collaborate with cross-functional teams.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Mastering Occam's Razor will help you eliminate unnecessary design elements and create a more intuitive user experience.",
+        "practice_points": [
+          "Create 3 wireframes of a simple login form, applying Occam's Razor to reduce the number of form fields by 50% while maintaining functionality",
+          "Conduct an A/B test with 2 versions of a UI element (e.g., button size) and document the results using a decision tree diagram",
+          "Write a blog post explaining how Occam's Razor can be applied to UX design, including examples from your own work or industry research"
+        ]
+      },
+      {
+        "name": "User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Using the Jobs-to-be-Done framework will help you uncover users' underlying motivations and create a more empathetic design approach.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, documenting findings in a spreadsheet or note-taking app",
+          "Create a user persona based on your research, including job descriptions, goals, and pain points",
+          "Develop a survey to gather more data on users' motivations and behaviors, with clear instructions and follow-up questions"
+        ]
+      },
+      {
+        "name": "Visual Design Principles: Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Understanding the Aesthetic-Usability Effect will help you create visually appealing designs that also improve user experience.",
+        "practice_points": [
+          "Design 3 color palettes for a hypothetical website, applying the principles of the Aesthetic-Usability Effect to ensure contrast and readability",
+          "Create a visual design system with typography guidelines, spacing recommendations, and color tokens",
+          "Develop a mood board or inspiration board to explore how different design elements can evoke emotions and improve user engagement"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:46:41.366872"
+}

@@ -17,12 +17,10 @@ from ollama_client import (
     generate_category_insights,
     quick_ollama_check,
     generate_design_system_improvement_plan,
-    generate_design_system_insights,
+    generate_design_system_insights
 )
 # from generate_design_system_questions import generate_all_design_system_questions
 from job_links import build_job_search_links
-from content_aggregator import ContentAggregator, load_social_config
-from admin_api import router as admin_router
 
 # Import RAG components
 try:
@@ -61,9 +59,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Mount admin API router
-app.include_router(admin_router)
 
 # Load curated resources with retry logic and better error handling
 RESOURCES_FILE = os.path.join(os.path.dirname(__file__), "resources.json")
@@ -181,46 +176,6 @@ def get_fallback_resources() -> Dict[str, Any]:
             }
         ]
     }
-
-
-@app.get("/api/social/stats")
-def social_stats() -> Dict[str, Any]:
-    """
-    Lightweight stats about social content in the knowledge base.
-    Currently proxies vector store stats.
-    """
-    if not RAG_AVAILABLE:
-        raise HTTPException(status_code=500, detail="RAG system not available")
-
-    vs = get_vector_store()
-    return vs.get_stats()
-
-
-@app.post("/api/social/update")
-def social_update() -> Dict[str, Any]:
-    """
-    Manually trigger social content aggregation.
-    """
-    if not RAG_AVAILABLE:
-        raise HTTPException(status_code=500, detail="RAG system not available")
-
-    try:
-        aggregator = ContentAggregator()
-        summary = aggregator.run_full_update()
-        return {"ok": True, "summary": summary}
-    except Exception as exc:
-        raise HTTPException(status_code=500, detail=f"Aggregation failed: {exc}")
-
-
-@app.get("/api/social/feeds")
-def social_feeds() -> Dict[str, Any]:
-    """
-    Return the configured social feed sources (from social_config.json).
-    """
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    cfg_path = os.path.join(base_dir, "social_config.json")
-    return load_social_config(cfg_path)
-
 
 # Load curated resources, merge with fallback (loaded takes priority)
 loaded_resources = load_curated_resources()

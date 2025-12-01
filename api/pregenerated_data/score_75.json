@@ -1,0 +1,177 @@
+{
+  "score": 75,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 77,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 81,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 76,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 77,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 64,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review fundamentals of Collaboration & Communication",
+          "Complete 2-3 online tutorials or courses",
+          "Document your learning in a journal"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Practice Collaboration & Communication through small projects",
+          "Get feedback from peers or mentors",
+          "Analyze case studies in your focus area"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Apply new skills to a real project",
+          "Create a portfolio piece showcasing your work",
+          "Share your progress with the community"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review and reflect on your growth",
+          "Set goals for continued improvement",
+          "Identify next areas to develop"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, it's time to take your skills to the next level by focusing on areas where you need improvement, such as collaboration and communication. By investing in these skills and continuing to refine your existing expertise, you'll be well-equipped to drive meaningful design decisions and lead projects with confidence.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Occam's Razor for Effective UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of Occam's Razor to make data-driven design decisions and eliminate unnecessary complexity in your designs.",
+        "practice_points": [
+          "Analyze 3 existing products or services using Occam's Razor, identifying areas where the principle can be applied to simplify their design. Document findings and recommendations for improvement."
+        ]
+      },
+      {
+        "name": "Enhancing Collaboration & Communication Skills",
+        "pillar": "Collaboration & Communication",
+        "level": "Beginner/Intermediate",
+        "summary": "Develop effective communication skills to work seamlessly with cross-functional teams, ensuring that design decisions align with business objectives.",
+        "practice_points": [
+          "Create a 30-minute presentation on UX principles and best practices for non-UX stakeholders. Practice delivering the presentation to friends or family members."
+        ]
+      },
+      {
+        "name": "Deepening User Research & Validation Skills",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Develop advanced user research skills, including contextual inquiry and usability testing, to gather actionable insights that inform design decisions.",
+        "practice_points": [
+          "Conduct 2 contextual inquiries with participants from diverse backgrounds, documenting findings and identifying patterns. Analyze results using a framework like the Jobs-to-be-Done or User Journey Mapping."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "jobs",
+      "resources",
+      "deep-dive",
+      "improvement-plan"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "jobs": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:54:00.273179"
+}

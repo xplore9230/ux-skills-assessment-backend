@@ -1,0 +1,22 @@
+<svg width="256" height="256" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>UX Skill Quiz Icon</title>
+  <desc>Rounded gradient badge with stylized UX monogram</desc>
+  <defs>
+    <linearGradient id="fg" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7B5CFF" />
+      <stop offset="100%" stop-color="#19D4FF" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#050814" />
+  <rect x="8" y="8" width="48" height="48" rx="14" fill="url(#fg)" />
+  <path
+    d="M19 19v16.5c0 7 4.2 11.5 11 11.5s11-4.5 11-11.5V19h-4.5v16.5c0 4.2-2.4 6.6-6.5 6.6s-6.5-2.4-6.5-6.6V19H19z"
+    fill="#F7F9FF"
+  />
+  <path
+    d="M34.5 19l-6.2 22h4.7l3.7-13.5L40.4 41H45l-6.2-22h-4.3z"
+    fill="#F7F9FF"
+  />
+  <circle cx="47.5" cy="16.5" r="3.5" fill="#FFE17D" />
+</svg>
+

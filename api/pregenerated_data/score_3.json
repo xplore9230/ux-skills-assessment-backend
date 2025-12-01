@@ -1,0 +1,179 @@
+{
+  "score": 3,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 0,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 9,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 8,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 0,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 2,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login page using the 8-point grid system, focusing on proper alignment and spacing. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement: +5% in UI Craft & Visual Design",
+          "Write down 3 common UX mistakes you've seen in designs and explain how to avoid them using Tesler's Law. (Reference: https://lawsofux.com/teslers-law/) Score improvement: +10% in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview and document 5 pain points using the Jobs-to-be-Done framework. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement: +15% in User Research & Validation",
+          "Create a list of 10 UX principles you'd like to learn more about, along with their definitions and examples. Focus on Hick's Law and Aesthetic-Usability Effect. (Reference: https://lawsofux.com/hicks-law/ and https://lawsofux.com/aesthetic-usability-effect/) Score improvement: +20% in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design a simple prototype of a product feature using Figma or Sketch, focusing on error states you missed. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement: +25% in UI Craft & Visual Design",
+          "Write a short essay (max 500 words) explaining the concept of Hick's Law and how it applies to your design work. Include examples from your own projects or research. (Reference: https://lawsofux.com/hicks-law/) Score improvement: +30% in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive guide for designers on how to apply Hick's Law and Aesthetic-Usability Effect in their work. Include examples, best practices, and potential pitfalls. (Reference: https://lawsofux.com/hicks-law/ and https://lawsofux.com/aesthetic-usability-effect/) Score improvement: +40% in UX Fundamentals",
+          "Design a case study of a product redesign that successfully applied the principles learned throughout this 4-week journey. Include before-and-after comparisons, user research findings, and design decisions. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement: +50% in Product Thinking & Strategy"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, your role is to uncover new insights and possibilities that shape the future of products. To excel in this position, focus on developing a strong foundation in UX Fundamentals, leveraging your UI Craft & Visual Design skills to create intuitive experiences, conducting thorough user research and validation to inform design decisions, and collaborating effectively with cross-functional teams to drive product strategy and growth.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law for Efficient Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Applying Hick's Law to design intuitive navigation can improve user experience.",
+        "practice_points": [
+          "Create a usability test script to evaluate the impact of response time on navigation decisions",
+          "Analyze 3 existing websites and identify areas where Hick's Law is applied (or not)",
+          "Design an interactive prototype with varying response times to demonstrate the law's effect"
+        ]
+      },
+      {
+        "name": "Developing a Personal Style Guide for UI Craft & Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Establishing a consistent visual language enhances user engagement and brand recognition.",
+        "practice_points": [
+          "Create a mood board with 5 color palettes inspired by nature and design principles",
+          "Design 3 UI components (button, input field, header) using the Aesthetic-Usability Effect framework",
+          "Develop a typography guide with font pairing suggestions for 2-3 different screen sizes"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Understanding users' motivations and goals improves product design and user satisfaction.",
+        "practice_points": [
+          "Recruit 2 participants to share their jobs-to-be-done for a specific task (e.g., grocery shopping)",
+          "Conduct 2 interviews using the Jobs-to-be-Done framework and document findings",
+          "Create a personas document with job descriptions, goals, and pain points"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:39:19.899957"
+}

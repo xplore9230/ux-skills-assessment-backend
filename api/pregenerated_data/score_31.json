@@ -1,0 +1,224 @@
+{
+  "score": 31,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 24,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 27,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 28,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a list of 10 common UX design principles and explain how they apply to your current work ( reference the 8-point grid system for navigation).",
+          "Identify 3 areas in your portfolio where you could improve error states, and create wireframes for each. (Reference Jakob's Law)",
+          "Write a short reflection on what 'user-centered design' means to you, using Occam's Razor as a guiding principle."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework. (Reference Laws of UX)",
+          "Create a simple usability test plan for your current project, including 5 potential user scenarios. (Reference nngroup.com's 10 Usability Heuristics)",
+          "Redesign your navigation menu to follow Aesthetic-Usability Effect guidelines."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a list of 5 UX design heuristics and explain how they apply to user research. (Reference Laws of UX)",
+          "Conduct 2 user interviews and document 4 pain points using the Jobs-to-be-Done framework, then create a user persona based on those findings.",
+          "Develop a simple user journey map for your current project, highlighting key touchpoints and pain points."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create an advanced usability test plan for your current project, including 10 potential user scenarios. (Reference nngroup.com's 10 Usability Heuristics)",
+          "Design a new navigation system using the 8-point grid system, incorporating error states and visual design principles.",
+          "Develop a comprehensive UX strategy document for your current project, outlining key design decisions and research findings."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By leveraging your skills in UX fundamentals, UI craft, research, product thinking, and collaboration, you can create intuitive and engaging experiences that drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified User Interfaces",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Developing a clear understanding of Occam's Razor will help you simplify complex user interfaces, making them more intuitive and efficient for users.",
+        "practice_points": [
+          "Analyze 3 existing websites or mobile apps using Occam's Razor to identify areas where simplification can be applied. Document your findings in a report."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Mastering the Jobs-to-be-Done framework will enable you to better understand user needs and create more effective solutions. Start by conducting 2 interviews using this framework."
+      },
+      {
+        "name": "Creating a Comprehensive Style Guide with Color, Typography, and Spacing Tokens",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Developing a cohesive style guide will help you establish a consistent visual language for your designs. Create 3 interactive prototypes in Figma incorporating your own style guide."
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score meaning for Explorer, indicating room for improvement in understanding user needs and behaviors.",
+        "detailed": "The current score of 24/100 suggests that the designer is struggling to apply fundamental principles of UX design, such as user-centered design, usability, and accessibility. This may lead to a poor user experience and negative impact on the product's overall success.",
+        "actionable": [
+          "Conduct user interviews and surveys to gain a deeper understanding of user needs and pain points.",
+          "Review industry best practices and UX design principles to identify areas for improvement.",
+          "Create a UX design framework or style guide to ensure consistency in design decisions."
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score meaning for Explorer, indicating opportunities for enhancement in visual design and user interface elements.",
+        "detailed": "The current score of 39/100 suggests that the designer is struggling to create visually appealing and intuitive interfaces, which may lead to a negative user experience. This could be due to a lack of understanding of color theory, typography, or layout principles.",
+        "actionable": [
+          "Study successful UI designs in various industries and analyze what makes them effective.",
+          "Invest time in learning about color theory, typography, and layout principles to improve visual design skills.",
+          "Create a mood board or style guide to visualize the desired aesthetic and ensure consistency across the product."
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score meaning for Explorer, indicating room for improvement in validating user needs and behaviors through research methods.",
+        "detailed": "The current score of 27/100 suggests that the designer is struggling to validate user needs and behaviors through effective research methods, such as usability testing or A/B testing. This may lead to a product that doesn't meet user expectations.",
+        "actionable": [
+          "Plan and conduct usability testing sessions with real users to gather feedback on the product.",
+          "Develop an A/B testing strategy to validate design decisions and identify areas for improvement.",
+          "Collaborate with cross-functional teams, such as product management and engineering, to ensure research findings are actionable."
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score meaning for Explorer, indicating opportunities for enhancement in understanding product goals and strategies.",
+        "detailed": "The current score of 36/100 suggests that the designer is struggling to apply product thinking principles, such as user acquisition, retention, and monetization. This may lead to a product that doesn't meet business objectives.",
+        "actionable": [
+          "Study successful products in various industries and analyze their strategies for growth and revenue generation.",
+          "Develop a product roadmap or vision statement to ensure alignment with business goals.",
+          "Collaborate with stakeholders, such as product management and marketing teams, to understand product goals and priorities."
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score meaning for Explorer, indicating room for improvement in working effectively with cross-functional teams.",
+        "detailed": "The current score of 28/100 suggests that the designer is struggling to collaborate with cross-functional teams, such as product management, engineering, and design systems. This may lead to a lack of cohesion and consistency across the product.",
+        "actionable": [
+          "Develop strong relationships with team members through regular check-ins and open communication channels.",
+          "Create a shared design language or style guide to ensure consistency across the product.",
+          "Participate in cross-functional meetings, such as product launches or design reviews, to stay informed about project goals and progress."
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:09:20.207054"
+}

@@ -17,48 +17,21 @@ class UXResource:
     """
     Core data structure for UX learning resources.
     Maps to the 5 quiz categories for personalized recommendations.
-
-    NOTE: This schema is shared by:
-    - Traditional article-based resources (NN/g, Laws of UX, etc.)
-    - Social / streaming resources (YouTube, podcasts, tweets)
-
-    New fields such as engagement_score and status are optional and have
-    sensible defaults so existing data continues to work unchanged.
     """
     id: str
     title: str
     url: str
-    content: str  # Full text content (article body, transcript, or expanded tweet)
+    content: str  # Full text content
     summary: str  # First 200 words or explicit summary
     category: str  # Maps to quiz categories
-    resource_type: str  # article, book, course, tool, case_study, guide, video, podcast, tweet
+    resource_type: str  # article, book, course, tool, case_study, guide
     difficulty: str  # beginner, intermediate, advanced
     tags: List[str] = field(default_factory=list)
     author: str = ""
-    source: str = ""  # Domain name (e.g., nngroup.com, youtube.com, twitter.com)
+    source: str = ""  # Domain name (e.g., nngroup.com)
     publish_date: str = ""
     estimated_read_time: int = 0  # Minutes
     created_at: str = field(default_factory=lambda: datetime.now().isoformat())
-
-    # --- Social / engagement metadata (optional) ---
-    # Total engagement score for social content (likes + retweets + replies, etc.)
-    engagement_score: int = 0
-    # View count for video-based content (YouTube, etc.)
-    view_count: int = 0
-    # Episode number for podcasts (0 if not applicable)
-    episode_number: int = 0
-    # Arbitrary platform-specific fields (JSON-safe dict)
-    social_metadata: Dict[str, Any] = field(default_factory=dict)
-
-    # --- Review / moderation metadata (optional) ---
-    # Lifecycle status for moderation: pending -> approved / rejected
-    status: str = "approved"
-    # Raw AI classification payload (category, level, tags, confidence, etc.)
-    ai_classification: Dict[str, Any] = field(default_factory=dict)
-    # Manual review metadata
-    reviewed_by: str = ""
-    reviewed_at: str = ""  # ISO timestamp or empty if not reviewed
-    rejection_reason: str = ""
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for storage"""

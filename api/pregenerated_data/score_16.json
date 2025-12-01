@@ -1,0 +1,227 @@
+{
+  "score": 16,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 14,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 18,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 18,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 12,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 16,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a login flow using the 8-point grid system, focusing on typography and layout. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement: +2% for UX Fundamentals",
+          "Write down 5 common errors that occur during user research and validation, and brainstorm ways to mitigate them. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement: +1% for User Research & Validation"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Design a basic prototype of a product feature using Figma or Sketch, focusing on usability and accessibility. (Reference: https://lawsofux.com/aesthetic-usability-effect/) Score improvement: +1% for UI Craft & Visual Design",
+          "Conduct a self-assessment of your current design process, identifying 3 areas where you can improve collaboration with stakeholders. (Reference: https://lawsofux.com/teslers-law/) Score improvement: +1% for Collaboration & Communication"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a mind map of the 10 Usability Heuristics, highlighting key principles and best practices. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/) Score improvement: +2% for UX Fundamentals",
+          "Develop a simple usability test plan for a hypothetical product feature, including participant recruitment and data analysis. (Reference: https://lawsofux.com/hicks-law/) Score improvement: +1% for User Research & Validation"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive product strategy document outlining your approach to user research, usability testing, and accessibility. (Reference: https://lawsofux.com/laws-of-ux/) Score improvement: +5% for Product Thinking & Strategy",
+          "Create a final portfolio piece that showcases your design process, including wireframes, prototypes, and usability test results. (Score improvement: +10% across all categories)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to craft user experiences that ignite curiosity and spark meaningful connections. By leveraging your skills in user research, visual design, and collaboration, you can help shape products that are both functional and emotionally resonant.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Applying Hick's Law to optimize navigation and reduce cognitive load for users.",
+        "practice_points": [
+          "Analyze 3 existing websites and identify areas where Hick's Law is applied (e.g., dropdown menus, navigation bars). Document findings and suggest improvements.",
+          "Design a simple navigation system with 5-7 options and test it using the Hick's Law formula to determine optimal number of options for users."
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Using the Jobs-to-be-Done framework to understand user motivations and behaviors.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework with users from different demographics. Document findings and identify patterns."
+        ]
+      },
+      {
+        "name": "Applying Aesthetic-Usability Effect in UI Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Using color, typography, and spacing to create an aesthetically pleasing and usable interface.",
+        "practice_points": [
+          "Create 3 wireframes with different color schemes and ask users to rate their usability. Analyze results and suggest improvements."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Score meaning for UX Fundamentals",
+        "detailed": "The score of 14 indicates that the designer has a basic understanding of fundamental principles such as user-centered design, wireframing, and usability testing. However, there is room for improvement in applying these principles to create a more intuitive and user-friendly experience.",
+        "actionable": [
+          "Take online courses or attend workshops to refresh knowledge on UX fundamentals",
+          "Study successful designs and analyze what makes them effective",
+          "Conduct usability testing with real users to identify areas for improvement"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Score meaning for UI Craft & Visual Design",
+        "detailed": "The score of 18 suggests that the designer has a solid foundation in visual design principles, color theory, and typography. However, there is still an opportunity to refine skills in creating visually appealing and consistent designs.",
+        "actionable": [
+          "Join online communities or forums to stay updated on design trends and best practices",
+          "Participate in design challenges or hackathons to practice new skills",
+          "Study the work of renowned designers and analyze their visual design decisions"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Score meaning for User Research & Validation",
+        "detailed": "The score of 18 indicates that the designer has a good understanding of research methods, user personas, and validation techniques. However, there is room for improvement in applying these skills to inform design decisions.",
+        "actionable": [
+          "Conduct user interviews or surveys to gather insights on user needs and pain points",
+          "Analyze user feedback and data to identify trends and patterns",
+          "Collaborate with stakeholders to ensure research findings are actionable"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Score meaning for Product Thinking & Strategy",
+        "detailed": "The score of 12 suggests that the designer has a basic understanding of product thinking and strategy, but may need to develop skills in areas such as market research, competitive analysis, and business goals alignment. This can impact the design's ability to meet user needs and achieve business objectives.",
+        "actionable": [
+          "Take courses or attend workshops on product management and strategy",
+          "Study successful products and analyze their features, pricing, and marketing strategies",
+          "Collaborate with cross-functional teams to understand business goals and priorities"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Score meaning for Collaboration & Communication",
+        "detailed": "The score of 16 indicates that the designer has a good understanding of collaboration principles, communication styles, and stakeholder management. However, there is still an opportunity to refine skills in facilitating effective team discussions and managing conflicting opinions.",
+        "actionable": [
+          "Practice active listening and ask clarifying questions during meetings",
+          "Develop a clear and concise design language to ensure consistency across projects",
+          "Establish open communication channels with stakeholders to manage expectations"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T17:54:30.630005"
+}

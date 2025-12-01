@@ -1,0 +1,183 @@
+{
+  "score": 72,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 63,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 66,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 72,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 78,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (https://www.nngroup.com/articles/ten-usability-heuristics/) and identify 3 areas where you can apply them to your current design work. Document your findings in a 2-page report.",
+          "Create a simple wireframe of a hypothetical product feature using the 8-point grid system, focusing on visual hierarchy and negative space. Measure the time it takes to create this wireframe and aim to reduce it by 30% next week.",
+          "Write a short reflection (250 words) on how you can incorporate Occam's Razor into your design process. What are some common design pitfalls that you've encountered, and how would Occam's Razor help you avoid them?"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user interview with someone who uses the product you designed (or one of your previous projects) and ask them to describe their experience. Use the Jobs-to-be-Done framework to identify 3 pain points that you can address in future design work. Document these pain points in a 2-page report.",
+          "Create a simple user research plan for a hypothetical project, including 2 user personas, 3 user journeys, and 5 usability heuristics to test. Measure the time it takes to create this plan and aim to reduce it by 30% next week.",
+          "Write a short reflection (250 words) on how you can incorporate Miller's Law into your design process. What are some common design pitfalls that you've encountered, and how would Miller's Law help you avoid them?"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Redesign the navigation of your portfolio using the 8-point grid system, focusing on visual hierarchy and negative space. Measure the time it takes to create this redesign and aim to reduce it by 30% next week.",
+          "Create a simple user research plan for a hypothetical project, including 2 user personas, 3 user journeys, and 5 usability heuristics to test. Conduct 1 user interview using this plan and document 3 pain points identified during the interview. Measure the time it takes to conduct this interview and aim to reduce it by 30% next week.",
+          "Write a short reflection (250 words) on how you can incorporate Aesthetic-Usability Effect into your design process. What are some common design pitfalls that you've encountered, and how would the Aesthetic-Usability Effect help you avoid them?"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive user research plan for a hypothetical project, including 2 user personas, 3 user journeys, and 5 usability heuristics to test. Conduct 2 user interviews using this plan and document 6 pain points identified during the interviews. Measure the time it takes to create this plan and conduct these interviews and aim to reduce them by 30% compared to previous weeks.",
+          "Redesign a hypothetical product feature using the 8-point grid system, focusing on visual hierarchy and negative space. Incorporate Occam's Razor into your design process to avoid common pitfalls. Measure the time it takes to create this redesign and aim to reduce it by 30% compared to previous weeks.",
+          "Write a comprehensive reflection (500 words) on how you've applied the principles of UX Fundamentals, User Research & Validation, UI Craft & Visual Design, Product Thinking & Strategy, and Collaboration & Communication throughout your design work over the past 4 weeks. What have you learned, and what are some areas where you'd like to improve further?"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, it's time to take your skills to the next level. Focus on bridging the gaps in your strengths and weaknesses by developing a deeper understanding of user research, product strategy, and collaboration - with a keen eye for UI craft and visual design that elevates your designs and sets you apart.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick’s Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Hick's Law will help Emerging Seniors optimize interaction time and improve overall user experience.",
+        "practice_points": [
+          "Create a case study of 2-3 existing websites that effectively apply Hick’s Law, analyzing the benefits and drawbacks of their design choices",
+          "Conduct an experiment to test the impact of response time on user satisfaction (e.g., using a survey or rating system)",
+          "Develop a heuristic evaluation checklist for assessing Hick's Law compliance in UX designs"
+        ]
+      },
+      {
+        "name": "Applying Occam’s Razor in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Learning Occam's Razor will help Emerging Seniors simplify complex design decisions and prioritize user needs.",
+        "practice_points": [
+          "Analyze 3 existing products or services that effectively apply Occam’s Razor, identifying the key insights and benefits of their design choices",
+          "Create a decision tree to evaluate competing design options using Occam's Razor",
+          "Develop a set of guiding principles for applying Occam's Razor in UX design"
+        ]
+      },
+      {
+        "name": "Mastering Tesler’s Law: A Deep Dive into Cognitive Load and User Experience",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding Tesler’s Law will enable Emerging Seniors to create more intuitive and user-friendly designs that minimize cognitive load.",
+        "practice_points": [
+          "Conduct a usability study to test the impact of cognitive load on user performance (e.g., using eye-tracking or heat maps)",
+          "Develop a framework for assessing cognitive load in UX designs, including strategies for minimizing it",
+          "Create a set of design guidelines for applying Tesler’s Law in UX design"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:50:51.131769"
+}

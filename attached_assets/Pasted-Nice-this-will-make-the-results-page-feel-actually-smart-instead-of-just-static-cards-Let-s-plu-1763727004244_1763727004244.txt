@@ -1,0 +1,151 @@
+Nice, this will make the results page feel actually *smart* instead of just static cards.
+
+Let’s plug an **AI-powered “Deep Dive” section** right below your 4-week plan.
+
+---
+
+## 1. Where this sits in the UI
+
+Result page structure:
+
+1. Hero: “Your AI-Powered 4-Week Improvement Plan” (what you already have)
+2. Week 1–4 cards
+3. **New section:** AI learning recommendations
+4. Optional: CTA to save / email plan
+
+---
+
+## 2. Section layout & copy
+
+### Section header
+
+**Title:**
+
+> Deeper Learning, Curated by AI
+
+**Subtext:**
+
+> Based on your assessment, here are the topics you’ll benefit most from, plus hand-picked articles, guides, and videos to level up faster.
+
+---
+
+### Topic block (repeat 2–4 times)
+
+Each block is one *topic* your AI thinks they should focus on.
+
+**Top row (topic header)**
+
+* Pill/label: `Topic 1`
+* Topic name (bold):
+
+  > Driving 0 → 1 Product Initiatives
+* Tiny tag chips:
+
+  * `Pillar: Product Thinking`
+  * `Level: Intermediate`
+
+**Short description**
+
+> You’re strong at polishing flows, but you haven’t led enough end-to-end 0→1 initiatives. Focus on framing problems, defining success, and aligning stakeholders.
+
+**Key focus bullets**
+
+> **What to practice next**
+> • Turn ambiguous product asks into clear problem statements
+> • Write simple “north star + guardrail” metrics
+> • Communicate trade-offs and rationale in 1–2 pages
+
+---
+
+### AI reading list inside each topic
+
+Under the topic description, show a mini “resource list” card:
+
+**Subheading:**
+
+> Smart Reading List for You
+
+Then 3 resource rows like this:
+
+1. **Card row**
+
+   * Title (link-style text):
+
+     > How Senior Designers Lead 0 → 1 Projects
+   * Meta line:
+
+     > Article · ~12 min read · Productboard Design Blog
+   * Tag chips: `Foundation`, `Case Study`
+   * CTA (right side): `Read`
+
+2. **Second row**
+
+   > **From UX to Outcomes: Defining North Star Metrics**
+   > Video · 18 min · Figma Config Talk
+   > Chips: `Metrics`, `Strategy` · Button: `Watch`
+
+3. **Third row**
+
+   > **A One-Page Decision Doc Template for Designers**
+   > Guide · 7 min read · Notion Playbook
+   > Chips: `Templates`, `Practical` · Button: `Use Template`
+
+At the bottom of the block:
+
+> 🔍 **Powered by AI search**
+> We continuously refresh these picks as new, high-quality resources appear.
+
+---
+
+## 3. Empty / loading states (so it feels AI-driven)
+
+While the AI is fetching recommendations:
+
+> **Finding resources just for you…**
+> We’re scanning trusted UX blogs, talks, and playbooks that match your current skill gaps.
+
+If the search fails:
+
+> **Couldn’t fetch articles right now**
+> Something went wrong on our side. Your 4-week plan is still ready to use — try loading recommendations again in a bit.
+> [Try again]
+
+---
+
+## 4. Simple data shape for the AI result
+
+If you’re wiring this with Gemini / OpenAI in the backend, you can think of the AI response like:
+
+```json
+{
+  "topics": [
+    {
+      "name": "Driving 0 → 1 Product Initiatives",
+      "pillar": "Product Thinking",
+      "level": "Intermediate",
+      "summary": "You need more reps in framing problems, defining success metrics, and leading 0→1 work.",
+      "practice_points": [
+        "Turn vague asks into clear problem statements",
+        "Write simple success metrics (north star + guardrails)",
+        "Summarize decisions and trade-offs in short docs"
+      ],
+      "resources": [
+        {
+          "title": "How Senior Designers Lead 0 → 1 Projects",
+          "type": "article",
+          "estimated_read_time": "12 min",
+          "source": "Productboard Design Blog",
+          "url": "https://example.com",
+          "tags": ["Foundation", "Case Study"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+You just loop over `topics` → render topic card → loop over `resources` for the list.
+
+---
+
+If you tell me which stack you’re using (Framer, React, Webflow, plain HTML), I can turn this into actual component code with your exact visual style.

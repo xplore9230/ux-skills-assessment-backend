@@ -1,0 +1,180 @@
+{
+  "score": 5,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 9,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 0,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 1,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 10,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 6,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe for a login form using the 8-point grid system, focusing on typography and spacing.",
+          "Write down 5 common user research methods used in UX design, such as surveys, interviews, and usability testing.",
+          "Identify 3 usability heuristics from the nngroup.com article '10 Usability Heuristics for User Interface Design' that you can apply to your current design work."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign a simple webpage using the Aesthetic-Usability Effect principles, focusing on color and typography.",
+          "Conduct a self-assessment of your user research skills, identifying 3 areas where you need improvement and documenting 1 example of each."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a mood board for a hypothetical product using the Zeigarnik Effect principles, focusing on unfinished tasks and unmet needs.",
+          "Write a short reflection (max. 250 words) on how you can apply the Law of Proximity in your design work, including examples from your current projects."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive user flow for a complex product feature using the Laws of UX principles, focusing on error states and feedback mechanisms.",
+          "Create a portfolio piece that showcases your new UI craft skills, including a clear design process and documentation of your design decisions."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have a unique opportunity to craft the first impressions of a product and shape its overall user experience. By focusing on user research, validation, and collaboration, you can turn your design skills into tangible solutions that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying usability heuristics to design intuitive interfaces is crucial for Explorer designers to improve user experience.",
+        "practice_points": [
+          "Analyze 3 existing products using the 10 Usability Heuristics and identify areas for improvement",
+          "Create a comprehensive list of usability heuristics with explanations and examples",
+          "Design 2 wireframes for a hypothetical product, incorporating at least 5 usability heuristics"
+        ]
+      },
+      {
+        "name": "Applying Cognitive Biases in User Research",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Exploring cognitive biases helps Explorer designers conduct more effective user research and validate assumptions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Zeigarnik Effect to uncover unresolved issues",
+          "Create a list of common cognitive biases in user research, with examples and explanations",
+          "Design an experiment to test the Aesthetic-Usability Effect on user behavior"
+        ]
+      },
+      {
+        "name": "Developing Product Thinking through Strategic Analysis",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate",
+        "summary": "Understanding product thinking is essential for Explorer designers to develop strategic solutions and improve user outcomes.",
+        "practice_points": [
+          "Analyze 2 existing products using the Jobs-to-be-Done framework, identifying key job requirements",
+          "Create a list of potential jobs-to-be-done for a hypothetical product, with user personas and scenarios",
+          "Design a product roadmap with at least 3 key milestones, incorporating user research and validation"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:41:22.646455"
+}

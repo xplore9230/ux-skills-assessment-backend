@@ -1,0 +1,236 @@
+{
+  "score": 94,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 100,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 91,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 89,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 94,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 95,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review the 10 Usability Heuristics for User Interface Design (nngroup.com) and identify 3 areas where you can apply them to your current work. Document these in a spreadsheet or note-taking app.",
+          "Create a list of 5 common user research methods used by Strategic Leads, including pros and cons. Write a short reflection on which method(s) you've used effectively in the past and how you can improve.",
+          "Sketch out 3 simple wireframes for a hypothetical product feature using the Occam's Razor principle (lawsofux.com). Focus on minimalism and simplicity."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview using the Zeigarnik Effect as a guide (lawsofux.com) to identify unresolved issues with your current product. Document 3 pain points and potential solutions in a spreadsheet.",
+          "Redesign your portfolio's navigation using the 8-point grid system (no specific resource needed). Focus on simplicity and ease of use.",
+          "Write a short reflection on how you can apply the Aesthetic-Usability Effect to improve your design work. Identify 2 areas where you can make changes in the next week."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a list of 10 common UI mistakes and brainstorm ways to avoid them using Occam's Razor (lawsofux.com). Focus on simplicity and minimalism.",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework (no specific resource needed) to identify unresolved issues with your current product. Document 5 pain points and potential solutions in a spreadsheet.",
+          "Redesign your current project's UI using the Laws of UX as a guide. Focus on usability and accessibility."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for your hypothetical product feature, incorporating the principles learned throughout the past weeks. Document all design decisions and rationale.",
+          "Conduct a self-assessment of your current user research skills using the Laws of UX as a guide. Identify areas where you need improvement and create an action plan to address them.",
+          "Develop a final portfolio piece that showcases your improved UI craft & visual design skills, incorporating the principles learned throughout the past weeks."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX designer, you're not just a master of user experience, but also a visionary leader who drives product strategy and collaboration. With your expertise in UX fundamentals, UI craft, research, and product thinking, you have the power to shape the future of products and experiences that people love.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for UI Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Developing the ability to simplify complex design decisions with clear, concise language will enhance your UX Fundamentals and UI Craft & Visual Design skills as a Strategic Lead designer.",
+        "practice_points": [
+          "Analyze 3 existing products' UI elements and identify areas where Occam's Razor can be applied for simplification",
+          "Create a case study on how Occam's Razor improved the user experience of a recent design project",
+          "Develop a personal style guide that incorporates Occam's Razor principles for typography, color palette, and layout"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Mastering user research techniques will help you better understand users' motivations and behaviors, leading to more effective design decisions as a Strategic Lead designer.",
+        "practice_points": [
+          "Conduct 5 user interviews using the Jobs-to-be-Done framework and document findings",
+          "Create a user journey map illustrating a user's goals and pain points in completing a specific task",
+          "Develop a research plan for a new product launch, including identifying target users and research methods"
+        ]
+      },
+      {
+        "name": "Implementing Hick’s Law for UI Design Optimization",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Understanding Hick's Law will enable you to optimize your UI design for faster user interactions, enhancing the overall user experience as a Strategic Lead designer.",
+        "practice_points": [
+          "Analyze 3 existing websites' navigation menus and identify areas where Hick’s Law can be applied for improvement",
+          "Create a usability test plan using Hick’s Law principles to evaluate the effectiveness of different UI elements",
+          "Develop a heuristic evaluation checklist based on Hick’s Law for reviewing design prototypes"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Strategic Leads should demonstrate a solid understanding of UX principles to ensure effective design decisions.",
+        "detailed": "A strong foundation in UX fundamentals is crucial for Strategic Leads, as it enables them to create user-centered designs that meet business objectives. However, the current score suggests room for improvement in this area, indicating a need for targeted training or mentorship to enhance their skills.",
+        "actionable": [
+          "Attend UX design workshops or conferences to stay updated on industry trends and best practices",
+          "Review and apply established UX design principles and frameworks in daily work",
+          "Seek feedback from peers or mentors on UX-related projects to identify areas for improvement"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Strategic Leads should develop their visual design skills to create visually appealing and effective UI solutions.",
+        "detailed": "While Strategic Leads have a solid foundation in UI craft, there is room for growth in terms of visual design expertise. A stronger emphasis on visual design principles and best practices will enable them to create more engaging and user-friendly interfaces.",
+        "actionable": [
+          "Take online courses or tutorials focused on visual design principles and trends",
+          "Participate in design challenges or hackathons to practice visual design skills",
+          "Collaborate with designers who specialize in visual design to learn from their expertise"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Strategic Leads should prioritize user research and validation to ensure designs meet user needs and business objectives.",
+        "detailed": "While Strategic Leads have a good understanding of user research principles, there is room for improvement in terms of applying these principles effectively. A stronger focus on user research and validation will enable them to create more effective and user-centered designs.",
+        "actionable": [
+          "Develop a user research plan and methodology to guide design decisions",
+          "Conduct regular usability testing and gather feedback from users to inform design iterations",
+          "Collaborate with cross-functional teams to ensure user needs are aligned with business objectives"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Strategic Leads should demonstrate a deep understanding of product thinking and strategy to make informed design decisions.",
+        "detailed": "A strong foundation in product thinking and strategy is essential for Strategic Leads, as it enables them to create designs that meet business objectives while prioritizing user needs. However, the current score suggests room for improvement in this area, indicating a need for targeted training or mentorship to enhance their skills.",
+        "actionable": [
+          "Read industry publications and books on product thinking and strategy to stay updated on best practices",
+          "Participate in design sprints or workshops to practice applying product thinking principles",
+          "Seek feedback from peers or mentors on product-related projects to identify areas for improvement"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Strategic Leads should develop their collaboration and communication skills to effectively work with cross-functional teams.",
+        "detailed": "While Strategic Leads have a strong foundation in collaboration and communication, there is room for growth in terms of applying these skills effectively. A stronger emphasis on collaboration and communication will enable them to build stronger relationships with stakeholders and create more effective designs.",
+        "actionable": [
+          "Attend design leadership workshops or conferences to develop leadership skills",
+          "Join design communities or forums to network with peers and stay updated on industry trends",
+          "Practice active listening and feedback skills in daily work to improve collaboration"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T19:14:30.541987"
+}

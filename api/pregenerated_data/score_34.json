@@ -1,0 +1,177 @@
+{
+  "score": 34,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 40,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 35,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 42,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 24,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 31,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "As an Explorer, you should be able to identify the primary goals of a product. Review Tesler's Law (https://lawsofux.com/teslers-law/) and explain how it applies to your current projects in 500 words or less.",
+          "Create a simple wireframe for a hypothetical product using the 8-point grid system, focusing on creating a clear hierarchy of information. Reference your portfolio's navigation redesign from Week 1 as an example of good design principles.",
+          "Conduct a self-assessment of your current collaboration style, identifying areas where you can improve communication with team members and stakeholders. Write down specific changes you'd like to make and how you plan to implement them."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Review the Zeigarnik Effect (https://lawsofux.com/zeigarnik-effect/) and explain how it can be applied to your user research process. Create a simple mind map illustrating how you can use this effect to improve your research outcomes.",
+          "Redesign the navigation menu for a real-world product using the 8-point grid system, focusing on creating clear labels and minimal cognitive load. Reference the wireframe from Week 1 as an example of good design principles.",
+          "Create a simple user journey map for a hypothetical product, highlighting pain points and areas where users can be helped. Use the Jobs-to-be-Done framework to identify user goals and motivations."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Review Aesthetic-Usability Effect (https://lawsofux.com/aesthetic-usability-effect/) and explain how it applies to your visual design process. Create a simple mood board illustrating how you can use this effect to improve the aesthetic appeal of your designs.",
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework, focusing on identifying pain points and areas where users can be helped. Document 5 specific pain points in detail, including solutions you'd propose to address them.",
+          "Create a simple product vision board for a hypothetical product, highlighting key features and benefits. Use the Tesler's Law framework to ensure your design aligns with user goals and motivations."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Review Laws of UX (https://lawsofux.com/) and explain how it applies to your current projects in 500 words or less. Create a simple diagram illustrating the different laws and how they intersect.",
+          "Redesign the entire navigation menu for a real-world product, incorporating all the design principles learned throughout the past weeks. Focus on creating a clear hierarchy of information and minimal cognitive load.",
+          "Create a comprehensive user research plan for a hypothetical product, including methods for data collection, analysis, and reporting. Use the Zeigarnik Effect to ensure your research process is effective in uncovering user needs."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the power to shape user experiences that spark curiosity and ignite passion. By leveraging your skills in research, strategy, and collaboration, you can craft intuitive designs that not only meet but exceed user expectations.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick's Law to optimize navigation and reduce cognitive load for better user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites and identify areas where Hick's Law is applied (or not). Document findings in a report."
+        ]
+      },
+      {
+        "name": "Conducting User Interviews using the Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Using the Zeigarnik Effect to uncover user motivations and pain points through effective interviewing techniques.",
+        "practice_points": [
+          "Plan and conduct 2 user interviews using the Zeigarnik Effect framework. Record and transcribe interviews, then analyze findings."
+        ]
+      },
+      {
+        "name": "Designing for Proximity with Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Applying the Aesthetic-Usability Effect to create visually appealing and intuitive interfaces.",
+        "practice_points": [
+          "Create 3 wireframes for a hypothetical product, incorporating the Aesthetic-Usability Effect principles. Document design decisions."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:12:04.897680"
+}

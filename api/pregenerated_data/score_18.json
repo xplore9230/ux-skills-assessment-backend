@@ -1,0 +1,231 @@
+{
+  "score": 18,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 15,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 13,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 24,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 20,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 17,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of your current portfolio's homepage using the 8-point grid system, focusing on aligning elements and creating visual balance. (Reference: Law of Uniform Connectedness)",
+          "Redesign your portfolio's navigation menu using the 10 Usability Heuristics for User Interface Design as a reference point. Focus on error states you missed. (Reference: nngroup.com)",
+          "Write down 5 principles of UX Fundamentals that you're currently struggling with and create a simple diagram illustrating each principle. (Reference: Lawsofux.com)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a low-fidelity prototype of your portfolio's homepage using paper sketches or digital tools, focusing on user flow and usability. (Reference: Law of Proximity)",
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework. Focus on understanding user needs. (Reference: Lawsofux.com)",
+          "Create a simple mood board for your portfolio's visual design, incorporating 2-3 color palettes that evoke different emotions. (Reference: Aesthetic-Usability Effect)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Design a high-fidelity prototype of your portfolio's homepage using digital tools, focusing on visual design and user experience. (Reference: Lawsofux.com)",
+          "Create a simple usability test plan for your portfolio's navigation menu, including 2-3 scenarios to test. Focus on error states and user flow. (Reference: nngroup.com)",
+          "Write down 5 principles of Product Thinking & Strategy that you're currently struggling with and create a simple diagram illustrating each principle. (Reference: Lawsofux.com)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system for your portfolio's visual design, incorporating 3-5 design patterns. Focus on consistency and user experience. (Reference: Lawsofux.com)",
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Focus on understanding user needs and creating solutions. (Reference: Lawsofux.com)",
+          "Create a final portfolio piece that showcases your skills in UI Craft & Visual Design, including a clear design process and explanation of design decisions. (Reference: nngroup.com)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have a unique opportunity to shape the future of products by immersing yourself in user needs and behaviors. By leveraging your research skills and collaboration abilities, you can craft intuitive designs that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Usability Heuristics for UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering usability heuristics will help Explorer designers create intuitive and user-friendly interfaces, improving overall UX.",
+        "practice_points": [
+          "Analyze 5 existing websites using the 10 Usability Heuristics for User Interface Design and identify areas for improvement",
+          "Create a comprehensive guide to applying the Law of Proximity in UI design, including examples and best practices"
+        ]
+      },
+      {
+        "name": "Conducting Effective User Research",
+        "pillar": "User Research & Validation",
+        "level": "Beginner/Intermediate",
+        "summary": "Developing user research skills is crucial for Explorer designers to inform design decisions and create products that meet user needs.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings, including quotes and insights"
+        ]
+      },
+      {
+        "name": "Crafting Compelling Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner/Intermediate",
+        "summary": "Exploring visual design principles will help Explorer designers create visually appealing and effective interfaces.",
+        "practice_points": [
+          "Create 3 wireframes using Figma, focusing on typography, color, and spacing to improve visual hierarchy"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Scores indicate a need for improvement in understanding user needs and behaviors.",
+        "detailed": "The current scores suggest that the designer is not fully equipped to design an intuitive and user-friendly experience. This may lead to a poor user experience, high bounce rates, and negative reviews. The designer may benefit from taking courses or attending workshops to improve their UX fundamentals skills.",
+        "actionable": [
+          "Take online courses on UX principles and human-centered design",
+          "Read books and articles on UX best practices and design thinking",
+          "Join online communities and forums for designers to learn from others"
+        ]
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Scores indicate a need for improvement in creating visually appealing and consistent designs.",
+        "detailed": "The current scores suggest that the designer may struggle with creating cohesive and aesthetically pleasing designs. This could lead to a poor user experience, as users may be distracted by inconsistent design elements. The designer may benefit from studying visual design principles and practicing their skills through exercises and projects.",
+        "actionable": [
+          "Study visual design principles and color theory",
+          "Practice designing with different styles and techniques",
+          "Join online communities for visual designers to learn from others"
+        ]
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Scores indicate a need for improvement in conducting effective user research and validation.",
+        "detailed": "The current scores suggest that the designer may not be skilled in gathering and analyzing user data, leading to poor design decisions. This could result in a product that does not meet user needs or expectations. The designer may benefit from taking courses on user research methods and practicing their skills through real-world projects.",
+        "actionable": [
+          "Take online courses on user research methods and statistics",
+          "Practice conducting user interviews and usability testing",
+          "Join online communities for user researchers to learn from others"
+        ]
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Scores indicate a need for improvement in understanding product strategy and market trends.",
+        "detailed": "The current scores suggest that the designer may not be skilled in developing a product roadmap or understanding market trends, leading to a lack of direction and focus. This could result in a product that does not meet user needs or expectations. The designer may benefit from studying product management principles and staying up-to-date on industry trends.",
+        "actionable": [
+          "Take online courses on product management principles and strategy",
+          "Read books and articles on market trends and industry analysis",
+          "Join online communities for product managers to learn from others"
+        ]
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Scores indicate a need for improvement in collaborating with cross-functional teams and communicating effectively.",
+        "detailed": "The current scores suggest that the designer may struggle with working with stakeholders, leading to misunderstandings and miscommunication. This could result in a product that does not meet user needs or expectations. The designer may benefit from practicing collaboration skills and learning effective communication techniques.",
+        "actionable": [
+          "Practice collaborating with cross-functional teams on design projects",
+          "Take courses on effective communication and conflict resolution",
+          "Join online communities for designers to learn from others"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T17:56:30.824495"
+}

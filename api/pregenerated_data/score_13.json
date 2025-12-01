@@ -1,0 +1,179 @@
+{
+  "score": 13,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 11,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 12,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 8,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 23,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 10,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple user persona using the 5 Ws (who, what, when, where, why) and a brief description of their pain points. Focus on User Research & Validation.",
+          "Conduct a self-reflection exercise: Write down 3 things you wish you knew about your users before starting a project. Use these insights to inform your design decisions moving forward. Reference the '5 Whys' technique from UX Fundamentals (nngroup.com).",
+          "Design a basic wireframe for a hypothetical product using the 8-point grid system. Focus on UI Craft & Visual Design."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct 1 user interview and document 3 pain points using the Jobs-to-be-Done framework. Focus on User Research & Validation.",
+          "Write a short reflection (max 250 words) on how you would approach collaboration in a team setting, referencing 'Collaboration & Communication' resources (e.g., lawsofux.com).",
+          "Redesign your portfolio's navigation using the 8-point grid system. Focus on UI Craft & Visual Design."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a simple user journey map illustrating the pain points you identified during Week 1's task. Use this to inform your design decisions moving forward. Reference '10 Usability Heuristics for User Interface Design' (nngroup.com).",
+          "Write a short script for a hypothetical usability test, focusing on how to effectively communicate with users and gather feedback. Reference 'Collaboration & Communication' resources.",
+          "Design 3 wireframes for a hypothetical product using the Aesthetic-Usability Effect principles from Jakob's Law (lawsofux.com). Focus on UI Craft & Visual Design."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Conduct 2 user interviews and document 5 pain points using the Jobs-to-be-Done framework. Focus on User Research & Validation.",
+          "Create a simple product strategy document outlining your design decisions for a hypothetical product. Reference 'Product Thinking & Strategy' resources (e.g., lawsofux.com).",
+          "Design a comprehensive wireframe for a checkout flow, focusing on error states you missed and incorporating the 8-point grid system. Focus on UI Craft & Visual Design."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, your role is to uncover new ideas and possibilities that can transform user experiences. By developing a strong foundation in UX fundamentals, UI craft, research, product thinking, and collaboration, you'll be empowered to drive innovation and create products that delight users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Occam's Razor for Simplified UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Mastering Occam's Razor will help you eliminate unnecessary design elements, resulting in a more intuitive and efficient user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites using Occam's Razor and document the decisions made to simplify their UI design",
+          "Create a new wireframe for a hypothetical product, applying Occam's Razor principles to minimize cognitive load"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "Using the Jobs-to-be-Done framework will enable you to gain a deeper understanding of users' motivations and behaviors, informing more effective design decisions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework and document findings",
+          "Create a user persona based on research conducted with the Jobs-to-be-Done framework"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide for Consistency",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Establishing a consistent visual language will enhance user trust and engagement, making your design more effective.",
+        "practice_points": [
+          "Create 3 style guide documents (color palette, typography, spacing) for a hypothetical product"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:50:00.200918"
+}

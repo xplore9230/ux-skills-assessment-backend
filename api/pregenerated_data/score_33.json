@@ -1,0 +1,211 @@
+{
+  "score": 33,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 39,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 26,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 41,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 28,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 29,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe for a login flow using the 8-point grid system, focusing on typography and color scheme (UI Craft & Visual Design).",
+          "Write down 3 usability heuristics from nngroup.com that you can apply to your current projects (UX Fundamentals).",
+          "Design a basic information architecture for a hypothetical e-commerce website using the 10 Usability Heuristics for User Interface Design"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign the navigation of your portfolio using the 8-point grid system, focusing on consistency and readability (UI Craft & Visual Design).",
+          "Apply Tesler’s Law to a current project, identifying areas where visual hierarchy can be improved (UX Fundamentals).",
+          "Conduct a user interview and document 2 pain points related to product thinking and strategy using the Jobs-to-be-Done framework"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a mood board for a hypothetical product, incorporating the Aesthetic-Usability Effect and Zeigarnik Effect (UX Fundamentals).",
+          "Develop a simple prototype of a feature using InVision or Figma, focusing on usability and user flow (UI Craft & Visual Design).",
+          "Write a short reflection on how you can apply the Laws of UX to your current design projects"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive user experience for a hypothetical product, incorporating all relevant UX principles and heuristics (UX Fundamentals).",
+          "Create a visually appealing and consistent design system for a real-world project using the 8-point grid system (UI Craft & Visual Design).",
+          "Develop a case study on how you applied product thinking and strategy to a current or hypothetical project"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By combining your skills in user research, visual design, and collaboration, you can uncover new insights and create intuitive designs that delight users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Hick's Law is a fundamental principle that affects user behavior, and understanding it will help you design more intuitive interfaces.",
+        "practice_points": [
+          "Create 3 wireframes of a common interface element (e.g., button, form input) with varying response times to test Hick's Law in action",
+          "Conduct 2 usability testing sessions with participants who struggle with fast vs. slow responses and document findings",
+          "Develop a spreadsheet to analyze the data from your usability tests and identify patterns that support or contradict Hick's Law"
+        ]
+      },
+      {
+        "name": "Applying Tesler’s Law in Visual Design",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Beginner",
+        "summary": "Tesler’s Law states that users prefer a clear and simple visual hierarchy, which is essential for effective design.",
+        "practice_points": [
+          "Create 3 mood boards with different color schemes to test Tesler’s Law in visual design",
+          "Design a new logo or branding system using the principles of Tesler’s Law",
+          "Develop a comprehensive style guide with typography and spacing guidelines that adhere to Tesler’s Law"
+        ]
+      },
+      {
+        "name": "Using Zeigarnik Effect in User Research",
+        "pillar": "User Research & Validation",
+        "level": "Beginner",
+        "summary": "The Zeigarnik Effect shows that users remember uncompleted tasks better than completed ones, making it essential to design for completion and satisfaction.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Zeigarnik Effect framework to identify pain points in a specific task or process",
+          "Create a survey with open-ended questions that tap into users' uncompleted tasks and document findings",
+          "Develop a user journey map that highlights areas where users may feel frustrated or incomplete"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": {
+    "insights": [
+      {
+        "category": "UX Fundamentals",
+        "brief": "Explorer designer's UX skills need improvement, focusing on user-centered design principles.",
+        "detailed": "The current score of 39/100 indicates a lack of understanding of fundamental UX concepts such as user research, wireframing, and usability testing. This can lead to designs that are not intuitive or accessible for users."
+      },
+      {
+        "category": "UI Craft & Visual Design",
+        "brief": "Explorer designer's visual design skills require enhancement, emphasizing the importance of aesthetics and consistency.",
+        "detailed": "A score of 26/100 suggests a need to develop skills in UI design principles, color theory, typography, and visual hierarchy. This will enable the creation of visually appealing and consistent designs that enhance the user experience."
+      },
+      {
+        "category": "User Research & Validation",
+        "brief": "Explorer designer's research skills are strong, but could benefit from more validation techniques to ensure design accuracy.",
+        "detailed": "The current score of 41/100 indicates a solid foundation in user research methods such as interviews, surveys, and usability testing. However, there is room for improvement in validating design decisions through A/B testing, user feedback, and analytics."
+      },
+      {
+        "category": "Product Thinking & Strategy",
+        "brief": "Explorer designer's product thinking skills require development, focusing on business goals and user needs.",
+        "detailed": "A score of 28/100 suggests a need to develop an understanding of product strategy, including market analysis, competitive research, and customer personas. This will enable the creation of designs that align with business objectives and meet user needs."
+      },
+      {
+        "category": "Collaboration & Communication",
+        "brief": "Explorer designer's collaboration skills are average, requiring improvement in effective communication and team coordination.",
+        "detailed": "The current score of 29/100 indicates a need to develop skills in collaboration tools such as Slack, Trello, or Asana. Additionally, improving active listening, clear communication, and conflict resolution will enhance the designer's ability to work effectively with cross-functional teams."
+      }
+    ]
+  },
+  "generated_at": "2025-11-22T18:11:04.547727"
+}

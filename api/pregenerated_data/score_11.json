@@ -1,0 +1,183 @@
+{
+  "score": 11,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 10,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 13,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 10,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 10,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 12,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe for a login screen using the 8-point grid system, focusing on error states (e.g., incorrect password). Measure your score improvement by comparing it to your original wireframe. (Reference: https://lawsofux.com/aesthetic-usability-effect/)",
+          "Document 5 common UX mistakes in existing products and explain why they are bad design decisions. Use the '10 Usability Heuristics for User Interface Design' as a reference point. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/)",
+          "Write a short reflection on your current understanding of user research methods, including pain points and limitations. Identify one area you'd like to improve in the coming weeks. (No specific resource needed)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a basic user persona using the 'Jobs-to-be-Done' framework, focusing on common pain points for your target audience. Measure your score improvement by comparing it to your original persona. (Reference: https://lawsofux.com/millers-law/)",
+          "Conduct 1 user interview and document 3 pain points related to your current design process. Use the 'Occam's Razor' principle to identify the most important insights. (Reference: https://lawsofux.com/occams-razor/)",
+          "Create a simple usability test plan for a hypothetical product, including participant recruitment and testing procedures. Focus on ensuring the test is valid and reliable. (No specific resource needed)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Redesign your portfolio's navigation using the '8-point grid system', focusing on simplicity and error prevention. Measure your score improvement by comparing it to your original design. (Reference: https://lawsofux.com/aesthetic-usability-effect/)",
+          "Create a basic user journey map for a hypothetical product, including pain points and potential solutions. Use the '10 Usability Heuristics' as a reference point. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/)",
+          "Write a short reflection on your current understanding of collaboration and communication in UX design teams. Identify one area you'd like to improve in the coming weeks. (No specific resource needed)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create an advanced user research plan for a hypothetical product, including participant recruitment, testing procedures, and data analysis. Focus on ensuring the test is valid and reliable. (Reference: https://lawsofux.com/millers-law/)",
+          "Design a simple prototype using Figma or Sketch, focusing on usability and accessibility. Use the '8-point grid system' to ensure consistency. Measure your score improvement by comparing it to your original design. (No specific resource needed)",
+          "Create a comprehensive UX portfolio showcasing your skills in user research, usability testing, and visual design. Focus on storytelling and clear communication of your design decisions. (Reference: https://lawsofux.com/occams-razor/)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. To excel in this role, focus on developing your skills in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, using your current strengths as a foundation to build upon.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick’s Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick's Law to optimize navigation and reduce cognitive load for users",
+        "practice_points": [
+          "Create a case study of 2-3 existing websites that effectively apply Hick’s Law, analyzing the design decisions behind them",
+          "Design an interactive prototype with varying button sizes and test participants' reaction times using Hick’s Law as a guideline",
+          "Develop a heuristic evaluation checklist for assessing navigation menus against Hick's Law"
+        ]
+      },
+      {
+        "name": "Aesthetic-Usability Effect: Designing for Emotional Connection in UX",
+        "pillar": "UX Fundamentals",
+        "level": "Beginner",
+        "summary": "Understanding the Aesthetic-Usability Effect to create a more engaging and user-friendly design",
+        "practice_points": [
+          "Conduct 2 usability testing sessions with participants of different age groups, analyzing how color schemes affect their experience",
+          "Create a mood board for a hypothetical product, incorporating principles from the Aesthetic-Usability Effect",
+          "Design an interactive prototype with varying visual elements (e.g., colors, textures) to test the impact on user engagement"
+        ]
+      },
+      {
+        "name": "Applying Occam’s Razor in UX Design: Simplifying Complexity",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Using Occam's Razor to simplify complex design decisions and prioritize usability",
+        "practice_points": [
+          "Analyze 3 existing products with complex navigation systems, identifying areas where Occam’s Razor can be applied to improve user experience",
+          "Design a simplified wireframe for a hypothetical product, applying Occam’s Razor principles to reduce cognitive load",
+          "Develop a framework for evaluating design complexity and providing recommendations for simplification using Occam's Razor"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T17:47:48.942601"
+}

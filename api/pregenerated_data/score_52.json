@@ -1,0 +1,183 @@
+{
+  "score": 52,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 50,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 43,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 57,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 53,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Redesign the navigation menu for a fictional e-commerce website using the 8-point grid system, focusing on clear typography and consistent spacing. (Reference: https://lawsofux.com/law-of-uniform-connectedness/)",
+          "Create a low-fidelity wireframe of a hypothetical product feature using only 10 usability heuristics from nngroup.com. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/)",
+          "Write a short reflection (max 250 words) on how the Aesthetic-Usability Effect influences your design decisions, and provide an example of a recent project where you applied this principle."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a visual design system for a fictional website using the principles outlined in 'Law of Proximity' (lawsofux.com). Include a minimum of 3 components with clear typography and consistent spacing.",
+          "Conduct a user research study on a specific pain point in your industry, using the Jobs-to-be-Done framework to document 5 pain points. (Reference: https://lawsofux.com/)",
+          "Redesign the color palette for a fictional company's branding, focusing on a minimum of 3 colors that adhere to the Law of Uniform Connectedness."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a high-fidelity wireframe of a hypothetical product feature using advanced design principles from 'Law of Proximity' (lawsofux.com). Include clear typography, consistent spacing, and visual hierarchy.",
+          "Develop a comprehensive design system for a fictional website, including a minimum of 10 usability heuristics from nngroup.com. Document the reasoning behind each principle.",
+          "Write a case study (max 500 words) on how you applied UX Fundamentals in a recent project, highlighting specific examples and outcomes."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Design a comprehensive visual design system for a fictional company's branding, including a minimum of 10 components that adhere to the Law of Uniform Connectedness. Document the reasoning behind each component.",
+          "Create an interactive prototype of a hypothetical product feature using advanced design principles from 'Law of Proximity' (lawsofux.com). Include clear typography, consistent spacing, and visual hierarchy.",
+          "Develop a comprehensive UX strategy for a fictional company, including a minimum of 5 usability heuristics from nngroup.com. Document the reasoning behind each principle and provide an example of how you applied it in a recent project."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have a solid foundation in user research and product thinking, but there's room for growth in UI craft, visual design, and collaboration skills. Focus on developing your UI craft and visual design skills to elevate the overall user experience, and continue to refine your research and validation methods to deliver high-quality designs that meet user needs.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Proximity",
+        "url": "https://lawsofux.com/law-of-proximity/",
+        "description": "* [English](https://lawsofux.com/law-of-proximity/) * [Español](https://lawsofux.com/es/ley-de-proximidad/) * [Francais](https://lawsofux.com/fr/loi-d...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Law of Uniform Connectedness",
+        "url": "https://lawsofux.com/law-of-uniform-connectedness/",
+        "description": "* [English](https://lawsofux.com/law-of-uniform-connectedness/) * [Español](https://lawsofux.com/es/ley-de-conectividad-uniforme/) * [Francais](https:...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Tesler's Law in UI Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Tesler's Law states that the most memorable information is presented in a sequence of three items, not more or less. Practitioners will apply this principle to design intuitive and memorable interfaces.",
+        "practice_points": [
+          "Design 3 interactive prototypes with a sequence of 3 elements (e.g., navigation menu, button, and feedback message) and test for memorability",
+          "Conduct an analysis of 5 existing websites that demonstrate effective use of Tesler's Law and identify best practices",
+          "Create a case study illustrating how Tesler's Law improved the user experience in a real-world project"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide with Visual Design Principles",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "A well-designed style guide ensures consistency and clarity in visual design, enhancing the overall user experience. Practitioners will create a comprehensive style guide that incorporates visual design principles.",
+        "practice_points": [
+          "Create a 10-page style guide with color palette, typography, spacing, and icon guidelines",
+          "Design 3 wireframes using a consistent visual language (e.g., Figma) and document the decisions behind each element",
+          "Conduct an audit of 5 existing design systems to identify areas for improvement"
+        ]
+      },
+      {
+        "name": "Applying the Zeigarnik Effect in User Research",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "The Zeigarnik Effect states that unfinished tasks are more memorable than completed ones. Practitioners will apply this principle to design research methods that leave users with a sense of accomplishment and motivation.",
+        "practice_points": [
+          "Conduct 2 interviews using the Zeigarnik Effect framework (e.g., ask about user goals, pain points, and unfinished tasks) and document findings",
+          "Design an experiment to test the impact of leaving users with a task on their engagement and motivation",
+          "Create a case study illustrating how the Zeigarnik Effect improved the user experience in a real-world project"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:30:37.008407"
+}

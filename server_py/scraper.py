@@ -20,9 +20,8 @@ from knowledge_base import (
     CategoryMapper,
     DifficultyClassifier,
     estimate_read_time,
-    create_summary,
+    create_summary
 )
-from social_scrapers import YouTubeScraper, PodcastScraper
 
 
 # Rate limiting configuration
@@ -187,11 +186,6 @@ class NNGroupScraper(BaseScraper):
         
         print(f"  ✓ Found {len(links)} article links")
         return links[:limit]
-
-
-# Social scrapers (YouTube / Podcasts) are defined in social_scrapers.py
-# and wired into ScraperFactory below so the ingestion pipeline can
-# optionally treat them as additional sources.
 
 
 class LawsOfUXScraper(BaseScraper):
@@ -507,14 +501,11 @@ class ScraperFactory:
     """
     
     SCRAPERS = {
-        "nngroup": NNGroupScraper,
-        "lawsofux": LawsOfUXScraper,
-        "uxcollective": UXCollectiveScraper,
-        "smashing": SmashingMagazineScraper,
-        "alistapart": AListApartScraper,
-        # Social sources (treated specially by content_aggregator)
-        "youtube": YouTubeScraper,
-        "podcast": PodcastScraper,
+        'nngroup': NNGroupScraper,
+        'lawsofux': LawsOfUXScraper,
+        'uxcollective': UXCollectiveScraper,
+        'smashing': SmashingMagazineScraper,
+        'alistapart': AListApartScraper
     }
     
     @classmethod

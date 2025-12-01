@@ -1,0 +1,180 @@
+{
+  "score": 86,
+  "stage": "Strategic Lead",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 97,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 90,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 80,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 82,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (https://lawsofux.com/teslers-law/) and explain its impact on UX design. Write a 2-page report detailing how this law can be applied to improve your current designs.",
+          "Practice Hick’s Law (https://lawsofux.com/hicks-law/) by creating 5 wireframes for a navigation menu, ensuring that the time it takes to complete each task is optimized for the user's needs.",
+          "Create an Aesthetic-Usability Effect (https://lawsofux.com/aesthetic-usability-effect/) analysis of your current portfolio. Identify areas where the design could be improved to increase usability."
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a user research exercise using the Jobs-to-be-Done framework (https://lawsofux.com/jobs-to-be-done/) on a current project. Document 5 pain points and potential solutions.",
+          "Develop a 10 Usability Heuristics for User Interface Design (https://www.nngroup.com/articles/ten-usability-heuristics/) checklist to apply to your future designs. Focus on the heuristics that align with your weak area in UX Fundamentals.",
+          "Create a simple usability test plan using the 8-point grid system (https://lawsofux.com/8-point-grid-system/) and apply it to a current design element."
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Develop a Product Thinking & Strategy framework for your current project. Identify key product goals, user needs, and potential solutions.",
+          "Create a UX Fundamentals case study (using the Laws of UX) on how to improve the navigation menu of a recent design. Focus on applying principles from Tesler's Law and Hick’s Law.",
+          "Design an error state for a current project using the 8-point grid system. Ensure that the error message is clear, concise, and provides a solution."
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive UX Fundamentals portfolio showcasing your understanding of key principles such as Tesler's Law, Hick’s Law, and Aesthetic-Usability Effect. Include examples from previous projects.",
+          "Develop a Product Thinking & Strategy plan for a hypothetical product. Focus on how to apply the framework to improve user experience and meet business goals.",
+          "Conduct an in-depth analysis of your current design process using the 10 Usability Heuristics for User Interface Design checklist. Identify areas where you can improve your UX Fundamentals skills."
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Strategic Lead UX designer, you have the unique opportunity to drive user-centered design decisions across multiple products and teams. By leveraging your strengths in UI Craft & Visual Design, User Research & Validation, and Collaboration & Communication, you can create seamless and intuitive experiences that delight users and drive business success.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick’s Law and its Impact on UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying Hick's Law to inform design decisions about response time, navigation, and feedback.",
+        "practice_points": [
+          "Conduct a usability test with 5 participants to measure the impact of response time on user experience. Analyze the results using Hick’s Law as a framework for interpretation",
+          "Create a wireframe prototype of a search bar with varying response times to demonstrate how Hick's Law affects user behavior"
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide Using Tesler’s Law",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Applying Tesler’s Law to create a style guide that minimizes cognitive load and maximizes visual appeal.",
+        "practice_points": [
+          "Create 3 style guides for different UI components (e.g., buttons, forms) using Tesler’s Law as the guiding principle. Document design decisions and rationale",
+          "Conduct an A/B testing experiment to compare two versions of a UI component with varying levels of visual complexity"
+        ]
+      },
+      {
+        "name": "Evaluating the Effectiveness of Von Restorff Effect in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Applying the Von Restorff Effect to create attention-grabbing and memorable UI elements.",
+        "practice_points": [
+          "Design 5 different UI elements (e.g., icons, labels) using the Von Restorff Effect to increase cognitive salience. Test with 10 participants and document results",
+          "Create a visual hierarchy of a webpage using the Von Restorff Effect as a guiding principle"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:06:01.916856"
+}

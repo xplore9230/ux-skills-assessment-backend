@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Quiz Complete</title>
+</head>
+<body>
+    <h1>Quick Results Test</h1>
+    <button onclick="goToResults()">Go to Results Page</button>
+    
+    <script>
+    function goToResults() {
+        // Simulate quiz completion with middle scores
+        const answers = {};
+        for (let i = 1; i <= 15; i++) {
+            answers[`q${i}`] = 3;
+        }
+        
+        // Calculate results (simulated)
+        const results = {
+            stage: "Practitioner",
+            totalScore: 52,
+            maxScore: 100,
+            summary: "You're functioning as a UX designer and can handle features with guidance.",
+            categories: [
+                { name: "UX Fundamentals", score: 60, maxScore: 100, status: "decent" },
+                { name: "UI Craft & Visual Design", score: 60, maxScore: 100, status: "decent" },
+                { name: "User Research & Validation", score: 47, maxScore: 100, status: "needs-work" },
+                { name: "Product Thinking & Strategy", score: 53, maxScore: 100, status: "needs-work" },
+                { name: "Collaboration & Communication", score: 60, maxScore: 100, status: "decent" }
+            ],
+            improvementPlan: [
+                { week: 1, tasks: ["Task 1", "Task 2", "Task 3"] },
+                { week: 2, tasks: ["Task 4", "Task 5", "Task 6"] },
+                { week: 3, tasks: ["Task 7", "Task 8", "Task 9"] },
+                { week: 4, tasks: ["Task 10", "Task 11", "Task 12"] }
+            ]
+        };
+        
+        // Navigate to results with state
+        window.location.href = `http://localhost:3000/results?test=true`;
+    }
+    </script>
+</body>
+</html>

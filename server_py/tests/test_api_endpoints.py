@@ -175,4 +175,3 @@ def test_job_search_links_returns_json(client):
 
 
 
-

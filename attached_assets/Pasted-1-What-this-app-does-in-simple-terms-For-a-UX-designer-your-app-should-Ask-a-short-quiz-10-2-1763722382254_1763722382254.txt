@@ -1,0 +1,358 @@
+1. What this app does (in simple terms)
+
+For a UX designer, your app should:
+
+Ask a short quiz (10–20 questions) about how they work, what they know, what they’ve shipped.
+
+Place them in a “career stage” (e.g. Beginner → Mid → Senior → Lead).
+
+Show a personalised report with:
+
+Where they’re strong / weak (e.g. strong UI, weak research).
+
+What stage they’re closest to.
+
+A concrete improvement plan + reading list / practice tasks.
+
+Think of it as a “UX skills mirror” + mini study coach.
+
+2. Skill areas to measure
+
+Let’s keep it to 5 skill areas for v1:
+
+UX Fundamentals
+Flows, usability, information architecture, basic heuristics.
+
+UI Craft & Visual Design
+Layout, typography, spacing, hierarchy, interaction patterns.
+
+User Research & Validation
+Talking to users, usability tests, using data to make decisions.
+
+Product Thinking & Strategy
+Understanding business goals, metrics, impact, prioritisation.
+
+Collaboration & Communication
+Working with PM/eng, presenting work, documentation.
+
+Each area gets 3 questions → 15 questions total.
+Each question is self-rated 1–5 → max per area = 15, overall = 75.
+
+3. Career stages
+
+Define 4 clear stages:
+
+Explorer (Beginner / Transitioning into UX)
+
+Total score: 0–25
+
+Just learning core concepts, limited real projects.
+
+Practitioner (Junior–Mid)
+
+Total score: 26–45
+
+Can own small features, needs guidance for complex problems.
+
+Emerging Senior
+
+Total score: 46–60
+
+Can lead end-to-end flows, mentor juniors, speak the product language.
+
+Strategic Lead / Manager
+
+Total score: 61–75
+
+Owns problem spaces, influences roadmap, strong on strategy & org impact.
+
+You can tweak the ranges later based on real data.
+
+4. Sample questions (ready to plug into your app)
+A. UX Fundamentals (3 questions)
+
+Q1. When you start a new project, how often do you explicitly define the problem statement and success metrics?
+1 – Rarely, I mostly start directly with screens
+2 – Sometimes, but not always written down
+3 – Often, but metrics are vague
+4 – Usually, with clear problem + direction
+5 – Always, I write a clear problem, constraints, and success metrics
+
+Q2. How confident are you in breaking down a user journey into flows and edge cases?
+1 – I struggle with this
+2 – I can do simple flows
+3 – I can handle typical product flows
+4 – I cover most states and edge cases
+5 – I systematically cover all states, edge cases, and system rules
+
+Q3. When designing, how often do you consciously apply usability principles (heuristics, Fitts’ law, etc.)?
+1 – Almost never
+2 – Occasionally
+3 – Sometimes
+4 – Often
+5 – Very often and intentionally
+
+B. UI Craft & Visual Design
+
+Q4. How would you rate your skills in layout, spacing, and visual hierarchy?
+1 – Weak, my designs often feel cluttered or misaligned
+2 – Basic, I can follow existing patterns
+3 – Decent, I can make things look “good enough”
+4 – Strong, I can craft polished clean UIs
+5 – Very strong, I obsess over details, grids, and spacing
+
+Q5. How often do you use and contribute to a design system (tokens, components, patterns)?
+1 – I don’t really use design systems
+2 – I consume components but don’t modify them
+3 – I sometimes suggest improvements
+4 – I actively extend and maintain components
+5 – I help define or govern the design system
+
+Q6. How comfortable are you with designing for different screen sizes and platforms (Android, iOS, Web)?
+1 – Mostly design for one screen/platform
+2 – I try but struggle to adapt patterns
+3 – I can adapt for major platforms
+4 – Comfortable across multiple platforms
+5 – Very comfortable with platform guidelines and responsive behaviour
+
+C. User Research & Validation
+
+Q7. How often do you talk to users or observe them using your product?
+1 – Almost never
+2 – Rarely, maybe once or twice a year
+3 – Sometimes, when the project demands it
+4 – Regularly for key projects
+5 – Very regularly, I push for it proactively
+
+Q8. When you design something, how often is it validated (usability test, A/B test, analytics)?
+1 – Hardly ever
+2 – Rarely, only big features
+3 – Sometimes
+4 – Often, especially critical flows
+5 – Almost always, I push for validation
+
+Q9. How confident are you in turning research insights into clear product decisions?
+1 – Not confident
+2 – I can summarise feedback but struggle to prioritise
+3 – I can identify patterns and suggest changes
+4 – I can define clear recommendations with rationale
+5 – I can frame insights into roadmap-level decisions
+
+D. Product Thinking & Strategy
+
+Q10. How well do you understand the business model and metrics of the product you work on?
+1 – Barely
+2 – I know a few high-level metrics
+3 – I know main KPIs and track them loosely
+4 – I understand core funnels and business impact
+5 – I can explain trade-offs between UX, revenue, and tech in detail
+
+Q11. When prioritising design ideas, how often do you consider impact vs. effort?
+1 – Hardly ever, I just design what’s asked
+2 – Sometimes, but not systematically
+3 – I think about it but don’t always voice it
+4 – I actively push for high-impact/low-effort ideas
+5 – I help PM/Eng prioritise with clear impact/effort framing
+
+Q12. How often are you involved early (problem-definition stage) vs. late (UI-polish stage)?
+1 – Almost always brought in late
+2 – Mostly late, rarely early
+3 – Mixed
+4 – Often early in the process
+5 – Usually at the very beginning
+
+E. Collaboration & Communication
+
+Q13. How comfortable are you presenting your work to stakeholders (PMs, engineers, leadership)?
+1 – Very uncomfortable
+2 – Somewhat uncomfortable
+3 – Neutral
+4 – Quite comfortable
+5 – Very confident, I enjoy it
+
+Q14. How often do you write documentation (rationale, specs, handoff notes)?
+1 – Almost never
+2 – Rarely
+3 – Sometimes
+4 – Often
+5 – Almost always, with clear and structured docs
+
+Q15. How would you rate your relationship with developers and PMs?
+1 – Often misaligned or tense
+2 – Functional but not smooth
+3 – Mostly okay, some friction
+4 – Generally strong and collaborative
+5 – Very strong, I’m seen as a trusted partner
+
+5. Scoring logic
+
+Implementation idea:
+
+Store questions like this (pseudo-JSON):
+
+{
+  "id": "Q1",
+  "text": "When you start a new project, how often do you explicitly define the problem statement and success metrics?",
+  "category": "ux_fundamentals",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels": {
+      "1": "Rarely, I mostly start directly with screens",
+      "5": "Always, I write a clear problem, constraints, and success metrics"
+    }
+  }
+}
+
+
+After user submits:
+
+Sum scores per category.
+
+Sum all scores for total.
+
+totalScore → map to career stage.
+
+For each category, classify as:
+
+1–5 → Needs work
+
+6–10 → Decent
+
+11–15 → Strong
+
+Output object:
+
+{
+  "totalScore": 48,
+  "stage": "Emerging Senior",
+  "categoryScores": {
+    "ux_fundamentals": 11,
+    "ui_craft": 9,
+    "research": 7,
+    "product_thinking": 12,
+    "collaboration": 9
+  }
+}
+
+
+Then use this to generate a personalised report UI.
+
+6. Feedback templates by stage
+
+You can hard-code these as templates and inject category highlights.
+
+Stage 1 – Explorer
+
+Summary:
+“You’re in the early stage of your UX journey or transitioning from another field. Your main focus now should be building strong fundamentals and getting hands-on with small projects.”
+
+What to focus on:
+
+Learn basic UX concepts: flows, wireframes, usability heuristics.
+
+Practice simple apps: redesign a login flow, onboarding, or checkout.
+
+Get feedback from other designers (Discord, design communities, friends).
+
+Study plan (4 weeks, light):
+
+Week 1: Learn UX basics (heuristics, flows, wireframes).
+
+Week 2: Pick one app you use daily and sketch a better version of 1 flow.
+
+Week 3: Do 2–3 user conversations with friends/family using that app.
+
+Week 4: Refine your design based on feedback and write a 1-page case study.
+
+Stage 2 – Practitioner
+
+Summary:
+“You’re functioning as a UX designer and can handle features with guidance. Now it’s about depth: better research, stronger visual craft, and thinking more about impact/metrics.”
+
+What to focus on:
+
+Push your UI craft (spacings, grids, typography, states).
+
+Practice structured research: plan > interview > synthesise > design.
+
+Start thinking in hypotheses and metrics: ‘If we change X, Y should improve’.
+
+Study plan (4–6 weeks):
+
+Pick one live feature from your current or a fake product.
+
+Write a short problem statement + success metric.
+
+Talk to 3–5 users (or proxy users).
+
+Design 2–3 variations, get feedback from a PM/dev friend if possible.
+
+Document it as a proper case study.
+
+Stage 3 – Emerging Senior
+
+Summary:
+“You’re close to or already functioning at a senior level. You can drive flows end-to-end and work well with PM/eng. Next step is sharpening strategy, systems thinking, and mentoring.”
+
+What to focus on:
+
+Define problem spaces, not just features.
+
+Get more fluent in data: funnels, conversion, retention, A/B basics.
+
+Start mentoring juniors or giving feedback regularly.
+
+Contribute seriously to design systems and patterns.
+
+Study / growth ideas:
+
+Pick a core funnel (e.g. search → book, browse → purchase) and map it.
+
+Identify drop-off points, propose 2–3 experiments.
+
+Run a small usability study for a critical flow and share the findings.
+
+Write internal docs: “Design principles for [your product]”.
+
+Stage 4 – Strategic Lead
+
+Summary:
+“You’re already operating at a high level. Your edge now is strategy, org influence, and building systems (design system, UX ops, research ops).”
+
+What to focus on:
+
+Owning problem spaces, not just features.
+
+Connecting company strategy → roadmap → design bets.
+
+Creating design frameworks others can reuse: templates, checklists, playbooks.
+
+Coaching others and shaping the design culture.
+
+Study / growth ideas:
+
+Drive a 0→1 initiative and document decision trade-offs.
+
+Build a design quality bar document with examples and use it in reviews.
+
+Partner with data/PM to define north star metrics for the UX team.
+
+7. Making the output feel personalised
+
+Use the category scores to give targeted advice. Example:
+
+“Your strongest area right now is Product Thinking (12/15) – you clearly think in terms of impact and business goals.
+Your biggest opportunity is Research & Validation (6/15) – try to bring users into your process more often and run quick tests before shipping.”
+
+You can have a small library of suggestions per category & level, then pick based on score.
+
+8. How we can continue
+
+Next step (if you want) we can:
+
+Turn this into actual UI flows (welcome → quiz → results → “start plan”).
+
+Design the result screen layout.
+
+Or I can give you a JSON schema + sample dataset you can directly plug into your frontend/backend.

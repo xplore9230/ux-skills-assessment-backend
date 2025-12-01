@@ -19,7 +19,6 @@ from datetime import datetime
 from scraper import ScraperFactory, NNGroupScraper, LawsOfUXScraper
 from knowledge_base import ContentChunker, UXResource
 from vector_store import get_vector_store, init_vector_store
-from content_aggregator import ContentAggregator
 
 
 class IngestionPipeline:
@@ -292,9 +291,6 @@ Examples:
   
   # Reset and rebuild from scratch
   python ingest.py --scrape --sources all --reset --limit 150
-
-  # Fetch social content (YouTube/Twitter/Podcasts)
-  python ingest.py --social
         """
     )
     
@@ -334,23 +330,11 @@ Examples:
         action='store_true',
         help='Clear existing data before ingestion (USE WITH CAUTION!)'
     )
-
-    parser.add_argument(
-        '--social',
-        action='store_true',
-        help='Fetch social content (YouTube RSS, podcasts, Twitter, Google discovery)'
-    )
-
-    parser.add_argument(
-        '--update-social',
-        action='store_true',
-        help='Alias for --social (kept for compatibility with plan wording)'
-    )
     
     args = parser.parse_args()
     
     # Validate arguments
-    if not args.scrape and not args.add_url and not args.social and not args.update_social:
+    if not args.scrape and not args.add_url:
         parser.print_help()
         sys.exit(1)
     
@@ -380,13 +364,6 @@ Examples:
                 for source in sources:
                     pipeline.scrape_source(source, limit=args.limit)
         
-        # Social content aggregation
-        if args.social or args.update_social:
-            aggregator = ContentAggregator()
-            summary = aggregator.run_full_update()
-            print("\nSocial content ingestion summary:")
-            print(json.dumps(summary, indent=2))
-
         # Print summary
         pipeline.print_summary()
         

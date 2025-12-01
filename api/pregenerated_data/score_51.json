@@ -1,0 +1,179 @@
+{
+  "score": 51,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 48,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 57,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 58,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 46,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 48,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe of a product page using the 8-point grid system, focusing on layout and visual hierarchy. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement target: +3 for UX Fundamentals",
+          "Write down 5 principles of usability from Tesler's Law and explain how they apply to your current design work. (Reference: https://lawsofux.com/teslers-law/) Score improvement target: +2 for UX Fundamentals"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign a simple product page using the 8-point grid system, focusing on visual hierarchy and layout. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement target: +3 for UX Fundamentals",
+          "Create a list of 10 usability heuristics from the NNGroup and explain how they can be applied to your current design work. (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/) Score improvement target: +2 for UX Fundamentals"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a simple wireframe of an error page using the 8-point grid system, focusing on clear communication and minimal cognitive load. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement target: +3 for UX Fundamentals",
+          "Write down 5 principles of aesthetic usability from Laws of UX and explain how they apply to your current design work. (Reference: https://lawsofux.com/aesthetic-usability-effect/) Score improvement target: +2 for UX Fundamentals"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system document outlining the use of the 8-point grid system in your current projects. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement target: +3 for UX Fundamentals",
+          "Conduct a self-assessment of your product thinking and strategy skills, identifying areas for improvement and creating a plan to address them. (Reference: https://lawsofux.com/product-thinking-and-strategy/) Score improvement target: +2 for Product Thinking & Strategy"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have a solid foundation in UX Fundamentals and User Research & Validation, but there's room for growth in Product Thinking & Strategy and Collaboration & Communication. By focusing on these areas and continually honing your skills, you can elevate your practice and drive more impactful design solutions.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Improving Product Thinking & Strategy through Jobs-to-be-Done Framework",
+        "pillar": "Product Thinking & Strategy",
+        "level": "Intermediate",
+        "summary": "Developing a deeper understanding of user motivations and needs to inform design decisions.",
+        "practice_points": [
+          "Conduct 3 user interviews using the Jobs-to-be-Done framework and document findings on pain points, goals, and behaviors.",
+          "Create a personas document with 2-3 user profiles and their associated jobs-to-be-done, highlighting key motivations and pain points.",
+          "Develop a design brief for a new product feature that incorporates the user's job-to-be-done, including clear goals, metrics, and success criteria."
+        ]
+      },
+      {
+        "name": "Enhancing UI Craft & Visual Design through Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Applying principles of visual design to create an aesthetically pleasing and usable interface.",
+        "practice_points": [
+          "Create 3 wireframes with varying levels of visual hierarchy, color scheme, and typography, and test for usability using user interviews or A/B testing.",
+          "Develop a comprehensive style guide with color, typography, and spacing tokens, including examples of how to apply these principles in design decisions.",
+          "Design 2 interactive prototypes in Figma that incorporate the aesthetic-usability effect, including micro-interactions and visual feedback."
+        ]
+      },
+      {
+        "name": "Strengthening User Research & Validation through Empathy Mapping",
+        "pillar": "User Research & Validation",
+        "level": "Beginner/Intermediate",
+        "summary": "Developing a deeper understanding of user emotions, needs, and behaviors to inform design decisions.",
+        "practice_points": [
+          "Create 2 empathy maps for 1-2 users, highlighting their thoughts, feelings, and behaviors in relation to a specific product or service.",
+          "Conduct 2 usability testing sessions with participants using an empathy map as a guide, documenting findings on user behavior and pain points.",
+          "Develop a user research plan for a new project, including methods for data collection, analysis, and reporting."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:29:31.944388"
+}

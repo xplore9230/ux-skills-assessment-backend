@@ -10,5 +10,6 @@ server
 attached_assets
 *.md
 .env
-.railway
-.ollama
+
+
+

@@ -1,0 +1,178 @@
+{
+  "score": 44,
+  "stage": "Practitioner",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 46,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 49,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 50,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 36,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 38,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a low-fidelity wireframe of your current portfolio's navigation system using the 8-point grid system, focusing on improving its usability. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement needed for Collaboration & Communication: +2%",
+          "Write down 3 specific pain points you've encountered while working with designers or stakeholders in your current role, using the Jobs-to-be-Done framework to analyze them. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement needed for Collaboration & Communication: +2%",
+          "Develop a list of 5 questions to ask your colleagues about their design process and pain points during collaboration meetings, aiming to improve communication and understanding. (Reference: https://lawsofux.com/aesthetic-usability-effect) Score improvement needed for Collaboration & Communication: +1%"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Create a user persona for your current design projects using Tesler's Law as a guide, focusing on understanding users' needs and behaviors. (Reference: https://lawsofux.com/teslers-law) Score improvement needed for Product Thinking & Strategy: +4%",
+          "Redesign the navigation menu of a fictional e-commerce website using Hick's Law to optimize its usability, aiming to reduce cognitive load. (Reference: https://lawsofux.com/hicks-law/) Score improvement needed for UI Craft & Visual Design: +3%",
+          "Develop a list of 5 possible solutions to a common design problem you've encountered in your current role, using the 10 Usability Heuristics as a guide. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement needed for Product Thinking & Strategy: +3%"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a case study of a successful design project you've worked on, using the Laws of UX as a guide to analyze its strengths and weaknesses. (Reference: https://lawsofux.com/) Score improvement needed for Product Thinking & Strategy: +5%",
+          "Develop a list of 3 key performance indicators (KPIs) to measure the success of your design projects, focusing on user engagement and satisfaction. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement needed for Collaboration & Communication: +4%",
+          "Create a wireframe of an error state page using Aesthetic-Usability Effect as a guide to improve its visual appeal and usability. (Reference: https://lawsofux.com/aesthetic-usability-effect) Score improvement needed for UI Craft & Visual Design: +5%"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Develop a comprehensive design strategy document outlining your approach to designing user-centered products, using the Laws of UX as a guide. (Reference: https://lawsofux.com/) Score improvement needed for Product Thinking & Strategy: +8%",
+          "Create a prototype of a new design concept using user research and validation methods to test its usability and effectiveness. (Reference: https://nngroup.com/articles/ten-usability-heuristics/) Score improvement needed for UI Craft & Visual Design: +7%",
+          "Conduct a peer review of your portfolio's navigation system, providing constructive feedback on usability and design quality using the 8-point grid system as a guide. (Reference: https://lawsofux.com/8-point-grid-system) Score improvement needed for Collaboration & Communication: +6%"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As a Practitioner UX designer, you have the potential to unlock innovative solutions and create seamless user experiences. By focusing on building your skills in UX Fundamentals, UI Craft & Visual Design, User Research & Validation, Product Thinking & Strategy, and Collaboration & Communication, you can elevate your practice and drive meaningful impact in your work.",
+    "resources": [
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Applying Hick’s Law to Improve Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering the concept of Hick's Law will help Practitioner designers optimize navigation and reduce cognitive load for users.",
+        "practice_points": [
+          "Analyze 3 existing websites using Hick’s Law and identify areas for improvement. Document findings in a report.",
+          "Design and test 2 new navigation systems with optimized button sizes and spacing. Conduct A/B testing to validate results."
+        ]
+      },
+      {
+        "name": "Developing a Comprehensive Style Guide",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Intermediate",
+        "summary": "Creating a style guide will help Practitioner designers establish consistency in their design work and ensure user experience is aligned with the product's overall strategy.",
+        "practice_points": [
+          "Research 5 existing style guides (e.g., Apple, Google, Microsoft) and identify common patterns and best practices. Create a list of recommendations for improvement."
+        ]
+      },
+      {
+        "name": "Conducting User Research Using the Jobs-to-be-Done Framework",
+        "pillar": "User Research & Validation",
+        "level": "Advanced",
+        "summary": "Applying the Jobs-to-be-Done framework will enable Practitioner designers to gain a deeper understanding of users' motivations and behaviors, leading to more effective design solutions.",
+        "practice_points": [
+          "Conduct 2 user interviews using the Jobs-to-be-Done framework. Document findings in a report and identify areas for further research."
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:22:38.125102"
+}

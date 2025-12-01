@@ -1,0 +1,219 @@
+{
+  "score": 85,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 82,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 95,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 79,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 86,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 82,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          {
+            "task": "Review and apply the 10 Usability Heuristics for User Interface Design (nngroup.com) to a real-world project, focusing on usability principles you can improve upon",
+            "doneCriteria": "Complete the heuristics review and provide specific examples of how they can be applied to an existing design"
+          },
+          {
+            "task": "Create a simple wireframe for a hypothetical product using the 8-point grid system, demonstrating your understanding of spatial reasoning and layout principles",
+            "doneCriteria": "Submit a clear and concise wireframe with proper spacing and alignment"
+          },
+          {
+            "task": "Write down 5 common UX mistakes you've made in previous projects and brainstorm ways to improve upon them",
+            "doneCriteria": "Provide specific examples of how you can avoid these mistakes in future work"
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          {
+            "task": "Conduct a user interview using the Jobs-to-be-Done framework and document 3 pain points related to a specific product or service",
+            "doneCriteria": "Submit a clear and concise report outlining the user's goals, pain points, and potential solutions"
+          },
+          {
+            "task": "Redesign your portfolio's navigation using the 8-point grid system, ensuring proper spacing and alignment",
+            "doneCriteria": "Submit a polished and well-organized portfolio with improved navigation"
+          },
+          {
+            "task": "Create a simple prototype of a hypothetical product using a tool of your choice (e.g., Figma, Sketch), focusing on user flow and interaction design",
+            "doneCriteria": "Share a clear and concise video or screenshot demonstrating the prototype's functionality"
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          {
+            "task": "Apply Jakob’s Law to a real-world project, identifying areas where the law can be improved upon",
+            "doneCriteria": "Submit specific examples of how you applied Jakob’s Law and potential solutions"
+          },
+          {
+            "task": "Create a simple Aesthetic-Usability Effect (AUE) analysis for a hypothetical product, demonstrating your understanding of visual design principles",
+            "doneCriteria": "Share a clear and concise report outlining the AUE findings and recommendations"
+          },
+          {
+            "task": "Conduct a self-assessment of your UX Fundamentals skills, identifying areas where you need improvement and creating a plan to address them",
+            "doneCriteria": "Submit a clear and concise report outlining your strengths, weaknesses, and action plan"
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          {
+            "task": "Create a comprehensive UX Fundamentals portfolio piece (e.g., case study, design process walkthrough) showcasing your skills in usability principles, user research, and visual design",
+            "doneCriteria": "Submit a polished and well-organized portfolio piece that demonstrates your mastery of UX Fundamentals"
+          },
+          {
+            "task": "Develop a personal project or contribute to an open-source project that incorporates your new UX Fundamentals skills",
+            "doneCriteria": "Share a clear and concise report outlining the project's goals, design process, and outcomes"
+          },
+          {
+            "task": "Prepare for a UX design interview by practicing common questions and developing thoughtful answers using the Laws of UX as reference",
+            "doneCriteria": "Submit a list of 5-10 well-prepared questions and answers demonstrating your understanding of UX Fundamentals"
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and a keen eye for visual design. Now, focus on elevating your skills in user research, product thinking, and collaboration to drive more impactful solutions that meet the needs of users and stakeholders alike.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Jakob’s Law",
+        "url": "https://lawsofux.com/jakobs-law/",
+        "description": "* [English](https://lawsofux.com/jakobs-law/) * [Español](https://lawsofux.com/es/ley-de-jakob/) * [Francais](https://lawsofux.com/fr/loi-de-jakob/) *...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Miller’s Law",
+        "url": "https://lawsofux.com/millers-law/",
+        "description": "* [English](https://lawsofux.com/millers-law/) * [Español](https://lawsofux.com/es/ley-de-miller/) * [Francais](https://lawsofux.com/fr/loi-de-miller/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Usability Heuristics for Effective Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Emerging Senior designers need to apply usability heuristics to design intuitive and user-friendly interfaces, which requires a deeper understanding of these principles.",
+        "practice_points": [
+          "Create 3 wireframes for a hypothetical product using the 10 Usability Heuristics for User Interface Design resource, focusing on applying each heuristic correctly",
+          "Conduct 2 usability testing sessions with real users and document the findings, identifying areas where heuristics can be applied to improve the design",
+          "Develop a comprehensive guide to the 10 Usability Heuristics, including examples and case studies of successful implementation"
+        ]
+      },
+      {
+        "name": "Deepening Understanding of User Research Methods",
+        "pillar": "User Research & Validation",
+        "level": "Intermediate",
+        "summary": "Emerging Senior designers need to refine their user research skills to gather high-quality insights that inform design decisions.",
+        "practice_points": [
+          "Conduct 2 interviews using the Jobs-to-be-Done framework and document findings, analyzing how users perceive the value of a product or service",
+          "Create a user persona for a hypothetical product, including demographic information, goals, and pain points",
+          "Design and conduct a usability testing session with real users, recording and analyzing the results to identify areas for improvement"
+        ]
+      },
+      {
+        "name": "Applying Visual Design Principles for Aesthetic-Usability Effect",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Emerging Senior designers need to apply visual design principles to create an aesthetic-usable interface that engages users and supports their goals.",
+        "practice_points": [
+          "Create 3 interactive prototypes in Figma with micro-interactions, focusing on applying the Aesthetic-Usability Effect principle to enhance user experience",
+          "Develop a comprehensive style guide for a hypothetical product, including color, typography, spacing, and other visual design elements",
+          "Conduct an analysis of existing products or websites, identifying areas where the Aesthetic-Usability Effect can be applied to improve user engagement"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T19:04:58.511799"
+}

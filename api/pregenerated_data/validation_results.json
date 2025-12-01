@@ -1,0 +1,1215 @@
+{
+  "total_files": 101,
+  "files_checked": 101,
+  "files_with_errors": 0,
+  "files_with_warnings": 64,
+  "total_errors": 0,
+  "total_warnings": 64,
+  "error_scores": [],
+  "warning_scores": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12,
+    13,
+    17,
+    22,
+    23,
+    24,
+    25,
+    30,
+    34,
+    35,
+    36,
+    37,
+    39,
+    41,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    54,
+    57,
+    59,
+    60,
+    61,
+    62,
+    64,
+    65,
+    66,
+    68,
+    69,
+    71,
+    72,
+    74,
+    75,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    91,
+    95,
+    96,
+    97,
+    98,
+    100
+  ],
+  "results": [
+    {
+      "score": 0,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 1,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 2,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 3,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 4,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 5,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 6,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 7,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 8,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 9,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 10,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 11,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 12,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 13,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 14,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 15,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 16,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 17,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 18,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 19,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 20,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 21,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 22,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 23,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 24,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 25,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 26,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 27,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 28,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 29,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 30,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 31,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 32,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 33,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 34,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 35,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 36,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 37,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 38,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 39,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 40,
+      "exists": true,
+      "expected_stage": "Explorer",
+      "file_stage": "Explorer",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 41,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 42,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 43,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 44,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 45,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 46,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 47,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 48,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 49,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 50,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 51,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 52,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 53,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 54,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 55,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 56,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 57,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 58,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 59,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 60,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 61,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 62,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 63,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 64,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 65,
+      "exists": true,
+      "expected_stage": "Practitioner",
+      "file_stage": "Practitioner",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 66,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 67,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 68,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 69,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 70,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 71,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 72,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 73,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 74,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 75,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 76,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 77,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 78,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 79,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 80,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 81,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 82,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 83,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 84,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 85,
+      "exists": true,
+      "expected_stage": "Emerging Senior",
+      "file_stage": "Emerging Senior",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 86,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 87,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 88,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 89,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 90,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 91,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 92,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 93,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 94,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 95,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 96,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 97,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 98,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    },
+    {
+      "score": 99,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [],
+      "has_errors": false,
+      "has_warnings": false
+    },
+    {
+      "score": 100,
+      "exists": true,
+      "expected_stage": "Strategic Lead",
+      "file_stage": "Strategic Lead",
+      "errors": [],
+      "warnings": [
+        "No insights data found"
+      ],
+      "has_errors": false,
+      "has_warnings": true
+    }
+  ]
+}

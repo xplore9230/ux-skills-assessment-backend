@@ -1,0 +1,183 @@
+{
+  "score": 69,
+  "stage": "Emerging Senior",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 64,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 66,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 68,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 65,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 82,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Review Tesler's Law (lawsofux.com) and create a mind map illustrating how it applies to your current design work. Focus on identifying areas where you can improve the consistency of your designs. (Reference: 64/100 - UX Fundamentals)",
+          "Create a list of 5 common design patterns used in user interfaces, along with examples from popular websites or apps. Analyze each pattern's strengths and weaknesses using the 10 Usability Heuristics for User Interface Design (nngroup.com). (Reference: 64/100 - UX Fundamentals)",
+          "Design a simple wireframe of a login page, focusing on error states that might be overlooked by users. Use the Aesthetic-Usability Effect (lawsofux.com) as a guiding principle to make your design more visually appealing. (Reference: 64/100 - UX Fundamentals)"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Conduct a self-assessment of your current design process, identifying areas where you can streamline tasks and improve efficiency. Use the Laws of UX as a framework to inform your decisions. (Reference: 65/100 - Product Thinking & Strategy)",
+          "Create a list of 3 potential user personas for a new product or feature you're interested in designing. Use the Jobs-to-be-Done framework to understand their motivations and pain points. Document your process using user research methods such as interviews or surveys. (Reference: 68/100 - User Research & Validation)",
+          "Design a prototype of a simple product feature, focusing on usability and accessibility. Test it with 2-3 users and gather feedback using the 8-point grid system to inform your design decisions. (Reference: 66/100 - UI Craft & Visual Design)"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Research and analyze a successful product or service that has implemented effective user research methods. Document their process, identifying key takeaways and lessons learned. Use this information to inform your own design decisions. (Reference: 65/100 - Product Thinking & Strategy)",
+          "Create a list of 5 potential design solutions for a common UX problem, such as navigation or search functionality. Evaluate each solution using the 10 Usability Heuristics for User Interface Design and select the most effective one. Document your process and decision-making. (Reference: 64/100 - UX Fundamentals)",
+          "Design a case study of a successful design project you've worked on, focusing on the product thinking and strategy aspects that contributed to its success. Use this as an opportunity to reflect on your own design decisions and areas for improvement. (Reference: 82/100 - Collaboration & Communication)"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive design system document outlining the principles, patterns, and components used in your current or future designs. Use this as an opportunity to demonstrate your understanding of product thinking and strategy. (Reference: 65/100 - Product Thinking & Strategy)",
+          "Conduct a usability testing session with 3-5 users on a new design concept, using the Hick's Law (lawsofux.com) as a guiding principle to inform your decisions. Gather feedback and document your process. (Reference: 64/100 - UX Fundamentals)",
+          "Develop a final capstone project that demonstrates your mastery of product thinking and strategy, user research, and design principles. Use this opportunity to showcase your skills and knowledge in a comprehensive and well-structured design project. (Reference: 82/100 - Collaboration & Communication)"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an emerging senior UX designer, you have a solid foundation in UX fundamentals and a keen eye for visual design. Focus on refining your product thinking skills to drive strategic decisions that prioritize user needs, while leveraging your exceptional collaboration and communication abilities to lead cross-functional teams and deliver impactful designs.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Tesler’s Law",
+        "url": "https://lawsofux.com/teslers-law/",
+        "description": "* [English](https://lawsofux.com/teslers-law/) * [Español](https://lawsofux.com/es/ley-de-tesler/) * [Francais](https://lawsofux.com/fr/loi-de-tesler/...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Hick’s Law",
+        "url": "https://lawsofux.com/hicks-law/",
+        "description": "* [English](https://lawsofux.com/hicks-law/) * [Español](https://lawsofux.com/es/ley-de-hick/) * [Francais](https://lawsofux.com/fr/loi-de-hick/) * [ع...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Mastering Hick's Law for Efficient Navigation",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of Hick's Law to optimize navigation and reduce cognitive load, leading to improved user experience.",
+        "practice_points": [
+          "Conduct an A/B testing experiment using Framer Motion to compare the impact of different button sizes on click latency (deliverables: test results, data analysis)",
+          "Analyze 5 existing websites that apply Hick's Law effectively and identify best practices for implementation (deliverables: annotated screenshots, design notes)",
+          "Create a comprehensive guide to Hick's Law, including its history, principles, and application in UX design (deliverables: written guide, visual aids)"
+        ]
+      },
+      {
+        "name": "Enhancing Collaboration with Effective Communication",
+        "pillar": "Collaboration & Communication",
+        "level": "Intermediate",
+        "summary": "Develop strong communication skills to effectively collaborate with cross-functional teams and stakeholders, leading to better project outcomes.",
+        "practice_points": [
+          "Conduct 2 workshops on active listening and empathy in UX design, focusing on team collaboration (deliverables: workshop notes, participant feedback)",
+          "Create a shared document outlining the importance of clear communication in UX design, including tips for effective messaging (deliverables: document, example use cases)",
+          "Practice facilitating a design review session using the 'Stoplight' method to provide constructive feedback (deliverables: review notes, team feedback)"
+        ]
+      },
+      {
+        "name": "Applying Tesler's Law for Consistent Branding",
+        "pillar": "UI Craft & Visual Design",
+        "level": "Advanced",
+        "summary": "Develop a deep understanding of Tesler's Law to create consistent and recognizable brand identities across digital products.",
+        "practice_points": [
+          "Conduct an analysis of 5 brands that effectively apply Tesler's Law, identifying best practices for implementation (deliverables: annotated screenshots, design notes)",
+          "Create a comprehensive style guide for a hypothetical product using Tesler's Law as the foundation (deliverables: written guide, visual aids)",
+          "Design and implement a consistent typography system across multiple digital products, applying Tesler's Law principles (deliverables: design files, user testing results)"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:47:34.362897"
+}

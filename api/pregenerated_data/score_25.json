@@ -1,0 +1,183 @@
+{
+  "score": 25,
+  "stage": "Explorer",
+  "categories": [
+    {
+      "name": "UX Fundamentals",
+      "score": 28,
+      "maxScore": 100
+    },
+    {
+      "name": "UI Craft & Visual Design",
+      "score": 16,
+      "maxScore": 100
+    },
+    {
+      "name": "User Research & Validation",
+      "score": 22,
+      "maxScore": 100
+    },
+    {
+      "name": "Product Thinking & Strategy",
+      "score": 25,
+      "maxScore": 100
+    },
+    {
+      "name": "Collaboration & Communication",
+      "score": 36,
+      "maxScore": 100
+    }
+  ],
+  "improvement_plan": {
+    "weeks": [
+      {
+        "week": 1,
+        "tasks": [
+          "Create a simple wireframe for a login form using the 10 Usability Heuristics as a guide, focusing on error states (Reference: https://www.nngroup.com/articles/ten-usability-heuristics/). Score improvement target: +5 points in UI Craft & Visual Design",
+          "Conduct a user interview and document 2 pain points related to navigation using the Zeigarnik Effect as a framework. Score improvement target: +5 points in User Research & Validation",
+          "Write a short reflection (100-150 words) on how Occam's Razor can be applied to design decisions, and why it's essential for effective UX. Score improvement target: +3 points in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 2,
+        "tasks": [
+          "Redesign the navigation of your portfolio using the 8-point grid system from Aesthetic-Usability Effect as a reference. Score improvement target: +5 points in UI Craft & Visual Design",
+          "Create a user persona and document 3 user journeys for a hypothetical e-commerce website, focusing on user research validation techniques. Score improvement target: +7 points in User Research & Validation",
+          "Write a short essay (200-250 words) on how the Laws of UX can be applied to design decisions, and provide an example from your own work or a recent project. Score improvement target: +4 points in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 3,
+        "tasks": [
+          "Create a high-fidelity wireframe for a complex feature (e.g., payment processing) using the principles of Occam's Razor to minimize complexity. Score improvement target: +8 points in UI Craft & Visual Design",
+          "Conduct 2 user interviews and document 5 pain points related to usability using the Jobs-to-be-Done framework as a reference. Score improvement target: +9 points in User Research & Validation",
+          "Write a short presentation (5-7 minutes) on how the Zeigarnik Effect can be applied to design decisions, and provide examples from your own work or recent projects. Score improvement target: +6 points in UX Fundamentals"
+        ]
+      },
+      {
+        "week": 4,
+        "tasks": [
+          "Create a comprehensive usability report for a hypothetical website, including heuristics, user research findings, and design recommendations. Score improvement target: +10 points in UI Craft & Visual Design",
+          "Develop a product strategy document outlining the UX goals and objectives for a new feature or product. Score improvement target: +11 points in Product Thinking & Strategy",
+          "Write a final reflection (250-300 words) on your progress, highlighting key takeaways and areas for continued improvement. Score improvement target: +10 points across all categories"
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "readup": "As an Explorer UX designer, you have the unique opportunity to shape the user experience of innovative products and services. By leveraging your skills in user research, visual design, and collaboration, you can drive meaningful change and create products that truly meet the needs of users.",
+    "resources": [
+      {
+        "title": "10 Usability Heuristics for User Interface Design",
+        "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+        "description": "7 10 Usability Heuristics for User Interface Design ================================================= Jakob Nielsen ![](https://media.nngroup.com/medi...",
+        "tags": []
+      },
+      {
+        "title": "Laws of UX",
+        "url": "https://lawsofux.com/",
+        "description": "* [English](https://lawsofux.com/) * [Español](https://lawsofux.com/es/) * [Francais](https://lawsofux.com/fr/) * [عربي](https://lawsofux.com/ar/) * [...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "url": "https://lawsofux.com/aesthetic-usability-effect/",
+        "description": "* [English](https://lawsofux.com/aesthetic-usability-effect/) * [Español](https://lawsofux.com/es/efecto-de-est%C3%A9tica-usabilidad/) * [Francais](ht...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Occam’s Razor",
+        "url": "https://lawsofux.com/occams-razor/",
+        "description": "* [English](https://lawsofux.com/occams-razor/) * [Español](https://lawsofux.com/es/la-navaja-de-occam/) * [Francais](https://lawsofux.com/fr/le-rasoi...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "url": "https://lawsofux.com/zeigarnik-effect/",
+        "description": "* [English](https://lawsofux.com/zeigarnik-effect/) * [Español](https://lawsofux.com/es/efecto-zeigarnik/) * [Francais](https://lawsofux.com/fr/effet-...",
+        "tags": [
+          "heuristics",
+          "principles",
+          "psychology"
+        ]
+      }
+    ]
+  },
+  "deep_dive": {
+    "topics": [
+      {
+        "name": "Understanding Hick's Law and its Application in UX Design",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Hick's Law will help you optimize navigation and reduce cognitive load, leading to a better user experience.",
+        "practice_points": [
+          "Analyze 3 existing websites using Hick's Law and identify areas for improvement (deliverable: written report)",
+          "Design an A/B test to validate the impact of Hick's Law on website navigation (deliverable: test plan and results)",
+          "Create a tutorial or video explaining Hick's Law and its application in UX design (deliverable: published tutorial)"
+        ]
+      },
+      {
+        "name": "Conducting User Research with the Zeigarnik Effect",
+        "pillar": "User Research & Validation",
+        "level": "Beginner/Intermediate",
+        "summary": "Applying the Zeigarnik Effect will help you uncover user motivations and pain points, leading to more effective research methods.",
+        "practice_points": [
+          "Conduct 2 interviews using the Zeigarnik Effect framework and document findings (deliverable: interview notes and insights)",
+          "Create a survey or questionnaire using the Zeigarnik Effect principles (deliverable: published survey)",
+          "Analyze existing user research studies that applied the Zeigarnik Effect (deliverable: written analysis)"
+        ]
+      },
+      {
+        "name": "Applying Occam's Razor to Simplify Design Decisions",
+        "pillar": "UX Fundamentals",
+        "level": "Advanced",
+        "summary": "Mastering Occam's Razor will help you make data-driven design decisions and avoid unnecessary complexity.",
+        "practice_points": [
+          "Analyze 3 existing designs that applied Occam's Razor and identify areas for improvement (deliverable: written report)",
+          "Design an A/B test to validate the impact of Occam's Razor on design decisions (deliverable: test plan and results)",
+          "Create a tutorial or video explaining Occam's Razor and its application in UX design (deliverable: published tutorial)"
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "section_order": [
+      "hero",
+      "stage-readup",
+      "skill-breakdown",
+      "resources",
+      "deep-dive",
+      "improvement-plan",
+      "jobs"
+    ],
+    "section_visibility": {
+      "hero": true,
+      "stage-readup": true,
+      "skill-breakdown": true,
+      "resources": true,
+      "deep-dive": true,
+      "improvement-plan": true,
+      "jobs": true
+    },
+    "content_depth": {
+      "resources": "detailed",
+      "deep-dive": "standard",
+      "improvement-plan": "standard"
+    },
+    "priority_message": "Focus message"
+  },
+  "insights": null,
+  "generated_at": "2025-11-22T18:03:35.604531"
+}
