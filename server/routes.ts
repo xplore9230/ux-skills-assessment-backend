@@ -157,10 +157,14 @@ function buildJobTitle(stage: string): string {
       return "Junior Product Designer";
     case "Practitioner":
       return "Product Designer";
-    case "Emerging Senior":
-      return "Senior Product Designer";
-    case "Strategic Lead":
+    case "Emerging Lead":
       return "Lead Product Designer";
+    case "Strategic Lead - Senior":
+      return "Design Director";
+    case "Strategic Lead - Executive":
+      return "VP of Design";
+    case "Strategic Lead - C-Suite":
+      return "SVP of Design";
     default:
       return "Product Designer";
   }
@@ -502,22 +506,28 @@ const CATEGORY_WHITELIST = getCategories();
 const STAGE_TO_LEVEL: Record<string, ResourceLevel> = {
   Explorer: "explorer",
   Practitioner: "practitioner",
-  "Emerging Senior": "emerging-senior",
-  "Strategic Lead": "strategic-lead",
+  "Emerging Lead": "emerging-senior",
+  "Strategic Lead - Senior": "strategic-lead",
+  "Strategic Lead - Executive": "strategic-lead",
+  "Strategic Lead - C-Suite": "strategic-lead",
 };
 
 const STRETCH_LEVELS: Record<string, ResourceLevel[]> = {
   Explorer: ["practitioner"],
   Practitioner: ["emerging-senior"],
-  "Emerging Senior": ["strategic-lead"],
-  "Strategic Lead": ["strategic-lead"],
+  "Emerging Lead": ["strategic-lead"],
+  "Strategic Lead - Senior": ["strategic-lead"],
+  "Strategic Lead - Executive": ["strategic-lead"],
+  "Strategic Lead - C-Suite": ["strategic-lead"],
 };
 
 const STAGE_FOCUS_CATEGORIES: Record<string, Category[]> = {
   Explorer: ["UX Fundamentals", "Collaboration & Communication"],
   Practitioner: ["UI Craft & Visual Design", "Collaboration & Communication"],
-  "Emerging Senior": ["User Research & Validation", "Product Thinking & Strategy"],
-  "Strategic Lead": ["Collaboration & Communication", "Product Thinking & Strategy"],
+  "Emerging Lead": ["User Research & Validation", "Product Thinking & Strategy"],
+  "Strategic Lead - Senior": ["Collaboration & Communication", "Product Thinking & Strategy"],
+  "Strategic Lead - Executive": ["Collaboration & Communication", "Product Thinking & Strategy"],
+  "Strategic Lead - C-Suite": ["Collaboration & Communication", "Product Thinking & Strategy"],
 };
 
 function getLevelForStage(stage: string): ResourceLevel {

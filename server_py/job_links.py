@@ -8,8 +8,10 @@ def build_job_title(stage: str) -> str:
     stage_map = {
         "Explorer": "Junior Product Designer",
         "Practitioner": "Product Designer",
-        "Emerging Senior": "Senior Product Designer",
-        "Strategic Lead": "Lead Product Designer"
+        "Emerging Lead": "Lead Product Designer",
+        "Strategic Lead - Senior": "Design Director",
+        "Strategic Lead - Executive": "VP of Design",
+        "Strategic Lead - C-Suite": "SVP of Design"
     }
     return stage_map.get(stage, "Product Designer")
 

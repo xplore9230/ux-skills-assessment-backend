@@ -20,16 +20,20 @@ CATEGORIES = [
 def get_stage_from_score(score: int) -> str:
     """
     Determine career stage based on total score.
-    Matches the logic in client/src/lib/scoring.ts
+    Matches the logic in client/src/lib/results/scoring.ts
     """
     if score <= 40:
         return "Explorer"
     elif score <= 65:
         return "Practitioner"
-    elif score <= 85:
-        return "Emerging Senior"
+    elif score <= 83:
+        return "Emerging Lead"
+    elif score <= 90:
+        return "Strategic Lead - Senior"
+    elif score <= 95:
+        return "Strategic Lead - Executive"
     else:
-        return "Strategic Lead"
+        return "Strategic Lead - C-Suite"
 
 def generate_category_pattern(total_score: int) -> List[Dict[str, Any]]:
     """
