@@ -363,63 +363,368 @@ function generateImprovementPlan(
     [...week1Resources, ...week2Resources].map(r => r.id)
   );
 
+  // Stage-specific themes and tasks
+  const getStageSpecificPlan = () => {
+    if (stage === "Strategic Lead - C-Suite") {
+      return {
+        week1: {
+          theme: "Organizational Strategy Foundation",
+          practiceLabel: "Strategic analysis",
+          practiceDescription: (category: Category) =>
+            `Analyze how ${category} impacts organizational design maturity and business outcomes at the executive level.`,
+          deepWork: [
+            {
+              title: "Design vision & transformation roadmap",
+              description: "Create a strategic design vision document and transformation roadmap for board-level presentation.",
+            },
+            {
+              title: "Design ROI framework",
+              description: "Develop a framework to measure and communicate design's impact on business metrics at the C-suite level.",
+            },
+          ],
+          expectedOutcome: "Clear strategic design vision aligned with business transformation goals.",
+        },
+        week2: {
+          theme: "Executive Leadership & Influence",
+          practiceLabel: "Executive communication",
+          practiceDescription: (category: Category) =>
+            `Prepare a board-level presentation on ${category} strategy and its business impact.`,
+          deepWork: [
+            {
+              title: "Cross-functional executive alignment",
+              description: "Lead a strategic session with C-suite peers to align design strategy with company-wide initiatives.",
+            },
+            {
+              title: "Design-driven business transformation",
+              description: "Document how design can drive organizational transformation and competitive advantage.",
+            },
+          ],
+          expectedOutcome: "Established design as a strategic business function with executive buy-in.",
+        },
+        week3: {
+          theme: "Design Vision & Organizational Impact",
+          practiceLabel: "Vision articulation",
+          practiceDescription: (category: Category) =>
+            `Articulate how ${category} contributes to the company's long-term design vision and competitive positioning.`,
+          deepWork: [
+            {
+              title: "Board-level design strategy presentation",
+              description: "Create and deliver a comprehensive design strategy presentation to the board or executive team.",
+            },
+            {
+              title: "Design maturity assessment & roadmap",
+              description: "Assess organizational design maturity and create a multi-year roadmap for design excellence.",
+            },
+          ],
+          expectedOutcome: "Design positioned as a core strategic capability driving business transformation.",
+        },
+      };
+    } else if (stage === "Strategic Lead - Executive") {
+      return {
+        week1: {
+          theme: "VP-Level Strategy Foundation",
+          practiceLabel: "Strategic planning",
+          practiceDescription: (category: Category) =>
+            `Develop a VP-level strategy for ${category} that aligns with organizational goals and cross-functional priorities.`,
+          deepWork: [
+            {
+              title: "Design team growth strategy",
+              description: "Create a comprehensive plan for scaling the design team and establishing design excellence standards.",
+            },
+            {
+              title: "Cross-functional partnership framework",
+              description: "Develop a framework for building strategic partnerships with VP-level peers across product, engineering, and business.",
+            },
+          ],
+          expectedOutcome: "Clear VP-level design strategy with cross-functional alignment.",
+        },
+        week2: {
+          theme: "Organizational Influence & Culture Building",
+          practiceLabel: "Organizational influence",
+          practiceDescription: (category: Category) =>
+            `Build influence and alignment around ${category} strategy with VP-level stakeholders across the organization.`,
+          deepWork: [
+            {
+              title: "Design culture at scale",
+              description: "Design and implement initiatives to build design culture across multiple teams and products.",
+            },
+            {
+              title: "Design metrics & impact at scale",
+              description: "Establish metrics and frameworks to measure design impact across the organization.",
+            },
+          ],
+          expectedOutcome: "Design culture and influence established at the organizational level.",
+        },
+        week3: {
+          theme: "Strategic Execution & Scale",
+          practiceLabel: "Strategic execution",
+          practiceDescription: (category: Category) =>
+            `Execute on ${category} strategy with measurable impact and clear communication to executive leadership.`,
+          deepWork: [
+            {
+              title: "Executive design review & presentation",
+              description: "Present design strategy and impact to executive leadership with clear business outcomes.",
+            },
+            {
+              title: "Design team development & scaling plan",
+              description: "Create a comprehensive plan for developing and scaling the design organization.",
+            },
+          ],
+          expectedOutcome: "Design strategy executed with measurable organizational impact.",
+        },
+      };
+    } else if (stage === "Strategic Lead - Senior") {
+      return {
+        week1: {
+          theme: "Design Direction & Team Leadership",
+          practiceLabel: "Design direction",
+          practiceDescription: (category: Category) =>
+            `Establish design direction and standards for ${category} across your team and products.`,
+          deepWork: [
+            {
+              title: "Design system & standards",
+              description: "Lead the creation or evolution of design systems and quality standards for your team.",
+            },
+            {
+              title: "Team development & mentoring",
+              description: "Create a development plan for your design team and establish mentoring relationships.",
+            },
+          ],
+          expectedOutcome: "Clear design direction and team development framework established.",
+        },
+        week2: {
+          theme: "Process Excellence & Quality Standards",
+          practiceLabel: "Process improvement",
+          practiceDescription: (category: Category) =>
+            `Improve design processes and quality standards for ${category} work across your team.`,
+          deepWork: [
+            {
+              title: "Design process optimization",
+              description: "Audit and optimize design processes to improve quality and efficiency across your team.",
+            },
+            {
+              title: "Design quality framework",
+              description: "Establish a framework for measuring and maintaining design quality at scale.",
+            },
+          ],
+          expectedOutcome: "Design processes and quality standards improved and documented.",
+        },
+        week3: {
+          theme: "Strategic Impact & Visibility",
+          practiceLabel: "Strategic impact",
+          practiceDescription: (category: Category) =>
+            `Demonstrate strategic impact of ${category} work and increase visibility of design's value.`,
+          deepWork: [
+            {
+              title: "Design impact case study",
+              description: "Create a comprehensive case study demonstrating design's impact on business outcomes.",
+            },
+            {
+              title: "Design leadership presentation",
+              description: "Present design strategy and impact to leadership with clear recommendations.",
+            },
+          ],
+          expectedOutcome: "Design impact demonstrated with clear strategic value and visibility.",
+        },
+      };
+    } else if (stage === "Emerging Lead") {
+      return {
+        week1: {
+          theme: "Leadership Transition Foundation",
+          practiceLabel: "Leadership practice",
+          practiceDescription: (category: Category) =>
+            `Practice leading ${category} initiatives and mentoring junior designers.`,
+          deepWork: [
+            {
+              title: "Mentorship & coaching",
+              description: "Establish mentoring relationships and practice coaching junior designers.",
+            },
+            {
+              title: "Strategic thinking exercise",
+              description: "Practice strategic thinking by analyzing product decisions from a business perspective.",
+            },
+          ],
+          expectedOutcome: "Foundation for leadership transition established.",
+        },
+        week2: {
+          theme: "Influence & Product Impact",
+          practiceLabel: "Influence building",
+          practiceDescription: (category: Category) =>
+            `Build influence around ${category} decisions with product and engineering partners.`,
+          deepWork: [
+            {
+              title: "Product strategy influence",
+              description: "Participate in product strategy discussions and influence decisions with design thinking.",
+            },
+            {
+              title: "Cross-functional collaboration",
+              description: "Lead a cross-functional initiative demonstrating design's strategic value.",
+            },
+          ],
+          expectedOutcome: "Increased influence on product decisions and cross-functional collaboration.",
+        },
+        week3: {
+          theme: "Strategic Application & Visibility",
+          practiceLabel: "Strategic application",
+          practiceDescription: (category: Category) =>
+            `Apply strategic thinking to ${category} work and increase visibility of your leadership potential.`,
+          deepWork: [
+            {
+              title: "Strategic design narrative",
+              description: "Create a strategic narrative connecting your design work to business outcomes.",
+            },
+            {
+              title: "Leadership visibility project",
+              description: "Lead a visible project that demonstrates your readiness for senior leadership.",
+            },
+          ],
+          expectedOutcome: "Strategic mindset demonstrated with increased leadership visibility.",
+        },
+      };
+    } else if (stage === "Practitioner") {
+      return {
+        week1: {
+          theme: "Foundation Fix",
+          practiceLabel: "Apply fundamentals",
+          practiceDescription: (category: Category) =>
+            `Create a quick sketch, wireframe, or heuristic checklist focused on ${category} and capture notes in your journal.`,
+          deepWork: [
+            {
+              title: "Mini project sprint",
+              description: "Translate today's readings into a simple redesign or flow walkthrough.",
+            },
+            {
+              title: "Portfolio reflection",
+              description: "Document one clear before/after improvement you can add to a case study.",
+            },
+          ],
+          expectedOutcome: "Solid understanding of foundational concepts and initial practice experience.",
+        },
+        week2: {
+          theme: "Depth & Ownership",
+          practiceLabel: "Critique & iterate",
+          practiceDescription: (category: Category) =>
+            `Run a quick critique of an existing experience in ${category}. Capture 3 insights and 1 experiment you could ship.`,
+          deepWork: [
+            {
+              title: "End-to-end flow audit",
+              description: "Audit a real journey and capture opportunities tied to your focus areas.",
+            },
+            {
+              title: "Research or testing session",
+              description: "Host a short user session or synthesize prior research into actionable chunks.",
+            },
+          ],
+          expectedOutcome: "Clearer craftsmanship, improved documentation habits, and tighter stakeholder alignment.",
+        },
+        week3: {
+          theme: "Strategy & Visibility",
+          practiceLabel: "Share and mentor",
+          practiceDescription: (category: Category) =>
+            `Record a Loom or host a brown-bag to teach one ${category} insight to your team.`,
+          deepWork: [
+            {
+              title: "Strategic narrative",
+              description: "Create a 2-slide story or doc that ties your UX work to business goals.",
+            },
+            {
+              title: "Knowledge share",
+              description: "Package learnings into a blog post, internal doc, or playbook for peers.",
+            },
+          ],
+          expectedOutcome: "Strategic mindset and increased visibility through documented work.",
+        },
+      };
+    } else {
+      // Explorer - default
+      return {
+        week1: {
+          theme: "Foundation Fix",
+          practiceLabel: "Apply fundamentals",
+          practiceDescription: (category: Category) =>
+            `Create a quick sketch, wireframe, or heuristic checklist focused on ${category} and capture notes in your journal.`,
+          deepWork: [
+            {
+              title: "Mini project sprint",
+              description: "Translate today's readings into a simple redesign or flow walkthrough.",
+            },
+            {
+              title: "Portfolio reflection",
+              description: "Document one clear before/after improvement you can add to a case study.",
+            },
+          ],
+          expectedOutcome: "Solid understanding of foundational concepts and initial practice experience.",
+        },
+        week2: {
+          theme: "Depth & Ownership",
+          practiceLabel: "Critique & iterate",
+          practiceDescription: (category: Category) =>
+            `Run a quick critique of an existing experience in ${category}. Capture 3 insights and 1 experiment you could ship.`,
+          deepWork: [
+            {
+              title: "End-to-end flow audit",
+              description: "Audit a real journey and capture opportunities tied to your focus areas.",
+            },
+            {
+              title: "Research or testing session",
+              description: "Host a short user session or synthesize prior research into actionable chunks.",
+            },
+          ],
+          expectedOutcome: "Clearer craftsmanship, improved documentation habits, and tighter stakeholder alignment.",
+        },
+        week3: {
+          theme: "Strategy & Visibility",
+          practiceLabel: "Share and mentor",
+          practiceDescription: (category: Category) =>
+            `Record a Loom or host a brown-bag to teach one ${category} insight to your team.`,
+          deepWork: [
+            {
+              title: "Strategic narrative",
+              description: "Create a 2-slide story or doc that ties your UX work to business goals.",
+            },
+            {
+              title: "Knowledge share",
+              description: "Package learnings into a blog post, internal doc, or playbook for peers.",
+            },
+          ],
+          expectedOutcome: "Strategic mindset and increased visibility through documented work.",
+        },
+      };
+    }
+  };
+
+  const plan = getStageSpecificPlan();
+
   return [
     buildWeekPlan({
       weekNumber: 1,
-      theme: "Foundation Fix",
+      theme: plan.week1.theme,
       focusAreas: focusAreas.slice(0, 2),
       resources: week1Resources,
-      practiceLabel: "Apply fundamentals",
-      practiceDescription: (category) =>
-        `Create a quick sketch, wireframe, or heuristic checklist focused on ${category} and capture notes in your journal.`,
-      deepWork: [
-        {
-          title: "Mini project sprint",
-          description: "Translate today's readings into a simple redesign or flow walkthrough.",
-        },
-        {
-          title: "Portfolio reflection",
-          description: "Document one clear before/after improvement you can add to a case study.",
-        },
-      ],
+      practiceLabel: plan.week1.practiceLabel,
+      practiceDescription: plan.week1.practiceDescription,
+      deepWork: plan.week1.deepWork,
+      expectedOutcome: plan.week1.expectedOutcome,
     }),
     buildWeekPlan({
       weekNumber: 2,
-      theme: "Depth & Ownership",
+      theme: plan.week2.theme,
       focusAreas,
       resources: week2Resources,
-      practiceLabel: "Critique & iterate",
-      practiceDescription: (category) =>
-        `Run a quick critique of an existing experience in ${category}. Capture 3 insights and 1 experiment you could ship.`,
-      deepWork: [
-        {
-          title: "End-to-end flow audit",
-          description: "Audit a real journey and capture opportunities tied to your focus areas.",
-        },
-        {
-          title: "Research or testing session",
-          description: "Host a short user session or synthesize prior research into actionable chunks.",
-        },
-      ],
+      practiceLabel: plan.week2.practiceLabel,
+      practiceDescription: plan.week2.practiceDescription,
+      deepWork: plan.week2.deepWork,
+      expectedOutcome: plan.week2.expectedOutcome,
     }),
     buildWeekPlan({
       weekNumber: 3,
-      theme: "Strategy & Visibility",
+      theme: plan.week3.theme,
       focusAreas,
       resources: week3Resources,
-      practiceLabel: "Share and mentor",
-      practiceDescription: (category) =>
-        `Record a Loom or host a brown-bag to teach one ${category} insight to your team.`,
-      deepWork: [
-        {
-          title: "Strategic narrative",
-          description: "Create a 2-slide story or doc that ties your UX work to business goals.",
-        },
-        {
-          title: "Knowledge share",
-          description: "Package learnings into a blog post, internal doc, or playbook for peers.",
-        },
-      ],
+      practiceLabel: plan.week3.practiceLabel,
+      practiceDescription: plan.week3.practiceDescription,
+      deepWork: plan.week3.deepWork,
+      expectedOutcome: plan.week3.expectedOutcome,
     }),
   ];
 }
@@ -432,6 +737,7 @@ function buildWeekPlan({
   practiceLabel,
   practiceDescription,
   deepWork,
+  expectedOutcome,
 }: {
   weekNumber: number;
   theme: string;
@@ -440,6 +746,7 @@ function buildWeekPlan({
   practiceLabel: string;
   practiceDescription: (category: Category) => string;
   deepWork: Array<{ title: string; description: string }>;
+  expectedOutcome?: string;
 }) {
   const dailyTasks = [
     ...resources.map((resource, idx) => ({
@@ -478,12 +785,13 @@ function buildWeekPlan({
     focusAreas,
     dailyTasks,
     deepWorkTasks,
-    expectedOutcome:
+    expectedOutcome: expectedOutcome || (
       weekNumber === 1
         ? "Solid understanding of foundational concepts and initial practice experience."
         : weekNumber === 2
         ? "Clearer craftsmanship, improved documentation habits, and tighter stakeholder alignment."
-        : "Strategic mindset and increased visibility through documented work.",
+        : "Strategic mindset and increased visibility through documented work."
+    ),
   };
 }
 
@@ -528,6 +836,15 @@ const STAGE_FOCUS_CATEGORIES: Record<string, Category[]> = {
   "Strategic Lead - Senior": ["Collaboration & Communication", "Product Thinking & Strategy"],
   "Strategic Lead - Executive": ["Collaboration & Communication", "Product Thinking & Strategy"],
   "Strategic Lead - C-Suite": ["Collaboration & Communication", "Product Thinking & Strategy"],
+};
+
+const STAGE_DESCRIPTIONS: Record<string, string> = {
+  "Explorer": "Entry-level UX designer learning fundamentals. Focus on building core skills, understanding basic UX principles, and getting hands-on experience with real projects.",
+  "Practitioner": "Mid-level UX designer (including Senior Product Designer). Focus on deepening expertise in specific areas, taking ownership of end-to-end design work, and improving research and craft skills.",
+  "Emerging Lead": "Senior individual contributor transitioning to leadership. Focus on strategic thinking, mentoring others, and learning to influence product decisions beyond just design execution.",
+  "Strategic Lead - Senior": "Design Director/AVP level. Focus on design direction, team leadership, driving design excellence across products, and establishing design processes and standards.",
+  "Strategic Lead - Executive": "VP of Design level. Focus on organizational design strategy, cross-functional influence at the executive level, building design culture at scale, and connecting design to business outcomes.",
+  "Strategic Lead - C-Suite": "SVP/CDO/Chief Design Officer level. Focus on design vision and organizational transformation, board-level presentations, driving design as a strategic business function, and shaping company-wide design strategy.",
 };
 
 function getLevelForStage(stage: string): ResourceLevel {
@@ -1233,18 +1550,30 @@ app.post("/api/v2/deep-insights", async (req, res) => {
     if (isOpenAIConfigured()) {
       const stageCompetencies = await fetchStageCompetencies(stage);
       const skillRelationships = await fetchSkillRelationships(normalizedWeak, normalizedStrong);
+      const stageDescription = STAGE_DESCRIPTIONS[stage] || `Career stage: ${stage}`;
       
       // 3. Prompt OpenAI
       const systemPrompt = `You are a UX career strategist. Select 6 ADVANCED resources that:
       1. Deepen expertise in strong areas
-      2. Are stage-appropriate (e.g., leadership for seniors)
+      2. Are SPECIFICALLY appropriate for "${stage}" level role
       3. Bridge weak to strong areas strategically
       
-      Explain WHY each resource is strategically valuable.
+      CRITICAL: The user is at "${stage}" level. ${stageDescription}
+      
+      Role-Specific Content Requirements:
+      ${stage === "Strategic Lead - C-Suite" ? "- Focus on C-suite level content: organizational transformation, board-level strategy, design vision, design-driven business transformation, executive leadership\n- Resources should address challenges like design ROI at scale, design maturity models, design as competitive advantage\n- Content should be strategic and business-focused, not tactical execution" : ""}
+      ${stage === "Strategic Lead - Executive" ? "- Focus on VP-level content: organizational design strategy, cross-functional executive influence, building design culture at scale\n- Resources should address challenges like design team growth, VP-level partnerships, design metrics at organizational scale\n- Content should emphasize organizational impact and executive leadership" : ""}
+      ${stage === "Strategic Lead - Senior" ? "- Focus on Director/AVP level content: design direction, team leadership, design excellence, design systems\n- Resources should address challenges like leading design teams, establishing processes, design quality standards\n- Content should emphasize team leadership and design direction" : ""}
+      ${stage === "Emerging Lead" ? "- Focus on leadership transition content: strategic thinking, mentoring, influencing product decisions\n- Resources should address challenges like transitioning from IC to leadership, building influence\n- Content should bridge individual contributor and leadership skills" : ""}
+      ${stage === "Practitioner" ? "- Focus on mid-level content: deepening expertise, taking ownership, improving craft\n- Resources should address mid-level challenges and skill development" : ""}
+      ${stage === "Explorer" ? "- Focus on foundational content: building core skills, understanding basics\n- Resources should address beginner-level learning and fundamentals" : ""}
+      
+      Explain WHY each resource is strategically valuable for someone at "${stage}" level.
       Return JSON: { insights: [{ id, whyThisForYou }] }`;
       
       const userPrompt = `
       Stage: ${stage}
+      Stage Description: ${stageDescription}
       Strong Categories: ${normalizedStrong.join(", ")}
       Weak Categories: ${normalizedWeak.join(", ")}
       Candidates: ${JSON.stringify(candidates.map(r => ({ id: r.id, title: r.title, category: r.category, level: r.level, summary: r.summary })))}
@@ -1320,18 +1649,31 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
         });
       }
 
-      const systemPrompt = `You are a UX career coach. Create a 3-week improvement plan.
+      const stageDescription = STAGE_DESCRIPTIONS[stage] || `Career stage: ${stage}`;
+      
+      const systemPrompt = `You are a UX career coach. Create a 3-week improvement plan tailored to the specific role level.
+
+      CRITICAL: The user is at "${stage}" level. ${stageDescription}
+      
+      Role-Specific Expectations:
+      ${stage === "Strategic Lead - C-Suite" ? "- Focus on organizational transformation, board-level strategy, and design vision\n- Tasks should involve executive leadership, company-wide initiatives, and strategic business impact\n- Deep work should address C-suite level challenges like design ROI, organizational design maturity, and design-driven business transformation" : ""}
+      ${stage === "Strategic Lead - Executive" ? "- Focus on VP-level leadership, cross-functional influence, and building design culture\n- Tasks should involve executive collaboration, organizational strategy, and scaling design impact\n- Deep work should address VP-level challenges like design team growth, cross-functional partnerships, and design metrics at scale" : ""}
+      ${stage === "Strategic Lead - Senior" ? "- Focus on design direction, team leadership, and driving design excellence\n- Tasks should involve leading design teams, establishing processes, and mentoring designers\n- Deep work should address director-level challenges like design systems, team development, and design quality standards" : ""}
+      ${stage === "Emerging Lead" ? "- Focus on transitioning from IC to leadership, strategic thinking, and mentoring\n- Tasks should involve taking on leadership responsibilities and influencing product decisions\n- Deep work should address leadership transition challenges" : ""}
+      ${stage === "Practitioner" ? "- Focus on deepening expertise and taking ownership of end-to-end work\n- Tasks should involve improving craft, research skills, and project ownership\n- Deep work should address mid-level challenges" : ""}
+      ${stage === "Explorer" ? "- Focus on building fundamentals and getting hands-on experience\n- Tasks should be foundational and practical\n- Deep work should address beginner-level learning" : ""}
+      
       Structure:
-      - Week 1: Foundational improvements
-      - Week 2: Deepening skills
-      - Week 3: Strategic application
+      - Week 1: Foundational improvements appropriate for ${stage} level
+      - Week 2: Deepening skills relevant to ${stage} role
+      - Week 3: Strategic application aligned with ${stage} responsibilities
       
       For each week provide:
-      - Theme
+      - Theme (should reflect ${stage} level expectations)
       - Focus areas (from their weak categories)
-      - 3 Daily tasks (short, < 1hr)
-      - 2 Deep work sessions (long, > 1.5hr)
-      - Expected outcome
+      - 3 Daily tasks (short, < 1hr, appropriate for ${stage} level)
+      - 2 Deep work sessions (long, > 1.5hr, relevant to ${stage} role)
+      - Expected outcome (should reflect ${stage} level impact)
       
       ${contextString ? "IMPORTANT: Explicitly recommend reading/watching the provided Knowledge Base Resources in the daily tasks." : ""}
       
@@ -1339,6 +1681,7 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
       
       const userPrompt = `
       Stage: ${stage}
+      Stage Description: ${stageDescription}
       Weakest Categories (Focus on these): ${weakCategories?.join(", ")}
       Strongest Categories (Leverage these): ${strongCategories?.join(", ")}
       ${contextString}
