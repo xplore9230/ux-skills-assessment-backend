@@ -1507,11 +1507,14 @@ app.post("/api/v2/resources", async (req, res) => {
     }
     
     // 40% SKILL-BASED: Build score-aware prioritization (SECONDARY)
-    const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => ({
-      name: cat.name,
-      score: cat.score || cat.finalScore || 0,
-      band: cat.band || (cat.score >= 80 ? "Strong" : cat.score >= 40 ? "Needs Work" : "Learn the Basics")
-    })) : [];
+    const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => {
+      const computedScore = cat.score || cat.finalScore || 0;
+      return {
+        name: cat.name,
+        score: computedScore,
+        band: cat.band || (computedScore >= 80 ? "Strong" : computedScore >= 40 ? "Needs Work" : "Learn the Basics")
+      };
+    }) : [];
     
     // Find weakest categories by actual score (for 40% personalization)
     const sortedByScore = [...categoryScores].sort((a, b) => a.score - b.score);
@@ -1653,11 +1656,14 @@ app.post("/api/v2/deep-insights", async (req, res) => {
     console.log("[/api/v2/deep-insights] Stretch-level candidates:", candidates.length);
     
     // 30% SKILL-BASED: Build score-aware prioritization (SECONDARY)
-    const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => ({
-      name: cat.name,
-      score: cat.score || cat.finalScore || 0,
-      band: cat.band || (cat.score >= 80 ? "Strong" : cat.score >= 40 ? "Needs Work" : "Learn the Basics")
-    })) : [];
+    const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => {
+      const computedScore = cat.score || cat.finalScore || 0;
+      return {
+        name: cat.name,
+        score: computedScore,
+        band: cat.band || (computedScore >= 80 ? "Strong" : computedScore >= 40 ? "Needs Work" : "Learn the Basics")
+      };
+    }) : [];
     
     // Identify strong/weak by actual scores (for 30% personalization)
     const scoreBasedStrong = categoryScores
@@ -1821,27 +1827,27 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
       
       const systemPrompt = `You are a UX career coach. Create a 3-week improvement plan tailored to the specific role level.
 
-      CRITICAL: The user is at "${stage}" level. ${stageDescription}
+      CRITICAL: The user is at "${normalizedStage}" level. ${stageDescription}
       
       Role-Specific Expectations:
-      ${stage === "Strategic Lead - C-Suite" ? "- Focus on organizational transformation, board-level strategy, and design vision\n- Tasks should involve executive leadership, company-wide initiatives, and strategic business impact\n- Deep work should address C-suite level challenges like design ROI, organizational design maturity, and design-driven business transformation" : ""}
-      ${stage === "Strategic Lead - Executive" ? "- Focus on VP-level leadership, cross-functional influence, and building design culture\n- Tasks should involve executive collaboration, organizational strategy, and scaling design impact\n- Deep work should address VP-level challenges like design team growth, cross-functional partnerships, and design metrics at scale" : ""}
-      ${stage === "Strategic Lead - Senior" ? "- Focus on design direction, team leadership, and driving design excellence\n- Tasks should involve leading design teams, establishing processes, and mentoring designers\n- Deep work should address director-level challenges like design systems, team development, and design quality standards" : ""}
-      ${stage === "Emerging Lead" ? "- Focus on transitioning from IC to leadership, strategic thinking, and mentoring\n- Tasks should involve taking on leadership responsibilities and influencing product decisions\n- Deep work should address leadership transition challenges" : ""}
-      ${stage === "Practitioner" ? "- Focus on deepening expertise and taking ownership of end-to-end work\n- Tasks should involve improving craft, research skills, and project ownership\n- Deep work should address mid-level challenges" : ""}
-      ${stage === "Explorer" ? "- Focus on building fundamentals and getting hands-on experience\n- Tasks should be foundational and practical\n- Deep work should address beginner-level learning" : ""}
+      ${normalizedStage === "Strategic Lead - C-Suite" ? "- Focus on organizational transformation, board-level strategy, and design vision\n- Tasks should involve executive leadership, company-wide initiatives, and strategic business impact\n- Deep work should address C-suite level challenges like design ROI, organizational design maturity, and design-driven business transformation" : ""}
+      ${normalizedStage === "Strategic Lead - Executive" ? "- Focus on VP-level leadership, cross-functional influence, and building design culture\n- Tasks should involve executive collaboration, organizational strategy, and scaling design impact\n- Deep work should address VP-level challenges like design team growth, cross-functional partnerships, and design metrics at scale" : ""}
+      ${normalizedStage === "Strategic Lead - Senior" ? "- Focus on design direction, team leadership, and driving design excellence\n- Tasks should involve leading design teams, establishing processes, and mentoring designers\n- Deep work should address director-level challenges like design systems, team development, and design quality standards" : ""}
+      ${normalizedStage === "Emerging Lead" ? "- Focus on transitioning from IC to leadership, strategic thinking, and mentoring\n- Tasks should involve taking on leadership responsibilities and influencing product decisions\n- Deep work should address leadership transition challenges" : ""}
+      ${normalizedStage === "Practitioner" ? "- Focus on deepening expertise and taking ownership of end-to-end work\n- Tasks should involve improving craft, research skills, and project ownership\n- Deep work should address mid-level challenges" : ""}
+      ${normalizedStage === "Explorer" ? "- Focus on building fundamentals and getting hands-on experience\n- Tasks should be foundational and practical\n- Deep work should address beginner-level learning" : ""}
       
       Structure:
-      - Week 1: Foundational improvements appropriate for ${stage} level
-      - Week 2: Deepening skills relevant to ${stage} role
-      - Week 3: Strategic application aligned with ${stage} responsibilities
+      - Week 1: Foundational improvements appropriate for ${normalizedStage} level
+      - Week 2: Deepening skills relevant to ${normalizedStage} role
+      - Week 3: Strategic application aligned with ${normalizedStage} responsibilities
       
       For each week provide:
-      - Theme (should reflect ${stage} level expectations)
+      - Theme (should reflect ${normalizedStage} level expectations)
       - Focus areas (from their weak categories)
-      - 3 Daily tasks (short, < 1hr, appropriate for ${stage} level)
-      - 2 Deep work sessions (long, > 1.5hr, relevant to ${stage} role)
-      - Expected outcome (should reflect ${stage} level impact)
+      - 3 Daily tasks (short, < 1hr, appropriate for ${normalizedStage} level)
+      - 2 Deep work sessions (long, > 1.5hr, relevant to ${normalizedStage} role)
+      - Expected outcome (should reflect ${normalizedStage} level impact)
       
       ${contextString ? "IMPORTANT: Explicitly recommend reading/watching the provided Knowledge Base Resources in the daily tasks." : ""}
       
