@@ -1581,7 +1581,12 @@ app.post("/api/v2/resources", async (req, res) => {
     // Find weakest categories by actual score (for 40% personalization)
     const sortedByScore = [...categoryScores].sort((a, b) => a.score - b.score);
     const scoreBasedWeakCategories = sortedByScore
-      .filter(cat => cat.score < 60)
+      .filter(cat =>
+        // Treat anything below ~B+ (75%) as a growth/weak area
+        cat.score < 75 ||
+        cat.band === "Needs Work" ||
+        cat.band === "Learn the Basics"
+      )
       .map(cat => cat.name)
       .slice(0, 2);
     
