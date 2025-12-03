@@ -13,16 +13,40 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from ollama_client import (
-    generate_improvement_plan_ollama,
-    generate_resources_ollama,
-    generate_deep_dive_topics_ollama,
-    generate_layout_strategy,
-    generate_category_insights,
-    quick_ollama_check,
-    generate_design_system_improvement_plan,
-    generate_design_system_insights
-)
+# Import Ollama client (optional - not required for Railway)
+try:
+    from ollama_client import (
+        generate_improvement_plan_ollama,
+        generate_resources_ollama,
+        generate_deep_dive_topics_ollama,
+        generate_layout_strategy,
+        generate_category_insights,
+        quick_ollama_check,
+        generate_design_system_improvement_plan,
+        generate_design_system_insights
+    )
+    OLLAMA_AVAILABLE = True
+except ImportError:
+    OLLAMA_AVAILABLE = False
+    # Create stub functions to prevent errors when Ollama is not available
+    def generate_improvement_plan_ollama(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def generate_resources_ollama(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def generate_deep_dive_topics_ollama(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def generate_layout_strategy(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def generate_category_insights(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def quick_ollama_check(*args, **kwargs):
+        return False
+    def generate_design_system_improvement_plan(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    def generate_design_system_insights(*args, **kwargs):
+        raise NotImplementedError("Ollama not available - using OpenAI + RAG instead")
+    print("⚠ Ollama not available (optional - using OpenAI + RAG instead)")
+
 # from generate_design_system_questions import generate_all_design_system_questions
 from job_links import build_job_search_links
 
@@ -381,15 +405,16 @@ def ollama_status():
     Get detailed status of Ollama availability and pregenerated data.
     Returns information about which content generation method is available.
     """
-    from ollama_client import OLLAMA_AVAILABLE as OLLAMA_AVAIL
-    ollama_ready = quick_ollama_check(timeout=2.0)
+    ollama_ready = False
+    if OLLAMA_AVAILABLE:
+        ollama_ready = quick_ollama_check(timeout=2.0)
     
     return {
-        "ollama_available": OLLAMA_AVAIL,
+        "ollama_available": OLLAMA_AVAILABLE,
         "ollama_ready": ollama_ready,
         "pregenerated_available": PREGENERATED_AVAILABLE,
         "use_pregenerated": USE_PREGENERATED,
-        "model_status": "ready" if ollama_ready else ("not_available" if not OLLAMA_AVAIL else "checking")
+        "model_status": "ready" if ollama_ready else ("not_available" if not OLLAMA_AVAILABLE else "checking")
     }
 
 @app.post("/api/generate-design-system-questions")
@@ -438,7 +463,12 @@ def generate_plan(data: AssessmentInput):
                 print(f"✓ Using pre-generated improvement plan for score {data.totalScore}")
                 return pregenerated
         
-        # Fall back to LLM generation
+        # Fall back to LLM generation (only if Ollama available)
+        if not OLLAMA_AVAILABLE:
+            raise HTTPException(
+                status_code=503, 
+                detail="Ollama not available. Please use /api/v2/improvement-plan endpoint with OpenAI + RAG instead."
+            )
         print(f"Generating improvement plan via LLM for score {data.totalScore}")
         categories_dict = [c.model_dump() for c in data.categories]
         return generate_improvement_plan_ollama(
@@ -507,12 +537,14 @@ def generate_resources(data: AssessmentInput):
             })
         
         # Quick check if Ollama is ready for enhancement (non-blocking, < 2s)
-        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_ready = False
+        if OLLAMA_AVAILABLE:
+            ollama_ready = quick_ollama_check(timeout=2.0)
         ollama_available = ollama_ready
         print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         # ENHANCEMENT PATH: Only enhance with AI if Ollama is ready and fast
-        if ollama_ready and formatted_resources:
+        if OLLAMA_AVAILABLE and ollama_ready and formatted_resources:
             try:
                 print(f"⚡ Calling Ollama to generate /api/generate-resources content")
                 # Enhance descriptions with AI in background (non-blocking)
@@ -637,12 +669,14 @@ def generate_deep_dive(data: AssessmentInput):
         categories_dict = [c.model_dump() for c in data.categories]
         
         # Quick check if Ollama is ready
-        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_ready = False
+        if OLLAMA_AVAILABLE:
+            ollama_ready = quick_ollama_check(timeout=2.0)
         ollama_available = ollama_ready
         print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         ai_response = None
-        if ollama_ready:
+        if OLLAMA_AVAILABLE and ollama_ready:
             try:
                 print(f"⚡ Calling Ollama to generate /api/generate-deep-dive content")
                 # Try AI generation with timeout (15s max)
@@ -838,12 +872,14 @@ def generate_layout(data: AssessmentInput):
                 return pregenerated
         
         # Check Ollama availability
-        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_ready = False
+        if OLLAMA_AVAILABLE:
+            ollama_ready = quick_ollama_check(timeout=2.0)
         ollama_available = ollama_ready
         print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         # Fall back to LLM generation
-        if ollama_ready:
+        if OLLAMA_AVAILABLE and ollama_ready:
             try:
                 print(f"⚡ Calling Ollama to generate /api/generate-layout content")
                 categories_dict = [c.model_dump() for c in data.categories]
@@ -1014,13 +1050,15 @@ def generate_insights(data: AssessmentInput):
                 return pregenerated
         
         # Check Ollama availability
-        ollama_ready = quick_ollama_check(timeout=2.0)
+        ollama_ready = False
+        if OLLAMA_AVAILABLE:
+            ollama_ready = quick_ollama_check(timeout=2.0)
         ollama_available = ollama_ready
         print(f"Ollama status: {'ready' if ollama_ready else 'not ready'}")
         
         # Fall back to LLM generation
         insights = []
-        if ollama_ready:
+        if OLLAMA_AVAILABLE and ollama_ready:
             try:
                 print(f"⚡ Calling Ollama to generate /api/generate-category-insights content")
                 categories_dict = [c.model_dump() for c in data.categories]

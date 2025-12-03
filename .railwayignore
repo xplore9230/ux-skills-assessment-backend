@@ -12,5 +12,8 @@ attached_assets/
 .env
 .env.*
 
+# Exclude large pregenerated data directory from Railway builds
+server_py/pregenerated_data/
+
 
 
