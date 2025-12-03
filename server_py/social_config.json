@@ -2,17 +2,102 @@
   "rss_feeds": {
     "youtube_channels": [
       {
-        "id": "UCxxxxxxxx",
-        "name": "Example UX Channel",
-        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxxxxxxxx",
+        "id": "UC7Tizpr9knv6PX-THXVTwpw",
+        "name": "NN/g Nielsen Norman Group",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7Tizpr9knv6PX-THXVTwpw",
         "category": "UX Fundamentals",
+        "level": "practitioner"
+      },
+      {
+        "id": "UCxM6bQ2ZklPOvBRjYlsNdmA",
+        "name": "AJ&Smart",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxM6bQ2ZklPOvBRjYlsNdmA",
+        "category": "Product Strategy & Vision",
+        "level": "practitioner"
+      },
+      {
+        "id": "UCW36aN4O4-bW3gMd1mN1Q0g",
+        "name": "Flux",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCW36aN4O4-bW3gMd1mN1Q0g",
+        "category": "UI Craft & Visual Design",
         "level": "explorer"
+      },
+      {
+        "id": "UCBJycsmduvYEL83R_U4JriQ",
+        "name": "Marques Brownlee (MKBHD)",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBJycsmduvYEL83R_U4JriQ",
+        "category": "Product Strategy & Vision",
+        "level": "practitioner"
+      },
+      {
+        "id": "UC3AicsPlyms0SgZ6sUeZg9w",
+        "name": "The Futur",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3AicsPlyms0SgZ6sUeZg9w",
+        "category": "UI Craft & Visual Design",
+        "level": "practitioner"
+      },
+      {
+        "id": "UCVyRiMvfUNMA1UPlDPsGz8g",
+        "name": "DesignCourse",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVyRiMvfUNMA1UPlDPsGz8g",
+        "category": "UI Craft & Visual Design",
+        "level": "practitioner"
+      },
+      {
+        "id": "UCnmdlBjYjJ7X5Y5qJ2g8nMw",
+        "name": "Will Paterson",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnmdlBjYjJ7X5Y5qJ2g8nMw",
+        "category": "UI Craft & Visual Design",
+        "level": "practitioner"
+      },
+      {
+        "id": "UCvMBqweC8g2WpDgcFdcgDqQ",
+        "name": "UX Mastery",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvMBqweC8g2WpDgcFdcgDqQ",
+        "category": "User Research & Validation",
+        "level": "practitioner"
       }
     ],
     "podcasts": [
       {
-        "name": "Example UX Podcast",
-        "url": "https://example.com/feed.xml",
+        "name": "The UX Podcast",
+        "url": "https://uxpodcast.com/feed/",
+        "category": "User Research & Validation",
+        "level": "practitioner"
+      },
+      {
+        "name": "Design Details",
+        "url": "https://designdetails.fm/rss",
+        "category": "Product Strategy & Vision",
+        "level": "emerging-senior"
+      },
+      {
+        "name": "High Resolution",
+        "url": "https://www.highresolution.design/feed/",
+        "category": "Product Strategy & Vision",
+        "level": "strategic-lead"
+      },
+      {
+        "name": "User Defenders",
+        "url": "https://userdefenders.com/feed/",
+        "category": "User Research & Validation",
+        "level": "practitioner"
+      },
+      {
+        "name": "Smashing Podcast",
+        "url": "https://podcast.smashingmagazine.com/feed.xml",
+        "category": "UI Craft & Visual Design",
+        "level": "practitioner"
+      },
+      {
+        "name": "Design Better",
+        "url": "https://www.aarronwalter.com/podcast/feed.xml",
+        "category": "UI Craft & Visual Design",
+        "level": "emerging-senior"
+      },
+      {
+        "name": "UX Research Geeks",
+        "url": "https://uxresearchgeeks.com/feed/",
         "category": "User Research & Validation",
         "level": "practitioner"
       }
@@ -20,19 +105,20 @@
   },
   "twitter": {
     "api_key": "optional",
-    "search_queries": ["UX design", "user experience"],
+    "search_queries": ["UX design", "user experience", "product design", "design systems", "UI design"],
     "min_engagement": 100
   },
   "google_search": {
-    "queries": ["UX tutorial", "UX podcast", "UX tips"],
+    "queries": [
+      "UI design tutorial",
+      "visual design principles",
+      "design systems tutorial",
+      "user research methods",
+      "usability testing guide",
+      "user interview techniques",
+      "UI color theory",
+      "typography in UI design"
+    ],
     "max_results_per_query": 10
-  },
-  "update_schedule": {
-    "frequency": "weekly",
-    "day": "monday",
-    "time": "09:00"
   }
 }
-
-
-

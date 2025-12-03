@@ -2,6 +2,10 @@
 # This MUST be the first import to ensure numpy is patched before chromadb loads
 import numpy_compat  # noqa: F401
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
 import json
 import os
 from typing import List, Optional, Dict, Any
@@ -1172,6 +1176,30 @@ def rag_skill_relationships(data: RAGSkillRelInput):
     except Exception as e:
         print(f"Error in skill relationships: {e}")
         return {"relationships": []}
+
+class RAGSocialMediaInput(BaseModel):
+    stage: str
+    categories: List[CategoryScore]
+    resource_types: Optional[List[str]] = ["video", "podcast", "tweet"]
+    limit: Optional[int] = 8
+
+@app.post("/api/rag/social-media")
+def rag_social_media(data: RAGSocialMediaInput):
+    """Retrieve social media content (YouTube, podcasts, tweets)."""
+    if not RAG_AVAILABLE:
+        return {"resources": []}
+    try:
+        rag = get_rag_retriever()
+        resources = rag.retrieve_social_media_resources(
+            stage=data.stage,
+            categories=data.categories,
+            resource_types=data.resource_types or ["video", "podcast", "tweet"],
+            limit=data.limit or 8
+        )
+        return {"resources": resources}
+    except Exception as e:
+        print(f"Error in social media retrieval: {e}")
+        return {"resources": []}
 
 
 if __name__ == "__main__":

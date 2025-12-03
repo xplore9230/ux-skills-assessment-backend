@@ -1,0 +1,87 @@
+{
+  "ui_craft_visual_design": [
+    {
+      "source": "nngroup",
+      "urls": [
+        "https://www.nngroup.com/articles/principles-visual-design/",
+        "https://www.nngroup.com/articles/color-enhance-design/",
+        "https://www.nngroup.com/articles/visual-treatments-accessibility/",
+        "https://www.nngroup.com/articles/testing-visual-design/",
+        "https://www.nngroup.com/articles/flat-design/",
+        "https://www.nngroup.com/articles/gestalt-principles/",
+        "https://www.nngroup.com/articles/typography-terms/",
+        "https://www.nngroup.com/articles/visual-hierarchy/",
+        "https://www.nngroup.com/articles/whitespace/",
+        "https://www.nngroup.com/articles/icon-usability/"
+      ]
+    },
+    {
+      "source": "smashing",
+      "urls": [
+        "https://www.smashingmagazine.com/2018/02/comprehensive-guide-ui-design/",
+        "https://www.smashingmagazine.com/2018/05/guide-choosing-colors/",
+        "https://www.smashingmagazine.com/2019/01/design-systems-book/",
+        "https://www.smashingmagazine.com/2020/01/design-systems-consistency/",
+        "https://www.smashingmagazine.com/2021/03/complete-guide-typography/",
+        "https://www.smashingmagazine.com/2022/01/design-tokens-guide/",
+        "https://www.smashingmagazine.com/2023/04/accessibility-design-systems/",
+        "https://www.smashingmagazine.com/2024/01/color-contrast-accessibility/"
+      ]
+    },
+    {
+      "source": "alistapart",
+      "urls": [
+        "https://alistapart.com/article/color-accessibility-workflows/",
+        "https://alistapart.com/article/design-systems/",
+        "https://alistapart.com/article/designing-for-accessibility/",
+        "https://alistapart.com/article/visual-design-principles/"
+      ]
+    }
+  ],
+  "user_research_validation": [
+    {
+      "source": "nngroup",
+      "urls": [
+        "https://www.nngroup.com/articles/which-ux-research-methods/",
+        "https://www.nngroup.com/articles/user-interviews/",
+        "https://www.nngroup.com/articles/usability-testing-101/",
+        "https://www.nngroup.com/articles/survey-best-practices/",
+        "https://www.nngroup.com/articles/surveys-design-cycle/",
+        "https://www.nngroup.com/articles/persona/",
+        "https://www.nngroup.com/articles/card-sorting/",
+        "https://www.nngroup.com/articles/tree-testing/",
+        "https://www.nngroup.com/articles/first-click-testing/",
+        "https://www.nngroup.com/articles/guerrilla-usability-testing/",
+        "https://www.nngroup.com/articles/remote-usability-testing/",
+        "https://www.nngroup.com/articles/quantitative-user-research/",
+        "https://www.nngroup.com/articles/qualitative-research/",
+        "https://www.nngroup.com/articles/user-research-methods/",
+        "https://www.nngroup.com/articles/field-studies/",
+        "https://www.nngroup.com/articles/diary-studies/",
+        "https://www.nngroup.com/articles/contextual-inquiry/",
+        "https://www.nngroup.com/articles/task-analysis/",
+        "https://www.nngroup.com/articles/journey-mapping/",
+        "https://www.nngroup.com/articles/empathy-mapping/"
+      ]
+    },
+    {
+      "source": "smashing",
+      "urls": [
+        "https://www.smashingmagazine.com/2018/01/comprehensive-guide-user-research/",
+        "https://www.smashingmagazine.com/2019/07/user-research-methods/",
+        "https://www.smashingmagazine.com/2020/01/user-research-guide/",
+        "https://www.smashingmagazine.com/2021/06/usability-testing-guide/",
+        "https://www.smashingmagazine.com/2022/03/user-interview-guide/"
+      ]
+    },
+    {
+      "source": "alistapart",
+      "urls": [
+        "https://alistapart.com/article/researching-user-experience/",
+        "https://alistapart.com/article/user-research-methods/",
+        "https://alistapart.com/article/conducting-user-research/"
+      ]
+    }
+  ]
+}
+

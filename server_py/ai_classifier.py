@@ -20,6 +20,10 @@ from typing import Dict, Any, List, Optional
 import os
 import logging
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
 import requests
 import json
 
