@@ -1538,21 +1538,35 @@ app.post("/api/v2/resources", async (req, res) => {
       categoryScores: categoryScores.map(c => `${c.name}: ${c.score}%`)
     });
     
-    // Prioritize candidates: 60% level-matched, 40% skill-prioritized
+    // Prioritize candidates: 60% level-matched, 40% skill-prioritized, with category diversity
     let candidates: Resource[] = [];
     
-    // 40% SKILL-BASED: First add resources from focus categories (weakest by score)
+    // Group stage resources by category for balanced selection
+    const byCategory: Record<string, Resource[]> = {};
+    stageResources.forEach(r => {
+      if (!byCategory[r.category]) byCategory[r.category] = [];
+      byCategory[r.category].push(r);
+    });
+    
+    // 40% SKILL-BASED: Add resources from focus categories (weakest by score)
+    // But limit per category to ensure diversity
     if (focusCategories.length > 0) {
-      const focusMatches = stageResources.filter(r => focusCategories.includes(r.category));
-      candidates.push(...focusMatches);
+      for (const cat of focusCategories) {
+        const catResources = byCategory[cat] || [];
+        // Add up to 3 resources per focus category (to allow for diversity)
+        candidates.push(...catResources.slice(0, 3));
+      }
     }
     
-    // 60% LEVEL-BASED: Then add remaining stage-level resources
-    const candidateIds = new Set(candidates.map(c => c.id));
-    const others = stageResources.filter(r => !candidateIds.has(r.id));
-    candidates.push(...others);
+    // 60% LEVEL-BASED: Add diverse resources from other categories
+    const otherCategories = Object.keys(byCategory).filter(cat => !focusCategories.includes(cat));
+    for (const cat of otherCategories) {
+      // Add up to 2 resources per other category
+      const catResources = byCategory[cat] || [];
+      candidates.push(...catResources.slice(0, 2));
+    }
     
-    // Limit to 15 candidates for AI selection (60% level, 40% skill-weighted)
+    // Limit to 15 candidates for AI selection (ensuring category diversity)
     candidates = candidates.slice(0, 15);
     console.log("[/api/v2/resources] Candidates:", candidates.map(c => c.id));
 
@@ -1564,12 +1578,13 @@ app.post("/api/v2/resources", async (req, res) => {
         const learningPaths = await fetchLearningPaths(focusCategories);
         const stageCompetencies = await fetchStageCompetencies(stage);
         
-        // Prompt emphasizes 60% level, 40% skill scores
+        // Prompt emphasizes 60% level, 40% skill scores, with category diversity
         const systemPrompt = `You are a UX learning advisor. Select the 5 BEST resources for this user.
 
 SELECTION CRITERIA (weighted):
 - 60% PRIMARY: Resources MUST be appropriate for "${stage}" level (${level} level content)
 - 40% SECONDARY: Prioritize resources that address their weakest skill areas based on actual scores (shown below)
+- DIVERSITY: Ensure variety across categories - don't select all resources from the same category. Aim for 2-3 different categories.
 
 Explain WHY each one specifically addresses their gaps while being appropriate for their ${stage} level.
 Return JSON: { resources: [{ id, reasonSelected }] }
@@ -1598,7 +1613,27 @@ Stage Context: ${JSON.stringify(stageCompetencies)}
             }
             return null;
           }).filter(Boolean);
+          
+          // Ensure category diversity: if all resources are from the same category, diversify
+          const selectedCategories = new Set(selectedResources.map((r: any) => r.category));
+          if (selectedCategories.size === 1 && selectedResources.length >= 3) {
+            // Replace 1-2 resources with different categories from candidates
+            const singleCategory = Array.from(selectedCategories)[0];
+            const diverseCandidates = candidates.filter(r => r.category !== singleCategory);
+            const toReplace = Math.min(2, Math.floor(selectedResources.length / 2));
+            for (let i = 0; i < toReplace && diverseCandidates.length > 0; i++) {
+              const replacement = diverseCandidates[i];
+              if (!selectedResources.find((r: any) => r.id === replacement.id)) {
+                selectedResources[i] = {
+                  ...replacement,
+                  reasonSelected: `Recommended to strengthen your ${replacement.category} skills at ${stage} level.`
+                };
+              }
+            }
+          }
+          
           console.log("[/api/v2/resources] AI selected:", selectedResources.length, "resources");
+          console.log("[/api/v2/resources] Categories:", Array.from(new Set(selectedResources.map((r: any) => r.category))));
         } else {
           console.warn("[/api/v2/resources] AI returned no data:", response.error || "Unknown error");
         }
@@ -1618,15 +1653,59 @@ Stage Context: ${JSON.stringify(stageCompetencies)}
       }
       
       // 40% skill-based: Prioritize focus categories first, then others (60% level-based)
+      // Ensure category diversity
       const focusMatches = candidates.filter(r => focusCategories.includes(r.category));
       const others = candidates.filter(r => !focusCategories.includes(r.category));
-      // Select ~2 from focus (40%), ~3 from others (60%)
-      const shuffled = [
-        ...focusMatches.slice(0, 2),
-        ...others.slice(0, 3)
-      ].slice(0, 5);
       
-      selectedResources = shuffled.map(r => ({
+      // Group by category for diversity
+      const byCategory: Record<string, Resource[]> = {};
+      candidates.forEach(r => {
+        if (!byCategory[r.category]) byCategory[r.category] = [];
+        byCategory[r.category].push(r);
+      });
+      
+      // Select diverse resources: prioritize focus categories but ensure variety
+      const selected: Resource[] = [];
+      const usedIds = new Set<string>();
+      
+      // First, add 1-2 from each focus category (up to 2 total)
+      for (const cat of focusCategories) {
+        if (selected.length >= 2) break;
+        const catResources = byCategory[cat] || [];
+        for (const r of catResources) {
+          if (!usedIds.has(r.id) && selected.length < 2) {
+            selected.push(r);
+            usedIds.add(r.id);
+            break;
+          }
+        }
+      }
+      
+      // Then add diverse resources from other categories (up to 5 total)
+      const otherCategories = Object.keys(byCategory).filter(cat => !focusCategories.includes(cat));
+      for (const cat of otherCategories) {
+        if (selected.length >= 5) break;
+        const catResources = byCategory[cat] || [];
+        for (const r of catResources) {
+          if (!usedIds.has(r.id) && selected.length < 5) {
+            selected.push(r);
+            usedIds.add(r.id);
+            break;
+          }
+        }
+      }
+      
+      // Fill remaining slots from any category if needed
+      if (selected.length < 5) {
+        for (const r of candidates) {
+          if (!usedIds.has(r.id) && selected.length < 5) {
+            selected.push(r);
+            usedIds.add(r.id);
+          }
+        }
+      }
+      
+      selectedResources = selected.slice(0, 5).map(r => ({
         ...r,
         reasonSelected: `Recommended to strengthen your ${r.category} skills at ${stage} level.`
       }));
