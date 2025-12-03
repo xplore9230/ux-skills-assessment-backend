@@ -40,9 +40,26 @@ Follow these steps to connect Railway to the new backend repository:
 ### Step 5: Update Environment Variables
 
 Ensure all environment variables are set in Railway:
+
+**Required:**
+- `OPENAI_API_KEY` - Your OpenAI API key (starts with `sk-proj-...`) - **CRITICAL for AI features**
 - `PORT` (auto-set by Railway)
-- `OLLAMA_HOST` (if needed)
-- `USE_PREGENERATED` (optional)
+
+**Optional:**
+- `OLLAMA_HOST` (if using Ollama for local AI)
+- `USE_PREGENERATED` (set to `true` for faster responses)
+- `PYTHON_API_URL` or `RAG_API_URL` (if Node.js needs to call Python backend)
+
+**How to Add Variables:**
+1. Go to Railway Dashboard → Your Service → **Variables** tab
+2. Click **+ New Variable**
+3. Add `OPENAI_API_KEY` with your API key value
+4. Railway will auto-redeploy with the new variable
+
+**To Check if OPENAI_API_KEY is Set:**
+1. Railway Dashboard → Your Service → **Variables** tab
+2. Look for `OPENAI_API_KEY` in the list
+3. If missing, add it using the steps above
 
 ## Verification
 
