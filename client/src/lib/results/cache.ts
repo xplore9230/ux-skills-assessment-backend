@@ -13,6 +13,7 @@ import type {
   SkillAnalysisData,
   CuratedResourcesData,
   DeepInsightsData,
+  ImprovementPlanData,
 } from "./types";
 import { getScoreBucket } from "./scoring";
 
@@ -50,7 +51,8 @@ export type CacheSection =
   | "meaning"
   | "skill-analysis"
   | "resources"
-  | "deep-insights";
+  | "deep-insights"
+  | "improvement-plan";
 
 // ========================================
 // CACHE KEY GENERATION
@@ -306,6 +308,29 @@ export function cacheDeepInsights(
   data: DeepInsightsData
 ): void {
   const key = getCacheKeyForSection(stage, totalScore, "deep-insights");
+  setCache(key, data);
+}
+
+/**
+ * Get cached improvement plan data
+ */
+export function getCachedImprovementPlan(
+  stage: Stage,
+  totalScore: number
+): ImprovementPlanData | null {
+  const key = getCacheKeyForSection(stage, totalScore, "improvement-plan");
+  return getFromCache<ImprovementPlanData>(key);
+}
+
+/**
+ * Cache improvement plan data
+ */
+export function cacheImprovementPlan(
+  stage: Stage,
+  totalScore: number,
+  data: ImprovementPlanData
+): void {
+  const key = getCacheKeyForSection(stage, totalScore, "improvement-plan");
   setCache(key, data);
 }
 

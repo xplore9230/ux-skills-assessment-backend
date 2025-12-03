@@ -176,6 +176,7 @@ export default function PremiumResultsEntry() {
   // Improvement plan hook (AI-generated, lazy loaded)
   const improvementPlanHook = useImprovementPlan({
     stage: results?.stage || "Practitioner",
+    totalScore: results?.totalScore || 0,
     strongCategories: results?.strongestCategories || [],
     weakCategories: results?.weakestCategories || [],
     enabled: hasResults && mainSectionsReady,

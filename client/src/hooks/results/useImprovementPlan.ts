@@ -3,10 +3,14 @@
  * 
  * Fetches AI-generated 3-week improvement plan.
  * This is lazy-loaded after other sections complete.
- * No static fallback - fully AI-generated.
+ * Implements caching to avoid redundant API calls on page reload.
  */
 
 import { useState, useEffect, useCallback } from "react";
+import { 
+  getCachedImprovementPlan, 
+  cacheImprovementPlan 
+} from "@/lib/results/cache";
 import type { 
   Stage, 
   Category, 
@@ -30,6 +34,7 @@ interface UseImprovementPlanResult {
  */
 interface UseImprovementPlanOptions {
   stage: Stage;
+  totalScore: number;
   strongCategories: Category[];
   weakCategories: Category[];
   categories?: CategoryScore[];
@@ -67,13 +72,13 @@ import { generateImprovementPlan } from "@/lib/results/fallback-generators";
 /**
  * Hook for fetching AI-generated improvement plan
  * 
- * Note: This hook does NOT cache because the improvement plan
- * should be freshly generated for each session.
+ * Implements caching to avoid redundant API calls on page reload.
+ * Cache is keyed by stage + totalScore, expires after 24 hours.
  */
 export function useImprovementPlan(
   options: UseImprovementPlanOptions
 ): UseImprovementPlanResult {
-  const { stage, strongCategories, weakCategories, categories, enabled = true } = options;
+  const { stage, totalScore, strongCategories, weakCategories, categories, enabled = true } = options;
   
   const [data, setData] = useState<ImprovementPlanData | null>(null);
   const [status, setStatus] = useState<LoadingState>("idle");
@@ -85,7 +90,15 @@ export function useImprovementPlan(
       return;
     }
     
-    // Fetch from API (no caching for improvement plan)
+    // Check cache first
+    const cached = getCachedImprovementPlan(stage, totalScore);
+    if (cached) {
+      setData(cached);
+      setStatus("success");
+      return;
+    }
+    
+    // Fetch from API
     setStatus("loading");
     setError(null);
     
@@ -97,6 +110,9 @@ export function useImprovementPlan(
       try {
         const result = await fetchImprovementPlan(options);
         clearTimeout(timeoutId);
+        
+        // Cache the result
+        cacheImprovementPlan(stage, totalScore, result);
         
         setData(result);
         setStatus("success");
@@ -114,8 +130,10 @@ export function useImprovementPlan(
       
       setData(fallbackData);
       setStatus("success");
+      
+      // Don't cache fallback data
     }
-  }, [stage, strongCategories, weakCategories, categories, enabled]);
+  }, [stage, totalScore, strongCategories, weakCategories, categories, enabled]);
   
   // Fetch on mount and when dependencies change
   useEffect(() => {
