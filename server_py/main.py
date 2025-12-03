@@ -67,6 +67,139 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Auto-populate vector DB on startup if empty (for Railway ephemeral storage)
+@app.on_event("startup")
+async def startup_populate_vector_db():
+    """
+    Auto-populate vector database on startup if it's empty.
+    This handles Railway's ephemeral filesystem that gets wiped on each deployment.
+    """
+    if not RAG_AVAILABLE:
+        print("⚠ RAG not available, skipping vector DB population")
+        return
+    
+    try:
+        from vector_store import get_vector_store
+        
+        vector_store = get_vector_store()
+        stats = vector_store.get_stats()
+        total_resources = stats.get("unique_resources", 0)
+        
+        if total_resources > 0:
+            print(f"✓ Vector DB already populated with {total_resources} resources")
+            return
+        
+        print("📥 Vector DB is empty, auto-populating from knowledge bank...")
+        
+        # Import knowledge bank resources
+        kb_file = os.path.join(os.path.dirname(__file__), "knowledge_bank_export.json")
+        if not os.path.exists(kb_file):
+            print(f"⚠ Knowledge bank file not found: {kb_file}")
+            return
+        
+        import json
+        from knowledge_base import UXResource, ContentChunker
+        from urllib.parse import urlparse
+        
+        # Load knowledge bank
+        with open(kb_file, 'r', encoding='utf-8') as f:
+            kb_resources = json.load(f)
+        
+        print(f"📖 Loaded {len(kb_resources)} resources from knowledge bank")
+        
+        # Helper functions from import script
+        def level_to_difficulty(level: str) -> str:
+            mapping = {
+                'explorer': 'beginner',
+                'practitioner': 'intermediate',
+                'emerging-senior': 'intermediate',
+                'strategic-lead': 'advanced'
+            }
+            return mapping.get(level, 'beginner')
+        
+        def extract_domain(url: str) -> str:
+            try:
+                parsed = urlparse(url)
+                domain = parsed.netloc.replace('www.', '')
+                return domain
+            except:
+                return ""
+        
+        def knowledge_bank_to_ux_resource(kb_resource: Dict[str, Any]) -> UXResource:
+            url = kb_resource['url']
+            resource_id = UXResource.generate_id(url)
+            
+            kb_type = kb_resource.get('type', 'article')
+            resource_type_map = {
+                'article': 'article',
+                'video': 'video',
+                'podcast': 'podcast'
+            }
+            resource_type = resource_type_map.get(kb_type, 'article')
+            
+            content = kb_resource.get('summary', kb_resource.get('title', ''))
+            
+            import re
+            duration = kb_resource.get('duration', '')
+            estimated_read_time = 5  # default
+            if duration:
+                numbers = re.findall(r'\d+', duration)
+                if numbers:
+                    num = int(numbers[0])
+                    if 'min' in duration.lower():
+                        estimated_read_time = num
+                    elif 'hour' in duration.lower() or 'hr' in duration.lower():
+                        estimated_read_time = num * 60
+            
+            return UXResource(
+                id=resource_id,
+                title=kb_resource['title'],
+                url=url,
+                content=content,
+                summary=kb_resource.get('summary', ''),
+                category=kb_resource['category'],
+                resource_type=resource_type,
+                difficulty=level_to_difficulty(kb_resource['level']),
+                tags=kb_resource.get('tags', []),
+                author=kb_resource.get('author', ''),
+                source=extract_domain(url) or kb_resource.get('source', ''),
+                publish_date='',
+                estimated_read_time=estimated_read_time
+            )
+        
+        # Convert and import
+        chunker = ContentChunker(chunk_size=500, overlap=50, min_chunk_size=100)
+        added = 0
+        
+        for kb_res in kb_resources:
+            try:
+                ux_res = knowledge_bank_to_ux_resource(kb_res)
+                
+                if vector_store.resource_exists(ux_res.id):
+                    continue
+                
+                chunks = chunker.create_chunks(ux_res)
+                if not chunks:
+                    continue
+                
+                if vector_store.add_resource(ux_res, chunks):
+                    added += 1
+                    if added % 20 == 0:
+                        print(f"  ✓ Imported {added}/{len(kb_resources)} resources...")
+            except Exception as e:
+                print(f"  ⚠ Error importing {kb_res.get('title', 'unknown')[:50]}...: {e}")
+        
+        print(f"✅ Auto-populated vector DB with {added} resources")
+        
+        # Verify
+        stats = vector_store.get_stats()
+        print(f"✓ Vector DB now has {stats.get('unique_resources', 0)} unique resources")
+        
+    except Exception as e:
+        print(f"⚠ Error auto-populating vector DB: {e}")
+        import traceback
+        traceback.print_exc()
+
 # Load curated resources with retry logic and better error handling
 RESOURCES_FILE = os.path.join(os.path.dirname(__file__), "resources.json")
 
