@@ -10,6 +10,7 @@ import { useState, useEffect, useCallback } from "react";
 import type { 
   Stage, 
   Category, 
+  CategoryScore,
   ImprovementPlanData, 
   LoadingState 
 } from "@/lib/results/types";
@@ -31,6 +32,7 @@ interface UseImprovementPlanOptions {
   stage: Stage;
   strongCategories: Category[];
   weakCategories: Category[];
+  categories?: CategoryScore[];
   enabled?: boolean;
 }
 
@@ -49,6 +51,7 @@ async function fetchImprovementPlan(
       stage: options.stage,
       strongCategories: options.strongCategories,
       weakCategories: options.weakCategories,
+      categories: options.categories,
     }),
   });
   
@@ -70,7 +73,7 @@ import { generateImprovementPlan } from "@/lib/results/fallback-generators";
 export function useImprovementPlan(
   options: UseImprovementPlanOptions
 ): UseImprovementPlanResult {
-  const { stage, strongCategories, weakCategories, enabled = true } = options;
+  const { stage, strongCategories, weakCategories, categories, enabled = true } = options;
   
   const [data, setData] = useState<ImprovementPlanData | null>(null);
   const [status, setStatus] = useState<LoadingState>("idle");
@@ -112,7 +115,7 @@ export function useImprovementPlan(
       setData(fallbackData);
       setStatus("success");
     }
-  }, [stage, strongCategories, weakCategories, enabled]);
+  }, [stage, strongCategories, weakCategories, categories, enabled]);
   
   // Fetch on mount and when dependencies change
   useEffect(() => {

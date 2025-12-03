@@ -336,12 +336,20 @@ function generateCategoryInsight(category: any, stage: string): any {
 function generateImprovementPlan(
   stage: string,
   strongCategories: string[] = [],
-  weakCategories: string[] = []
+  weakCategories: string[] = [],
+  categoryScores?: any[]
 ): any[] {
   // Normalize stage name for backward compatibility
   const normalizedStage = stage === "Emerging Senior" ? "Emerging Lead" 
     : stage === "Strategic Lead" ? "Strategic Lead - Executive"
     : stage;
+  
+  // Check if user needs skill building (if categories available)
+  const needsSkillBuilding = Array.isArray(categoryScores) && categoryScores.length > 0
+    ? categoryScores.some((c: any) => 
+        (c.score || 0) < 75 || c.band === "Needs Work" || c.band === "Learn the Basics"
+      )
+    : weakCategories.length > 0; // Conservative: if weakCategories provided, assume needs building
   
   const normalizedWeak = normalizeCategories(weakCategories);
   const normalizedStrong = normalizeCategories(strongCategories);
@@ -533,6 +541,64 @@ function generateImprovementPlan(
         },
       };
     } else if (normalizedStage === "Emerging Lead") {
+      // If user has weak skills, focus on skill building first
+      if (needsSkillBuilding) {
+        return {
+          week1: {
+            theme: "Skill Foundation Building",
+            practiceLabel: "Skill practice",
+            practiceDescription: (category: Category) =>
+              `Focus on building your ${category} skills through hands-on practice and structured learning.`,
+            deepWork: [
+              {
+                title: "Hands-on skill building",
+                description: "Complete 2-3 practical exercises to strengthen your capabilities in your weakest areas.",
+              },
+              {
+                title: "Structured learning project",
+                description: "Apply concepts in a real project with measurable outcomes to demonstrate improvement.",
+              },
+            ],
+            expectedOutcome: "Stronger foundation with measurable skill improvement.",
+          },
+          week2: {
+            theme: "Strategic Application",
+            practiceLabel: "Strategic practice",
+            practiceDescription: (category: Category) =>
+              `Apply your improved ${category} skills in strategic contexts and real-world scenarios.`,
+            deepWork: [
+              {
+                title: "Strategic project application",
+                description: "Lead a project that applies your strengthened skills to solve a strategic problem.",
+              },
+              {
+                title: "Cross-functional collaboration",
+                description: "Collaborate with product and engineering to demonstrate your growing expertise.",
+              },
+            ],
+            expectedOutcome: "Skills applied strategically with visible impact.",
+          },
+          week3: {
+            theme: "Leadership Transition Foundation",
+            practiceLabel: "Leadership practice",
+            practiceDescription: (category: Category) =>
+              `Begin transitioning to leadership by mentoring others in ${category}.`,
+            deepWork: [
+              {
+                title: "Mentorship & coaching",
+                description: "Share your strengthened skills by mentoring junior designers.",
+              },
+              {
+                title: "Strategic thinking exercise",
+                description: "Practice strategic thinking by analyzing product decisions from a business perspective.",
+              },
+            ],
+            expectedOutcome: "Foundation for leadership transition established after skill strengthening.",
+          },
+        };
+      }
+      
+      // Default leadership-focused plan for users with strong skills
       return {
         week1: {
           theme: "Leadership Transition Foundation",
@@ -1405,17 +1471,29 @@ app.post("/api/v2/skill-analysis", async (req, res) => {
       
       let contextString = "";
       if (ragResources.length > 0) {
-        contextString = "\n\nRECOMMENDED RESOURCES (Reference these in checklists where applicable):\n";
+        contextString = "\n\nAVAILABLE RESOURCES:\n";
         ragResources.forEach((res, idx) => {
-          contextString += `- ${res.title}: ${res.content_preview?.substring(0, 100)}...\n`;
+          contextString += `${idx + 1}. "${res.title}" (${res.category}) - ${res.url}\n`;
         });
       }
 
-      const systemPrompt = `You are a senior UX hiring manager. Analyze the user's skill scores and generate specific insights.
-      For each category, provide:
-      1. A 2-sentence description of their current capability level.
-      2. A checklist of 3-5 specific, actionable tasks to improve.
-      ${contextString ? "3. Suggest specific resources from the provided list if they match the category." : ""}
+      const systemPrompt = `You are a senior UX mentor creating personalized action plans.
+
+For each category, analyze:
+- Their EXACT score - what does this specific number mean?
+- Their stage (${stage}) - what are the expectations and growth path?
+- Their band - what's the appropriate challenge level?
+
+Generate:
+1. A 2-sentence description SPECIFIC to their score and ${stage} stage
+2. A checklist of 3-5 HIGHLY SPECIFIC tasks that:
+   - Reference actual resources from the provided list when relevant (use exact titles in quotes)
+   - Are appropriate for ${stage} level (not too basic, not too advanced)
+   - Address the specific gap to the next level (e.g., 67% → 75%)
+   - Include concrete examples and measurable outcomes
+   - Are time-bound when possible (e.g., "this week", "within 2 weeks")
+
+${contextString ? `${contextString}\n\nReference specific resources by title in your tasks. Example: "Read 'User Interviews 101' from NN/g and practice conducting 2 interviews this week."` : ""}
       
       Return valid JSON with an "insights" array.`;
       
@@ -1494,7 +1572,7 @@ app.post("/api/v2/resources", async (req, res) => {
     const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => {
       const computedScore = cat.score || cat.finalScore || 0;
       return {
-        name: cat.name,
+      name: cat.name,
         score: computedScore,
         band: cat.band || (computedScore >= 80 ? "Strong" : computedScore >= 40 ? "Needs Work" : "Learn the Basics")
       };
@@ -1552,6 +1630,35 @@ app.post("/api/v2/resources", async (req, res) => {
           };
           return mappedResource;
         });
+        
+        // Filter by level for progressive learning: 70% current level, 30% stretch
+        const exactLevelMatches = candidates.filter(r => r.level === level);
+        const stretchLevels = getStretchLevelsForStage(stage);
+        const stretchMatches = candidates.filter(r => 
+          stretchLevels.some(stretchLevel => r.level === stretchLevel)
+        );
+        
+        // Progressive learning targets: ~11 current level, ~4 stretch
+        const targetCurrent = Math.ceil(15 * 0.7);
+        const targetStretch = Math.floor(15 * 0.3);
+        
+        console.log(`[/api/v2/resources] Level filtering: ${exactLevelMatches.length} at ${level}, ${stretchMatches.length} stretch (${stretchLevels.join(', ')})`);
+        
+        if (exactLevelMatches.length >= targetCurrent) {
+          // Enough current-level resources, use 70/30 split
+          candidates = [
+            ...exactLevelMatches.slice(0, targetCurrent),
+            ...stretchMatches.slice(0, targetStretch)
+          ];
+        } else {
+          // Not enough current-level, use what we have + stretch to fill
+          candidates = [
+            ...exactLevelMatches,
+            ...stretchMatches.slice(0, 15 - exactLevelMatches.length)
+          ];
+        }
+        
+        console.log(`[/api/v2/resources] After level filtering: ${candidates.length} candidates (${candidates.filter(r => r.level === level).length} current, ${candidates.filter(r => stretchLevels.includes(r.level)).length} stretch)`);
         
         // Group by category for diversity
         const byCategory: Record<string, any[]> = {};
@@ -1617,7 +1724,7 @@ app.post("/api/v2/resources", async (req, res) => {
       
       // 40% SKILL-BASED: Add resources from focus categories (weakest by score)
       // But limit per category to ensure diversity
-      if (focusCategories.length > 0) {
+    if (focusCategories.length > 0) {
         for (const cat of focusCategories) {
           const catResources = byCategory[cat] || [];
           // Add up to 3 resources per focus category (to allow for diversity)
@@ -1634,7 +1741,7 @@ app.post("/api/v2/resources", async (req, res) => {
       }
       
       // Limit to 15 candidates for AI selection (ensuring category diversity)
-      candidates = candidates.slice(0, 15);
+    candidates = candidates.slice(0, 15);
     }
     
     console.log("[/api/v2/resources] Final candidates:", candidates.length, candidates.map(c => c.id));
@@ -1818,7 +1925,7 @@ app.post("/api/v2/deep-insights", async (req, res) => {
     const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => {
       const computedScore = cat.score || cat.finalScore || 0;
       return {
-        name: cat.name,
+      name: cat.name,
         score: computedScore,
         band: cat.band || (computedScore >= 80 ? "Strong" : computedScore >= 40 ? "Needs Work" : "Learn the Basics")
       };
@@ -1959,11 +2066,26 @@ Skill Bridging: ${JSON.stringify(skillRelationships)}
  */
 app.post("/api/v2/improvement-plan", async (req, res) => {
   try {
-    const { stage, strongCategories, weakCategories } = req.body ?? {};
+    const { stage, strongCategories, weakCategories, categories: categoryScores } = req.body ?? {};
+    
+    // Check if user has weak skills (needs building) or strong skills (ready for leadership)
+    const hasWeakSkills = Array.isArray(categoryScores) && categoryScores.some((c: any) => 
+      (c.score || 0) < 75 || c.band === "Needs Work" || c.band === "Learn the Basics"
+    );
+    
+    const skillGapGuidance = hasWeakSkills 
+      ? `CRITICAL: User has weak skills (scores below 75%). Focus Week 1 on BUILDING SKILLS, not leadership. Only introduce leadership/mentorship in Week 3 after skills are strengthened.`
+      : `User has strong skills (scores 75%+). They're ready for leadership transition content.`;
     
     if (isOpenAIConfigured()) {
       // Construct categories for RAG context
-      const categories = [
+      const categories = Array.isArray(categoryScores) && categoryScores.length > 0
+        ? categoryScores.map((c: any) => ({ 
+            name: c.name, 
+            score: c.score || c.finalScore || 0, 
+            maxScore: c.maxScore || 100 
+          }))
+        : [
         ...(strongCategories || []).map((c: string) => ({ name: c, score: 100, maxScore: 100 })),
         ...(weakCategories || []).map((c: string) => ({ name: c, score: 50, maxScore: 100 }))
       ];
@@ -1988,6 +2110,8 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
 
       CRITICAL: The user is at "${normalizedStage}" level. ${stageDescription}
       
+      ${skillGapGuidance}
+      
       Role-Specific Expectations:
       ${normalizedStage === "Strategic Lead - C-Suite" ? "- Focus on organizational transformation, board-level strategy, and design vision\n- Tasks should involve executive leadership, company-wide initiatives, and strategic business impact\n- Deep work should address C-suite level challenges like design ROI, organizational design maturity, and design-driven business transformation" : ""}
       ${normalizedStage === "Strategic Lead - Executive" ? "- Focus on VP-level leadership, cross-functional influence, and building design culture\n- Tasks should involve executive collaboration, organizational strategy, and scaling design impact\n- Deep work should address VP-level challenges like design team growth, cross-functional partnerships, and design metrics at scale" : ""}
@@ -1997,7 +2121,8 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
       ${normalizedStage === "Explorer" ? "- Focus on building fundamentals and getting hands-on experience\n- Tasks should be foundational and practical\n- Deep work should address beginner-level learning" : ""}
       
       Structure:
-      - Week 1: Foundational improvements appropriate for ${normalizedStage} level
+      - Week 1: ${hasWeakSkills ? "Skill Foundation Building" : "Leadership Transition Foundation"} appropriate for ${normalizedStage} level
+        ${hasWeakSkills ? "Focus on hands-on practice, structured learning, and measurable skill improvement" : "Focus on transitioning from IC to leadership"}
       - Week 2: Deepening skills relevant to ${normalizedStage} role
       - Week 3: Strategic application aligned with ${normalizedStage} responsibilities
       
@@ -2045,12 +2170,12 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
     }
     
     // Fallback
-    const weeks = generateImprovementPlan(stage, strongCategories, weakCategories);
+    const weeks = generateImprovementPlan(stage, strongCategories, weakCategories, categoryScores);
     return res.json({ weeks });
   } catch (error) {
     console.error("Error generating improvement plan:", error);
-    const { stage, strongCategories, weakCategories } = req.body ?? {};
-    const weeks = generateImprovementPlan(stage, strongCategories, weakCategories);
+    const { stage, strongCategories, weakCategories, categories: categoryScores } = req.body ?? {};
+    const weeks = generateImprovementPlan(stage, strongCategories, weakCategories, categoryScores);
     return res.json({ weeks });
   }
 });
