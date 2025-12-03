@@ -6,6 +6,8 @@
 
 import { ArrowSquareOut, Clock, BookOpen, Video, Headphones } from "@phosphor-icons/react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { usePremiumAccess } from "@/context/PremiumAccessContext";
+import PaywallEntryOverlay from "@/components/premium/PaywallEntryOverlay";
 import type { CuratedResourcesData, CuratedResource, LoadingState } from "@/lib/results/types";
 
 interface CuratedResourcesProps {
@@ -97,7 +99,10 @@ function ResourceCardSkeleton() {
   );
 }
 
+
 export default function CuratedResources({ data, status }: CuratedResourcesProps) {
+  const { isPremium, openPaywall } = usePremiumAccess();
+  
   // Loading state
   if (status === "loading" || status === "idle") {
     return (
@@ -125,6 +130,11 @@ export default function CuratedResources({ data, status }: CuratedResourcesProps
     return null;
   }
   
+  // Show free resources (2) + locked resources with overlay
+  const freeResources = data.resources.slice(0, 2);
+  const lockedResources = data.resources.slice(2);
+  const showLockedResources = !isPremium && lockedResources.length > 0;
+  
   return (
     <div>
       {/* Section header */}
@@ -139,7 +149,29 @@ export default function CuratedResources({ data, status }: CuratedResourcesProps
       
       {/* Horizontal scroll carousel */}
       <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent">
-        {data.resources.map((resource) => (
+        {/* Free resources */}
+        {freeResources.map((resource) => (
+          <ResourceCard key={resource.id} resource={resource} />
+        ))}
+        
+        {/* Locked resources with blur overlay - show first locked resource with overlay */}
+        {showLockedResources && (
+          <div className="flex-shrink-0 w-72 md:w-80 relative" style={{ minHeight: '280px' }}>
+            <PaywallEntryOverlay
+              unlockType="resources"
+              onClick={() => openPaywall("resources")}
+              size="compact"
+              overlayWidth="w-full"
+              overlayHeight="h-full"
+            >
+              {/* Blurred locked resource behind */}
+              <ResourceCard resource={lockedResources[0]} />
+            </PaywallEntryOverlay>
+          </div>
+        )}
+        
+        {/* Premium: show all resources */}
+        {isPremium && lockedResources.map((resource) => (
           <ResourceCard key={resource.id} resource={resource} />
         ))}
       </div>

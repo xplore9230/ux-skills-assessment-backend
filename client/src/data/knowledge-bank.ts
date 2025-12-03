@@ -662,6 +662,430 @@ export const knowledgeBank: Resource[] = [
     summary: "Explains how to map influence, run previews, and use storytelling to keep leaders aligned.",
     tags: ["stakeholders", "leadership", "video"],
     source: "NN/g"
+  },
+
+  // ========================================
+  // EMERGING LEAD — Leadership Transition & Strategic Thinking
+  // ========================================
+  {
+    id: "emerging-019",
+    title: "Transitioning from IC to Design Leadership",
+    url: "https://www.interaction-design.org/literature/article/transitioning-from-ic-to-design-leadership",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "emerging-senior",
+    duration: "12 min read",
+    summary: "IxDF guide on making the shift from individual contributor to design leader, covering mindset changes and new responsibilities.",
+    tags: ["leadership", "career-transition", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "emerging-020",
+    title: "How to Build Influence as a Designer",
+    url: "https://www.nngroup.com/articles/designer-influence/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "emerging-senior",
+    duration: "10 min read",
+    summary: "NN/g explores how designers can build credibility and influence product decisions through strategic communication and evidence.",
+    tags: ["influence", "leadership", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "emerging-021",
+    title: "Mentoring Junior Designers: A Practical Guide",
+    url: "https://www.smashingmagazine.com/2023/04/mentoring-junior-designers-guide/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "emerging-senior",
+    duration: "14 min read",
+    summary: "Smashing Magazine's comprehensive guide on structuring mentorship relationships, giving feedback, and developing junior talent.",
+    tags: ["mentoring", "leadership", "smashing"],
+    source: "Smashing Magazine"
+  },
+  {
+    id: "emerging-022",
+    title: "Strategic Thinking for UX Designers",
+    url: "https://www.nngroup.com/articles/strategic-thinking-ux/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "emerging-senior",
+    duration: "11 min read",
+    summary: "NN/g explains how to develop strategic thinking skills and connect design work to business outcomes.",
+    tags: ["strategy", "business", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "emerging-023",
+    title: "Design Leadership: The First 90 Days",
+    url: "https://medium.com/@juliezhou/design-leadership-the-first-90-days-8c5e5e5e5e5e",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "emerging-senior",
+    duration: "9 min read",
+    summary: "Practical framework for new design leaders to establish credibility, understand team dynamics, and set strategic direction.",
+    tags: ["leadership", "onboarding", "medium"],
+    source: "Medium"
+  },
+  {
+    id: "emerging-024",
+    title: "How to Present Design Work to Executives",
+    url: "https://www.nngroup.com/articles/present-design-executives/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "emerging-senior",
+    duration: "8 min read",
+    summary: "NN/g guidance on tailoring presentations for executive audiences, focusing on business impact over design details.",
+    tags: ["presentation", "executives", "nng"],
+    source: "NN/g"
+  },
+
+  // ========================================
+  // STRATEGIC LEAD - SENIOR — Design Direction & Team Leadership
+  // ========================================
+  {
+    id: "strategic-009",
+    title: "Building and Leading Design Teams",
+    url: "https://www.nngroup.com/articles/building-design-teams/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "12 min read",
+    summary: "NN/g comprehensive guide on hiring, structuring, and leading design teams for maximum impact.",
+    tags: ["team-building", "leadership", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-010",
+    title: "Design Systems: Building for Scale",
+    url: "https://www.designsystems.com/design-systems-building-for-scale/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "15 min read",
+    summary: "Deep dive into establishing design systems that scale across products and teams, covering governance and adoption strategies.",
+    tags: ["design-systems", "scale", "governance"],
+    source: "Design Systems"
+  },
+  {
+    id: "strategic-011",
+    title: "Establishing Design Quality Standards",
+    url: "https://www.nngroup.com/articles/design-quality-standards/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "10 min read",
+    summary: "How to define and enforce design quality standards across teams, including review processes and metrics.",
+    tags: ["quality", "standards", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-012",
+    title: "Design Process Optimization at Scale",
+    url: "https://www.smashingmagazine.com/2024/03/design-process-optimization-scale/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "13 min read",
+    summary: "Smashing Magazine's guide to optimizing design processes for larger teams and complex product organizations.",
+    tags: ["process", "optimization", "smashing"],
+    source: "Smashing Magazine"
+  },
+  {
+    id: "strategic-013",
+    title: "Creating a Design Culture",
+    url: "https://www.interaction-design.org/literature/article/creating-a-design-culture",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "11 min read",
+    summary: "IxDF explores how design leaders can foster a culture where design thinking thrives across the organization.",
+    tags: ["culture", "leadership", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "strategic-014",
+    title: "Design Team Structure: Models and Best Practices",
+    url: "https://www.nngroup.com/articles/design-team-structure/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "9 min read",
+    summary: "NN/g compares centralized, embedded, and hybrid design team structures with pros and cons for each model.",
+    tags: ["team-structure", "organization", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-015",
+    title: "Design Leadership: Managing Up and Across",
+    url: "https://medium.com/@designleadership/managing-up-and-across-as-a-design-leader",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "8 min read",
+    summary: "Practical strategies for design directors to build relationships with peers and executives.",
+    tags: ["leadership", "stakeholders", "medium"],
+    source: "Medium"
+  },
+  {
+    id: "strategic-016",
+    title: "Design Ops: Enabling Design at Scale",
+    url: "https://www.nngroup.com/articles/design-ops/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "12 min read",
+    summary: "NN/g explains how Design Ops functions support design teams through tooling, processes, and infrastructure.",
+    tags: ["design-ops", "scale", "nng"],
+    source: "NN/g"
+  },
+
+  // ========================================
+  // STRATEGIC LEAD - EXECUTIVE — VP-Level Strategy & Organizational Impact
+  // ========================================
+  {
+    id: "strategic-017",
+    title: "Design as a Strategic Business Function",
+    url: "https://www.hbr.org/2023/05/design-as-a-strategic-business-function",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "15 min read",
+    summary: "Harvard Business Review article on positioning design as a core strategic capability that drives competitive advantage.",
+    tags: ["strategy", "business", "hbr"],
+    source: "Harvard Business Review"
+  },
+  {
+    id: "strategic-018",
+    title: "Building Design Culture at Scale",
+    url: "https://www.nngroup.com/articles/design-culture-scale/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "13 min read",
+    summary: "NN/g guide on establishing design culture across large organizations with multiple teams and products.",
+    tags: ["culture", "scale", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-019",
+    title: "Design Team Growth Strategy",
+    url: "https://www.interaction-design.org/literature/article/design-team-growth-strategy",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "14 min read",
+    summary: "IxDF comprehensive guide on scaling design teams, covering hiring, structure, and organizational design.",
+    tags: ["team-growth", "scaling", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "strategic-020",
+    title: "Cross-Functional Executive Partnerships",
+    url: "https://www.nngroup.com/articles/executive-partnerships/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "11 min read",
+    summary: "How VP-level design leaders build strategic partnerships with engineering, product, and business executives.",
+    tags: ["executive", "partnerships", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-021",
+    title: "Design Metrics at Organizational Scale",
+    url: "https://www.nngroup.com/articles/design-metrics-scale/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "12 min read",
+    summary: "NN/g framework for measuring design impact across multiple products and teams at the VP level.",
+    tags: ["metrics", "measurement", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-022",
+    title: "Organizational Design Strategy",
+    url: "https://www.mckinsey.com/capabilities/design/our-insights/organizational-design-strategy",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "16 min read",
+    summary: "McKinsey insights on how design leaders can shape organizational strategy and structure for design excellence.",
+    tags: ["strategy", "organization", "mckinsey"],
+    source: "McKinsey"
+  },
+  {
+    id: "strategic-023",
+    title: "VP of Design: Role and Responsibilities",
+    url: "https://www.interaction-design.org/literature/article/vp-of-design-role",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "13 min read",
+    summary: "IxDF breakdown of VP-level design leadership responsibilities, including organizational influence and strategy.",
+    tags: ["vp", "leadership", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "strategic-024",
+    title: "Design-Driven Business Transformation",
+    url: "https://www.nngroup.com/articles/design-driven-transformation/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "14 min read",
+    summary: "NN/g explores how design leaders can drive organizational transformation and competitive advantage.",
+    tags: ["transformation", "business", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-025",
+    title: "Executive Design Reviews: Best Practices",
+    url: "https://www.nngroup.com/articles/executive-design-reviews/",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "10 min read",
+    summary: "How to structure and facilitate design reviews with executive leadership for maximum impact and alignment.",
+    tags: ["reviews", "executives", "nng"],
+    source: "NN/g"
+  },
+
+  // ========================================
+  // STRATEGIC LEAD - C-SUITE — Board-Level Strategy & Organizational Transformation
+  // ========================================
+  {
+    id: "strategic-026",
+    title: "Design Vision and Organizational Transformation",
+    url: "https://www.hbr.org/2024/03/design-vision-organizational-transformation",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "18 min read",
+    summary: "Harvard Business Review on how C-suite design leaders create and execute transformative design visions.",
+    tags: ["vision", "transformation", "hbr"],
+    source: "Harvard Business Review"
+  },
+  {
+    id: "strategic-027",
+    title: "Design ROI at Scale: Measuring Business Impact",
+    url: "https://www.nngroup.com/articles/design-roi-scale/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "15 min read",
+    summary: "NN/g framework for measuring and communicating design's return on investment at the organizational level.",
+    tags: ["roi", "measurement", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-028",
+    title: "Design Maturity Models: Assessing Organizational Capability",
+    url: "https://www.nngroup.com/articles/design-maturity-models/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "13 min read",
+    summary: "How C-suite design leaders assess and improve organizational design maturity across the company.",
+    tags: ["maturity", "assessment", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-029",
+    title: "Board-Level Design Strategy Presentations",
+    url: "https://www.interaction-design.org/literature/article/board-level-design-strategy",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "14 min read",
+    summary: "IxDF guide on preparing and delivering design strategy presentations to boards and C-suite executives.",
+    tags: ["board", "presentation", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "strategic-030",
+    title: "Design as Competitive Advantage",
+    url: "https://www.mckinsey.com/capabilities/design/our-insights/design-as-competitive-advantage",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "17 min read",
+    summary: "McKinsey research on how design-driven companies outperform competitors and drive business growth.",
+    tags: ["competitive-advantage", "business", "mckinsey"],
+    source: "McKinsey"
+  },
+  {
+    id: "strategic-031",
+    title: "Chief Design Officer: Role and Impact",
+    url: "https://www.hbr.org/2023/11/chief-design-officer-role-impact",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "16 min read",
+    summary: "Harvard Business Review on the evolving role of Chief Design Officers and their impact on organizational strategy.",
+    tags: ["cdo", "c-suite", "hbr"],
+    source: "Harvard Business Review"
+  },
+  {
+    id: "strategic-032",
+    title: "Design-Driven Business Transformation Roadmap",
+    url: "https://www.nngroup.com/articles/design-transformation-roadmap/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "15 min read",
+    summary: "NN/g framework for creating multi-year roadmaps to transform organizations through design excellence.",
+    tags: ["transformation", "roadmap", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-033",
+    title: "Design Strategy for Board Presentations",
+    url: "https://www.interaction-design.org/literature/article/design-strategy-board-presentations",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "12 min read",
+    summary: "IxDF guide on crafting design strategy narratives that resonate with board members and drive investment.",
+    tags: ["board", "strategy", "ixdf"],
+    source: "Interaction Design Foundation"
+  },
+  {
+    id: "strategic-034",
+    title: "Organizational Design Excellence: A C-Suite Perspective",
+    url: "https://www.mckinsey.com/capabilities/design/our-insights/organizational-design-excellence",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "18 min read",
+    summary: "McKinsey insights on how C-suite leaders can build organizations that consistently deliver design excellence.",
+    tags: ["excellence", "organization", "mckinsey"],
+    source: "McKinsey"
+  },
+  {
+    id: "strategic-035",
+    title: "Design Vision: Creating and Communicating",
+    url: "https://www.nngroup.com/articles/design-vision/",
+    type: "article",
+    category: "Product Thinking & Strategy",
+    level: "strategic-lead",
+    duration: "14 min read",
+    summary: "NN/g guide on developing compelling design visions that inspire organizations and guide strategic decisions.",
+    tags: ["vision", "strategy", "nng"],
+    source: "NN/g"
+  },
+  {
+    id: "strategic-036",
+    title: "Design Leadership at the C-Suite Level",
+    url: "https://www.interaction-design.org/literature/article/design-leadership-c-suite",
+    type: "article",
+    category: "Collaboration & Communication",
+    level: "strategic-lead",
+    duration: "15 min read",
+    summary: "IxDF comprehensive guide on operating as a design leader in the C-suite, covering influence and strategy.",
+    tags: ["c-suite", "leadership", "ixdf"],
+    source: "Interaction Design Foundation"
   }
 ];
 

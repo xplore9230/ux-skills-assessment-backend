@@ -13,7 +13,7 @@ the existing RAG vector store using the same pipeline as other sources.
 
 from __future__ import annotations
 
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import json
 import os
 import logging
@@ -36,7 +36,7 @@ class ContentAggregator:
     the vector store.
     """
 
-    def __init__(self, config_path: str | None = None) -> None:
+    def __init__(self, config_path: Optional[str] = None) -> None:
         base_dir = os.path.dirname(os.path.abspath(__file__))
         self.config_path = config_path or os.path.join(base_dir, "social_config.json")
         self.config: Dict[str, Any] = self._load_config()
@@ -58,6 +58,20 @@ class ContentAggregator:
             queries=google_cfg.get("queries", []),
             max_results=int(google_cfg.get("max_results_per_query", 10)),
         )
+    
+    def _load_config(self) -> Dict[str, Any]:
+        """
+        Load configuration from social_config.json file.
+        """
+        try:
+            with open(self.config_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logger.warning("Config file not found at %s, using defaults", self.config_path)
+            return {}
+        except json.JSONDecodeError as e:
+            logger.error("Invalid JSON in config file %s: %s", self.config_path, e)
+            return {}
 
     # ------------------------------------------------------------------ #
     # Public entry points

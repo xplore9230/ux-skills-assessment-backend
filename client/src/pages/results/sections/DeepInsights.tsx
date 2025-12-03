@@ -6,6 +6,8 @@
 
 import { ArrowSquareOut, Clock, BookOpen, Video, Headphones } from "@phosphor-icons/react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { usePremiumAccess } from "@/context/PremiumAccessContext";
+import PaywallEntryOverlay from "@/components/premium/PaywallEntryOverlay";
 import type { DeepInsightsData, DeepInsight, LoadingState } from "@/lib/results/types";
 
 interface DeepInsightsProps {
@@ -119,7 +121,10 @@ function InsightCardSkeleton() {
   );
 }
 
+
 export default function DeepInsights({ data, status }: DeepInsightsProps) {
+  const { isPremium, openPaywall } = usePremiumAccess();
+  
   // Loading state
   if (status === "loading" || status === "idle") {
     return (
@@ -147,6 +152,11 @@ export default function DeepInsights({ data, status }: DeepInsightsProps) {
     return null;
   }
   
+  // Show free insights (1) + locked insights with overlay
+  const freeInsights = data.insights.slice(0, 1);
+  const lockedInsights = data.insights.slice(1);
+  const showLockedInsights = !isPremium && lockedInsights.length > 0;
+  
   return (
     <div>
       {/* Section header */}
@@ -161,7 +171,29 @@ export default function DeepInsights({ data, status }: DeepInsightsProps) {
       
       {/* Mixed grid layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-        {data.insights.map((insight) => (
+        {/* Free insights */}
+        {freeInsights.map((insight) => (
+          <InsightCard key={insight.id} insight={insight} />
+        ))}
+        
+        {/* Locked insights with blur overlay - show first locked insight with overlay */}
+        {showLockedInsights && (
+          <div className="relative" style={{ minHeight: '280px' }}>
+            <PaywallEntryOverlay
+              unlockType="resources"
+              onClick={() => openPaywall("resources")}
+              size="compact"
+              overlayWidth="w-full"
+              overlayHeight="h-full"
+            >
+              {/* Blurred locked insight behind */}
+              <InsightCard insight={lockedInsights[0]} />
+            </PaywallEntryOverlay>
+          </div>
+        )}
+        
+        {/* Premium: show all insights */}
+        {isPremium && lockedInsights.map((insight) => (
           <InsightCard key={insight.id} insight={insight} />
         ))}
       </div>

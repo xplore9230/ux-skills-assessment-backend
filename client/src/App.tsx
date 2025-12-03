@@ -5,6 +5,8 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { PremiumAccessProvider, usePremiumAccess } from "@/context/PremiumAccessContext";
+import PaywallModal from "@/components/premium/PaywallModal";
 import LandingPage from "@/pages/landing";
 import QuizWrapper from "@/pages/QuizWrapper";
 import ResultsEntry from "@/pages/results";
@@ -44,28 +46,47 @@ function LandingPageWrapper() {
   return <LandingPage onStart={handleStartQuiz} />;
 }
 
+// Component that uses the context (must be inside PremiumAccessProvider)
+function PaywallModalWrapper() {
+  const { isPaywallOpen, unlockType, closePaywall, startCheckout } = usePremiumAccess();
+  
+  return (
+    <PaywallModal
+      isOpen={isPaywallOpen}
+      unlockType={unlockType}
+      onClose={closePaywall}
+      onConfirm={(type) => {
+        startCheckout();
+      }}
+    />
+  );
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <MotionConfig reducedMotion="user">
           <TooltipProvider>
-            <a
-              href="#main-content"
-              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-foreground focus:text-background focus:rounded-lg focus:font-semibold focus:shadow-lg"
-            >
-              Skip to main content
-            </a>
-            <Toaster />
-            <ConditionalAnalytics />
-            <main id="main-content">
-              <Routes>
-                <Route path="/" element={<LandingPageWrapper />} />
-                <Route path="/quiz" element={<QuizWrapper />} />
-                <Route path="/results" element={<ResultsEntry />} />
-                <Route path="/results/:resultId" element={<ResultsEntry />} />
-              </Routes>
-            </main>
+            <PremiumAccessProvider>
+              <a
+                href="#main-content"
+                className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-foreground focus:text-background focus:rounded-lg focus:font-semibold focus:shadow-lg"
+              >
+                Skip to main content
+              </a>
+              <Toaster />
+              <ConditionalAnalytics />
+              <PaywallModalWrapper />
+              <main id="main-content">
+                <Routes>
+                  <Route path="/" element={<LandingPageWrapper />} />
+                  <Route path="/quiz" element={<QuizWrapper />} />
+                  <Route path="/results" element={<ResultsEntry />} />
+                  <Route path="/results/:resultId" element={<ResultsEntry />} />
+                </Routes>
+              </main>
+            </PremiumAccessProvider>
           </TooltipProvider>
         </MotionConfig>
       </BrowserRouter>

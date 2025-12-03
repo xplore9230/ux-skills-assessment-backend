@@ -15,6 +15,7 @@ import { getAdvancedResources } from "@/lib/knowledge-bank";
 import type { 
   Stage, 
   Category, 
+  CategoryScore,
   DeepInsightsData, 
   DeepInsight,
   LoadingState 
@@ -38,6 +39,7 @@ interface UseDeepInsightsOptions {
   totalScore: number;
   strongCategories: Category[];
   weakCategories: Category[];
+  categories?: CategoryScore[];
   enabled?: boolean;
 }
 
@@ -56,6 +58,7 @@ async function fetchDeepInsightsWithAI(
       stage: options.stage,
       strongCategories: options.strongCategories,
       weakCategories: options.weakCategories,
+      categories: options.categories,
     }),
   });
   

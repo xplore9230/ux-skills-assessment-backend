@@ -9,6 +9,8 @@ import { useState } from "react";
 import { CaretDown, CaretUp, Clock, Target, Lightning } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
+import { usePremiumAccess } from "@/context/PremiumAccessContext";
+import PaywallEntryOverlay from "@/components/premium/PaywallEntryOverlay";
 import type { ImprovementPlanData, PlanWeek, LoadingState } from "@/lib/results/types";
 
 interface ImprovementPlanProps {
@@ -160,6 +162,8 @@ function WeekCardSkeleton() {
 }
 
 export default function ImprovementPlan({ data, status }: ImprovementPlanProps) {
+  const { isPremium, openPaywall } = usePremiumAccess();
+  
   // Loading state
   if (status === "loading") {
     return (
@@ -228,6 +232,10 @@ export default function ImprovementPlan({ data, status }: ImprovementPlanProps) 
     return null;
   }
   
+  // Show first week free, rest require premium
+  const freeWeeks = data.weeks.slice(0, 1);
+  const premiumWeeks = data.weeks.slice(1);
+  
   return (
     <div>
       {/* Section header */}
@@ -242,7 +250,32 @@ export default function ImprovementPlan({ data, status }: ImprovementPlanProps) 
       
       {/* Week cards */}
       <div className="space-y-4">
-        {data.weeks.map((week) => (
+        {/* Free week */}
+        {freeWeeks.map((week) => (
+          <WeekCard key={week.weekNumber} week={week} />
+        ))}
+        
+        {/* Premium weeks with blur overlay */}
+        {!isPremium && premiumWeeks.length > 0 && (
+          <>
+            {premiumWeeks.map((week) => (
+              <div key={week.weekNumber} className="relative">
+                <PaywallEntryOverlay
+                  unlockType="roadmap"
+                  onClick={() => openPaywall("roadmap")}
+                  overlayWidth="w-full"
+                  overlayHeight="h-full"
+                >
+                  {/* Blurred week card behind */}
+                  <WeekCard week={week} />
+                </PaywallEntryOverlay>
+              </div>
+            ))}
+          </>
+        )}
+        
+        {/* Show premium weeks if unlocked */}
+        {isPremium && premiumWeeks.map((week) => (
           <WeekCard key={week.weekNumber} week={week} />
         ))}
       </div>

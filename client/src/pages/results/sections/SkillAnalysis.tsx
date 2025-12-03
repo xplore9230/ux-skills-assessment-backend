@@ -8,6 +8,8 @@ import { useState } from "react";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
+import { usePremiumAccess } from "@/context/PremiumAccessContext";
+import PaywallEntryOverlay from "@/components/premium/PaywallEntryOverlay";
 import { 
   getBandColorClass, 
   getBandBgClass 
@@ -35,10 +37,15 @@ function SkillCard({
   insight?: CategoryInsight; 
   category: CategoryScore;
 }) {
+  const { isPremium, openPaywall } = usePremiumAccess();
   const [isExpanded, setIsExpanded] = useState(false);
   
   const bandColorClass = getBandColorClass(category.band);
   const bandBgClass = getBandBgClass(category.band);
+  
+  // Limit checklist to 1 item for free users
+  const limitedChecklist = isPremium ? insight?.checklist : (insight?.checklist || []).slice(0, 1);
+  const hasMoreItems = insight?.checklist && insight.checklist.length > 1;
   
   return (
     <div className="rounded-xl border border-border/30 bg-card overflow-hidden">
@@ -69,14 +76,14 @@ function SkillCard({
       </div>
       
       {/* Expandable checklist */}
-      {insight && insight.checklist && insight.checklist.length > 0 && (
+      {insight && limitedChecklist && limitedChecklist.length > 0 && (
         <>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className="w-full px-4 md:px-6 py-3 flex items-center justify-between bg-muted/30 hover:bg-muted/50 transition-colors"
           >
             <span className="text-sm font-medium text-foreground">
-              Action Items ({insight.checklist.length})
+              Action Items ({limitedChecklist.length} {!isPremium && hasMoreItems ? `of ${insight.checklist.length}` : ''})
             </span>
             {isExpanded ? (
               <CaretUp size={16} weight="duotone" className="text-muted-foreground" />
@@ -94,12 +101,47 @@ function SkillCard({
                 transition={{ duration: 0.2 }}
                 className="overflow-hidden"
               >
-                <div className="px-4 md:px-6 py-4 space-y-3 border-t border-border">
-                  {insight.checklist.map((item) => (
-                    <div 
-                      key={item.id} 
-                      className="flex items-start gap-3"
-                    >
+                <div className="px-4 md:px-6 py-4 space-y-3 border-t border-border relative">
+                  {/* Free checklist items */}
+                  {limitedChecklist.map((item) => (
+                    <div key={item.id} className="flex items-start gap-3">
+                      <div className="mt-1 h-4 w-4 rounded border border-border flex-shrink-0" />
+                      <span className="text-sm text-foreground">
+                        {item.text}
+                      </span>
+                    </div>
+                  ))}
+                  
+                  {/* Locked checklist items with blur overlay */}
+                  {!isPremium && hasMoreItems && (
+                    <div className="relative pt-2 mt-2" style={{ minHeight: '100px' }}>
+                      <PaywallEntryOverlay
+                        unlockType="todos"
+                        onClick={() => openPaywall("todos")}
+                        size="compact"
+                        overlayWidth="w-full"
+                        overlayHeight="h-full"
+                        titleOverride="Unlock Full Checklist"
+                        bodyOverride={`Get access to ${insight.checklist.length - 1} more action items for ${category.name}`}
+                      >
+                        {/* Blurred locked items behind */}
+                        <div className="space-y-3">
+                          {insight.checklist.slice(1).map((item) => (
+                            <div key={item.id} className="flex items-start gap-3">
+                              <div className="mt-1 h-4 w-4 rounded border border-border flex-shrink-0" />
+                              <span className="text-sm text-foreground">
+                                {item.text}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </PaywallEntryOverlay>
+                    </div>
+                  )}
+                  
+                  {/* Premium: show all items */}
+                  {isPremium && insight.checklist.slice(1).map((item) => (
+                    <div key={item.id} className="flex items-start gap-3">
                       <div className="mt-1 h-4 w-4 rounded border border-border flex-shrink-0" />
                       <span className="text-sm text-foreground">
                         {item.text}

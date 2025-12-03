@@ -4,7 +4,8 @@ Twitter Content Fetcher
 
 This module fetches high‑engagement tweets related to UX/Design using:
 - Twitter API v2 via tweepy (preferred, requires API key)
-- Optional scraping fallback (e.g. snscrape) if no API key is configured
+- Twikit scraper (fallback, no API key required, but requires Python 3.10+)
+  See: https://github.com/d60/twikit
 
 Tweets are normalised into a simple structure which can later be mapped
 to UXResource instances for the RAG knowledge base.
@@ -13,7 +14,7 @@ to UXResource instances for the RAG knowledge base.
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Union
 import logging
 import os
 
@@ -25,6 +26,19 @@ try:
     import tweepy  # type: ignore
 except ImportError:  # pragma: no cover - optional dependency
     tweepy = None  # type: ignore
+
+try:
+    from twikit import Client as TwikitClient  # type: ignore
+    import asyncio
+    TWIKIT_AVAILABLE = True
+except (ImportError, TypeError) as e:  # pragma: no cover - optional dependency
+    # TypeError can occur if twikit requires Python 3.10+ (uses | union syntax)
+    # ImportError occurs if twikit is not installed
+    TwikitClient = None  # type: ignore
+    TWIKIT_AVAILABLE = False
+    if "unsupported operand type" in str(e) or "|" in str(e):
+        logger.warning("TwitterFetcher: twikit requires Python 3.10+ (current: %s). Install Python 3.10+ to use twikit scraper.", 
+                      __import__('sys').version.split()[0])
 
 
 @dataclass
@@ -59,6 +73,9 @@ class TwitterFetcher:
         self.queries = queries or ["UX design", "user experience", "design systems"]
 
         self.client = None
+        self.twikit_client = None
+        
+        # Try Twitter API v2 first (requires bearer token)
         bearer_token = os.getenv("TWITTER_BEARER_TOKEN") or os.getenv(
             "TWITTER_API_BEARER_TOKEN"
         )
@@ -71,23 +88,42 @@ class TwitterFetcher:
                 self.client = None
         else:
             if not tweepy:
-                logger.warning("TwitterFetcher: tweepy not installed; API mode disabled")
+                logger.info("TwitterFetcher: tweepy not installed; will try twikit fallback")
             else:
-                logger.warning("TwitterFetcher: bearer token not configured; API mode disabled")
+                logger.info("TwitterFetcher: bearer token not configured; will try twikit fallback")
+        
+        # Fallback to twikit if no API key (no API key required)
+        if not self.client and TWIKIT_AVAILABLE:
+            try:
+                # Initialize twikit client (will need login credentials if required)
+                # For now, we'll use it without login for public searches
+                self.twikit_client = TwikitClient('en-US')
+                logger.info("TwitterFetcher: Twikit client initialised (no API key required)")
+            except Exception as exc:
+                logger.warning("TwitterFetcher: failed to init twikit client: %s", exc)
+                self.twikit_client = None
+        elif not TWIKIT_AVAILABLE:
+            logger.warning("TwitterFetcher: twikit not installed; install with: pip install twikit")
 
     # Public API ------------------------------------------------------------
 
     def fetch_high_engagement_tweets(self, limit_per_query: int = 20) -> List[TweetItem]:
         """
         Fetch tweets for all configured queries, filtered by engagement score.
+        Uses Twitter API v2 if available, otherwise falls back to twikit scraper.
         """
         items: List[TweetItem] = []
 
         if self.client:
+            # Use Twitter API v2 (requires bearer token)
             for query in self.queries:
                 items.extend(self._fetch_via_api(query, limit_per_query))
+        elif self.twikit_client:
+            # Use twikit scraper (no API key required)
+            for query in self.queries:
+                items.extend(self._fetch_via_twikit(query, limit_per_query))
         else:
-            logger.info("TwitterFetcher: API client unavailable, skipping fetch")
+            logger.warning("TwitterFetcher: No client available (neither API nor twikit), skipping fetch")
 
         # Deduplicate by id
         seen: Dict[str, TweetItem] = {}
@@ -154,6 +190,80 @@ class TwitterFetcher:
                     raw=tweet.data if hasattr(tweet, "data") else {},
                 )
             )
+
+        return items
+
+    def _fetch_via_twikit(self, query: str, limit: int) -> List[TweetItem]:
+        """
+        Fetch tweets via twikit scraper (no API key required).
+        Uses async/await pattern as twikit is async.
+        """
+        if not self.twikit_client:  # pragma: no cover - safety
+            return []
+
+        logger.info("TwitterFetcher: searching tweets via twikit for query '%s'", query)
+        items: List[TweetItem] = []
+
+        try:
+            # Run async search synchronously
+            tweets = asyncio.run(self.twikit_client.search_tweet(query, 'Latest'))
+            
+            if not tweets:
+                return []
+
+            for tweet in tweets[:limit]:
+                try:
+                    # Extract engagement metrics
+                    like_count = getattr(tweet, 'favorite_count', 0) or 0
+                    retweet_count = getattr(tweet, 'retweet_count', 0) or 0
+                    reply_count = getattr(tweet, 'reply_count', 0) or 0
+                    quote_count = getattr(tweet, 'quote_count', 0) or 0
+                    
+                    # Convert to int
+                    like_count = int(like_count) if like_count else 0
+                    retweet_count = int(retweet_count) if retweet_count else 0
+                    reply_count = int(reply_count) if reply_count else 0
+                    quote_count = int(quote_count) if quote_count else 0
+                    
+                    engagement = like_count + retweet_count + reply_count + quote_count
+
+                    if engagement < self.min_engagement:
+                        continue
+
+                    tweet_id = str(getattr(tweet, 'id', ''))
+                    if not tweet_id:
+                        continue
+                    
+                    url = f"https://twitter.com/i/web/status/{tweet_id}"
+                    text = getattr(tweet, 'text', '') or getattr(tweet, 'full_text', '') or ''
+                    author = getattr(tweet, 'user', None)
+                    author_name = getattr(author, 'name', '') or getattr(author, 'screen_name', '') if author else 'Unknown'
+                    created_at = getattr(tweet, 'created_at', '')
+                    if created_at:
+                        created_at = created_at.isoformat() if hasattr(created_at, 'isoformat') else str(created_at)
+
+                    items.append(
+                        TweetItem(
+                            id=tweet_id,
+                            text=text,
+                            url=url,
+                            author=author_name,
+                            like_count=like_count,
+                            retweet_count=retweet_count,
+                            reply_count=reply_count,
+                            quote_count=quote_count,
+                            engagement_score=engagement,
+                            created_at=created_at,
+                            raw={},
+                        )
+                    )
+                except Exception as exc:
+                    logger.warning("TwitterFetcher: Error processing tweet: %s", exc)
+                    continue
+
+        except Exception as exc:  # pragma: no cover - network dependent
+            logger.error("TwitterFetcher: Twikit error for '%s': %s", query, exc)
+            return []
 
         return items
 

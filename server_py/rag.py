@@ -204,6 +204,69 @@ class RAGRetriever:
                     
         # Deduplicate
         return self.vector_store.get_unique_resources(relationships)[:5]
+    
+    def retrieve_social_media_resources(
+        self,
+        stage: str,
+        categories: List[Dict[str, Any]],
+        resource_types: List[str] = None,
+        limit: int = 8
+    ) -> List[Dict[str, Any]]:
+        """
+        Retrieve social media content (YouTube videos, podcasts, tweets) 
+        relevant to the user's stage and categories.
+        
+        Args:
+            stage: User's career stage
+            categories: List of category scores
+            resource_types: List of resource types to filter (video, podcast, tweet)
+            limit: Maximum number of resources to return
+            
+        Returns:
+            List of social media resources
+        """
+        if resource_types is None:
+            resource_types = ["video", "podcast", "tweet"]
+        
+        all_resources = []
+        
+        # Identify weakest categories for personalized content
+        sorted_cats = sorted(
+            categories,
+            key=lambda c: (c.get('score', 0) / c.get('maxScore', 100)) if c.get('maxScore', 0) > 0 else 0
+        )
+        weakest_cats = [c.get('name') for c in sorted_cats[:2]]
+        
+        # Search for social media content in each resource type
+        for resource_type in resource_types:
+            # Build query based on stage and categories
+            if weakest_cats:
+                query = f"{weakest_cats[0]} for {stage} level UX designer"
+            else:
+                query = f"UX design insights for {stage} level"
+            
+            # Search with resource type filter
+            results = self.vector_store.semantic_search(
+                query=query,
+                resource_type=resource_type,
+                top_k=limit // len(resource_types) + 2  # Get a few extra per type
+            )
+            
+            # Deduplicate and add to results
+            unique_results = self.vector_store.get_unique_resources(results)
+            all_resources.extend(unique_results)
+        
+        # Sort by engagement score or view count if available
+        all_resources.sort(
+            key=lambda x: (
+                x.get('metadata', {}).get('engagement_score', 0) or 
+                x.get('metadata', {}).get('view_count', 0)
+            ),
+            reverse=True
+        )
+        
+        # Return top results
+        return all_resources[:limit]
 
 # Singleton instance
 _rag_instance = None

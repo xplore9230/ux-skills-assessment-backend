@@ -1,0 +1,1333 @@
+[
+  {
+    "id": "explorer-001",
+    "title": "Definition of User Experience (NN/g)",
+    "url": "https://www.nngroup.com/articles/definition-user-experience/",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Nielsen Norman Group",
+    "duration": "5 min read",
+    "source": "NN/g",
+    "tags": [
+      "definition",
+      "basics",
+      "nng",
+      "ux"
+    ]
+  },
+  {
+    "id": "explorer-002",
+    "title": "What is UX Design? (IxDF 2025)",
+    "url": "https://www.interaction-design.org/literature/topics/ux-design",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Interaction Design Foundation",
+    "duration": "10 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "introduction",
+      "ixdf",
+      "career",
+      "basics"
+    ]
+  },
+  {
+    "id": "explorer-003",
+    "title": "What Is UX? User Experience Basics (Baymard)",
+    "url": "https://baymard.com/learn/what-is-ux",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Baymard Institute breaks down UX terminology, the relationship to CRO, and how usability testing fits in.",
+    "duration": "7 min read",
+    "source": "Baymard",
+    "tags": [
+      "baymard",
+      "basics",
+      "usability"
+    ]
+  },
+  {
+    "id": "explorer-004",
+    "title": "UX vs UI – What",
+    "url": "https://www.interaction-design.org/literature/article/ux-vs-ui-what-s-the-difference",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Clarifies the responsibilities of UX versus UI design so beginners understand how the roles overlap and diverge.",
+    "duration": "8 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "ux",
+      "ui",
+      "roles",
+      "beginners"
+    ]
+  },
+  {
+    "id": "explorer-005",
+    "title": "A Comprehensive Guide to UX Design (Smashing)",
+    "url": "https://www.smashingmagazine.com/2018/02/comprehensive-guide-user-experience-design/",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Smashing Magazine",
+    "duration": "15 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "ux",
+      "guide",
+      "smashing"
+    ]
+  },
+  {
+    "id": "explorer-006",
+    "title": "Usability 101: Introduction to Usability",
+    "url": "https://www.nngroup.com/articles/usability-101-introduction-to-usability/",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Explains why usability matters, how to measure it, and the core components of user-centered design.",
+    "duration": "6 min read",
+    "source": "NN/g",
+    "tags": [
+      "usability",
+      "beginners",
+      "nng"
+    ]
+  },
+  {
+    "id": "explorer-007",
+    "title": "10 Usability Heuristics Every Designer Should Know",
+    "url": "https://uxdesign.cc/10-usability-heuristics-every-designer-should-know",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "UX Collective",
+    "duration": "9 min read",
+    "source": "UX Collective",
+    "tags": [
+      "heuristics",
+      "principles",
+      "uxcollective"
+    ]
+  },
+  {
+    "id": "explorer-008",
+    "title": "UX Design: How to Get Started (Workshopper)",
+    "url": "https://www.workshopper.com/post/ux-design-how-to-get-started-a-full-guide",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Step-by-step plan covering mindset shifts, study habits, and portfolio tips for brand-new designers.",
+    "duration": "12 min read",
+    "source": "Workshopper",
+    "tags": [
+      "career",
+      "beginners",
+      "workflow"
+    ]
+  },
+  {
+    "id": "explorer-009",
+    "title": "You Are Ready to Become a UX Designer",
+    "url": "https://blog.prototypr.io/you-are-ready-to-become-a-ux-designer-but-dont-know-where-to-start",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "explorer",
+    "summary": "Motivational essay that demystifies impostor syndrome and outlines practical first steps into UX.",
+    "duration": "7 min read",
+    "source": "Prototypr",
+    "tags": [
+      "career",
+      "mindset",
+      "prototypr"
+    ]
+  },
+  {
+    "id": "explorer-010",
+    "title": "Ten Tips for Aspiring Designers (Part 1)",
+    "url": "https://www.smashingmagazine.com/2022/01/ten-tips-aspiring-designer-beginners-part1/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "explorer",
+    "summary": "Smashing Magazine shares actionable advice on feedback, mentorship, and practicing core craft early.",
+    "duration": "10 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "career",
+      "tips",
+      "smashing"
+    ]
+  },
+  {
+    "id": "explorer-011",
+    "title": "Free UX Design Course",
+    "url": "https://www.uxdesigninstitute.com/courses/free-ux-design-course",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "UX Design Institute",
+    "duration": "Self-paced",
+    "source": "UX Design Institute",
+    "tags": [
+      "course",
+      "video",
+      "uxdesigninstitute"
+    ]
+  },
+  {
+    "id": "explorer-012",
+    "title": "3 Underrated Fundamentals of UX",
+    "url": "https://www.appcues.com/blog/ux-fundamentals",
+    "type": "article",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "Appcues highlights journey mapping, expectation setting, and friction reduction as often-missed basics.",
+    "duration": "6 min read",
+    "source": "Appcues",
+    "tags": [
+      "fundamentals",
+      "appcues",
+      "basics"
+    ]
+  },
+  {
+    "id": "explorer-013",
+    "title": "What Is UX Design & Why It",
+    "url": "https://www.youtube.com/watch?v=nWtLbeq0M-o",
+    "type": "video",
+    "category": "UX Fundamentals",
+    "level": "explorer",
+    "summary": "YouTube explainer that frames UX value for stakeholders and shows real-world examples of good and bad flows.",
+    "duration": "9 min video",
+    "source": "YouTube",
+    "tags": [
+      "video",
+      "ux",
+      "basics"
+    ]
+  },
+  {
+    "id": "practitioner-001",
+    "title": "A Comprehensive Guide to UI Design",
+    "url": "https://www.smashingmagazine.com/2018/02/comprehensive-guide-ui-design/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "Smashing Magazine dives into layout, color, and prototyping techniques for designers shipping production work.",
+    "duration": "18 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "ui",
+      "smashing",
+      "patterns"
+    ]
+  },
+  {
+    "id": "practitioner-002",
+    "title": "5 Principles of Visual Design in UX",
+    "url": "https://www.nngroup.com/articles/principles-visual-design/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "NN/g outlines hierarchy, balance, contrast, gestalt, and consistency with examples from modern products.",
+    "duration": "7 min read",
+    "source": "NN/g",
+    "tags": [
+      "visual-design",
+      "principles",
+      "nng"
+    ]
+  },
+  {
+    "id": "practitioner-003",
+    "title": "Using Color to Enhance Your Design",
+    "url": "https://www.nngroup.com/articles/color-enhance-design/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "Explains how to apply color intentionally for call-to-action clarity, state changes, and accessibility.",
+    "duration": "8 min read",
+    "source": "NN/g",
+    "tags": [
+      "color",
+      "visual",
+      "nng"
+    ]
+  },
+  {
+    "id": "practitioner-004",
+    "title": "The UX Designer",
+    "url": "https://medium.com/the-interaction-design-foundation/the-ux-designers-guide-to-typography",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "IxDF covers font pairing, readability, and responsive type scales for product teams.",
+    "duration": "9 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "typography",
+      "ixdf",
+      "ui"
+    ]
+  },
+  {
+    "id": "practitioner-005",
+    "title": "5 Visual Treatments that Improve Accessibility",
+    "url": "https://www.nngroup.com/articles/visual-treatments-accessibility/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "Shows how contrast, outlines, focus states, and motion cues can remove visual barriers for users.",
+    "duration": "6 min read",
+    "source": "NN/g",
+    "tags": [
+      "accessibility",
+      "ui",
+      "nng"
+    ]
+  },
+  {
+    "id": "practitioner-006",
+    "title": "Design Systems: An Overview",
+    "url": "https://uxplanet.org/design-systems-an-overview-243b07534b64",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "practitioner",
+    "summary": "UX Planet explains tokens, governance, and component libraries so designers can partner with engineering.",
+    "duration": "10 min read",
+    "source": "UX Planet",
+    "tags": [
+      "design-systems",
+      "tokens",
+      "uxplanet"
+    ]
+  },
+  {
+    "id": "practitioner-007",
+    "title": "Testing Visual Design",
+    "url": "https://www.nngroup.com/articles/testing-visual-design/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "Guidance on preference tests, desirability studies, and which metrics reveal visual quality.",
+    "duration": "7 min read",
+    "source": "NN/g",
+    "tags": [
+      "testing",
+      "visual",
+      "nng"
+    ]
+  },
+  {
+    "id": "practitioner-008",
+    "title": "Flat Design: Problems & Flat 2.0",
+    "url": "https://www.nngroup.com/articles/flat-design/",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "NN/g dissects why overly minimal interfaces hurt usability and how Flat 2.0 reintroduces helpful cues.",
+    "duration": "9 min read",
+    "source": "NN/g",
+    "tags": [
+      "flat-design",
+      "visual",
+      "nng"
+    ]
+  },
+  {
+    "id": "practitioner-009",
+    "title": "Material 3 Expressive: Building on the Failures of Flat Design",
+    "url": "https://uxdesign.cc/material-3-expressive-building-on-the-failures-of-flat-design-d7a9bb627298",
+    "type": "article",
+    "category": "UI Craft & Visual Design",
+    "level": "practitioner",
+    "summary": "UX Collective analyzes Google",
+    "duration": "8 min read",
+    "source": "UX Collective",
+    "tags": [
+      "material",
+      "design-language",
+      "uxcollective"
+    ]
+  },
+  {
+    "id": "emerging-001",
+    "title": "When to Use Which UX Research Methods",
+    "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Matrix from NN/g that maps generative vs evaluative methods to project constraints.",
+    "duration": "12 min read",
+    "source": "NN/g",
+    "tags": [
+      "research",
+      "methods",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-002",
+    "title": "User Interviews 101",
+    "url": "https://www.nngroup.com/articles/user-interviews/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "How to plan, recruit, script, and synthesize user interviews with fewer biases.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "interviews",
+      "qualitative",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-003",
+    "title": "How Many Users Should You Interview?",
+    "url": "https://blog.ferpection.com/en/how-many-users-should-we-interview",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Ferpection shares sample-size guidance and how to iterate research rounds efficiently.",
+    "duration": "6 min read",
+    "source": "Ferpection",
+    "tags": [
+      "sample-size",
+      "research",
+      "qual"
+    ]
+  },
+  {
+    "id": "emerging-004",
+    "title": "Usability Testing 101",
+    "url": "https://www.nngroup.com/articles/usability-testing-101/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Explains planning, facilitation, note-taking, and reporting steps for lab or remote usability tests.",
+    "duration": "8 min read",
+    "source": "NN/g",
+    "tags": [
+      "usability",
+      "testing",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-005",
+    "title": "What is A/B Testing?",
+    "url": "https://www.interaction-design.org/literature/topics/a-b-testing",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "IxDF overview of experimentation workflows, metrics, and when to use multivariate tests.",
+    "duration": "8 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "experimentation",
+      "ab-testing",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "emerging-006",
+    "title": "Writing Good Survey Questions",
+    "url": "https://www.nngroup.com/articles/survey-best-practices/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Best practices on bias-free wording, Likert design, and screening logic for UX surveys.",
+    "duration": "7 min read",
+    "source": "NN/g",
+    "tags": [
+      "surveys",
+      "quant",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-007",
+    "title": "Running Surveys in the Design Cycle",
+    "url": "https://www.nngroup.com/articles/surveys-design-cycle/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "How to place surveys at discovery, validation, or post-launch phases for stronger evidence.",
+    "duration": "6 min read",
+    "source": "NN/g",
+    "tags": [
+      "surveys",
+      "process",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-008",
+    "title": "Tips on Conducting Guerrilla Usability Testing",
+    "url": "https://uxplanet.org/tips-on-conducting-guerrilla-usability-testing-941b46d2fce6",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "UX Planet walkthrough on recruiting fast, scripting short tasks, and using findings responsibly.",
+    "duration": "7 min read",
+    "source": "UX Planet",
+    "tags": [
+      "guerrilla",
+      "testing",
+      "uxplanet"
+    ]
+  },
+  {
+    "id": "emerging-009",
+    "title": "Personas Make Users Memorable",
+    "url": "https://www.nngroup.com/articles/persona/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Explains persona attributes, storytelling, and pitfalls so teams keep user mental models aligned.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "personas",
+      "story",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-010",
+    "title": "Card Sorting: How to Organize Information",
+    "url": "https://www.interaction-design.org/literature/topics/card-sorting",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "Covers open vs closed sorts, recruiting, and when to pair with tree testing.",
+    "duration": "9 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "ia",
+      "cardsorting",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "emerging-011",
+    "title": "First Click Testing",
+    "url": "https://blog.uxtweak.com/first-click-testing/",
+    "type": "article",
+    "category": "User Research & Validation",
+    "level": "emerging-senior",
+    "summary": "UXtweak explains setup, metrics, and how to interpret first-click success.",
+    "duration": "6 min read",
+    "source": "UXtweak",
+    "tags": [
+      "testing",
+      "navigation",
+      "uxtweak"
+    ]
+  },
+  {
+    "id": "emerging-012",
+    "title": "Why Product Thinking Is the Next Big Thing in UX",
+    "url": "https://medium.com/@jaf_designer/why-product-thinking-is-the-next-big-thing-in-ux-design-ee7de959f3fe",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Shows how UX designers can align problem framing and outcomes with product strategy.",
+    "duration": "8 min read",
+    "source": "Medium",
+    "tags": [
+      "product-thinking",
+      "strategy",
+      "medium"
+    ]
+  },
+  {
+    "id": "emerging-013",
+    "title": "UX Strategy: Definition & Components",
+    "url": "https://www.nngroup.com/articles/ux-strategy/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Breaks down vision, KPIs, prioritization, and sequencing for UX leaders.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "ux-strategy",
+      "roadmap",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-014",
+    "title": "Product & UX Study Guide",
+    "url": "https://www.nngroup.com/articles/product-and-ux-study-guide/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Reading roadmap from NN/g that links business, analytics, and UX craft topics.",
+    "duration": "12 min read",
+    "source": "NN/g",
+    "tags": [
+      "study-guide",
+      "product",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-015",
+    "title": "The Fusion Phenomenon: Product Strategy vs UX Strategy",
+    "url": "https://www.mindtheproduct.com/the-fusion-phenomenon-product-strategy-vs-ux-strategy/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Mind the Product clarifies responsibilities between product managers and UX strategists.",
+    "duration": "10 min read",
+    "source": "Mind the Product",
+    "tags": [
+      "strategy",
+      "mindtheproduct",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "emerging-016",
+    "title": "Building a Practical UX Strategy Framework",
+    "url": "https://www.smashingmagazine.com/2025/05/building-practical-ux-strategy-framework/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "2025 Smashing Magazine piece detailing templates for mission, KPIs, and governance.",
+    "duration": "14 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "ux-strategy",
+      "framework",
+      "smashing"
+    ]
+  },
+  {
+    "id": "emerging-017",
+    "title": "UX KPIs",
+    "url": "https://www.interaction-design.org/literature/topics/kpi",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Defines leading and lagging indicators designers can attach to product objectives.",
+    "duration": "7 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "kpi",
+      "metrics",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "emerging-018",
+    "title": "Best UX Metrics & KPIs (2025)",
+    "url": "https://qualaroo.com/blog/measure-user-experience/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "Qualaroo compiles CSAT, SUS, CES, and behavioral metrics with sample dashboards.",
+    "duration": "9 min read",
+    "source": "Qualaroo",
+    "tags": [
+      "metrics",
+      "qualaroo",
+      "measurement"
+    ]
+  },
+  {
+    "id": "emerging-019",
+    "title": "Measuring UX and ROI",
+    "url": "https://rgp.com/2024/06/06/measuring-ux-and-roi/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "RGP explains how to link UX initiatives to revenue, retention, and efficiency gains.",
+    "duration": "8 min read",
+    "source": "RGP",
+    "tags": [
+      "roi",
+      "business",
+      "rgp"
+    ]
+  },
+  {
+    "id": "strategic-001",
+    "title": "Developer–Designer Relationship",
+    "url": "https://www.nngroup.com/articles/developer-designer-relationship/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "NN/g guidance on building trust, shared vocabulary, and smoother handoffs with engineering.",
+    "duration": "8 min read",
+    "source": "NN/g",
+    "tags": [
+      "collaboration",
+      "engineering",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-002",
+    "title": "Why Product Managers Need to Know UX",
+    "url": "https://www.uxdesigninstitute.com/blog/product-manager-ux/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Outlines how PMs and UX leaders share outcomes, experimentation, and empathy work.",
+    "duration": "7 min read",
+    "source": "UX Design Institute",
+    "tags": [
+      "product",
+      "pm",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "strategic-003",
+    "title": "Communication Practices for Increasing UX Maturity",
+    "url": "https://www.nngroup.com/articles/communication-practices/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "Shows how storytelling, demos, and office hours accelerate UX maturity inside enterprises.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "ux-maturity",
+      "communication",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-004",
+    "title": "Evangelizing UX Across an Entire Organization",
+    "url": "https://www.uxmatters.com/mt/archives/2009/03/evangelizing-ux-across-an-entire-organization.php",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "UX Matters article on stakeholder roadshows, toolkits, and governance committees.",
+    "duration": "9 min read",
+    "source": "UX Matters",
+    "tags": [
+      "evangelism",
+      "stakeholders",
+      "uxmatters"
+    ]
+  },
+  {
+    "id": "strategic-005",
+    "title": "Design Critiques: Building a Positive Culture",
+    "url": "https://www.nngroup.com/articles/design-critiques/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "Framework for facilitating critiques so teams share intent, context, and actionable feedback.",
+    "duration": "8 min read",
+    "source": "NN/g",
+    "tags": [
+      "critiques",
+      "culture",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-006",
+    "title": "Using Video Evidence for Stakeholders",
+    "url": "https://www.nngroup.com/videos/video-evidence/",
+    "type": "video",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "NN/g video on how short highlight reels change executive perceptions faster than slide decks.",
+    "duration": "5 min video",
+    "source": "NN/g",
+    "tags": [
+      "video",
+      "stakeholders",
+      "evidence"
+    ]
+  },
+  {
+    "id": "strategic-007",
+    "title": "Facilitating UX Workshops with Stakeholders",
+    "url": "https://www.nngroup.com/videos/ux-workshops-stakeholders/",
+    "type": "video",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "Tips for planning agendas, activities, and follow-ups that keep workshops outcomes-focused.",
+    "duration": "6 min video",
+    "source": "NN/g",
+    "tags": [
+      "workshops",
+      "facilitation",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-008",
+    "title": "UX Stakeholder Engagement 101",
+    "url": "https://www.nngroup.com/videos/ux-stakeholder-engagement-101/",
+    "type": "video",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "Explains how to map influence, run previews, and use storytelling to keep leaders aligned.",
+    "duration": "4 min video",
+    "source": "NN/g",
+    "tags": [
+      "stakeholders",
+      "leadership",
+      "video"
+    ]
+  },
+  {
+    "id": "emerging-019",
+    "title": "Transitioning from IC to Design Leadership",
+    "url": "https://www.interaction-design.org/literature/article/transitioning-from-ic-to-design-leadership",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "emerging-senior",
+    "summary": "IxDF guide on making the shift from individual contributor to design leader, covering mindset changes and new responsibilities.",
+    "duration": "12 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "leadership",
+      "career-transition",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "emerging-020",
+    "title": "How to Build Influence as a Designer",
+    "url": "https://www.nngroup.com/articles/designer-influence/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "emerging-senior",
+    "summary": "NN/g explores how designers can build credibility and influence product decisions through strategic communication and evidence.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "influence",
+      "leadership",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-021",
+    "title": "Mentoring Junior Designers: A Practical Guide",
+    "url": "https://www.smashingmagazine.com/2023/04/mentoring-junior-designers-guide/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "emerging-senior",
+    "summary": "Smashing Magazine",
+    "duration": "14 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "mentoring",
+      "leadership",
+      "smashing"
+    ]
+  },
+  {
+    "id": "emerging-022",
+    "title": "Strategic Thinking for UX Designers",
+    "url": "https://www.nngroup.com/articles/strategic-thinking-ux/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "emerging-senior",
+    "summary": "NN/g explains how to develop strategic thinking skills and connect design work to business outcomes.",
+    "duration": "11 min read",
+    "source": "NN/g",
+    "tags": [
+      "strategy",
+      "business",
+      "nng"
+    ]
+  },
+  {
+    "id": "emerging-023",
+    "title": "Design Leadership: The First 90 Days",
+    "url": "https://medium.com/@juliezhou/design-leadership-the-first-90-days-8c5e5e5e5e5e",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "emerging-senior",
+    "summary": "Practical framework for new design leaders to establish credibility, understand team dynamics, and set strategic direction.",
+    "duration": "9 min read",
+    "source": "Medium",
+    "tags": [
+      "leadership",
+      "onboarding",
+      "medium"
+    ]
+  },
+  {
+    "id": "emerging-024",
+    "title": "How to Present Design Work to Executives",
+    "url": "https://www.nngroup.com/articles/present-design-executives/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "emerging-senior",
+    "summary": "NN/g guidance on tailoring presentations for executive audiences, focusing on business impact over design details.",
+    "duration": "8 min read",
+    "source": "NN/g",
+    "tags": [
+      "presentation",
+      "executives",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-009",
+    "title": "Building and Leading Design Teams",
+    "url": "https://www.nngroup.com/articles/building-design-teams/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "NN/g comprehensive guide on hiring, structuring, and leading design teams for maximum impact.",
+    "duration": "12 min read",
+    "source": "NN/g",
+    "tags": [
+      "team-building",
+      "leadership",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-010",
+    "title": "Design Systems: Building for Scale",
+    "url": "https://www.designsystems.com/design-systems-building-for-scale/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Deep dive into establishing design systems that scale across products and teams, covering governance and adoption strategies.",
+    "duration": "15 min read",
+    "source": "Design Systems",
+    "tags": [
+      "design-systems",
+      "scale",
+      "governance"
+    ]
+  },
+  {
+    "id": "strategic-011",
+    "title": "Establishing Design Quality Standards",
+    "url": "https://www.nngroup.com/articles/design-quality-standards/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "How to define and enforce design quality standards across teams, including review processes and metrics.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "quality",
+      "standards",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-012",
+    "title": "Design Process Optimization at Scale",
+    "url": "https://www.smashingmagazine.com/2024/03/design-process-optimization-scale/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Smashing Magazine",
+    "duration": "13 min read",
+    "source": "Smashing Magazine",
+    "tags": [
+      "process",
+      "optimization",
+      "smashing"
+    ]
+  },
+  {
+    "id": "strategic-013",
+    "title": "Creating a Design Culture",
+    "url": "https://www.interaction-design.org/literature/article/creating-a-design-culture",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF explores how design leaders can foster a culture where design thinking thrives across the organization.",
+    "duration": "11 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "culture",
+      "leadership",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "strategic-014",
+    "title": "Design Team Structure: Models and Best Practices",
+    "url": "https://www.nngroup.com/articles/design-team-structure/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "NN/g compares centralized, embedded, and hybrid design team structures with pros and cons for each model.",
+    "duration": "9 min read",
+    "source": "NN/g",
+    "tags": [
+      "team-structure",
+      "organization",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-015",
+    "title": "Design Leadership: Managing Up and Across",
+    "url": "https://medium.com/@designleadership/managing-up-and-across-as-a-design-leader",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "Practical strategies for design directors to build relationships with peers and executives.",
+    "duration": "8 min read",
+    "source": "Medium",
+    "tags": [
+      "leadership",
+      "stakeholders",
+      "medium"
+    ]
+  },
+  {
+    "id": "strategic-016",
+    "title": "Design Ops: Enabling Design at Scale",
+    "url": "https://www.nngroup.com/articles/design-ops/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g explains how Design Ops functions support design teams through tooling, processes, and infrastructure.",
+    "duration": "12 min read",
+    "source": "NN/g",
+    "tags": [
+      "design-ops",
+      "scale",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-017",
+    "title": "Design as a Strategic Business Function",
+    "url": "https://www.hbr.org/2023/05/design-as-a-strategic-business-function",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Harvard Business Review article on positioning design as a core strategic capability that drives competitive advantage.",
+    "duration": "15 min read",
+    "source": "Harvard Business Review",
+    "tags": [
+      "strategy",
+      "business",
+      "hbr"
+    ]
+  },
+  {
+    "id": "strategic-018",
+    "title": "Building Design Culture at Scale",
+    "url": "https://www.nngroup.com/articles/design-culture-scale/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "NN/g guide on establishing design culture across large organizations with multiple teams and products.",
+    "duration": "13 min read",
+    "source": "NN/g",
+    "tags": [
+      "culture",
+      "scale",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-019",
+    "title": "Design Team Growth Strategy",
+    "url": "https://www.interaction-design.org/literature/article/design-team-growth-strategy",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF comprehensive guide on scaling design teams, covering hiring, structure, and organizational design.",
+    "duration": "14 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "team-growth",
+      "scaling",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "strategic-020",
+    "title": "Cross-Functional Executive Partnerships",
+    "url": "https://www.nngroup.com/articles/executive-partnerships/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "How VP-level design leaders build strategic partnerships with engineering, product, and business executives.",
+    "duration": "11 min read",
+    "source": "NN/g",
+    "tags": [
+      "executive",
+      "partnerships",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-021",
+    "title": "Design Metrics at Organizational Scale",
+    "url": "https://www.nngroup.com/articles/design-metrics-scale/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g framework for measuring design impact across multiple products and teams at the VP level.",
+    "duration": "12 min read",
+    "source": "NN/g",
+    "tags": [
+      "metrics",
+      "measurement",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-022",
+    "title": "Organizational Design Strategy",
+    "url": "https://www.mckinsey.com/capabilities/design/our-insights/organizational-design-strategy",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "McKinsey insights on how design leaders can shape organizational strategy and structure for design excellence.",
+    "duration": "16 min read",
+    "source": "McKinsey",
+    "tags": [
+      "strategy",
+      "organization",
+      "mckinsey"
+    ]
+  },
+  {
+    "id": "strategic-023",
+    "title": "VP of Design: Role and Responsibilities",
+    "url": "https://www.interaction-design.org/literature/article/vp-of-design-role",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF breakdown of VP-level design leadership responsibilities, including organizational influence and strategy.",
+    "duration": "13 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "vp",
+      "leadership",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "strategic-024",
+    "title": "Design-Driven Business Transformation",
+    "url": "https://www.nngroup.com/articles/design-driven-transformation/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g explores how design leaders can drive organizational transformation and competitive advantage.",
+    "duration": "14 min read",
+    "source": "NN/g",
+    "tags": [
+      "transformation",
+      "business",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-025",
+    "title": "Executive Design Reviews: Best Practices",
+    "url": "https://www.nngroup.com/articles/executive-design-reviews/",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "How to structure and facilitate design reviews with executive leadership for maximum impact and alignment.",
+    "duration": "10 min read",
+    "source": "NN/g",
+    "tags": [
+      "reviews",
+      "executives",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-026",
+    "title": "Design Vision and Organizational Transformation",
+    "url": "https://www.hbr.org/2024/03/design-vision-organizational-transformation",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Harvard Business Review on how C-suite design leaders create and execute transformative design visions.",
+    "duration": "18 min read",
+    "source": "Harvard Business Review",
+    "tags": [
+      "vision",
+      "transformation",
+      "hbr"
+    ]
+  },
+  {
+    "id": "strategic-027",
+    "title": "Design ROI at Scale: Measuring Business Impact",
+    "url": "https://www.nngroup.com/articles/design-roi-scale/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g framework for measuring and communicating design",
+    "duration": "15 min read",
+    "source": "NN/g",
+    "tags": [
+      "roi",
+      "measurement",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-028",
+    "title": "Design Maturity Models: Assessing Organizational Capability",
+    "url": "https://www.nngroup.com/articles/design-maturity-models/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "How C-suite design leaders assess and improve organizational design maturity across the company.",
+    "duration": "13 min read",
+    "source": "NN/g",
+    "tags": [
+      "maturity",
+      "assessment",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-029",
+    "title": "Board-Level Design Strategy Presentations",
+    "url": "https://www.interaction-design.org/literature/article/board-level-design-strategy",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF guide on preparing and delivering design strategy presentations to boards and C-suite executives.",
+    "duration": "14 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "board",
+      "presentation",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "strategic-030",
+    "title": "Design as Competitive Advantage",
+    "url": "https://www.mckinsey.com/capabilities/design/our-insights/design-as-competitive-advantage",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "McKinsey research on how design-driven companies outperform competitors and drive business growth.",
+    "duration": "17 min read",
+    "source": "McKinsey",
+    "tags": [
+      "competitive-advantage",
+      "business",
+      "mckinsey"
+    ]
+  },
+  {
+    "id": "strategic-031",
+    "title": "Chief Design Officer: Role and Impact",
+    "url": "https://www.hbr.org/2023/11/chief-design-officer-role-impact",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "Harvard Business Review on the evolving role of Chief Design Officers and their impact on organizational strategy.",
+    "duration": "16 min read",
+    "source": "Harvard Business Review",
+    "tags": [
+      "cdo",
+      "c-suite",
+      "hbr"
+    ]
+  },
+  {
+    "id": "strategic-032",
+    "title": "Design-Driven Business Transformation Roadmap",
+    "url": "https://www.nngroup.com/articles/design-transformation-roadmap/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g framework for creating multi-year roadmaps to transform organizations through design excellence.",
+    "duration": "15 min read",
+    "source": "NN/g",
+    "tags": [
+      "transformation",
+      "roadmap",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-033",
+    "title": "Design Strategy for Board Presentations",
+    "url": "https://www.interaction-design.org/literature/article/design-strategy-board-presentations",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF guide on crafting design strategy narratives that resonate with board members and drive investment.",
+    "duration": "12 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "board",
+      "strategy",
+      "ixdf"
+    ]
+  },
+  {
+    "id": "strategic-034",
+    "title": "Organizational Design Excellence: A C-Suite Perspective",
+    "url": "https://www.mckinsey.com/capabilities/design/our-insights/organizational-design-excellence",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "McKinsey insights on how C-suite leaders can build organizations that consistently deliver design excellence.",
+    "duration": "18 min read",
+    "source": "McKinsey",
+    "tags": [
+      "excellence",
+      "organization",
+      "mckinsey"
+    ]
+  },
+  {
+    "id": "strategic-035",
+    "title": "Design Vision: Creating and Communicating",
+    "url": "https://www.nngroup.com/articles/design-vision/",
+    "type": "article",
+    "category": "Product Thinking & Strategy",
+    "level": "strategic-lead",
+    "summary": "NN/g guide on developing compelling design visions that inspire organizations and guide strategic decisions.",
+    "duration": "14 min read",
+    "source": "NN/g",
+    "tags": [
+      "vision",
+      "strategy",
+      "nng"
+    ]
+  },
+  {
+    "id": "strategic-036",
+    "title": "Design Leadership at the C-Suite Level",
+    "url": "https://www.interaction-design.org/literature/article/design-leadership-c-suite",
+    "type": "article",
+    "category": "Collaboration & Communication",
+    "level": "strategic-lead",
+    "summary": "IxDF comprehensive guide on operating as a design leader in the C-suite, covering influence and strategy.",
+    "duration": "15 min read",
+    "source": "Interaction Design Foundation",
+    "tags": [
+      "c-suite",
+      "leadership",
+      "ixdf"
+    ]
+  }
+]

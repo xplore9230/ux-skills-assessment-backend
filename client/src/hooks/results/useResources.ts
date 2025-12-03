@@ -15,6 +15,7 @@ import { getBeginnerResources } from "@/lib/knowledge-bank";
 import type { 
   Stage, 
   Category, 
+  CategoryScore,
   CuratedResourcesData, 
   CuratedResource,
   LoadingState 
@@ -37,6 +38,7 @@ interface UseResourcesOptions {
   stage: Stage;
   totalScore: number;
   weakCategories: Category[];
+  categories?: CategoryScore[];
   enabled?: boolean;
 }
 
@@ -54,6 +56,7 @@ async function fetchResourcesWithRanking(
     body: JSON.stringify({
       stage: options.stage,
       weakCategories: options.weakCategories,
+      categories: options.categories,
     }),
   });
   

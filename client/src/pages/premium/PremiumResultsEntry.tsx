@@ -1,10 +1,7 @@
 /**
- * Results Page Entry Point
+ * Premium Results Page Entry Point
  * 
- * Orchestrates data fetching and renders the results page.
- * Supports two modes:
- * 1. Fresh results: Receives quiz answers from router state
- * 2. Restored results: Loads from localStorage via URL parameter
+ * Same as ResultsEntry but uses PremiumResultsPage for gated content.
  */
 
 import { useEffect, useState, useMemo } from "react";
@@ -28,7 +25,7 @@ import {
 import { getTitleForStage, getAIInsightTeaserData } from "@/lib/results/stage-config";
 import { getTopPodcastsData } from "@/data/podcasts";
 import type { QuizAnswers, QuizResults } from "@/lib/results/types";
-import ResultsPage from "./ResultsPage";
+import PremiumResultsPage from "./results-premium";
 
 /**
  * Router state type
@@ -40,9 +37,9 @@ interface LocationState {
 const SHOW_MEANING_BLOCK = false;
 
 /**
- * Results page entry component
+ * Premium Results page entry component
  */
-export default function ResultsEntry() {
+export default function PremiumResultsEntry() {
   const location = useLocation();
   const navigate = useNavigate();
   const { resultId } = useParams<{ resultId?: string }>();
@@ -76,7 +73,7 @@ export default function ResultsEntry() {
       saveResult(newId, answers, results);
       
       // Update URL without triggering navigation (replace state)
-      navigate(`/results/${newId}`, { replace: true });
+      navigate(`/premium/results/${newId}`, { replace: true });
       
       setResolvedAnswers(answers);
       setInitialized(true);
@@ -94,8 +91,8 @@ export default function ResultsEntry() {
       }
     }
     
-    // Case 3: No valid source, redirect to home
-    navigate("/", { replace: true });
+    // Case 3: No valid source, redirect to premium quiz
+    navigate("/premium/quiz", { replace: true });
     setInitialized(true);
   }, [state, resultId, navigate, initialized]);
   
@@ -135,7 +132,6 @@ export default function ResultsEntry() {
     stage: results?.stage || "Practitioner",
     totalScore: results?.totalScore || 0,
     weakCategories: results?.weakestCategories || [],
-    categories: results?.categories || [],
     enabled: hasResults,
   });
   
@@ -145,7 +141,6 @@ export default function ResultsEntry() {
     totalScore: results?.totalScore || 0,
     strongCategories: results?.strongestCategories || [],
     weakCategories: results?.weakestCategories || [],
-    categories: results?.categories || [],
     enabled: hasResults,
   });
   
@@ -160,7 +155,6 @@ export default function ResultsEntry() {
     if (mainSectionsReady) return;
     
     // We consider sections ready if they are success OR error (meaning they are settled)
-    // With the new fallbacks, they should mostly be "success" even on API failure.
     const isSettled = (status: string) => status === "success" || status === "error";
     
     if (
@@ -198,7 +192,7 @@ export default function ResultsEntry() {
   const topPodcastsData = getTopPodcastsData();
   
   return (
-    <ResultsPage
+    <PremiumResultsPage
       // Core results
       quizResults={results}
       
@@ -242,3 +236,4 @@ export default function ResultsEntry() {
     />
   );
 }
+
