@@ -8,6 +8,7 @@ load_dotenv()
 
 import json
 import os
+import asyncio
 from typing import List, Optional, Dict, Any
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -92,12 +93,15 @@ app.add_middleware(
 )
 
 # Auto-populate vector DB on startup if empty (for Railway ephemeral storage)
-@app.on_event("startup")
-async def startup_populate_vector_db():
+async def populate_vector_db_background():
     """
-    Auto-populate vector database on startup if it's empty.
-    This handles Railway's ephemeral filesystem that gets wiped on each deployment.
+    Background task to auto-populate vector database if it's empty.
+    This runs in the background to avoid blocking the healthcheck.
+    Railway's ephemeral filesystem gets wiped on each deployment.
     """
+    # Wait a bit to let the app fully initialize
+    await asyncio.sleep(2)
+    
     if not RAG_AVAILABLE:
         print("⚠ RAG not available, skipping vector DB population")
         return
@@ -223,6 +227,17 @@ async def startup_populate_vector_db():
         print(f"⚠ Error auto-populating vector DB: {e}")
         import traceback
         traceback.print_exc()
+
+@app.on_event("startup")
+async def startup_event():
+    """
+    Non-blocking startup: Launch vector DB population in background.
+    This allows healthcheck to pass immediately while data loads.
+    """
+    print("🚀 Starting FastAPI application...")
+    print("📦 Launching vector DB population in background...")
+    asyncio.create_task(populate_vector_db_background())
+    print("✅ Startup complete - app ready for healthcheck")
 
 # Load curated resources with retry logic and better error handling
 RESOURCES_FILE = os.path.join(os.path.dirname(__file__), "resources.json")
