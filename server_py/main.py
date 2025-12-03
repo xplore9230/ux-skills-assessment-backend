@@ -31,9 +31,12 @@ try:
     from rag import get_rag_retriever
     from vector_store import get_vector_store
     RAG_AVAILABLE = True
-except ImportError:
+    print("✓ RAG system initialized successfully")
+except Exception as e:
     RAG_AVAILABLE = False
-    print("⚠ RAG system not available")
+    print(f"⚠ RAG system not available: {type(e).__name__}: {e}")
+    import traceback
+    traceback.print_exc()
 
 # Import pre-generated lookup
 try:
