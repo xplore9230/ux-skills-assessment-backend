@@ -1266,6 +1266,24 @@ function getRAGUrl(): string {
   return process.env.PYTHON_API_URL || process.env.RAG_API_URL || "http://localhost:8000";
 }
 
+// Diagnostic endpoint to check RAG configuration
+app.get("/api/debug/rag-config", (_req, res) => {
+  const ragUrl = getRAGUrl();
+  const hasOpenAI = !!process.env.OPENAI_API_KEY;
+  const hasPythonUrl = !!process.env.PYTHON_API_URL;
+  const hasRagUrl = !!process.env.RAG_API_URL;
+  
+  return res.json({
+    ragUrl,
+    configured: {
+      OPENAI_API_KEY: hasOpenAI,
+      PYTHON_API_URL: hasPythonUrl,
+      RAG_API_URL: hasRagUrl,
+    },
+    env: process.env.NODE_ENV || "development"
+  });
+});
+
 // Helper to fetch RAG context from Python backend
 async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]> {
   try {
