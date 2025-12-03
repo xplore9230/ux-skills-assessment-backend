@@ -532,7 +532,7 @@ function generateImprovementPlan(
           expectedOutcome: "Design impact demonstrated with clear strategic value and visibility.",
         },
       };
-    } else if (normalizedStage === "Emerging Lead" || normalizedStage === "Emerging Senior") {
+    } else if (normalizedStage === "Emerging Lead") {
       return {
         week1: {
           theme: "Leadership Transition Foundation",
@@ -1727,7 +1727,7 @@ Role-Specific Content Requirements:
 ${normalizedStage === "Strategic Lead - C-Suite" ? "- Focus on C-suite level content: organizational transformation, board-level strategy, design vision, design-driven business transformation, executive leadership\n- Resources should address challenges like design ROI at scale, design maturity models, design as competitive advantage\n- Content should be strategic and business-focused, not tactical execution" : ""}
 ${normalizedStage === "Strategic Lead - Executive" ? "- Focus on VP-level content: organizational design strategy, cross-functional executive influence, building design culture at scale\n- Resources should address challenges like design team growth, VP-level partnerships, design metrics at organizational scale\n- Content should emphasize organizational impact and executive leadership" : ""}
 ${normalizedStage === "Strategic Lead - Senior" ? "- Focus on Director/AVP level content: design direction, team leadership, design excellence, design systems\n- Resources should address challenges like leading design teams, establishing processes, design quality standards\n- Content should emphasize team leadership and design direction" : ""}
-${normalizedStage === "Emerging Lead" || normalizedStage === "Emerging Senior" ? "- Focus on leadership transition content: strategic thinking, mentoring, influencing product decisions\n- Resources should address challenges like transitioning from IC to leadership, building influence\n- Content should bridge individual contributor and leadership skills" : ""}
+${normalizedStage === "Emerging Lead" ? "- Focus on leadership transition content: strategic thinking, mentoring, influencing product decisions\n- Resources should address challenges like transitioning from IC to leadership, building influence\n- Content should bridge individual contributor and leadership skills" : ""}
 ${normalizedStage === "Practitioner" ? "- Focus on mid-level content: deepening expertise, taking ownership, improving craft\n- Resources should address mid-level challenges and skill development" : ""}
 ${normalizedStage === "Explorer" ? "- Focus on foundational content: building core skills, understanding basics\n- Resources should address beginner-level learning and fundamentals" : ""}
 
