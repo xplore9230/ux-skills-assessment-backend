@@ -3,6 +3,7 @@
 FROM python:3.11-bookworm
 
 # Install system dependencies (Ollama removed - using OpenAI + RAG instead)
+# Note: Railway cache may persist old layers - force rebuild if Ollama still appears
 RUN apt-get update && \
     apt-get install -y curl bash && \
     rm -rf /var/lib/apt/lists/*
