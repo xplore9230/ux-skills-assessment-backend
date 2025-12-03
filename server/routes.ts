@@ -1202,7 +1202,9 @@ async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]>
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 2000);
     
-    const response = await fetch("http://localhost:8000/api/rag/retrieve", {
+    // Use environment variable or default to localhost for local dev
+    const ragUrl = process.env.PYTHON_API_URL || process.env.RAG_API_URL || "http://localhost:8000";
+    const response = await fetch(`${ragUrl}/api/rag/retrieve`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -1212,7 +1214,7 @@ async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]>
           score: c.finalScore || c.score,
           maxScore: 100
         })),
-        top_k: 5
+        top_k: 15  // Request more resources for better diversity
       }),
       signal: controller.signal
     });
@@ -1488,24 +1490,6 @@ app.post("/api/v2/resources", async (req, res) => {
     const normalizedWeakCategories = normalizeCategories(weakCategories);
     const level = getLevelForStage(stage);
     
-    // 60% LEVEL-BASED: Get all stage-level resources (PRIMARY)
-    let stageResources = knowledgeBank.filter(r => r.level === level);
-    console.log("[/api/v2/resources] Stage resources found:", stageResources.length, "for level:", level);
-    
-    // Safety check: If no resources found for this level, use stretch levels as fallback
-    if (stageResources.length === 0) {
-      const stretchLevels = getStretchLevelsForStage(stage);
-      console.warn(`[/api/v2/resources] No ${level} resources found for stage "${stage}"; using stretch levels:`, stretchLevels);
-      stageResources = knowledgeBank.filter(r => stretchLevels.includes(r.level));
-      console.log("[/api/v2/resources] Stretch resources found:", stageResources.length);
-      
-      // If still empty (shouldn't happen), fall back to entire knowledge bank as last resort
-      if (stageResources.length === 0) {
-        console.error("[/api/v2/resources] CRITICAL: No resources found even with stretch levels! Falling back to entire knowledge bank.");
-        stageResources = [...knowledgeBank];
-      }
-    }
-    
     // 40% SKILL-BASED: Build score-aware prioritization (SECONDARY)
     const categoryScores = Array.isArray(categories) ? categories.map((cat: any) => {
       const computedScore = cat.score || cat.finalScore || 0;
@@ -1538,37 +1522,122 @@ app.post("/api/v2/resources", async (req, res) => {
       categoryScores: categoryScores.map(c => `${c.name}: ${c.score}%`)
     });
     
-    // Prioritize candidates: 60% level-matched, 40% skill-prioritized, with category diversity
-    let candidates: Resource[] = [];
+    // PRIMARY: Use RAG to retrieve resources from vector database
+    let candidates: any[] = [];
+    let ragResources: any[] = [];
     
-    // Group stage resources by category for balanced selection
-    const byCategory: Record<string, Resource[]> = {};
-    stageResources.forEach(r => {
-      if (!byCategory[r.category]) byCategory[r.category] = [];
-      byCategory[r.category].push(r);
-    });
-    
-    // 40% SKILL-BASED: Add resources from focus categories (weakest by score)
-    // But limit per category to ensure diversity
-    if (focusCategories.length > 0) {
-      for (const cat of focusCategories) {
-        const catResources = byCategory[cat] || [];
-        // Add up to 3 resources per focus category (to allow for diversity)
-        candidates.push(...catResources.slice(0, 3));
+    try {
+      // Fetch resources from RAG vector database
+      ragResources = await fetchRAGContext(stage, categoryScores.length > 0 ? categoryScores : []);
+      console.log(`[/api/v2/resources] RAG retrieved ${ragResources.length} resources from vector database`);
+      
+      if (ragResources.length > 0) {
+        // Convert RAG resources to Resource format
+        candidates = ragResources.map((ragRes: any) => {
+          // Map RAG resource to knowledge bank format
+          const mappedResource: any = {
+            id: ragRes.resource_id || `rag-${ragRes.url?.replace(/[^a-zA-Z0-9]/g, '-')}`,
+            title: ragRes.title || ragRes.metadata?.title || 'Untitled Resource',
+            url: ragRes.url || ragRes.metadata?.url || '',
+            summary: ragRes.summary || ragRes.metadata?.summary || ragRes.content?.substring(0, 200) || '',
+            category: ragRes.category || ragRes.metadata?.category || 'UX Fundamentals',
+            level: ragRes.level || ragRes.metadata?.level || level,
+            type: ragRes.resource_type || ragRes.metadata?.resource_type || 'article',
+            difficulty: ragRes.difficulty || ragRes.metadata?.difficulty || 'intermediate',
+            tags: ragRes.tags || ragRes.metadata?.tags || [],
+            author: ragRes.author || ragRes.metadata?.author || '',
+            duration: ragRes.estimated_read_time ? `${ragRes.estimated_read_time} min` : '',
+            _rag: true, // Mark as RAG resource
+            _relevance_score: ragRes.relevance_score || 0
+          };
+          return mappedResource;
+        });
+        
+        // Group by category for diversity
+        const byCategory: Record<string, any[]> = {};
+        candidates.forEach(r => {
+          if (!byCategory[r.category]) byCategory[r.category] = [];
+          byCategory[r.category].push(r);
+        });
+        
+        // Ensure diversity: prioritize focus categories but limit per category
+        const diverseCandidates: any[] = [];
+        
+        // Add 2-3 from focus categories
+        for (const cat of focusCategories) {
+          const catResources = byCategory[cat] || [];
+          diverseCandidates.push(...catResources.slice(0, 3));
+        }
+        
+        // Add 1-2 from other categories
+        const otherCategories = Object.keys(byCategory).filter(cat => !focusCategories.includes(cat));
+        for (const cat of otherCategories) {
+          const catResources = byCategory[cat] || [];
+          diverseCandidates.push(...catResources.slice(0, 2));
+        }
+        
+        // Sort by relevance score and limit to 15
+        diverseCandidates.sort((a, b) => (b._relevance_score || 0) - (a._relevance_score || 0));
+        candidates = diverseCandidates.slice(0, 15);
+        
+        console.log(`[/api/v2/resources] RAG candidates (${candidates.length}):`, candidates.map(c => `${c.category}: ${c.title.substring(0, 40)}...`));
       }
+    } catch (ragError) {
+      console.warn("[/api/v2/resources] RAG retrieval failed, falling back to static knowledge bank:", ragError);
     }
     
-    // 60% LEVEL-BASED: Add diverse resources from other categories
-    const otherCategories = Object.keys(byCategory).filter(cat => !focusCategories.includes(cat));
-    for (const cat of otherCategories) {
-      // Add up to 2 resources per other category
-      const catResources = byCategory[cat] || [];
-      candidates.push(...catResources.slice(0, 2));
+    // FALLBACK: If RAG returned no resources, use static knowledge bank
+    if (candidates.length === 0) {
+      console.log("[/api/v2/resources] Using static knowledge bank fallback");
+      
+      // 60% LEVEL-BASED: Get all stage-level resources (PRIMARY)
+      let stageResources = knowledgeBank.filter(r => r.level === level);
+      console.log("[/api/v2/resources] Stage resources found:", stageResources.length, "for level:", level);
+      
+      // Safety check: If no resources found for this level, use stretch levels as fallback
+      if (stageResources.length === 0) {
+        const stretchLevels = getStretchLevelsForStage(stage);
+        console.warn(`[/api/v2/resources] No ${level} resources found for stage "${stage}"; using stretch levels:`, stretchLevels);
+        stageResources = knowledgeBank.filter(r => stretchLevels.includes(r.level));
+        console.log("[/api/v2/resources] Stretch resources found:", stageResources.length);
+        
+        // If still empty (shouldn't happen), fall back to entire knowledge bank as last resort
+        if (stageResources.length === 0) {
+          console.error("[/api/v2/resources] CRITICAL: No resources found even with stretch levels! Falling back to entire knowledge bank.");
+          stageResources = [...knowledgeBank];
+        }
+      }
+      
+      // Group stage resources by category for balanced selection
+      const byCategory: Record<string, Resource[]> = {};
+      stageResources.forEach(r => {
+        if (!byCategory[r.category]) byCategory[r.category] = [];
+        byCategory[r.category].push(r);
+      });
+      
+      // 40% SKILL-BASED: Add resources from focus categories (weakest by score)
+      // But limit per category to ensure diversity
+      if (focusCategories.length > 0) {
+        for (const cat of focusCategories) {
+          const catResources = byCategory[cat] || [];
+          // Add up to 3 resources per focus category (to allow for diversity)
+          candidates.push(...catResources.slice(0, 3));
+        }
+      }
+      
+      // 60% LEVEL-BASED: Add diverse resources from other categories
+      const otherCategories = Object.keys(byCategory).filter(cat => !focusCategories.includes(cat));
+      for (const cat of otherCategories) {
+        // Add up to 2 resources per other category
+        const catResources = byCategory[cat] || [];
+        candidates.push(...catResources.slice(0, 2));
+      }
+      
+      // Limit to 15 candidates for AI selection (ensuring category diversity)
+      candidates = candidates.slice(0, 15);
     }
     
-    // Limit to 15 candidates for AI selection (ensuring category diversity)
-    candidates = candidates.slice(0, 15);
-    console.log("[/api/v2/resources] Candidates:", candidates.map(c => c.id));
+    console.log("[/api/v2/resources] Final candidates:", candidates.length, candidates.map(c => c.id));
 
     let selectedResources: any[] = [];
 
@@ -1607,7 +1676,12 @@ Stage Context: ${JSON.stringify(stageCompetencies)}
         
         if (response.data && response.data.resources) {
           selectedResources = response.data.resources.map(sel => {
-            const original = knowledgeBank.find(r => r.id === sel.id);
+            // First try to find in candidates (which may include RAG resources)
+            let original = candidates.find(r => r.id === sel.id);
+            // Fallback to knowledge bank if not found in candidates
+            if (!original) {
+              original = knowledgeBank.find(r => r.id === sel.id);
+            }
             if (original) {
               return { ...original, reasonSelected: sel.reasonSelected };
             }
@@ -1646,10 +1720,16 @@ Stage Context: ${JSON.stringify(stageCompetencies)}
     if (selectedResources.length === 0) {
       console.log("[/api/v2/resources] Using fallback - selecting from candidates");
       
-      // If candidates is empty, use stageResources directly
+      // If candidates is empty, fallback to static knowledge bank
       if (candidates.length === 0) {
-        console.warn("[/api/v2/resources] Candidates empty, using stageResources directly");
-        candidates = [...stageResources];
+        console.warn("[/api/v2/resources] Candidates empty, falling back to static knowledge bank");
+        const level = getLevelForStage(stage);
+        let stageResources = knowledgeBank.filter(r => r.level === level);
+        if (stageResources.length === 0) {
+          const stretchLevels = getStretchLevelsForStage(stage);
+          stageResources = knowledgeBank.filter(r => stretchLevels.includes(r.level));
+        }
+        candidates = stageResources.slice(0, 15);
       }
       
       // 40% skill-based: Prioritize focus categories first, then others (60% level-based)
