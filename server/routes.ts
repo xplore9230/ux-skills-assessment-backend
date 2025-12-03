@@ -1269,9 +1269,9 @@ function getRAGUrl(): string {
 // Helper to fetch RAG context from Python backend
 async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]> {
   try {
-    // Set a short timeout (2s) to ensure RAG doesn't slow down the response
+    // Set timeout for cross-cloud communication (10s for Vercel → Railway)
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000);
+    const timeoutId = setTimeout(() => controller.abort(), 10000);
     
     // Use environment variable or default to localhost for local dev
     const ragUrl = getRAGUrl();
@@ -1301,7 +1301,8 @@ async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]>
     }
   } catch (error) {
     // Silent failure for RAG - fallback to pure OpenAI
-    console.warn("RAG Context Retrieval skipped:", error instanceof Error ? error.message : "Unknown error");
+    const ragUrl = getRAGUrl();
+    console.warn(`RAG Context Retrieval skipped (URL: ${ragUrl}):`, error instanceof Error ? error.message : "Unknown error");
   }
   return [];
 }

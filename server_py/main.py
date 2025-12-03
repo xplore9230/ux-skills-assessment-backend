@@ -117,23 +117,23 @@ async def populate_vector_db_background():
             print(f"✓ Vector DB already populated with {total_resources} resources")
             return
         
-        print("📥 Vector DB is empty, auto-populating from knowledge bank...")
+        print("📥 Vector DB is empty, auto-populating from vector store export...")
         
-        # Import knowledge bank resources
-        kb_file = os.path.join(os.path.dirname(__file__), "knowledge_bank_export.json")
+        # Import vector store export (includes all 264 resources: knowledge bank + social + scraped)
+        kb_file = os.path.join(os.path.dirname(__file__), "vector_store_export.json")
         if not os.path.exists(kb_file):
-            print(f"⚠ Knowledge bank file not found: {kb_file}")
+            print(f"⚠ Vector store export file not found: {kb_file}")
             return
         
         import json
         from knowledge_base import UXResource, ContentChunker
         from urllib.parse import urlparse
         
-        # Load knowledge bank
+        # Load vector store export
         with open(kb_file, 'r', encoding='utf-8') as f:
             kb_resources = json.load(f)
         
-        print(f"📖 Loaded {len(kb_resources)} resources from knowledge bank")
+        print(f"📖 Loaded {len(kb_resources)} resources from vector store export")
         
         # Helper functions from import script
         def level_to_difficulty(level: str) -> str:
