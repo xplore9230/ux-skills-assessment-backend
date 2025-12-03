@@ -1284,6 +1284,44 @@ async function fetchSkillRelationships(weak: string[], strong: string[]): Promis
   return [];
 }
 
+// Helper: Fetch Social Media Resources from Vector Store
+async function fetchSocialMediaResources(stage: string, categories: any[]): Promise<any[]> {
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+    
+    // Query vector store for social media content (videos, podcasts, tweets)
+    const response = await fetch("http://localhost:8000/api/rag/social-media", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        stage,
+        categories: categories.map(c => ({
+          name: c.name,
+          score: c.finalScore || c.score || 0,
+          maxScore: 100
+        })),
+        resource_types: ["video", "podcast", "tweet"],
+        limit: 8
+      }),
+      signal: controller.signal
+    });
+    
+    clearTimeout(timeoutId);
+    
+    if (response.ok) {
+      const data = await response.json();
+      if (data && Array.isArray(data.resources)) {
+        console.log(`✓ Social Media: Retrieved ${data.resources.length} resources`);
+        return data.resources;
+      }
+    }
+  } catch (error) {
+    console.warn("Social Media RAG skipped:", error instanceof Error ? error.message : "Unknown error");
+  }
+  return [];
+}
+
 /**
  * POST /api/v2/meaning
  * Generate "What this means for you" AI text
@@ -1519,7 +1557,8 @@ app.post("/api/v2/resources", async (req, res) => {
 
     if (isOpenAIConfigured()) {
       try {
-        const learningPaths = await fetchLearningPaths(normalizedWeakCategories);
+        // Use score-based weak categories for RAG context (40% skill-based personalization)
+        const learningPaths = await fetchLearningPaths(focusCategories);
         const stageCompetencies = await fetchStageCompetencies(stage);
         
         // Prompt emphasizes 60% level, 40% skill scores
@@ -1659,7 +1698,8 @@ app.post("/api/v2/deep-insights", async (req, res) => {
 
     if (isOpenAIConfigured()) {
       const stageCompetencies = await fetchStageCompetencies(stage);
-      const skillRelationships = await fetchSkillRelationships(normalizedWeak, normalizedStrong);
+      // Use score-based categories for RAG context (30% skill-based personalization)
+      const skillRelationships = await fetchSkillRelationships(actualWeak, actualStrong);
       // Normalize stage name for backward compatibility
       const normalizedStage = stage === "Emerging Senior" ? "Emerging Lead" 
         : stage === "Strategic Lead" ? "Strategic Lead - Executive"
@@ -1847,6 +1887,57 @@ app.post("/api/v2/improvement-plan", async (req, res) => {
     const { stage, strongCategories, weakCategories } = req.body ?? {};
     const weeks = generateImprovementPlan(stage, strongCategories, weakCategories);
     return res.json({ weeks });
+  }
+});
+
+/**
+ * POST /api/v2/social-media
+ * Fetch social media content (YouTube videos, podcasts, tweets) from vector store
+ */
+app.post("/api/v2/social-media", async (req, res) => {
+  try {
+    const { stage, categories } = req.body ?? {};
+    
+    if (!stage) {
+      return res.status(400).json({ error: "Stage is required" });
+    }
+
+    // Normalize categories format
+    const normalizedCategories = Array.isArray(categories) 
+      ? categories 
+      : [];
+
+    // Fetch social media resources from vector store
+    const socialResources = await fetchSocialMediaResources(stage, normalizedCategories);
+    
+    // Transform to frontend format
+    const formattedResources = socialResources.map((resource: any) => {
+      const metadata = resource.metadata || {};
+      return {
+        id: metadata.resource_id || `social-${Date.now()}-${Math.random()}`,
+        title: metadata.title || resource.title || "Untitled",
+        url: metadata.url || resource.url || "#",
+        type: metadata.resource_type || (metadata.source === "Twitter" ? "tweet" : metadata.resource_type) || "video",
+        source: metadata.source || "Unknown",
+        summary: resource.content?.substring(0, 200) || metadata.summary || "",
+        author: metadata.author || metadata.source || "",
+        engagementScore: metadata.engagement_score || 0,
+        viewCount: metadata.view_count || 0,
+        publishedAt: metadata.published_at || metadata.date || "",
+        thumbnail: metadata.thumbnail || ""
+      };
+    });
+
+    // Get unique sources
+    const sources = [...new Set(formattedResources.map(r => r.source))].filter(Boolean);
+
+    return res.json({
+      resources: formattedResources,
+      sources: sources.length > 0 ? sources : ["YouTube", "Twitter", "Podcasts"]
+    });
+  } catch (error) {
+    console.error("[/api/v2/social-media] Error:", error);
+    return res.status(500).json({ error: "Failed to fetch social media content" });
   }
 });
 
