@@ -1,3 +1,20 @@
+/**
+ * ⚠️ CRITICAL WARNING: This file is NOT deployed to Vercel
+ * 
+ * Repository: ux-skills-assessment-backend
+ * Deployment Target: ❌ NONE (Local development only)
+ * 
+ * This file exists for local development/testing purposes only.
+ * Changes made here will NOT be deployed to production.
+ * 
+ * For production Vercel deployments, modify:
+ * → ux-skills-assessment/server/routes.ts (Frontend repository)
+ * 
+ * See DEPLOYMENT_MAP.md for complete file-to-deployment mapping.
+ * 
+ * Last Updated: 2025-12-04
+ */
+
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import fs from "node:fs";
