@@ -672,54 +672,54 @@ function generateImprovementPlan(
     } else if (normalizedStage === "Practitioner") {
       return {
         week1: {
-      theme: "Foundation Fix",
-      practiceLabel: "Apply fundamentals",
+          theme: "Foundation Fix",
+          practiceLabel: "Apply fundamentals",
           practiceDescription: (category: Category) =>
-        `Create a quick sketch, wireframe, or heuristic checklist focused on ${category} and capture notes in your journal.`,
-      deepWork: [
-        {
-          title: "Mini project sprint",
-          description: "Translate today's readings into a simple redesign or flow walkthrough.",
-        },
-        {
-          title: "Portfolio reflection",
-          description: "Document one clear before/after improvement you can add to a case study.",
-        },
-      ],
+            `Create a quick sketch, wireframe, or heuristic checklist focused on ${category} and capture notes in your journal.`,
+          deepWork: [
+            {
+              title: "Mini project sprint",
+              description: "Translate today's readings into a simple redesign or flow walkthrough.",
+            },
+            {
+              title: "Portfolio reflection",
+              description: "Document one clear before/after improvement you can add to a case study.",
+            },
+          ],
           expectedOutcome: "Solid understanding of foundational concepts and initial practice experience.",
         },
         week2: {
-      theme: "Depth & Ownership",
-      practiceLabel: "Critique & iterate",
+          theme: "Depth & Ownership",
+          practiceLabel: "Critique & iterate",
           practiceDescription: (category: Category) =>
-        `Run a quick critique of an existing experience in ${category}. Capture 3 insights and 1 experiment you could ship.`,
-      deepWork: [
-        {
-          title: "End-to-end flow audit",
-          description: "Audit a real journey and capture opportunities tied to your focus areas.",
-        },
-        {
-          title: "Research or testing session",
-          description: "Host a short user session or synthesize prior research into actionable chunks.",
-        },
-      ],
+            `Run a quick critique of an existing experience in ${category}. Capture 3 insights and 1 experiment you could ship.`,
+          deepWork: [
+            {
+              title: "End-to-end flow audit",
+              description: "Audit a real journey and capture opportunities tied to your focus areas.",
+            },
+            {
+              title: "Research or testing session",
+              description: "Host a short user session or synthesize prior research into actionable chunks.",
+            },
+          ],
           expectedOutcome: "Clearer craftsmanship, improved documentation habits, and tighter stakeholder alignment.",
         },
         week3: {
-      theme: "Strategy & Visibility",
-      practiceLabel: "Share and mentor",
+          theme: "Strategy & Visibility",
+          practiceLabel: "Share and mentor",
           practiceDescription: (category: Category) =>
-        `Record a Loom or host a brown-bag to teach one ${category} insight to your team.`,
-      deepWork: [
-        {
-          title: "Strategic narrative",
-          description: "Create a 2-slide story or doc that ties your UX work to business goals.",
-        },
-        {
-          title: "Knowledge share",
-          description: "Package learnings into a blog post, internal doc, or playbook for peers.",
-        },
-      ],
+            `Record a Loom or host a brown-bag to teach one ${category} insight to your team.`,
+          deepWork: [
+            {
+              title: "Strategic narrative",
+              description: "Create a 2-slide story or doc that ties your UX work to business goals.",
+            },
+            {
+              title: "Knowledge share",
+              description: "Package learnings into a blog post, internal doc, or playbook for peers.",
+            },
+          ],
           expectedOutcome: "Strategic mindset and increased visibility through documented work.",
         },
       };
@@ -1304,13 +1304,15 @@ app.get("/api/debug/rag-config", (_req, res) => {
 
 // Helper to fetch RAG context from Python backend
 async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]> {
+  const ragUrl = getRAGUrl();
+  console.log(`[fetchRAGContext] Attempting to fetch from: ${ragUrl}/api/rag/retrieve`);
+  console.log(`[fetchRAGContext] Request:`, { stage, categoriesCount: categories.length });
+  
   try {
     // Set timeout for cross-cloud communication (10s for Vercel → Railway)
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 10000);
     
-    // Use environment variable or default to localhost for local dev
-    const ragUrl = getRAGUrl();
     const response = await fetch(`${ragUrl}/api/rag/retrieve`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -1328,17 +1330,34 @@ async function fetchRAGContext(stage: string, categories: any[]): Promise<any[]>
     
     clearTimeout(timeoutId);
     
+    console.log(`[fetchRAGContext] Response status: ${response.status} ${response.statusText}`);
+    
     if (response.ok) {
       const data = await response.json();
       if (data && Array.isArray(data.resources)) {
-        console.log(`✓ RAG Context: Retrieved ${data.resources.length} resources`);
+        console.log(`[fetchRAGContext] ✓ Retrieved ${data.resources.length} resources`);
         return data.resources;
+      } else {
+        console.warn(`[fetchRAGContext] ⚠ Invalid response format:`, typeof data, Array.isArray(data?.resources));
       }
+    } else {
+      const errorText = await response.text().catch(() => "Unknown error");
+      console.error(`[fetchRAGContext] ✗ HTTP ${response.status}: ${errorText.substring(0, 200)}`);
     }
   } catch (error) {
-    // Silent failure for RAG - fallback to pure OpenAI
-    const ragUrl = getRAGUrl();
-    console.warn(`RAG Context Retrieval skipped (URL: ${ragUrl}):`, error instanceof Error ? error.message : "Unknown error");
+    // More detailed error logging
+    if (error instanceof Error) {
+      if (error.name === 'AbortError') {
+        console.error(`[fetchRAGContext] ✗ Timeout after 10s connecting to ${ragUrl}`);
+      } else if (error.message.includes('ECONNREFUSED') || error.message.includes('fetch failed')) {
+        console.error(`[fetchRAGContext] ✗ Connection refused - RAG service not running at ${ragUrl}`);
+      } else {
+        console.error(`[fetchRAGContext] ✗ Error: ${error.message}`);
+      }
+    } else {
+      console.error(`[fetchRAGContext] ✗ Unknown error:`, error);
+    }
+    console.warn(`[fetchRAGContext] RAG Context Retrieval skipped (URL: ${ragUrl})`);
   }
   return [];
 }
@@ -1649,6 +1668,16 @@ app.post("/api/v2/resources", async (req, res) => {
           ? normalizedWeakCategories
           : getFallbackFocusCategories(stage));
     
+    // DIAGNOSTIC: Log RAG configuration
+    const ragUrl = getRAGUrl();
+    console.log("[/api/v2/resources] RAG Configuration:", {
+      ragUrl,
+      hasPythonUrl: !!process.env.PYTHON_API_URL,
+      hasRagUrl: !!process.env.RAG_API_URL,
+      nodeEnv: process.env.NODE_ENV || "development",
+      willAttemptRAG: true
+    });
+    
     console.log("[/api/v2/resources] Request:", { 
       stage, 
       level,
@@ -1661,12 +1690,14 @@ app.post("/api/v2/resources", async (req, res) => {
     let candidates: any[] = [];
     let ragResources: any[] = [];
     
+    console.log("[/api/v2/resources] Attempting RAG retrieval...");
     try {
       // Fetch resources from RAG vector database
       ragResources = await fetchRAGContext(stage, categoryScores.length > 0 ? categoryScores : []);
-      console.log(`[/api/v2/resources] RAG retrieved ${ragResources.length} resources from vector database`);
+      console.log(`[/api/v2/resources] RAG retrieval result: ${ragResources.length} resources`);
       
       if (ragResources.length > 0) {
+        console.log(`[/api/v2/resources] ✓ RAG retrieved ${ragResources.length} resources from vector database`);
         // Convert RAG resources to Resource format
         candidates = ragResources.map((ragRes: any) => {
           // Map RAG resource to knowledge bank format
@@ -1745,9 +1776,12 @@ app.post("/api/v2/resources", async (req, res) => {
         candidates = diverseCandidates.slice(0, 15);
         
         console.log(`[/api/v2/resources] RAG candidates (${candidates.length}):`, candidates.map(c => `${c.category}: ${c.title.substring(0, 40)}...`));
+      } else {
+        console.log("[/api/v2/resources] ⚠ RAG returned 0 resources, will use knowledge bank fallback");
       }
     } catch (ragError) {
-      console.warn("[/api/v2/resources] RAG retrieval failed, falling back to static knowledge bank:", ragError);
+      console.error("[/api/v2/resources] ✗ RAG retrieval failed:", ragError instanceof Error ? ragError.message : String(ragError));
+      console.warn("[/api/v2/resources] Falling back to static knowledge bank");
     }
     
     // FALLBACK: If RAG returned no resources, use static knowledge bank
@@ -1820,8 +1854,8 @@ SELECTION CRITERIA (weighted):
 - DIVERSITY: Ensure variety across categories - don't select all resources from the same category. Aim for 2-3 different categories.
 
 Explain WHY each one specifically addresses their gaps while being appropriate for their ${stage} level.
-Return JSON: { resources: [{ id, reasonSelected }] }
-IMPORTANT: Only use IDs from the provided Candidates list.`;
+        Return JSON: { resources: [{ id, reasonSelected }] }
+        IMPORTANT: Only use IDs from the provided Candidates list.`;
         
         const userPrompt = `
 Stage: ${stage} (Level: ${level})
@@ -1831,9 +1865,9 @@ Category Scores (for 40% prioritization within ${level} level):
 ${categoryScores.map(c => `- ${c.name}: ${c.score}% (${c.band})`).join("\n")}
 
 Candidates (all from ${level} level): ${JSON.stringify(candidates.map(r => ({ id: r.id, title: r.title, category: r.category, summary: r.summary })))}
-Learning Context: ${JSON.stringify(learningPaths)}
-Stage Context: ${JSON.stringify(stageCompetencies)}
-`;
+        Learning Context: ${JSON.stringify(learningPaths)}
+        Stage Context: ${JSON.stringify(stageCompetencies)}
+        `;
         
         type ResourceResponse = { resources: { id: string, reasonSelected: string }[] };
         const response = await generateJSON<ResourceResponse>(systemPrompt, userPrompt);
@@ -2045,8 +2079,8 @@ SELECTION CRITERIA (weighted):
   * Low scores (<60%): Recommend bridging content that connects weak to strong areas
 
 CRITICAL: The user is at "${normalizedStage}" level. ${stageDescription}
-
-Role-Specific Content Requirements:
+      
+      Role-Specific Content Requirements:
 ${normalizedStage === "Strategic Lead - C-Suite" ? "- Focus on C-suite level content: organizational transformation, board-level strategy, design vision, design-driven business transformation, executive leadership\n- Resources should address challenges like design ROI at scale, design maturity models, design as competitive advantage\n- Content should be strategic and business-focused, not tactical execution" : ""}
 ${normalizedStage === "Strategic Lead - Executive" ? "- Focus on VP-level content: organizational design strategy, cross-functional executive influence, building design culture at scale\n- Resources should address challenges like design team growth, VP-level partnerships, design metrics at organizational scale\n- Content should emphasize organizational impact and executive leadership" : ""}
 ${normalizedStage === "Strategic Lead - Senior" ? "- Focus on Director/AVP level content: design direction, team leadership, design excellence, design systems\n- Resources should address challenges like leading design teams, establishing processes, design quality standards\n- Content should emphasize team leadership and design direction" : ""}
@@ -2055,11 +2089,11 @@ ${normalizedStage === "Practitioner" ? "- Focus on mid-level content: deepening 
 ${normalizedStage === "Explorer" ? "- Focus on foundational content: building core skills, understanding basics\n- Resources should address beginner-level learning and fundamentals" : ""}
 
 Explain WHY each resource is strategically valuable for someone at "${normalizedStage}" level, considering their skill scores.
-Return JSON: { insights: [{ id, whyThisForYou }] }`;
+      Return JSON: { insights: [{ id, whyThisForYou }] }`;
       
       const userPrompt = `
 Stage: ${normalizedStage} (Stretch Levels: ${stretchLevels.join(", ")})
-Stage Description: ${stageDescription}
+      Stage Description: ${stageDescription}
 
 Category Scores (use for 30% prioritization within ${stretchLevels.join(", ")} level):
 ${categoryScores.map(c => `- ${c.name}: ${c.score}% (${c.band})`).join("\n")}
@@ -2068,9 +2102,9 @@ Strong Categories (by score >= 80%): ${actualStrong.join(", ")}
 Weak Categories (by score < 60%): ${actualWeak.join(", ")}
 
 Candidates (all from ${stretchLevels.join(", ")} levels): ${JSON.stringify(candidates.map(r => ({ id: r.id, title: r.title, category: r.category, level: r.level, summary: r.summary })))}
-Stage Strategy: ${JSON.stringify(stageCompetencies)}
-Skill Bridging: ${JSON.stringify(skillRelationships)}
-`;
+      Stage Strategy: ${JSON.stringify(stageCompetencies)}
+      Skill Bridging: ${JSON.stringify(skillRelationships)}
+      `;
       
       type InsightResponse = { insights: { id: string, whyThisForYou: string }[] };
       const response = await generateJSON<InsightResponse>(systemPrompt, userPrompt);
