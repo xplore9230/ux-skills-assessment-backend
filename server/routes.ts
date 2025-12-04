@@ -1262,6 +1262,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 // They utilize OpenAI if configured, or fall back to template generation.
 
 // Helper: Get RAG URL from environment
+// Updated: 2025-12-04 - Increased timeout to 10s for cross-cloud communication
 function getRAGUrl(): string {
   return process.env.PYTHON_API_URL || process.env.RAG_API_URL || "http://localhost:8000";
 }
