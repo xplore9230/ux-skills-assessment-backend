@@ -280,9 +280,29 @@ class VectorStore:
             difficulties = {}
             sources = {}
             
+            # Load knowledge bank URLs to filter
+            kb_urls = set()
+            try:
+                import json
+                import os
+                kb_export_path = os.path.join(os.path.dirname(__file__), 'knowledge_bank_export.json')
+                if os.path.exists(kb_export_path):
+                    with open(kb_export_path, 'r') as f:
+                        kb_resources = json.load(f)
+                        kb_urls = {res['url'] for res in kb_resources}
+            except Exception as e:
+                print(f"Warning: Could not load knowledge bank URLs: {e}")
+            
             if all_data['metadatas']:
                 for metadata in all_data['metadatas']:
                     resource_id = metadata.get('resource_id')
+                    url = metadata.get('url', '')
+                    
+                    # Only count knowledge bank resources if we have the export file
+                    # Otherwise count all resources
+                    if kb_urls and url not in kb_urls:
+                        continue
+                    
                     if resource_id:
                         unique_resources.add(resource_id)
                     

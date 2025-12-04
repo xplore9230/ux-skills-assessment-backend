@@ -278,6 +278,8 @@ Examples:
             print(f"   ... and {len(needs_update) - 10} more\n")
         else:
             print()
+    else:
+        print(f"   ✓ All {len(ux_resources)} resources have correct difficulty levels\n")
     
     # Import new resources
     print(f"📥 Ready to import {len(new_resources)} new resources\n")
@@ -324,53 +326,53 @@ Examples:
                 print(f"  ✗ Failed to update {failed_updates} resources\n")
         
         if new_resources:
-        print("💾 Importing resources...\n")
-        added = 0
-        failed = 0
-        
-        for i, res in enumerate(new_resources, 1):
-            try:
-                if vs.resource_exists(res.id):
-                    continue
-                
-                chunks = chunker.create_chunks(res)
-                if not chunks:
-                    print(f"  ⚠ [{i}/{len(new_resources)}] No chunks created for: {res.title[:50]}...")
-                    continue
-                
-                if vs.add_resource(res, chunks):
-                    added += 1
-                    if added % 10 == 0:
-                        print(f"  ✓ Imported {added}/{len(new_resources)} resources...")
-            except Exception as e:
-                failed += 1
-                print(f"  ✗ [{i}/{len(new_resources)}] Error importing {res.title[:50]}...: {e}")
-        
-        print()
-        print("="*70)
-        print("  SUMMARY")
-        print("="*70)
-        print(f"  Total knowledge bank resources: {len(kb_resources)}")
-        print(f"  Duplicates found (skipped):      {len(duplicates)}")
-        print(f"  Resources updated (difficulty):  {updated if needs_update else 0}")
-        print(f"  Conversion errors:               {len(errors)}")
-        print(f"  New resources imported:          {added}")
-        print(f"  Failed imports:                  {failed}")
-        if needs_update and failed_updates > 0:
-            print(f"  Failed updates:                  {failed_updates}")
-        print("="*70 + "\n")
-        
-        # Show new category distribution
-        if added > 0:
-            print("📊 New Category Distribution:")
-            categories = {}
-            for res in new_resources[:added]:
-                cat = res.category
-                categories[cat] = categories.get(cat, 0) + 1
+            print("💾 Importing resources...\n")
+            added = 0
+            failed = 0
             
-            for cat, count in sorted(categories.items()):
-                print(f"   {cat:30s}: {count:3d} resources")
+            for i, res in enumerate(new_resources, 1):
+                try:
+                    if vs.resource_exists(res.id):
+                        continue
+                    
+                    chunks = chunker.create_chunks(res)
+                    if not chunks:
+                        print(f"  ⚠ [{i}/{len(new_resources)}] No chunks created for: {res.title[:50]}...")
+                        continue
+                    
+                    if vs.add_resource(res, chunks):
+                        added += 1
+                        if added % 10 == 0:
+                            print(f"  ✓ Imported {added}/{len(new_resources)} resources...")
+                except Exception as e:
+                    failed += 1
+                    print(f"  ✗ [{i}/{len(new_resources)}] Error importing {res.title[:50]}...: {e}")
+            
             print()
+            print("="*70)
+            print("  SUMMARY")
+            print("="*70)
+            print(f"  Total knowledge bank resources: {len(kb_resources)}")
+            print(f"  Duplicates found (skipped):      {len(duplicates)}")
+            print(f"  Resources updated (difficulty):  {updated if needs_update else 0}")
+            print(f"  Conversion errors:               {len(errors)}")
+            print(f"  New resources imported:          {added}")
+            print(f"  Failed imports:                  {failed}")
+            if needs_update and failed_updates > 0:
+                print(f"  Failed updates:                  {failed_updates}")
+            print("="*70 + "\n")
+            
+            # Show new category distribution
+            if added > 0:
+                print("📊 New Category Distribution:")
+                categories = {}
+                for res in new_resources[:added]:
+                    cat = res.category
+                    categories[cat] = categories.get(cat, 0) + 1
+                
+                for cat, count in sorted(categories.items()):
+                    print(f"   {cat:30s}: {count:3d} resources")
+                print()
         
     elif args.dry_run:
         print("="*70)
