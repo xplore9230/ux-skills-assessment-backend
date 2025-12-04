@@ -128,10 +128,11 @@ export function useImprovementPlan(
       
       const fallbackData: ImprovementPlanData = { weeks };
       
+      // Cache fallback data so we don't regenerate it on every page load
+      cacheImprovementPlan(stage, totalScore, fallbackData);
+      
       setData(fallbackData);
       setStatus("success");
-      
-      // Don't cache fallback data
     }
   }, [stage, totalScore, strongCategories, weakCategories, categories, enabled]);
   
