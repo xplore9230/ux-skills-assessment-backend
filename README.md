@@ -2,6 +2,19 @@
 
 Python FastAPI backend for the UX Skills Assessment application.
 
+## ⚠️ IMPORTANT: Repository Structure
+
+**This repository (`ux-skills-assessment-backend`) contains:**
+- ✅ `server_py/` → **Deployed to Railway** (Python FastAPI backend)
+- ❌ `server/` → **NOT deployed** (Node.js code for local dev only)
+- ❌ `client/` → **NOT deployed** (Frontend code for local dev only)
+
+**For Vercel deployments, use the frontend repository:**
+- 📦 `ux-skills-assessment` → Contains code that deploys to Vercel
+
+**⚠️ CRITICAL**: Changes to `server/routes.ts` in this repo will **NOT** deploy to Vercel.  
+See [DEPLOYMENT_MAP.md](DEPLOYMENT_MAP.md) for complete file-to-deployment mapping.
+
 ## Features
 
 - FastAPI REST API

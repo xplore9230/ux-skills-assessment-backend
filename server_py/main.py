@@ -233,10 +233,27 @@ async def startup_event():
     """
     Non-blocking startup: Launch vector DB population in background.
     This allows healthcheck to pass immediately while data loads.
+    Also warms up RAG retriever to prevent cold starts.
     """
     print("🚀 Starting FastAPI application...")
     print("📦 Launching vector DB population in background...")
     asyncio.create_task(populate_vector_db_background())
+    
+    # Warm up RAG retriever (pre-load embedding model, prevent cold starts)
+    if RAG_AVAILABLE:
+        try:
+            print("🔥 Warming up RAG retriever...")
+            rag = get_rag_retriever()
+            # Pre-warm with a common query (Practitioner level, UX Fundamentals)
+            rag.retrieve_resources_for_user(
+                stage="Practitioner",
+                categories=[{"name": "UX Fundamentals", "score": 50, "maxScore": 100}],
+                top_k=5
+            )
+            print("✓ RAG warmed up and ready (embedding model loaded)")
+        except Exception as e:
+            print(f"⚠ RAG warmup failed (non-critical): {e}")
+    
     print("✅ Startup complete - app ready for healthcheck")
 
 # Load curated resources with retry logic and better error handling

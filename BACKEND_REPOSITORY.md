@@ -24,6 +24,23 @@ The backend is deployed on Railway and connected to the separate repository:
 
 For local development, the backend code is still available in `server_py/` directory, but deployments use the separate repository.
 
+## ⚠️ CRITICAL: What is NOT Deployed
+
+**This repository contains code that is NOT deployed:**
+
+- ❌ `server/` directory → **NOT deployed to Vercel**
+  - Contains Node.js serverless functions for local development only
+  - Changes to `server/routes.ts` here will **NOT** affect production
+  - For Vercel deployments, use: `ux-skills-assessment` repository
+
+- ❌ `client/` directory → **NOT deployed**
+  - Contains React frontend code for local development only
+  - For Vercel deployments, use: `ux-skills-assessment` repository
+
+**Only `server_py/` directory is deployed (to Railway).**
+
+See [DEPLOYMENT_MAP.md](DEPLOYMENT_MAP.md) for complete file-to-deployment mapping.
+
 ## Updating Backend
 
 To update the backend:

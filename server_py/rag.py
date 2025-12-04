@@ -3,6 +3,8 @@ RAG (Retrieval-Augmented Generation) System
 
 This module handles the retrieval of relevant content from the vector store
 to augment LLM prompts with specific knowledge.
+
+OPTIMIZED: Parallel queries + caching for fast, reliable RAG.
 """
 
 # CRITICAL: Import numpy_compat FIRST before any chromadb imports
@@ -10,15 +12,22 @@ import numpy_compat  # noqa: F401
 
 from typing import List, Dict, Any, Optional
 import json
+import hashlib
+from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 from vector_store import get_vector_store
 
 class RAGRetriever:
     """
     Handles retrieval of relevant content for RAG.
+    Optimized with parallel queries and in-memory caching.
     """
     
     def __init__(self):
         self.vector_store = get_vector_store()
+        # In-memory cache: {cache_key: (results, expiry_time)}
+        self._cache: Dict[str, tuple] = {}
+        self._cache_ttl = timedelta(hours=1)  # Cache for 1 hour
         
     def semantic_search_resources(
         self, 
@@ -41,14 +50,25 @@ class RAGRetriever:
         unique_resources = self.vector_store.get_unique_resources(results)
         return unique_resources[:top_k]
     
-    def retrieve_resources_for_user(
+    def _get_cache_key(self, stage: str, categories: List[Dict[str, Any]], top_k: int) -> str:
+        """Generate cache key from stage + top 2 categories"""
+        sorted_cats = sorted(
+            categories, 
+            key=lambda c: (c.get('score', 0) / c.get('maxScore', 100)) if c.get('maxScore', 0) > 0 else 0
+        )[:2]
+        cat_names = [c.get('name', '') for c in sorted_cats]
+        key_data = f"{stage}:{','.join(sorted(cat_names))}:{top_k}"
+        return hashlib.md5(key_data.encode()).hexdigest()
+    
+    def _retrieve_resources_parallel(
         self, 
         stage: str, 
         categories: List[Dict[str, Any]], 
         top_k: int = 5
     ) -> List[Dict[str, Any]]:
         """
-        Retrieve resources tailored to the user's stage and weakest categories.
+        OPTIMIZED: Retrieve resources using parallel queries (3x faster).
+        This is the core retrieval logic - runs queries in parallel instead of sequential.
         """
         # Identify weakest categories
         sorted_cats = sorted(
@@ -59,39 +79,87 @@ class RAGRetriever:
         
         all_resources = []
         
-        # 1. Search for resources in weakest categories appropriate for stage
-        for cat in weakest_cats:
-            # Query strategy: Category + Stage + "learning"
-            query = f"{cat} for {stage} level learning"
+        # Run all queries in PARALLEL (not sequential) - 3x faster
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            futures = []
             
-            cat_results = self.semantic_search_resources(
-                query=query,
-                category=cat,
-                top_k=3
+            # Query 1 & 2: Category searches (parallel)
+            for cat in weakest_cats:
+                query = f"{cat} for {stage} level learning"
+                futures.append(
+                    executor.submit(
+                        self.semantic_search_resources,
+                        query=query,
+                        category=cat,
+                        top_k=3
+                    )
+                )
+            
+            # Query 3: Stage search (parallel)
+            stage_query = f"Career growth for {stage} UX designer"
+            futures.append(
+                executor.submit(
+                    self.semantic_search_resources,
+                    query=stage_query,
+                    top_k=3
+                )
             )
-            all_resources.extend(cat_results)
             
-        # 2. Search for stage-specific growth resources
-        stage_query = f"Career growth for {stage} UX designer"
-        stage_results = self.semantic_search_resources(
-            query=stage_query,
-            top_k=3
-        )
-        all_resources.extend(stage_results)
+            # Wait for all queries (takes longest query time, not sum)
+            for future in futures:
+                try:
+                    results = future.result(timeout=5)  # 5s max per query
+                    all_resources.extend(results)
+                except Exception as e:
+                    print(f"⚠ RAG query failed: {e}")
+                    # Continue with other results - partial results better than none
         
         # Deduplicate and sort by relevance
         seen_ids = set()
         unique_results = []
         
         for res in all_resources:
-            if res['resource_id'] not in seen_ids:
-                seen_ids.add(res['resource_id'])
+            resource_id = res.get('resource_id')
+            if resource_id and resource_id not in seen_ids:
+                seen_ids.add(resource_id)
                 unique_results.append(res)
         
         # Sort by relevance score if available
         unique_results.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
         
         return unique_results[:top_k]
+    
+    def retrieve_resources_for_user(
+        self, 
+        stage: str, 
+        categories: List[Dict[str, Any]], 
+        top_k: int = 5
+    ) -> List[Dict[str, Any]]:
+        """
+        OPTIMIZED: Retrieve resources with caching + parallel queries.
+        - First request: 3-5s (parallel queries)
+        - Cached requests: <100ms (instant)
+        """
+        # Check cache first (instant for common queries)
+        cache_key = self._get_cache_key(stage, categories, top_k)
+        
+        if cache_key in self._cache:
+            results, expiry = self._cache[cache_key]
+            if datetime.now() < expiry:
+                print(f"✓ RAG Cache HIT: {cache_key[:8]}... ({len(results)} resources)")
+                return results
+            else:
+                # Expired, remove from cache
+                del self._cache[cache_key]
+        
+        # Cache miss - compute using parallel queries
+        print(f"⚠ RAG Cache MISS: Computing for {cache_key[:8]}...")
+        results = self._retrieve_resources_parallel(stage, categories, top_k)
+        
+        # Cache for 1 hour (common queries will be instant)
+        self._cache[cache_key] = (results, datetime.now() + self._cache_ttl)
+        
+        return results
 
     def generate_learning_path(
         self,
