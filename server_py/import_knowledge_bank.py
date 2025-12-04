@@ -244,10 +244,86 @@ Examples:
         if len(errors) > 5:
             print(f"   ... and {len(errors) - 5} more\n")
     
+    # Check for resources that need difficulty updates
+    print(f"🔄 Checking for resources that need difficulty updates...\n")
+    needs_update = []
+    
+    for ux_res in ux_resources:
+        if ux_res.url in existing_urls:
+            # Check if difficulty needs updating
+            try:
+                # Get existing resource metadata
+                existing_results = vs.collection.get(
+                    where={"url": ux_res.url},
+                    limit=1
+                )
+                if existing_results['metadatas']:
+                    existing_difficulty = existing_results['metadatas'][0].get('difficulty', 'beginner')
+                    new_difficulty = ux_res.difficulty
+                    if existing_difficulty != new_difficulty:
+                        needs_update.append({
+                            'resource': ux_res,
+                            'old_difficulty': existing_difficulty,
+                            'new_difficulty': new_difficulty
+                        })
+            except Exception as e:
+                print(f"  ⚠ Error checking {ux_res.title[:50]}...: {e}")
+    
+    if needs_update:
+        print(f"📝 Found {len(needs_update)} resources that need difficulty updates:\n")
+        for item in needs_update[:10]:
+            print(f"   - {item['resource'].title[:60]}...")
+            print(f"     {item['old_difficulty']} → {item['new_difficulty']}")
+        if len(needs_update) > 10:
+            print(f"   ... and {len(needs_update) - 10} more\n")
+        else:
+            print()
+    
     # Import new resources
     print(f"📥 Ready to import {len(new_resources)} new resources\n")
     
-    if not args.dry_run and new_resources:
+    updated = 0
+    failed_updates = 0
+    
+    if not args.dry_run:
+        # Update existing resources' difficulty
+        if needs_update:
+            print("🔄 Updating difficulty levels for existing resources...\n")
+            updated = 0
+            failed_updates = 0
+            
+            for item in needs_update:
+                try:
+                    resource = item['resource']
+                    # Get all chunks for this resource
+                    results = vs.collection.get(
+                        where={"url": resource.url}
+                    )
+                    
+                    if results['ids']:
+                        # Update metadata for each chunk
+                        updated_metadatas = []
+                        for metadata in results['metadatas']:
+                            metadata['difficulty'] = resource.difficulty
+                            updated_metadatas.append(metadata)
+                        
+                        # Update in ChromaDB
+                        vs.collection.update(
+                            ids=results['ids'],
+                            metadatas=updated_metadatas
+                        )
+                        updated += 1
+                        if updated % 10 == 0:
+                            print(f"  ✓ Updated {updated}/{len(needs_update)} resources...")
+                except Exception as e:
+                    failed_updates += 1
+                    print(f"  ✗ Error updating {item['resource'].title[:50]}...: {e}")
+            
+            print(f"\n  ✓ Updated {updated} resources")
+            if failed_updates > 0:
+                print(f"  ✗ Failed to update {failed_updates} resources\n")
+        
+        if new_resources:
         print("💾 Importing resources...\n")
         added = 0
         failed = 0
@@ -276,9 +352,12 @@ Examples:
         print("="*70)
         print(f"  Total knowledge bank resources: {len(kb_resources)}")
         print(f"  Duplicates found (skipped):      {len(duplicates)}")
+        print(f"  Resources updated (difficulty):  {updated if needs_update else 0}")
         print(f"  Conversion errors:               {len(errors)}")
         print(f"  New resources imported:          {added}")
         print(f"  Failed imports:                  {failed}")
+        if needs_update and failed_updates > 0:
+            print(f"  Failed updates:                  {failed_updates}")
         print("="*70 + "\n")
         
         # Show new category distribution
@@ -299,10 +378,11 @@ Examples:
         print("="*70)
         print(f"  Total knowledge bank resources: {len(kb_resources)}")
         print(f"  Duplicates found (would skip):  {len(duplicates)}")
+        print(f"  Resources needing update:        {len(needs_update)}")
         print(f"  Conversion errors:              {len(errors)}")
         print(f"  New resources (would import):   {len(new_resources)}")
         print()
-        print("  ℹ️  Run without --dry-run to import")
+        print("  ℹ️  Run without --dry-run to import and update")
         print("="*70 + "\n")
     
     return 0
